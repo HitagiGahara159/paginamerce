@@ -1,0 +1,2026 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="referrer" content="no-referrer" />
+  <meta name="theme-color" content="#260d1b" />
+  <title>Merce Gallardo · Catálogo & Redes</title>
+
+  <!-- Tipografía Femenina y Editorial (Playfair Display + Quicksand) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      -webkit-tap-highlight-color: transparent;
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+    }
+
+    button, a, .pill, .social-link-card, .apoyo-card, .grid-card, .carousel-card,
+    .social-logo, .social-logo-circle, .nav-arrow, .btn-volver {
+      -webkit-user-select: none;
+      user-select: none;
+      touch-action: manipulation;
+    }
+
+    :root {
+      --bg: #220b18;
+      --bg-panel: rgba(48, 16, 34, 0.78);
+      --accent: #f472b6;
+      --accent-strong: #ec4899;
+      --accent-soft: #fbcfe8;
+      --kick: #53fc18;
+      --text: #fff5fa;
+      --muted: #ebbcd5;
+      --border: rgba(244, 114, 182, 0.28);
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'Quicksand', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* ── FONDO ROSA CÁLIDO CON LA FOTO DE MERCE ── */
+    .hero-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .pink-aurora {
+      position: absolute;
+      inset: -20px;
+      background:
+        radial-gradient(circle at 18% 20%, rgba(244, 114, 182, 0.38), transparent 50%),
+        radial-gradient(circle at 82% 25%, rgba(251, 113, 133, 0.28), transparent 52%),
+        radial-gradient(circle at 50% 85%, rgba(219, 39, 119, 0.34), transparent 60%),
+        linear-gradient(180deg, #2e1021 0%, #210b17 58%, #170610 100%);
+    }
+
+    .merce-portrait-bg {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: min(880px, 100vw);
+      height: 100vh;
+      height: 100dvh;
+      background-image: url('merce.png'), url('assets/merce.png');
+      background-size: cover;
+      background-position: center 18%;
+      opacity: 0.78;
+      filter: contrast(1.04) brightness(0.98) saturate(1.08);
+      mask-image: radial-gradient(ellipse 66% 84% at 50% 34%, black 54%, transparent 95%);
+      -webkit-mask-image: radial-gradient(ellipse 66% 84% at 50% 34%, black 54%, transparent 95%);
+    }
+
+    .ambient-overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to bottom, rgba(34, 11, 24, 0.16) 0%, rgba(34, 11, 24, 0.6) 55%, rgba(25, 8, 18, 0.94) 100%);
+    }
+
+    /* ── HEADER SUPERIOR ── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 60;
+      background: rgba(38, 12, 27, 0.86);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      min-height: 62px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.5rem 2.25rem;
+    }
+
+    .brand {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1.25rem;
+      text-decoration: none;
+      color: #fff;
+      letter-spacing: 0.02em;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      text-shadow: 0 0 18px rgba(244, 114, 182, 0.6);
+    }
+
+    .brand span {
+      color: var(--accent);
+      font-style: italic;
+    }
+
+    .kick-partner-pill {
+      font-family: var(--font-body);
+      font-size: 0.62rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.18rem 0.55rem;
+      border-radius: 999px;
+      background: rgba(244, 114, 182, 0.22);
+      border: 1px solid var(--accent);
+      color: var(--accent-soft);
+      font-style: normal;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.65rem;
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .nav-links::-webkit-scrollbar { display: none; }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--muted);
+      transition: color 0.15s ease;
+      cursor: pointer;
+      white-space: nowrap;
+      font-weight: 700;
+      padding: 0.25rem 0;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #fff;
+    }
+
+    .nav-links a.active {
+      color: var(--accent-soft);
+      border-bottom: 2px solid var(--accent);
+      text-shadow: 0 0 12px rgba(244, 114, 182, 0.7);
+    }
+
+    .nav-num {
+      color: var(--accent);
+      font-weight: 700;
+      margin-right: 0.2rem;
+    }
+
+    .kick-live-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.35rem 0.9rem;
+      border-radius: 9999px;
+      background: rgba(244, 114, 182, 0.18);
+      border: 1px solid rgba(244, 114, 182, 0.45);
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+      letter-spacing: 0.06em;
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+    .kick-live-badge:hover {
+      background: rgba(244, 114, 182, 0.3);
+      transform: translateY(-1px);
+    }
+    .kick-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--kick);
+      box-shadow: 0 0 8px var(--kick);
+    }
+
+    @media (max-width: 1100px) {
+      header {
+        padding: calc(0.6rem + env(safe-area-inset-top, 0px)) max(1rem, env(safe-area-inset-right, 0px)) 0.6rem max(1rem, env(safe-area-inset-left, 0px));
+        flex-wrap: wrap;
+      }
+      .kick-live-badge { order: 2; margin-left: auto; }
+      .nav-links {
+        order: 3;
+        width: 100%;
+        gap: clamp(0.65rem, 2vw, 1rem);
+        padding-top: 0.25rem;
+      }
+    }
+
+    @media (max-width: 800px) {
+      .nav-links a:nth-child(n + 3) { display: none; }
+      .nav-num { display: none; }
+    }
+
+    @media (max-width: 600px) {
+      header {
+        row-gap: 0.2rem;
+        padding-top: calc(0.5rem + env(safe-area-inset-top, 0px));
+        padding-bottom: 0.5rem;
+      }
+
+      .brand {
+        gap: 0.35rem;
+        font-size: clamp(1.05rem, 4.7vw, 1.2rem);
+      }
+
+      .kick-partner-pill,
+      .kick-live-badge,
+      .nav-links a:nth-child(n + 3) {
+        display: none;
+      }
+
+      .nav-links {
+        gap: 0.35rem;
+        padding-top: 0.15rem;
+        overflow: visible;
+      }
+
+      .nav-links a {
+        flex: 1;
+        padding: 0.45rem 0.25rem;
+        text-align: center;
+      }
+
+      .nav-num { display: none; }
+    }
+
+    /* ── VISTA 01: HOME ── */
+    #vista-home {
+      display: block;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 4.2rem 2rem 4.5rem;
+      animation: fadeIn 0.22s ease-out;
+    }
+
+    .home-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    @media (min-width: 1024px) {
+      .home-grid {
+        grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+        gap: 3rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      #vista-home {
+        padding: 2.5rem 1.1rem 3rem;
+      }
+
+      .home-grid { gap: 1.5rem; }
+      .home-big-name { font-size: clamp(2.15rem, 10vw, 3rem); }
+      .home-bio { font-size: 0.95rem; }
+      .home-right {
+        padding: 1rem;
+        border-radius: 15px;
+      }
+
+      .social-link-card {
+        min-width: 0;
+        padding: 0.75rem 0.8rem;
+        font-size: 0.76rem;
+      }
+
+      .social-link-card > span:first-child { min-width: 0; }
+      .social-link-card small { overflow-wrap: anywhere; }
+      .contact-box {
+        max-width: 100%;
+        flex-wrap: wrap;
+        border-radius: 16px;
+        overflow-wrap: anywhere;
+      }
+    }
+
+    .home-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.32rem 0.95rem;
+      border-radius: 999px;
+      background: rgba(244, 114, 182, 0.2);
+      border: 1px solid rgba(244, 114, 182, 0.45);
+      color: var(--accent-soft);
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 0.9rem;
+      width: fit-content;
+    }
+
+    /* Nombre Merce Gallardo más pequeño, estilizado y femenino */
+    .home-big-name {
+      font-family: var(--font-display);
+      font-size: clamp(2.1rem, 3.8vw, 3.3rem);
+      font-weight: 700;
+      line-height: 1.06;
+      letter-spacing: 0.01em;
+      color: #fff;
+      text-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+      margin-bottom: 1.1rem;
+    }
+
+    .home-big-name .accent-text {
+      color: var(--accent);
+      font-style: italic;
+      font-weight: 600;
+      display: block;
+      margin-top: 0.04em;
+      text-shadow: 0 0 24px rgba(244, 114, 182, 0.5);
+    }
+
+    .home-bio {
+      font-size: 0.98rem;
+      color: #fce7f3;
+      line-height: 1.7;
+      max-width: 500px;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+
+    .contact-box {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.6rem 1.15rem;
+      border-radius: 999px;
+      background: rgba(244, 114, 182, 0.16);
+      border: 1px solid var(--border);
+      font-size: 0.82rem;
+      color: var(--text);
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+    .contact-box:hover {
+      border-color: var(--accent);
+      background: rgba(244, 114, 182, 0.28);
+    }
+
+    .home-right {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      background: var(--bg-panel);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 1.6rem;
+      backdrop-filter: blur(16px);
+      box-shadow: 0 22px 48px rgba(0, 0, 0, 0.42);
+    }
+
+    .seguime-label {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 1rem;
+      letter-spacing: 0.06em;
+      color: var(--accent-soft);
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+    }
+
+    .social-link-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.8rem 1.15rem;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(251, 207, 232, 0.16);
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      transition: all 0.15s ease;
+    }
+    .social-link-card:hover {
+      background: rgba(244, 114, 182, 0.24);
+      border-color: var(--accent);
+      transform: translateX(4px);
+    }
+    .social-link-card small {
+      color: var(--muted);
+      font-weight: 600;
+      margin-left: 0.4rem;
+      font-size: 0.72rem;
+    }
+    .social-link-card span:last-child {
+      color: var(--accent);
+      font-size: 0.95rem;
+    }
+
+    /* ── VISTA 02: CATÁLOGO ── */
+    #vista-catalogo {
+      display: none;
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 5rem;
+      animation: fadeIn 0.2s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .controls-wrapper {
+      max-width: 1100px;
+      margin: 0 auto 0.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.85rem;
+    }
+
+    .page-title {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 1.1rem;
+      letter-spacing: 0.06em;
+      color: var(--accent-soft);
+      font-weight: 700;
+    }
+
+    .search-box { width: 100%; max-width: 440px; }
+
+    .search-input {
+      width: 100%;
+      padding: 0.7rem 1.4rem;
+      border-radius: 9999px;
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.08);
+      color: #fff;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 600;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+    .search-input::placeholder { color: #deb0c8; }
+    .search-input:focus {
+      border-color: var(--accent);
+      background: rgba(255, 255, 255, 0.14);
+      box-shadow: 0 0 0 3px rgba(244, 114, 182, 0.28);
+    }
+
+    .filter-pills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.55rem;
+      font-size: 0.76rem;
+    }
+
+    .pill {
+      padding: 0.45rem 1.4rem;
+      border-radius: 9999px;
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--muted);
+      cursor: pointer;
+      font-family: inherit;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      transition: all 0.15s ease;
+    }
+    .pill:hover { color: #fff; border-color: var(--accent); }
+    .pill.active {
+      background: linear-gradient(135deg, #f472b6, #ec4899);
+      color: #fff;
+      border-color: transparent;
+      box-shadow: 0 4px 16px rgba(236, 72, 153, 0.45);
+    }
+
+    .sort-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      font-size: 0.74rem;
+      color: var(--muted);
+      margin-top: 0.2rem;
+      font-weight: 600;
+    }
+
+    .sort-btn {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.3rem 0.85rem;
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: 700;
+      color: inherit;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .sort-btn.active {
+      background: rgba(244, 114, 182, 0.26);
+      color: #fff;
+      border-color: var(--accent);
+    }
+
+    .top-strip-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      gap: 0.7rem;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0.8rem 1rem 0.2rem;
+    }
+    .top-strip-title {
+      font-family: var(--font-display);
+      font-size: 0.92rem;
+      letter-spacing: 0.06em;
+      font-weight: 700;
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .top-strip-title::before {
+      content: '✿';
+      color: var(--accent);
+    }
+    .top-strip-nota {
+      font-size: 0.74rem;
+      color: var(--muted);
+    }
+
+    /* ── CARRUSEL 3D COVERFLOW (SOLO JALAR MANTENIENDO EL CLIC) ── */
+    .stage-container {
+      width: 100%;
+      height: 375px;
+      position: relative;
+      margin: 1rem 0 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      perspective: 1200px;
+      perspective-origin: 50% 50%;
+      touch-action: pan-y;
+      cursor: grab;
+      overflow: hidden;
+    }
+    .stage-container:active { cursor: grabbing; }
+
+    .carousel-card {
+      position: absolute;
+      width: 186px;
+      aspect-ratio: 2 / 3;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #2f1223;
+      transform-style: preserve-3d;
+      backface-visibility: hidden;
+      will-change: transform, opacity;
+      cursor: pointer;
+      border: 1px solid rgba(251, 207, 232, 0.34);
+    }
+
+    @media (max-width: 560px) {
+      .stage-container { height: clamp(300px, 82vw, 340px); }
+      .carousel-card { width: clamp(132px, 42vw, 166px); }
+    }
+
+    .carousel-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+      display: block;
+    }
+
+    .carousel-card .top-score {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: #fde68a;
+      background: rgba(31, 11, 22, 0.85);
+      padding: 2px 7px;
+      border-radius: 999px;
+    }
+
+    .carousel-card .bottom-bar {
+      position: absolute;
+      inset: auto 0 0 0;
+      padding: 1.2rem 0.65rem 0.55rem;
+      background: linear-gradient(to top, rgba(24, 7, 17, 0.96) 0%, rgba(24, 7, 17, 0.68) 65%, transparent 100%);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 0.35rem;
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+    }
+
+    .carousel-card .bottom-bar span:first-child {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* ── DETALLE BAJO EL CARRUSEL ── */
+    .detail-section {
+      text-align: center;
+      max-width: 640px;
+      margin: 0.25rem auto 2.5rem;
+      padding: 0 1rem;
+    }
+
+    .detail-nav {
+      display: inline-flex;
+      align-items: center;
+      gap: 1.1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .nav-arrow {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 1.05rem;
+      font-weight: 700;
+      box-shadow: 0 4px 12px rgba(244, 114, 182, 0.45);
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+    .nav-arrow:hover {
+      background: var(--accent-strong);
+      transform: scale(1.08);
+    }
+
+    .nav-counter {
+      font-size: 0.78rem;
+      color: var(--muted);
+      font-weight: 700;
+      min-width: 85px;
+    }
+
+    .detail-meta {
+      font-size: 0.72rem;
+      color: var(--accent-soft);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-weight: 700;
+    }
+
+    .detail-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.7rem, 3.2vw, 2.25rem);
+      font-weight: 700;
+      color: #fff;
+      margin: 0.25rem 0;
+      line-height: 1.15;
+    }
+
+    .detail-rating {
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: #fbcfe8;
+      margin-bottom: 0.5rem;
+    }
+    .detail-rating span {
+      font-size: 0.78rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .detail-opinion {
+      font-size: 0.88rem;
+      line-height: 1.6;
+      color: #fce7f3;
+    }
+
+    .detail-btn {
+      display: inline-block;
+      margin-top: 1.1rem;
+      padding: 0.55rem 1.9rem;
+      border-radius: 9999px;
+      border: 1px solid var(--accent);
+      font-family: inherit;
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #fff;
+      background: rgba(244, 114, 182, 0.22);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .detail-btn:hover {
+      background: var(--accent);
+    }
+
+    /* ── REJILLA DE CARTELERA COMPLETA ── */
+    .grid-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2.2rem 1rem 4rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .grid-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.4rem;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .grid-title {
+      font-family: var(--font-display);
+      font-size: 1.08rem;
+      letter-spacing: 0.04em;
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .poster-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+    @media (min-width: 640px) { .poster-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+    @media (min-width: 768px) { .poster-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+    @media (min-width: 1024px) { .poster-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 1.2rem; } }
+
+    @media (max-width: 600px) {
+      #vista-catalogo { padding: 1.25rem 0.75rem 3rem; }
+      .search-input { font-size: 16px; }
+      .filter-pills { gap: 0.45rem; }
+      .pill { padding: 0.5rem 0.95rem; }
+      .sort-bar { gap: 0.4rem; }
+      .sort-bar > span:first-child { width: 100%; text-align: center; }
+      .sort-btn { padding: 0.45rem 0.65rem; }
+      .top-strip-head { padding-right: 0.2rem; padding-left: 0.2rem; }
+      .top-strip-nota { text-align: center; }
+      .stage-container { margin-top: 0.5rem; }
+      .grid-section { padding: 1.75rem 0 3rem; }
+      .poster-grid { gap: 0.7rem; }
+      .grid-card-title { font-size: 0.73rem; }
+    }
+
+    @media (max-width: 380px) {
+      #vista-catalogo { padding-right: 0.55rem; padding-left: 0.55rem; }
+      .poster-grid { gap: 0.55rem; }
+      .pill { padding-right: 0.75rem; padding-left: 0.75rem; }
+      .sort-btn { font-size: 0.68rem; }
+    }
+
+    .grid-card-wrap {
+      position: relative;
+    }
+
+    .grid-card {
+      aspect-ratio: 2 / 3;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      background: #2b1020;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.42);
+      cursor: pointer;
+      border: 1px solid rgba(251, 207, 232, 0.18);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+    .grid-card:hover {
+      transform: translateY(-5px) scale(1.02);
+      border-color: var(--accent);
+      box-shadow: 0 12px 26px rgba(244, 114, 182, 0.35);
+    }
+
+    .grid-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .grid-card .top-tag {
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: #fde68a;
+      background: rgba(26, 9, 19, 0.85);
+      padding: 2px 7px;
+      border-radius: 999px;
+    }
+
+    .grid-card-overlay {
+      position: absolute;
+      inset: auto 0 0 0;
+      padding: 1rem 0.6rem 0.5rem;
+      background: linear-gradient(to top, rgba(22, 6, 15, 0.96) 0%, rgba(22, 6, 15, 0.68) 65%, transparent 100%);
+      color: #fff;
+    }
+
+    .grid-card-title {
+      font-size: 0.78rem;
+      font-weight: 700;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .grid-card-sub {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.66rem;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    /* ── VISTA FICHA TÉCNICA ── */
+    #vista-ficha {
+      display: none;
+      max-width: 960px;
+      margin: 2.5rem auto 5rem;
+      padding: 0 1.5rem;
+      min-width: 0;
+      animation: fadeIn 0.22s ease-out;
+    }
+
+    .ficha-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2.2rem;
+      background: var(--bg-panel);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 2rem;
+      backdrop-filter: blur(16px);
+    }
+    @media (min-width: 768px) {
+      .ficha-container {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 3rem;
+      }
+    }
+
+    .ficha-poster-wrapper {
+      width: 100%;
+      max-width: 300px;
+      aspect-ratio: 2 / 3;
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6);
+      background: #240c1a;
+      flex-shrink: 0;
+      margin: 0 auto;
+      border: 1px solid var(--border);
+    }
+    .ficha-poster-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .ficha-content { flex: 1; min-width: 0; }
+
+    .ficha-tag {
+      font-size: 0.75rem;
+      color: var(--accent-soft);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .ficha-headline {
+      font-family: var(--font-display);
+      font-size: clamp(1.9rem, 3.8vw, 2.9rem);
+      font-weight: 700;
+      line-height: 1.08;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .ficha-big-score {
+      display: flex;
+      align-items: baseline;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .ficha-score-num {
+      font-size: 2.2rem;
+      font-weight: 800;
+      line-height: 1;
+      color: var(--accent);
+    }
+
+    .ficha-score-label {
+      font-size: 0.75rem;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .ficha-section-title {
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent-soft);
+      margin-top: 1rem;
+      margin-bottom: 0.35rem;
+      font-weight: 700;
+    }
+
+    .ficha-synopsis {
+      font-size: 0.94rem;
+      line-height: 1.68;
+      color: #fce7f3;
+      margin-bottom: 1.75rem;
+    }
+
+    .ficha-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .ficha-patreon-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.8rem 1.7rem;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #f472b6 0%, #db2777 100%);
+      color: #fff;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      box-shadow: 0 6px 18px rgba(244, 114, 182, 0.45);
+    }
+
+    @media (max-width: 600px) {
+      #vista-ficha {
+        margin: 1.25rem auto 3rem;
+        padding: 0 0.85rem;
+      }
+
+      .ficha-container {
+        gap: 1.35rem;
+        padding: 1rem;
+        border-radius: 16px;
+      }
+
+      .ficha-poster-wrapper { max-width: min(100%, 230px); }
+      .ficha-headline { font-size: clamp(1.75rem, 8vw, 2.35rem); overflow-wrap: anywhere; }
+      .ficha-actions { margin-bottom: 1.25rem; }
+      .ficha-patreon-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 0.8rem 0.75rem;
+        text-align: center;
+        font-size: 0.72rem;
+      }
+
+      .btn-volver { max-width: 100%; text-align: left; }
+    }
+
+    .btn-volver {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: inherit;
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-volver:hover { color: #fff; }
+
+    .back-to-top {
+      position: fixed;
+      right: max(1.25rem, env(safe-area-inset-right, 0px));
+      bottom: max(1.25rem, env(safe-area-inset-bottom, 0px));
+      z-index: 100;
+      display: grid;
+      place-items: center;
+      width: 3rem;
+      height: 3rem;
+      border: 1px solid rgba(251, 207, 232, 0.48);
+      border-radius: 50%;
+      background: rgba(244, 114, 182, 0.72);
+      color: #fff;
+      font: inherit;
+      font-size: 1.5rem;
+      line-height: 1;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(0.5rem);
+      transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s;
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+    }
+
+    .back-to-top.is-visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .back-to-top:hover { background: rgba(236, 72, 153, 0.9); }
+    .back-to-top:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .back-to-top { transition: none; }
+    }
+
+    @media (max-width: 600px) {
+      .site-footer-content { padding: 2rem 1rem; gap: 1.75rem; }
+      .site-footer-bottom {
+        padding: 1rem;
+        padding-bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+      }
+
+      .back-to-top {
+        right: max(0.8rem, env(safe-area-inset-right, 0px));
+        bottom: max(0.8rem, env(safe-area-inset-bottom, 0px));
+      }
+    }
+
+    /* ── FOOTER COMPARTIDO ── */
+    #site-footer {
+      margin-top: 4rem;
+      background: rgba(24, 8, 17, 0.88);
+      border-top: 1px solid var(--border);
+    }
+
+    .site-footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(240px, 340px);
+      gap: 2.5rem;
+      align-items: start;
+    }
+
+    @media (max-width: 760px) {
+      .site-footer-content { grid-template-columns: 1fr; }
+    }
+
+    .footer-section-title {
+      margin-bottom: 1.25rem;
+      color: #fff;
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 1.35rem;
+      font-weight: 700;
+    }
+
+    .sociales-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(95px, 1fr));
+      gap: 1rem;
+      justify-items: center;
+    }
+
+    .social-logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      padding: 0.4rem;
+    }
+
+    .social-logo-circle {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      border: 1px solid var(--border);
+      background: rgba(244, 114, 182, 0.12);
+      font-weight: 700;
+      font-size: 0.82rem;
+      transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+    }
+    .social-logo:hover .social-logo-circle {
+      transform: translateY(-4px);
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .social-logo-name {
+      font-size: 0.68rem;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .apoyo-card {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.15rem 1.35rem;
+      text-decoration: none;
+      background: var(--bg-panel);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      transition: all 0.2s ease;
+    }
+    .apoyo-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-3px);
+    }
+
+    .apoyo-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(244, 114, 182, 0.2);
+      border: 1px solid var(--accent);
+      color: var(--accent-soft);
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .apoyo-name {
+      font-family: var(--font-display);
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .apoyo-desc {
+      font-size: 0.74rem;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    .site-footer-bottom {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1.2rem 1.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.76rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    @media (hover: none) {
+      .nav-links a:not(.active):hover { color: var(--muted); }
+      .kick-live-badge:hover { background: rgba(244, 114, 182, 0.18); transform: none; }
+      .contact-box:hover { border-color: var(--border); background: rgba(244, 114, 182, 0.16); }
+      .social-link-card:hover {
+        background: rgba(255, 255, 255, 0.05);
+        border-color: rgba(251, 207, 232, 0.16);
+        transform: none;
+      }
+      .pill:hover { color: var(--muted); border-color: var(--border); }
+      .nav-arrow:hover { background: var(--accent); transform: none; }
+      .detail-btn:hover { background: rgba(244, 114, 182, 0.22); }
+      .grid-card:hover {
+        transform: none;
+        border-color: rgba(251, 207, 232, 0.18);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.42);
+      }
+      .btn-volver:hover { color: var(--muted); }
+      .back-to-top:hover { background: rgba(244, 114, 182, 0.72); }
+      .social-logo:hover .social-logo-circle {
+        transform: none;
+        background: rgba(244, 114, 182, 0.12);
+        border-color: var(--border);
+      }
+      .apoyo-card:hover { border-color: var(--border); transform: none; }
+
+      button:active, a:active, .grid-card:active, .carousel-card:active {
+        filter: brightness(0.9);
+        transition: filter 100ms ease-out;
+      }
+    }
+  </style>
+</head>
+
+<body data-current-view="home">
+
+  <!-- Fondo Rosa Cálido + Foto de Merce -->
+  <div class="hero-backdrop">
+    <div class="pink-aurora"></div>
+    <div class="merce-portrait-bg"></div>
+    <div class="ambient-overlay"></div>
+  </div>
+
+  <!-- Barra de Navegación -->
+  <header>
+    <a class="brand" onclick="cambiarVista('home')">
+      <span>Merce</span> Gallardo
+      <small class="kick-partner-pill">Kick Partner</small>
+    </a>
+
+    <nav class="nav-links">
+      <a id="nav-home" class="active" onclick="cambiarVista('home')"><span class="nav-num">01</span> HOME</a>
+      <a id="nav-catalogo" onclick="cambiarVista('catalogo')"><span class="nav-num">02</span> CATÁLOGO (87)</a>
+      <a href="https://kick.com/mercegallardo" target="_blank" rel="noopener"><span class="nav-num">03</span> KICK EN VIVO ↗</a>
+      <a href="https://www.patreon.com/MerceGallardo" target="_blank" rel="noopener"><span class="nav-num">04</span> PATREON ↗</a>
+      <a href="https://discord.com/invite/rzMVj8uaR9" target="_blank" rel="noopener"><span class="nav-num">05</span> DISCORD ↗</a>
+      <a href="https://streamlabs.com/mercegallardo2/tip" target="_blank" rel="noopener"><span class="nav-num">06</span> DONACIONES ↗</a>
+    </nav>
+
+    <a href="https://kick.com/mercegallardo" target="_blank" rel="noopener" class="kick-live-badge">
+      <span class="kick-dot"></span> KICK PARTNER
+    </a>
+  </header>
+
+  <!-- ══════════ VISTA 01: HOME ══════════ -->
+  <main id="vista-home">
+    <div class="home-grid">
+      <div class="home-left">
+        <div class="home-kicker">🌸 Streamer & Creadora de Contenido</div>
+
+        <h1 class="home-big-name">
+          Merce
+          <span class="accent-text">Gallardo</span>
+        </h1>
+
+        <p class="home-bio">
+          <strong>Kick Partner oficial</strong> (@mercegaallardo). Directos reaccionando a animes y películas junto a la comunidad. Todas las series y reacciones completas sin cortes están disponibles en Patreon.
+        </p>
+
+        <div>
+          <a href="mailto:mercegcontacto@gmail.com" class="contact-box">
+            <span>📩 Contacto:</span>
+            <strong>mercegcontacto@gmail.com</strong>
+          </a>
+        </div>
+      </div>
+
+      <!-- Panel Derecho con todas las Redes Oficiales -->
+      <div class="home-right">
+        <div class="seguime-label">✦ Mis Redes Oficiales</div>
+
+        <a href="https://kick.com/mercegallardo" target="_blank" rel="noopener" class="social-link-card">
+          <span>KICK <small>@mercegallardo</small></span> <span>↗</span>
+        </a>
+        <a href="https://www.patreon.com/MerceGallardo" target="_blank" rel="noopener" class="social-link-card">
+          <span>PATREON <small>Animes y películas sin cortes</small></span> <span>↗</span>
+        </a>
+        <a href="https://www.instagram.com/mercegaallardo/" target="_blank" rel="noopener" class="social-link-card">
+          <span>INSTAGRAM <small>@mercegaallardo</small></span> <span>↗</span>
+        </a>
+        <a href="https://www.tiktok.com/@merce.kitagawa?_r=1&_t=zn-93s6msczwy2" target="_blank" rel="noopener" class="social-link-card">
+          <span>TIKTOK <small>@merce.kitagawa</small></span> <span>↗</span>
+        </a>
+        <a href="https://www.youtube.com/@mercegallardo?" target="_blank" rel="noopener" class="social-link-card">
+          <span>YOUTUBE <small>@mercegallardo</small></span> <span>↗</span>
+        </a>
+        <a href="https://x.com/mercegallardotv" target="_blank" rel="noopener" class="social-link-card">
+          <span>X (TWITTER) <small>@mercegallardotv</small></span> <span>↗</span>
+        </a>
+        <a href="https://discord.com/invite/rzMVj8uaR9" target="_blank" rel="noopener" class="social-link-card">
+          <span>DISCORD <small>Comunidad oficial</small></span> <span>↗</span>
+        </a>
+        <a href="https://linktr.ee/mercegallardo" target="_blank" rel="noopener" class="social-link-card">
+          <span>LINKTREE <small>linktr.ee/mercegallardo</small></span> <span>↗</span>
+        </a>
+        <a href="https://streamlabs.com/mercegallardo2/tip" target="_blank" rel="noopener" class="social-link-card">
+          <span>DONACIONES <small>Streamlabs Tip</small></span> <span>💖</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- ══════════ VISTA 02: CATÁLOGO ══════════ -->
+  <main id="vista-catalogo">
+    <section class="controls-wrapper">
+      <div class="page-title">Catálogo de Animes y Películas de Merce Gallardo</div>
+
+      <div class="search-box">
+        <input type="text" id="buscador" class="search-input" placeholder="Buscar anime o película (ej. Fate, Rocky, Spider-Man, Harry Potter...)" />
+      </div>
+
+      <div class="filter-pills">
+        <button class="pill active" data-cat="todo">Todo (87)</button>
+        <button class="pill" data-cat="anime">Animes (47)</button>
+        <button class="pill" data-cat="pelicula">Películas (40)</button>
+      </div>
+
+      <div class="sort-bar">
+        <span>ORDENAR POR:</span>
+        <button id="sort-orden" class="sort-btn active">ORDEN DEL CATÁLOGO</button>
+        <button id="sort-caps" class="sort-btn">MÁS CAPÍTULOS / PARTES</button>
+        <button id="sort-az" class="sort-btn">A · Z</button>
+        <span id="total-count" style="margin-left: 0.5rem; font-weight: 700; color: #fff;">87 TÍTULOS</span>
+      </div>
+    </section>
+
+    <div class="top-strip-head">
+      <span class="top-strip-title" id="top-strip-title">Carrusel de Reacciones</span>
+      <span class="top-strip-nota" id="top-strip-nota">mantén presionado el clic y jala hacia los lados para explorar</span>
+    </div>
+
+    <!-- Carrusel 3D Coverflow -->
+    <section class="stage-container" id="stage"></section>
+
+    <!-- Detalle activo del carrusel -->
+    <section class="detail-section">
+      <div class="detail-nav">
+        <button class="nav-arrow" id="btn-prev" type="button" aria-label="Anterior">‹</button>
+        <span class="nav-counter" id="nav-counter">1 de 87</span>
+        <button class="nav-arrow" id="btn-next" type="button" aria-label="Siguiente">›</button>
+      </div>
+
+      <div class="detail-meta" id="detail-meta">ANIME · PATREON</div>
+      <h2 class="detail-title" id="detail-title">Título</h2>
+      <div class="detail-rating">
+        <span id="detail-caps">Reacción completa</span> <span>· disponible en Patreon</span>
+      </div>
+      <p class="detail-opinion" id="detail-opinion">Sinopsis...</p>
+      <button class="detail-btn" type="button" onclick="abrirFichaActual()">VER FICHA Y REACCIÓN</button>
+    </section>
+
+    <!-- Cartelera Completa -->
+    <section class="grid-section">
+      <div class="grid-header">
+        <div class="grid-title" id="grid-section-title">Cartelera Completa</div>
+        <div style="font-size: 0.74rem; color: var(--muted);">Haz clic en cualquier portada para abrir su ficha</div>
+      </div>
+      <div class="poster-grid" id="poster-grid"></div>
+    </section>
+  </main>
+
+  <!-- ══════════ VISTA 03: FICHA TÉCNICA ══════════ -->
+  <section id="vista-ficha">
+    <div class="ficha-container">
+      <div class="ficha-poster-wrapper">
+        <img id="ficha-img" src="" alt="" />
+      </div>
+
+      <div class="ficha-content">
+        <div class="ficha-tag">
+          <span id="ficha-tag-tipo">ANIME</span> · <span id="ficha-tag-year">2024</span>
+        </div>
+        <h1 class="ficha-headline" id="ficha-headline">Título</h1>
+
+        <div class="ficha-big-score">
+          <span class="ficha-score-num" id="ficha-score-big">51 CAPS</span>
+          <div class="ficha-score-label" id="ficha-score-unit">DISPONIBLE EN EL PATREON DE MERCE</div>
+        </div>
+
+        <div class="ficha-section-title">SINOPSIS Y DETALLES DE LA REACCIÓN</div>
+        <p class="ficha-synopsis" id="ficha-synopsis-text">Descripción...</p>
+
+        <div class="ficha-actions">
+          <a id="ficha-patreon-link" href="https://www.patreon.com/MerceGallardo" target="_blank" rel="noopener" class="ficha-patreon-btn">
+            ▶ VER REACCIÓN EN PATREON
+          </a>
+        </div>
+
+        <div>
+          <button class="btn-volver" type="button" onclick="cambiarVista('catalogo')">← VOLVER AL CATÁLOGO</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer id="site-footer">
+    <div class="site-footer-content">
+      <section>
+        <h2 class="footer-section-title">Sígueme en redes</h2>
+        <div class="sociales-grid">
+          <a href="https://kick.com/mercegallardo" target="_blank" rel="noopener" class="social-logo">
+            <div class="social-logo-circle">KICK</div>
+            <div class="social-logo-name">Kick</div>
+          </a>
+          <a href="https://www.patreon.com/MerceGallardo" target="_blank" rel="noopener" class="social-logo">
+            <div class="social-logo-circle">PT</div>
+            <div class="social-logo-name">Patreon</div>
+          </a>
+          <a href="https://www.instagram.com/mercegaallardo/" target="_blank" rel="noopener" class="social-logo">
+            <div class="social-logo-circle">IG</div>
+            <div class="social-logo-name">Instagram</div>
+          </a>
+          <a href="https://www.tiktok.com/@merce.kitagawa?_r=1&_t=zn-93s6msczwy2" target="_blank" rel="noopener" class="social-logo">
+            <div class="social-logo-circle">TK</div>
+            <div class="social-logo-name">TikTok</div>
+          </a>
+          <a href="https://www.youtube.com/@mercegallardo?" target="_blank" rel="noopener" class="social-logo">
+            <div class="social-logo-circle">YT</div>
+            <div class="social-logo-name">YouTube</div>
+          </a>
+          <a href="https://x.com/mercegallardotv" target="_blank" rel="noopener" class="social-logo">
+            <div class="social-logo-circle">X</div>
+            <div class="social-logo-name">Twitter</div>
+          </a>
+          <a href="https://discord.com/invite/rzMVj8uaR9" target="_blank" rel="noopener" class="social-logo">
+            <div class="social-logo-circle">DC</div>
+            <div class="social-logo-name">Discord</div>
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="footer-section-title">Apóyame</h2>
+        <a href="https://streamlabs.com/mercegallardo2/tip" target="_blank" rel="noopener" class="apoyo-card">
+          <div class="apoyo-icon">💖</div>
+          <div>
+            <div class="apoyo-name">Streamlabs Tip</div>
+            <div class="apoyo-desc">Envía una donación con alerta en directo</div>
+          </div>
+        </a>
+      </section>
+    </div>
+
+    <div class="site-footer-bottom">
+      <span>© 2026 Merce Gallardo · Kick Partner</span>
+      <span>📩 mercegcontacto@gmail.com</span>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Volver arriba" title="Volver arriba">↑</button>
+
+  <!-- ══════════ LÓGICA DEL CATÁLOGO Y PORTADAS GARANTIZADAS ══════════ -->
+  <script>
+    function crearPosterFallback(titulo, emoji) {
+      const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="400" height="600" viewBox="0 0 400 600">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#4a1230"/>
+            <stop offset="50%" stop-color="#2b0b1d"/>
+            <stop offset="100%" stop-color="#16050f"/>
+          </linearGradient>
+        </defs>
+        <rect width="400" height="600" fill="url(#g)"/>
+        <circle cx="200" cy="230" r="78" fill="rgba(244,114,182,0.18)" stroke="rgba(244,114,182,0.45)" stroke-width="2"/>
+        <text x="200" y="250" text-anchor="middle" font-size="54">${emoji || '🌸'}</text>
+        <text x="200" y="370" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="700" font-size="20">${titulo.replace(/&/g, '&amp;')}</text>
+        <text x="200" y="405" text-anchor="middle" fill="#fbcfe8" font-family="sans-serif" font-weight="600" font-size="13">MERCE GALLARDO · PATREON</text>
+      </svg>`;
+      return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+    }
+
+    // ══ CATÁLOGO OFICIAL DE MERCE: 47 ANIMES + 40 PELÍCULAS ══
+    const catalogo = [
+      // ── 47 ANIMES ──
+      { id: 1, emoji: "⚔️🍷", titulo: "Fate", anilist: "Fate stay night Unlimited Blade Works", tipo: "anime", caps: 13, badge: "13 caps", year: 2014, poster: "https://media.kitsu.app/anime/poster_images/7882/large.jpg", sinopsis: "Siete magos y sus Espíritus Heroicos compiten en la Guerra del Santo Grial. Reacción en el Patreon de Merce." },
+      { id: 2, emoji: "🌸🍰", titulo: "La nobleza de las Flores", anilist: "Kaoru Hana wa Rin to Saku", tipo: "anime", caps: 5, badge: "5 caps", year: 2025, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx181444-Ut9DDUZdfHwg.jpg", sinopsis: "Rintaro Tsumugi, un joven de aspecto intimidante pero gran corazón, conoce a Kaoruko Waguri, alumna de una prestigiosa academia de señoritas." },
+      { id: 3, emoji: "⚙️🗑️", titulo: "Gachiakuta", anilist: "Gachiakuta", tipo: "anime", caps: 7, badge: "7 caps", year: 2025, poster: "https://media.kitsu.app/anime/48946/poster_image/large-5855f32a7aa8e67ddc32d343498e087b.jpeg", sinopsis: "Rudo es arrojado injustamente al Abismo, un gigantesco vertedero plagado de bestias formadas por basura, donde despierta su poder de Giver." },
+      { id: 4, emoji: "💥🦸", titulo: "MHA Vigilantes", anilist: "Vigilante Boku no Hero Academia Illegals", tipo: "anime", caps: 8, badge: "8 caps", year: 2025, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185736-Ci6AiGwjKKtp.jpg", sinopsis: "Antes de la historia principal de Deku, Koichi Haimawari usa su don para ayudar en las calles junto a Knuckleduster y Pop Step." },
+      { id: 5, emoji: "💥🦸", titulo: "My Hero Academia", anilist: "Boku no Hero Academia", tipo: "anime", caps: 51, badge: "51 caps", year: 2016, poster: "https://media.kitsu.app/anime/poster_images/11469/large.jpg", sinopsis: "En un mundo donde el 80% de la humanidad tiene superpoderes, Izuku Midoriya hereda el One For All para convertirse en el mayor héroe." },
+      { id: 6, emoji: "💥🍻", titulo: "Konosuba", anilist: "Kono Subarashii Sekai ni Shukufuku wo", tipo: "anime", caps: 14, badge: "14 caps", year: 2016, poster: "https://media.kitsu.app/anime/poster_images/10941/large.jpg", sinopsis: "Kazuma Sato reencarna en un mundo de fantasía llevándose consigo a la diosa Aqua, formando el grupo de aventureros más caótico." },
+      { id: 7, emoji: "🎖️⚔️", titulo: "86: Eighty-Six", anilist: "86 Eighty Six", tipo: "anime", caps: 7, badge: "7 caps", year: 2021, poster: "https://media.kitsu.app/anime/poster_images/43066/large.jpg", sinopsis: "Los jóvenes del marginado Sector 86 pilotean drones de combate en una cruda guerra liderados por Shin y la comandante Lena." },
+      { id: 8, emoji: "🎎🍵", titulo: "La Boticaria", anilist: "Kusuriya no Hitorigoto", tipo: "anime", caps: 13, badge: "13 caps", year: 2023, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx161645-QLbzHXiYRgV2.jpg", sinopsis: "Maomao, una joven boticaria apasionada por los venenos y las medicinas, resuelve misterios e intrigas dentro del palacio imperial." },
+      { id: 9, emoji: "🦾🧪", titulo: "Fullmetal Alchemist Brotherhood", anilist: "Fullmetal Alchemist Brotherhood", tipo: "anime", caps: 21, badge: "21 caps", year: 2009, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx5114-nSWCgQlmOMtj.jpg", sinopsis: "Los hermanos Edward y Alphonse Elric buscan la Piedra Filosofal para recuperar sus cuerpos tras una transmutación fallida." },
+      { id: 10, emoji: "🌸🥲", titulo: "Clannad", anilist: "Clannad", tipo: "anime", caps: 13, badge: "13 caps", year: 2007, poster: "https://media.kitsu.app/anime/poster_images/3505/large.jpg", sinopsis: "Tomoya Okazaki conoce a Nagisa Furukawa y su vida escolar da un giro lleno de amistad, romance y momentos profundamente emotivos." },
+      { id: 11, emoji: "🔍🌸", titulo: "Hyouka", anilist: "Hyouka", tipo: "anime", caps: 7, badge: "7 caps", year: 2012, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx12189-zj5AWUYO53Fv.jpg", sinopsis: "Hotaro Oreki se une al Club de Literatura Clásica donde la curiosa Eru Chitanda lo involucra en intrigantes misterios escolares." },
+      { id: 12, emoji: "⚖️⚔️", titulo: "Record Of Ragnarok", anilist: "Shuumatsu no Valkyrie", tipo: "anime", caps: 12, badge: "12 caps", year: 2021, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx127399-AAH1pevCZLrB.jpg", sinopsis: "Trece dioses y trece campeones de la humanidad se enfrentan en duelos uno contra uno en la arena del Valhalla." },
+      { id: 13, emoji: "🕵️‍♂️🧠", titulo: "MONSTER", anilist: "Monster", tipo: "anime", caps: 20, badge: "20 caps", year: 2004, poster: "https://media.kitsu.app/anime/poster_images/10/large.jpg", sinopsis: "El neurocirujano Kenzo Tenma salva la vida de un niño herido, descubriendo años después que salvó a un peligroso psicópata llamado Johan." },
+      { id: 14, emoji: "🗡️☠️", titulo: "Akame Ga Kill", anilist: "Akame ga Kill", tipo: "anime", caps: 6, badge: "6 caps", year: 2014, poster: "https://media.kitsu.app/anime/poster_images/8270/large.jpg", sinopsis: "Tatsumi viaja a la Capital buscando ayudar a su aldea y termina reclutado por Night Raid, un escuadrón de asesinos revolucionarios." },
+      { id: 15, emoji: "💙🏀", titulo: "Blue Box", anilist: "Ao no Hako", tipo: "anime", caps: 8, badge: "8 caps", year: 2024, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx170942-KKcLfQzV57nG.jpg", sinopsis: "Taiki Inomata, jugador de bádminton, admira a Chinatsu Kano, la estrella del equipo de baloncesto femenino con quien empieza a convivir." },
+      { id: 16, emoji: "🦾🔫", titulo: "Cyberpunk: Edgerunners", anilist: "Cyberpunk Edgerunners", tipo: "anime", caps: 4, badge: "4 caps", year: 2022, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx120377-ayZPoxiWt4Li.jpg", sinopsis: "David Martinez sobrevive en Night City implantándose un Sandevistan militar y uniéndose al grupo de mercenarios de Lucy y Maine." },
+      { id: 17, emoji: "👰❤", titulo: "More Than a Married Couple", anilist: "Fuufu Ijou Koibito Miman", tipo: "anime", caps: 4, badge: "4 caps", year: 2022, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx141949-tViCIRHPZAyG.jpg", sinopsis: "Jiro Yakuin y la gyaru Akari Watanabe son emparejados en un curso escolar de práctica matrimonial donde conviven bajo el mismo techo." },
+      { id: 18, emoji: "⚔️🕊️", titulo: "Attack on Titan", anilist: "Shingeki no Kyojin", tipo: "anime", caps: 39, badge: "39 caps", year: 2013, poster: "https://media.kitsu.app/anime/poster_images/7442/large.jpg", sinopsis: "Eren Jaeger, Mikasa y Armin se unen a la Legión de Reconocimiento para combatir a los Titanes y descubrir la verdad del mundo." },
+      { id: 19, emoji: "🦖🛡️", titulo: "Kaiju No. 8", anilist: "Kaijuu 8-gou", tipo: "anime", caps: 6, badge: "6 caps", year: 2024, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx153288-25FBfFJzEQ5O.jpg", sinopsis: "Kafka Hibino limpia restos de monstruos hasta que una criatura misteriosa le otorga el poder de transformarse en el Kaiju N.º 8." },
+      { id: 20, emoji: "⏳❄️", titulo: "Erased", anilist: "Boku dake ga Inai Machi", tipo: "anime", caps: 4, badge: "4 caps", year: 2016, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21234-XmqW39aQ9o7O.jpg", sinopsis: "Satoru Fujinuma retrocede 18 años en el tiempo hasta su infancia para evitar el secuestro y asesinato de sus compañeros." },
+      { id: 21, emoji: "💘👩‍❤️‍👨", titulo: "Las 100 Novias", anilist: "Hyakkano", tipo: "anime", caps: 11, badge: "11 caps", year: 2023, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx162694-QFBei5pbjSh8.png", sinopsis: "Por un error del Dios del Amor, Rentaro Aijo está destinado a tener 100 almas gemelas en el instituto y debe hacerlas felices a todas." },
+      { id: 22, emoji: "💀🧝", titulo: "Re: ZERO", anilist: "Re Zero kara Hajimeru Isekai Seikatsu", tipo: "anime", caps: 27, badge: "27 caps", year: 2016, poster: "https://media.kitsu.app/anime/poster_images/11209/large.jpg", sinopsis: "Subaru Natsuki es invocado a un mundo de fantasía donde descubre la habilidad de regresar de la muerte retrocediendo en el tiempo." },
+      { id: 23, emoji: "🐙✨", titulo: "Takopis Original Sin", anilist: "Takopii no Genzai", tipo: "anime", caps: 2, badge: "2 caps", year: 2025, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185407-7uzY4fA3hokP.jpg", sinopsis: "Takopi, un extraterrestre del Planeta Feliz, aterriza en la Tierra e intenta usar sus artefactos para ayudar a la pequeña Shizuka." },
+      { id: 24, emoji: "👨🏻‍🦲🥊", titulo: "One Punch Man", anilist: "One Punch Man", tipo: "anime", caps: 12, badge: "12 caps", year: 2015, poster: "https://media.kitsu.app/anime/poster_images/10740/large.jpg", sinopsis: "Saitama es un superhéroe tan abrumadoramente fuerte que derrota a cualquier villano o monstruo de un solo puñetazo." },
+      { id: 25, emoji: "🤖😈", titulo: "Darling in the Franxx", anilist: "Darling in the FranXX", tipo: "anime", caps: 6, badge: "6 caps", year: 2018, poster: "https://media.kitsu.app/anime/poster_images/13600/large.jpg", sinopsis: "En un futuro postapocalíptico, Hiro conoce a Zero Two, una enigmática piloto con cuernos con quien pilota el Franxx Strelizia." },
+      { id: 26, emoji: "💀📓", titulo: "Death Note", anilist: "Death Note", tipo: "anime", caps: 11, badge: "11 caps", year: 2006, poster: "https://media.kitsu.app/anime/poster_images/1376/large.jpg", sinopsis: "Light Yagami encuentra el cuaderno de un Shinigami capaz de matar a cualquier persona cuyo nombre sea escrito en sus páginas." },
+      { id: 27, emoji: "👊", titulo: "Wind Breaker", anilist: "Wind Breaker", tipo: "anime", caps: 8, badge: "8 caps", year: 2024, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx163270-wboZJp0ybwVK.jpg", sinopsis: "Haruka Sakura llega al instituto Furin buscando pelear con los más fuertes, donde sus estudiantes protegen a todo el vecindario." },
+      { id: 28, emoji: "👩‍🦰", titulo: "Las Quintillizas", anilist: "5-toubun no Hanayome", tipo: "anime", caps: 9, badge: "9 caps", year: 2019, poster: "https://media.kitsu.app/anime/poster_images/41966/large.jpg", sinopsis: "Futaro Uesugi acepta ser el tutor privado de cinco hermanas quintillizas con personalidades muy distintas que odian estudiar." },
+      { id: 29, emoji: "⚽", titulo: "Blue Lock", anilist: "Blue Lock", tipo: "anime", caps: 26, badge: "26 caps", year: 2022, poster: "https://media.kitsu.app/anime/poster_images/44973/large.jpg", sinopsis: "Yoichi Isagi entra al proyecto Blue Lock, donde 300 delanteros compiten por convertirse en el goleador definitivo de Japón." },
+      { id: 30, emoji: "🔮", titulo: "Frieren", anilist: "Sousou no Frieren", tipo: "anime", caps: 13, badge: "13 caps", year: 2023, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-qQTzQnEJJ3oB.jpg", sinopsis: "Tras derrotar al Rey Demonio, la maga elfa Frieren emprende un nuevo viaje para comprender a los humanos y recordar a Himmel." },
+      { id: 31, emoji: "♟️", titulo: "Classroom of the Elite", anilist: "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e", tipo: "anime", caps: 18, badge: "18 caps", year: 2017, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx98659-WNyPLIZDpGGY.jpg", sinopsis: "Kiyotaka Ayanokoji ingresa a la Clase D de una academia de élite donde todo se decide por méritos y estrategias psicológicas." },
+      { id: 32, emoji: "🍊", titulo: "Citrus", anilist: "Citrus", tipo: "anime", caps: 4, badge: "4 caps", year: 2018, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97832-uMSoHPCn5BnJ.png", sinopsis: "Yuzu Aihara, una chica alegre y a la moda, se convierte en hermanastra de Mei Aihara, la estricta presidenta estudiantil." },
+      { id: 33, emoji: "⛓️💀", titulo: "Chainsaw Man", anilist: "Chainsaw Man", tipo: "anime", caps: 5, badge: "5 caps", year: 2022, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx127230-DdP4vAdssLoz.png", sinopsis: "Denji se fusiona con Pochita para renacer como Chainsaw Man y trabajar como cazador de demonios en Seguridad Pública." },
+      { id: 34, emoji: "🥊⚙️", titulo: "ARCANE", itunes: "Arcane League of Legends", tipo: "anime", caps: 10, badge: "10 caps", year: 2021, poster: "https://media.themoviedb.org/t/p/w500/87C0wecB8bHb1PsrKBI4kJiEkgV.jpg", sinopsis: "En medio del conflicto entre Piltover y Zaun, las hermanas Vi y Jinx luchan en bandos opuestos marcadas por la tragedia." },
+      { id: 35, emoji: "👊🏴", titulo: "Tokyo Revengers", anilist: "Tokyo Revengers", tipo: "anime", caps: 19, badge: "19 caps", year: 2021, poster: "https://media.kitsu.app/anime/poster_images/43321/large.jpg", sinopsis: "Takemichi Hanagaki viaja 12 años al pasado para infiltrarse en la pandilla Tokyo Manji y salvar la vida de Hinata." },
+      { id: 36, emoji: "🛸", titulo: "Dan Da Dan", anilist: "Dandadan", tipo: "anime", caps: 9, badge: "9 caps", year: 2024, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171018-60q1B6GK2Ghb.jpg", sinopsis: "Momo Ayase cree en fantasmas y Okarun en alienígenas; ambos se retan a probar quién tiene razón y terminan con poderes sobrenaturales." },
+      { id: 37, emoji: "❤️🦻🏻", titulo: "A Sign of Affection", anilist: "Yubisaki to Renren", tipo: "anime", caps: 4, badge: "4 caps", year: 2024, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166794-1MAXFMgND6qS.jpg", sinopsis: "Yuki Itose, una universitaria con discapacidad auditiva, conoce a Itsuomi Nagi, un joven viajero que aprende lengua de señas por ella." },
+      { id: 38, emoji: "👺", titulo: "Demon Slayer", anilist: "Kimetsu no Yaiba", tipo: "anime", caps: 26, badge: "26 caps", year: 2019, poster: "https://media.kitsu.app/anime/poster_images/41370/large.jpg", sinopsis: "Tanjiro Kamado se une al Cuerpo de Exterminio de Demonios para encontrar una cura que devuelva la humanidad a su hermana Nezuko." },
+      { id: 39, emoji: "🗡️", titulo: "Solo Leveling", anilist: "Ore dake Level Up na Ken", tipo: "anime", caps: 9, badge: "9 caps", year: 2024, poster: "https://media.kitsu.app/anime/46231/poster_image/large-cdadff31f42490b9f48a035939a01a92.jpeg", sinopsis: "Sung Jinwoo pasa de ser el cazador más débil de rango E a subir de nivel sin límites tras sobrevivir a una mazmorra oculta." },
+      { id: 40, emoji: "👘", titulo: "My Dress up Darling", anilist: "Sono Bisque Doll wa Koi wo Suru", tipo: "anime", caps: 8, badge: "8 caps", year: 2022, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx132405-qP7FQYGmNI3d.jpg", sinopsis: "Wakana Gojo une su talento para la costura con su alegre compañera Marin Kitagawa para crear sus trajes de cosplay." },
+      { id: 41, emoji: "😎", titulo: "Jujutsu Kaisen", anilist: "Jujutsu Kaisen", tipo: "anime", caps: 22, badge: "22 caps", year: 2020, poster: "https://media.kitsu.app/anime/poster_images/42765/large.jpg", sinopsis: "Yuji Itadori ingiere un dedo maldito de Sukuna e ingresa a la Escuela Técnica de Hechicería bajo el mando de Satoru Gojo." },
+      { id: 42, emoji: "✉️🦾", titulo: "Violet Evergarden", anilist: "Violet Evergarden", tipo: "anime", caps: 5, badge: "5 caps", year: 2018, poster: "https://media.kitsu.app/anime/poster_images/12230/large.jpg", sinopsis: "Violet Evergarden escribe cartas para conectar los sentimientos de las personas mientras comprende el significado del amor." },
+      { id: 43, emoji: "🎥", titulo: "Charlotte", anilist: "Charlotte", tipo: "anime", caps: 4, badge: "4 caps", year: 2015, poster: "https://media.kitsu.app/anime/poster_images/10103/large.jpg", sinopsis: "Yuu Otosaka posee cuerpos por 5 segundos hasta que Nao Tomori lo recluta para proteger a jóvenes con habilidades especiales." },
+      { id: 44, emoji: "🐰", titulo: "Bunny Girl Senpai", anilist: "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai", tipo: "anime", caps: 10, badge: "10 caps", year: 2018, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101291-wfEdgPqtfU0l.jpg", sinopsis: "Sakuta Azusagawa ayuda a Mai Sakurajima cuando descubre que se está volviendo invisible para todos por el Síndrome de la Pubertad." },
+      { id: 45, emoji: "👤🏝️", titulo: "Summer Time Rendering", anilist: "Summertime Render", tipo: "anime", caps: 8, badge: "8 caps", year: 2022, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx129201-HJBauga2be8I.png", sinopsis: "Shinpei Ajiro regresa a su isla natal para el funeral de Ushio y queda atrapado en un bucle mortal contra misteriosas Sombras." },
+      { id: 46, emoji: "🏐", titulo: "Haikyuu!", anilist: "Haikyuu", tipo: "anime", caps: 31, badge: "31 caps", year: 2014, poster: "https://media.kitsu.app/anime/poster_images/8133/large.jpg", sinopsis: "Shoyo Hinata y Tobio Kageyama combinan su talento para llevar al equipo de voleibol del instituto Karasuno al torneo nacional." },
+      { id: 47, emoji: "🎹🌸", titulo: "Your Lie in April", anilist: "Shigatsu wa Kimi no Uso", tipo: "anime", caps: 28, badge: "28 caps", year: 2014, poster: "https://media.kitsu.app/anime/poster_images/8403/large.jpg", sinopsis: "El prodigio del piano Kosei Arima recupera el color de la música tras conocer a la inolvidable violinista Kaori Miyazono." },
+
+      // ── 40 PELÍCULAS VISTAS POR MERCE ──
+      { id: 48, emoji: "⚡🔴", titulo: "Iron Man 1", itunes: "Iron Man 2008", tipo: "pelicula", caps: 1, badge: "Película", year: 2008, poster: "https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_.jpg", sinopsis: "¡La película que cambió Marvel para siempre! Tony Stark construye su primera armadura de Iron Man para convertirse en superhéroe." },
+      { id: 49, emoji: "😭🕷️", titulo: "Spider-Man 2", itunes: "Spider-Man 2 2004", tipo: "pelicula", caps: 1, badge: "Película", year: 2004, poster: "https://m.media-amazon.com/images/M/MV5BMzY2ODk4NmUtOTVmNi00ZTdkLTlmOWYtMmE2OWVhNTU2OTVkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg", sinopsis: "Peter Parker lucha por equilibrar su vida universitaria y su amor por Mary Jane mientras enfrenta al brillante Doctor Octopus." },
+      { id: 50, emoji: "🌊🏄‍♀️", titulo: "Ride Your Wave", anilist: "Kimi to Nami ni Noretara", tipo: "pelicula", caps: 1, badge: "Película", year: 2019, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx105018-XM7rFyryltjb.jpg", sinopsis: "Hinako, una joven amante del surf, se enamora del bombero Minato y descubre un vínculo mágico en el agua tras una tragedia." },
+      { id: 51, emoji: "⚔️🍷", titulo: "Fate/stay night: Heaven's Feel 2", anilist: "Fate stay night Heaven's Feel II lost butterfly", tipo: "pelicula", caps: 1, badge: "Película", year: 2019, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21718-Hjj26Sapx1bd.jpg", sinopsis: "Segunda película de la trilogía Heaven's Feel. Shirou Emiya toma su decisión definitiva para proteger a Sakura Matou." },
+      { id: 52, emoji: "😭⏳", titulo: "Click", itunes: "Click Adam Sandler 2006", tipo: "pelicula", caps: 1, badge: "Película", year: 2006, poster: "https://m.media-amazon.com/images/M/MV5BMTA1MTUxNDY4NzReQTJeQWpwZ15BbWU2MDE3ODAxNw@@._V1_.jpg", sinopsis: "Un arquitecto adicto al trabajo consigue un control remoto universal capaz de adelantar y pausar los momentos de su propia vida." },
+      { id: 53, emoji: "⚔️", titulo: "A Knight's Tale", itunes: "A Knight's Tale 2001", tipo: "pelicula", caps: 1, badge: "Película", year: 2001, poster: "https://m.media-amazon.com/images/M/MV5BMTE5OTE4OTE2Nl5BMl5BanBnXkFtZTYwMDkzMTQ3._V1_.jpg", sinopsis: "William Thatcher, un joven escudero campesino, se hace pasar por un noble caballero para competir en los torneos de justas medievales." },
+      { id: 54, emoji: "🖤👀", titulo: "Obsession", tipo: "pelicula", caps: 1, badge: "Película", year: 2026, poster: "https://media.themoviedb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg", sinopsis: "Un joven rompe una misteriosa rama de los deseos para conquistar a la persona que ama, pero pronto descubre que sus deseos tienen un precio oscuro." },
+      { id: 55, emoji: "🥊", titulo: "Rocky III", itunes: "Rocky III 1982", tipo: "pelicula", caps: 1, badge: "Película", year: 1982, poster: "https://media.themoviedb.org/t/p/w500/uqw16i2kmwVqkJHzjzbDU4xZ0Pl.jpg", sinopsis: "Tras perder el campeonato ante Clubber Lang, Rocky Balboa entrena junto a Apollo Creed para recuperar el ojo del tigre." },
+      { id: 56, emoji: "💥", titulo: "My Hero Academia: You're Next", anilist: "Boku no Hero Academia THE MOVIE You're Next", tipo: "pelicula", caps: 1, badge: "Película", year: 2024, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx168013-eeyN5L8tmYKI.png", sinopsis: "Deku y la Clase 1-A se enfrentan a Dark Might, un misterioso villano que usurpa la imagen y el legado de All Might." },
+      { id: 57, emoji: "👺", titulo: "Demon Slayer: Castillo Infinito", anilist: "Demon Slayer: Kimetsu no Yaiba Infinity Castle", tipo: "pelicula", caps: 1, badge: "Película", year: 2025, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178788-zm3gtpB9TpRt.jpg", sinopsis: "Tanjiro y los Pilares caen dentro de la fortaleza dimensional de Muzan Kibutsuji para librar la batalla definitiva." },
+      { id: 58, emoji: "🕊️🌸", titulo: "Maquia: Una historia de amor inmortal", anilist: "Sayonara no Asa ni Yakusoku no Hana wo Kazarou", tipo: "pelicula", caps: 1, badge: "Película", year: 2018, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx99457-OD0xtM8NlHNQ.png", sinopsis: "Maquia, una joven de un clan longevo que no envejece, adopta a un bebé humano huérfano llamado Ariel y experimenta el valor de ser madre." },
+      { id: 59, emoji: "🗡️🛡️", titulo: "Braveheart", itunes: "Braveheart 1995", tipo: "pelicula", caps: 1, badge: "Película", year: 1995, poster: "https://m.media-amazon.com/images/M/MV5BMzkzMmU0YTYtOWM3My00YzBmLWI0YzctOGYyNTkwMWE5MTJkXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg", sinopsis: "El legendario guerrero escocés William Wallace lidera a su pueblo en una rebelión histórica por la libertad de Escocia." },
+      { id: 60, emoji: "🥁🤬", titulo: "Whiplash", itunes: "Whiplash 2014", tipo: "pelicula", caps: 1, badge: "Película", year: 2014, poster: "https://m.media-amazon.com/images/M/MV5BOTA5NDZlZGUtMjAxOS00YTRkLTkwYmMtYWQ0NWEwZDZiNjEzXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg", sinopsis: "Andrew Neiman, un ambicioso baterista de jazz, es llevado al límite por el implacable instructor Terence Fletcher." },
+      { id: 61, emoji: "🐯", titulo: "Josee, the Tiger and the Fish", anilist: "Josee to Tora to Sakana-tachi", tipo: "pelicula", caps: 1, badge: "Película", year: 2020, poster: "https://media.kitsu.app/anime/poster_images/42825/large.jpg", sinopsis: "Tsuneo, un universitario apasionado por el buceo, comienza a trabajar como cuidador de Josee, una joven artista en silla de ruedas." },
+      { id: 62, emoji: "🥊", titulo: "Rocky II", itunes: "Rocky II 1979", tipo: "pelicula", caps: 1, badge: "Película", year: 1979, poster: "https://media.themoviedb.org/t/p/w500/nMaiiu0CzT77U4JZkUYV7KqdAjK.jpg", sinopsis: "Apollo Creed exige una revancha definitiva contra Rocky Balboa para demostrar quién es el verdadero campeón mundial de los pesos pesados." },
+      { id: 63, emoji: "✨", titulo: "La princesa Kaguya del cosmos", tituloOriginal: "Chō Kaguya-hime! (超かぐや姫！)", plataforma: "Netflix", anilist: "Chou Kaguya-hime!", tipo: "pelicula", caps: 1, badge: "Película", year: 2026, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx201903-v43gxQKw8Tc8.jpg", sinopsis: "Película de anime japonesa estrenada en Netflix en 2026, conocida en Japón como Chō Kaguya-hime! (超かぐや姫！)." },
+      { id: 64, emoji: "⚔️🛡️", titulo: "El Gladiador", itunes: "Gladiator 2000", tipo: "pelicula", caps: 1, badge: "Película", year: 2000, poster: "https://m.media-amazon.com/images/M/MV5BMDliMmNhNDEtODUyOS00MjNlLTgxODEtN2U3NzIxMGVkZTA1L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg", sinopsis: "El general romano Máximo Décimo Meridio regresa a Roma como gladiador para vengar a su familia y a su emperador." },
+      { id: 65, emoji: "🕸️🕷️", titulo: "Spider-Man (2002)", itunes: "Spider-Man 2002", tipo: "pelicula", caps: 1, badge: "Película", year: 2002, poster: "https://m.media-amazon.com/images/M/MV5BZDEyN2NhMjgtMjdhNi00MmNlLWE5YTgtZGE4MzNjMTRlMGEwXkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_.jpg", sinopsis: "Tras ser picado por una araña genéticamente modificada, Peter Parker protege Nueva York del Duende Verde." },
+      { id: 66, emoji: "🥊", titulo: "Rocky", itunes: "Rocky 1976", tipo: "pelicula", caps: 1, badge: "Película", year: 1976, poster: "https://media.themoviedb.org/t/p/w500/raayaQ9WTUGolsYHPWc2bGonu58.jpg", sinopsis: "Rocky Balboa, un humilde boxeador de Filadelfia, recibe la oportunidad única de pelear por el título mundial contra el invicto Apollo Creed." },
+      { id: 67, emoji: "🚀🪐", titulo: "Interestelar", itunes: "Interstellar 2014", tipo: "pelicula", caps: 1, badge: "Película", year: 2014, poster: "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg", sinopsis: "Un grupo de exploradores liderados por Cooper atraviesa un agujero de gusano en el espacio en busca de un nuevo hogar para la humanidad." },
+      { id: 68, emoji: "🦇🤡", titulo: "The Dark Knight", itunes: "The Dark Knight 2008", tipo: "pelicula", caps: 1, badge: "Película", year: 2008, poster: "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg", sinopsis: "Batman lleva al límite su guerra contra el crimen en Ciudad Gótica cuando se enfrenta al caos psicológico desatado por el Joker." },
+      { id: 69, emoji: "⛓️💀", titulo: "Chainsaw Man - Arco de Reze", anilist: "Chainsaw Man Reze-hen", tipo: "pelicula", caps: 1, badge: "Película", year: 2025, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171627-ZN9D7P46yHnw.png", sinopsis: "Denji conoce en una cafetería a Reze, una encantadora joven que guarda un explosivo secreto capaz de cambiar su destino por completo." },
+      { id: 70, emoji: "👩‍🦰", titulo: "Las Quintillizas Película (FINAL)", anilist: "The Quintessential Quintuplets Movie", tipo: "pelicula", caps: 1, badge: "Película", year: 2022, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx131520-89Qfo8JnGHI3.png", sinopsis: "El desenlace definitivo de la historia de Futaro Uesugi y las hermanas Nakano durante su último festival escolar." },
+      { id: 71, emoji: "🌦️⛩️", titulo: "Weathering with You (El tiempo contigo)", anilist: "Tenki no Ko", tipo: "pelicula", caps: 1, badge: "Película", year: 2019, poster: "https://media.kitsu.app/anime/poster_images/42028/large.jpg", sinopsis: "Hodaka huye a un Tokio cubierto por lluvias interminables y conoce a Hina, una chica con el maravilloso poder de despejar el cielo." },
+      { id: 72, emoji: "💙🦾", titulo: "Violet Evergarden (Película completa)", anilist: "Violet Evergarden Movie", tipo: "pelicula", caps: 1, badge: "Película", year: 2020, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx103047-odblDHHEdehK.jpg", sinopsis: "El emotivo final de la historia de Violet Evergarden tras encontrar una carta que reaviva la esperanza de reencontrarse con Gilbert." },
+      { id: 73, emoji: "🏐", titulo: "Haikyu!! La Batalla del Basurero", anilist: "Haikyuu Gomi Suteba no Kessen", tipo: "pelicula", caps: 1, badge: "Película", year: 2024, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx153658-KVnjW77cQw3y.jpg", sinopsis: "El esperado enfrentamiento oficial en el Torneo Nacional entre el instituto Karasuno y su clásico rival Nekoma." },
+      { id: 74, emoji: "🌙", titulo: "Crepúsculo: Luna nueva", itunes: "The Twilight Saga New Moon", tipo: "pelicula", caps: 1, badge: "Película", year: 2009, poster: "https://media.themoviedb.org/t/p/w500/k2qTooPlHffgNABNWxeJdGMglPK.jpg", sinopsis: "Tras la partida de Edward Cullen de Forks, Bella Swan encuentra consuelo en su profunda amistad con Jacob Black y la manada Quileute." },
+      { id: 75, emoji: "🏴‍☠️", titulo: "Piratas del Caribe: La maldición de la Perla Negra", itunes: "Pirates of the Caribbean The Curse of the Black Pearl", tipo: "pelicula", caps: 1, badge: "Película", year: 2003, poster: "https://m.media-amazon.com/images/M/MV5BNGYyZGM5MGMtYTY2Ni00M2Y1LWIzNjQtYWUzM2VlNGVhMDNhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg", sinopsis: "El excéntrico capitán Jack Sparrow y Will Turner unen fuerzas para rescatar a Elizabeth Swann de la tripulación maldita del capitán Barbossa." },
+      { id: 76, emoji: "🧛🏻‍♂️", titulo: "Crepúsculo", itunes: "Twilight 2008", tipo: "pelicula", caps: 1, badge: "Película", year: 2008, poster: "https://m.media-amazon.com/images/M/MV5BMTQ2NzUxMTAxN15BMl5BanBnXkFtZTcwMzEyMTIwMg@@._V1_.jpg", sinopsis: "Bella Swan se muda al lluvioso pueblo de Forks y se enamora del misterioso Edward Cullen, quien oculta que su familia es de vampiros." },
+      { id: 77, emoji: "🏎️", titulo: "Cars 3", itunes: "Cars 3 2017", tipo: "pelicula", caps: 1, badge: "Película", year: 2017, poster: "https://media.themoviedb.org/t/p/w500/zg5RDxvIIAKsucjuU2EZJIHEIvz.jpg", sinopsis: "Sorprendido por una nueva generación de corredores ultrarrápidos liderados por Jackson Storm, el Rayo McQueen entrena con Cruz Ramírez." },
+      { id: 78, emoji: "🏎️", titulo: "Cars 2", itunes: "Cars 2 2011", tipo: "pelicula", caps: 1, badge: "Película", year: 2011, poster: "https://media.themoviedb.org/t/p/w500/okIz1HyxeVOMzYwwHUjH2pHi74I.jpg", sinopsis: "El Rayo McQueen y su inseparable amigo Mate viajan al extranjero para competir en el Gran Prix Mundial en medio de una misión de espionaje." },
+      { id: 79, emoji: "⚡🏎️", titulo: "Cars", itunes: "Cars 2006 Pixar", tipo: "pelicula", caps: 1, badge: "Película", year: 2006, poster: "https://m.media-amazon.com/images/M/MV5BMTg5NzY0MzA2MV5BMl5BanBnXkFtZTYwNDc3NTc2._V1_.jpg", sinopsis: "De camino a la final de la Copa Pistón en California, el novato Rayo McQueen termina perdido en el olvidado pueblo de Radiador Springs." },
+      { id: 80, emoji: "🌸🦻🏻", titulo: "Una Voz Silenciosa", anilist: "Koe no Katachi", tipo: "pelicula", caps: 1, badge: "Película", year: 2016, poster: "https://media.kitsu.app/anime/poster_images/10028/large.jpg", sinopsis: "Shoya Ishida busca redimirse de sus errores de la infancia reencontrándose con Shoko Nishimiya, una joven sorda a quien aprendió a valorar." },
+      { id: 81, emoji: "⚡", titulo: "Harry Potter y las Reliquias de la Muerte: Parte 1", itunes: "Harry Potter and the Deathly Hallows Part 1", tipo: "pelicula", caps: 3, badge: "3 partes", year: 2010, poster: "https://m.media-amazon.com/images/M/MV5BMTQ2OTE1Mjk0N15BMl5BanBnXkFtZTcwODE3MDAwNA@@._V1_.jpg", sinopsis: "Harry, Ron y Hermione abandonan Hogwarts para buscar y destruir los Horrocruxes que contienen el poder de Lord Voldemort (3 partes en Patreon)." },
+      { id: 82, emoji: "⚡", titulo: "Harry Potter y el Misterio del Príncipe", itunes: "Harry Potter and the Half-Blood Prince", tipo: "pelicula", caps: 3, badge: "3 partes", year: 2009, poster: "https://m.media-amazon.com/images/M/MV5BNzU3NDg4NTAyNV5BMl5BanBnXkFtZTcwOTg2ODg1Mg@@._V1_.jpg", sinopsis: "En su sexto año en Hogwarts, Harry descubre un antiguo libro de pociones marcado como propiedad del Príncipe Mestizo (3 partes en Patreon)." },
+      { id: 83, emoji: "⚡", titulo: "Harry Potter y la Orden del Fénix", itunes: "Harry Potter and the Order of the Phoenix", tipo: "pelicula", caps: 3, badge: "3 partes", year: 2007, poster: "https://m.media-amazon.com/images/M/MV5BMTM0NTczMTUzOV5BMl5BanBnXkFtZTYwMzIxNTg3._V1_.jpg", sinopsis: "Ante la negación del Ministerio sobre el regreso de Voldemort, Harry forma en secreto el Ejército de Dumbledore (3 partes en Patreon)." },
+      { id: 84, emoji: "⚡", titulo: "Harry Potter y el Cáliz de Fuego", itunes: "Harry Potter and the Goblet of Fire", tipo: "pelicula", caps: 3, badge: "3 partes", year: 2005, poster: "https://m.media-amazon.com/images/M/MV5BMTI1NDMyMjExOF5BMl5BanBnXkFtZTcwOTc4MjQzMQ@@._V1_.jpg", sinopsis: "El nombre de Harry emerge misteriosamente del Cáliz de Fuego, obligándolo a competir en el peligroso Torneo de los Tres Magos (3 partes en Patreon)." },
+      { id: 85, emoji: "⚡", titulo: "Harry Potter y el Prisionero de Azkaban", itunes: "Harry Potter and the Prisoner of Azkaban", tipo: "pelicula", caps: 3, badge: "3 partes", year: 2004, poster: "https://m.media-amazon.com/images/M/MV5BMTY4NTIwODg0N15BMl5BanBnXkFtZTcwOTc0MjEzMw@@._V1_.jpg", sinopsis: "Sirius Black escapa de la prisión de Azkaban mientras Harry descubre la verdad sobre el pasado de sus padres (3 partes en Patreon)." },
+      { id: 86, emoji: "⚡", titulo: "Harry Potter y la Cámara Secreta", itunes: "Harry Potter and the Chamber of Secrets", tipo: "pelicula", caps: 3, badge: "3 partes", year: 2002, poster: "https://m.media-amazon.com/images/M/MV5BMjE0YjUzNDUtMjc5OS00MTU3LTgxMmUtODhkOThkMzdjNWI4XkEyXkFqcGdeQXVyMTA3MzQ4MTc0._V1_.jpg", sinopsis: "En su segundo año en Hogwarts, una fuerza misteriosa petrifica a los estudiantes tras abrirse la Cámara de los Secretos (3 partes en Patreon)." },
+      { id: 87, emoji: "⚡", titulo: "Harry Potter y la Piedra Filosofal", itunes: "Harry Potter and the Sorcerer's Stone", tipo: "pelicula", caps: 3, badge: "3 partes", year: 2001, poster: "https://m.media-amazon.com/images/M/MV5BNTU1MzgyMDMtMzBlZS00YzczLThmYWEtMjU3YmFlOWEyMjE1XkEyXkFqcGc@._V1_.jpg", sinopsis: "En su undécimo cumpleaños, Harry Potter descubre que es un mago e inicia su aventura en el Colegio Hogwarts (3 partes en Patreon)." }
+    ];
+
+    catalogo.forEach(item => {
+      if (!item.poster) {
+        item.poster = crearPosterFallback(item.titulo, item.emoji);
+      }
+    });
+
+    // ══ CARGADOR AUTOMÁTICO DE PORTADAS OFICIALES (ANILIST) ══
+    async function cargarPortadasOficiales() {
+      const CACHE_KEY = 'merce_catalogo_posters_v11';
+      let cache = {};
+      try {
+        cache = JSON.parse(localStorage.getItem(CACHE_KEY) || '{}');
+      } catch (e) { cache = {}; }
+
+      const faltanAnilist = [];
+      catalogo.forEach(item => {
+        if (!item.poster && cache[item.id]) {
+          item.poster = cache[item.id];
+        } else if (!item.poster && item.anilist) {
+          faltanAnilist.push(item);
+        }
+      });
+
+      if (Object.keys(cache).length > 0) {
+        refrescarImagenesDOM();
+      }
+
+      // Refresh AniList covers so stale or duplicate catalog URLs are replaced.
+      for (let i = 0; i < faltanAnilist.length; i += 25) {
+        const chunk = faltanAnilist.slice(i, i + 25);
+        const subqueries = chunk.map(item => {
+          const safe = item.anilist.replace(/"/g, '');
+          return `q_${item.id}: Page(perPage: 1) { media(search: "${safe}", type: ANIME) { coverImage { extraLarge large } } }`;
+        }).join('\n');
+
+        try {
+          const resp = await fetch('https://graphql.anilist.co', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify({ query: `query {\n${subqueries}\n}` })
+          });
+          if (resp.ok) {
+            const json = await resp.json();
+            const data = json && json.data ? json.data : {};
+            chunk.forEach(item => {
+              const mediaList = data[`q_${item.id}`]?.media;
+              if (Array.isArray(mediaList) && mediaList[0]?.coverImage) {
+                const url = mediaList[0].coverImage.extraLarge || mediaList[0].coverImage.large;
+                if (url) {
+                  item.poster = url;
+                  cache[item.id] = url;
+                }
+              }
+            });
+            try { localStorage.setItem(CACHE_KEY, JSON.stringify(cache)); } catch (e) {}
+            refrescarImagenesDOM();
+          }
+        } catch (err) {
+          console.warn('Error cargando lote AniList:', err);
+        }
+      }
+
+      try { localStorage.setItem(CACHE_KEY, JSON.stringify(cache)); } catch (e) {}
+    }
+
+    function refrescarImagenesDOM() {
+      document.querySelectorAll('img[data-item-id]').forEach(img => {
+        const id = Number(img.getAttribute('data-item-id'));
+        const item = catalogo.find(c => c.id === id);
+        if (item && img.src !== item.poster) {
+          img.src = item.poster;
+        }
+      });
+    }
+
+    function manejarErrorImagen(img, id) {
+      const item = catalogo.find(c => c.id === id);
+      if (!item) return;
+      img.onerror = null;
+      img.src = crearPosterFallback(item.titulo, item.emoji);
+    }
+    window.manejarErrorImagen = manejarErrorImagen;
+
+    // ══ ORDENACIÓN Y FILTRADO ══
+    const ORDENES = {
+      orden: (a, b) => a.id - b.id,
+      caps: (a, b) => b.caps - a.caps || a.id - b.id,
+      az: (a, b) => a.titulo.localeCompare(b.titulo, 'es')
+    };
+
+    let currentCat = 'todo';
+    let currentSort = 'orden';
+    let searchQuery = '';
+
+    let items = [...catalogo];
+    let carruselItems = [...catalogo];
+    let currentIndex = 0;
+    let targetIndex = 0;
+    let currentPos = 0;
+
+    const stage = document.getElementById('stage');
+    const posterGrid = document.getElementById('poster-grid');
+    const navCounter = document.getElementById('nav-counter');
+    const detailMeta = document.getElementById('detail-meta');
+    const detailTitle = document.getElementById('detail-title');
+    const detailCaps = document.getElementById('detail-caps');
+    const detailOpinion = document.getElementById('detail-opinion');
+    const totalCount = document.getElementById('total-count');
+
+    let cardElements = [];
+    let cardGap = window.innerWidth <= 560 ? 96 : 118;
+    window.addEventListener('resize', () => { cardGap = window.innerWidth <= 560 ? 96 : 118; });
+
+    function setupCarouselDOM() {
+      stage.innerHTML = '';
+      carruselItems = items.length > 0 ? [...items] : [...catalogo];
+      cardElements = carruselItems.map((item, index) => {
+        const card = document.createElement('div');
+        card.className = 'carousel-card';
+        card.dataset.index = index;
+        card.innerHTML = `
+          <img data-item-id="${item.id}" src="${item.poster}" alt="${item.titulo}" onerror="manejarErrorImagen(this, ${item.id})" />
+          <span class="top-score">${item.tipo === 'pelicula' ? 'PELÍCULA' : 'ANIME'}</span>
+          <div class="bottom-bar">
+            <span>${item.titulo}</span>
+            <span style="color:#fde68a;">${item.year}</span>
+          </div>
+        `;
+        stage.appendChild(card);
+        return card;
+      });
+    }
+
+    function setupGridDOM() {
+      if (items.length === 0) {
+        posterGrid.innerHTML = `<p style="grid-column: 1/-1; text-align:center; padding: 3rem; color: var(--muted);">No se encontraron títulos con ese nombre.</p>`;
+        return;
+      }
+
+      posterGrid.innerHTML = items.map((item) => `
+        <div class="grid-card-wrap">
+          <article class="grid-card" onclick="abrirFichaPorId(${item.id})">
+            <img data-item-id="${item.id}" src="${item.poster}" alt="${item.titulo}" loading="lazy" onerror="manejarErrorImagen(this, ${item.id})" />
+            <span class="top-tag">${item.tipo === 'pelicula' ? 'PELÍCULA' : 'ANIME'}</span>
+            <div class="grid-card-overlay">
+              <div class="grid-card-title">${item.titulo}</div>
+              <div class="grid-card-sub">
+                <span>${item.year}</span>
+                <span style="color:#fbcfe8;">Ver en Patreon →</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      `).join('');
+    }
+
+    function updateDetails(index) {
+      const item = carruselItems[index];
+      if (!item) return;
+      detailMeta.innerText = `${item.emoji} ${item.tipo.toUpperCase()} · ${item.year}`;
+      detailTitle.innerText = item.titulo;
+      detailCaps.innerText = item.tipo === 'pelicula'
+        ? (item.caps > 1 ? `Película (${item.caps} partes)` : 'Película completa')
+        : `${item.caps} capítulos reaccionados`;
+      detailOpinion.innerText = item.sinopsis;
+      navCounter.innerText = `${index + 1} de ${carruselItems.length}`;
+    }
+
+    // ══ MOTOR 3D DEL CARRUSEL (SOLO ARRASTRAR CON CLIC MANTENIDO, SIN RUEDA DEL RATÓN) ══
+    let isDragging = false;
+    let lastX = 0;
+    let totalDragDistance = 0;
+    let clickedCardIndex = null;
+
+    function loop() {
+      if (!isDragging && carruselItems.length > 0) {
+        const diff = targetIndex - currentPos;
+        currentPos += diff * 0.14;
+        if (Math.abs(diff) < 0.001) currentPos = targetIndex;
+      }
+
+      const activeIdx = Math.max(0, Math.min(carruselItems.length - 1, Math.round(currentPos)));
+      if (activeIdx !== currentIndex && carruselItems[activeIdx]) {
+        currentIndex = activeIdx;
+        updateDetails(currentIndex);
+      }
+
+      cardElements.forEach((el, i) => {
+        const offset = i - currentPos;
+        const absOffset = Math.abs(offset);
+
+        if (absOffset > 4.5) {
+          el.style.display = 'none';
+          return;
+        }
+        el.style.display = 'block';
+
+        let translateX = offset * cardGap;
+        let rotateY = 0;
+        let scale = 1;
+        let opacity = 1;
+        let zIndex = Math.round(50 - absOffset * 10);
+
+        if (absOffset < 0.08) {
+          scale = 1.16;
+          rotateY = 0;
+          opacity = 1;
+          el.style.boxShadow = '0 20px 42px -5px rgba(244, 114, 182, 0.5)';
+        } else if (offset > 0) {
+          rotateY = -34;
+          translateX += 38;
+          scale = Math.max(0.72, 1 - absOffset * 0.08);
+          opacity = Math.max(0.22, 1 - absOffset * 0.22);
+          el.style.boxShadow = '0 10px 20px rgba(0,0,0,0.45)';
+        } else {
+          rotateY = 34;
+          translateX -= 38;
+          scale = Math.max(0.72, 1 - absOffset * 0.08);
+          opacity = Math.max(0.22, 1 - absOffset * 0.22);
+          el.style.boxShadow = '0 10px 20px rgba(0,0,0,0.45)';
+        }
+
+        el.style.transform = `translate3d(${translateX}px, 0, 0) rotateY(${rotateY}deg) scale(${scale})`;
+        el.style.zIndex = zIndex;
+        el.style.opacity = opacity;
+      });
+
+      requestAnimationFrame(loop);
+    }
+
+    stage.addEventListener('pointerdown', (e) => {
+      if (carruselItems.length === 0) return;
+      if (e.pointerType === 'mouse' && e.button !== 0) return;
+      isDragging = true;
+      lastX = e.clientX;
+      totalDragDistance = 0;
+      const cardEl = e.target.closest('.carousel-card');
+      clickedCardIndex = cardEl ? Number(cardEl.dataset.index) : null;
+    });
+
+    window.addEventListener('pointermove', (e) => {
+      if (!isDragging) return;
+      const dx = e.clientX - lastX;
+      totalDragDistance += Math.abs(dx);
+      currentPos -= dx / 220;
+      currentPos = Math.max(0, Math.min(carruselItems.length - 1, currentPos));
+      lastX = e.clientX;
+    });
+
+    window.addEventListener('pointerup', () => {
+      if (!isDragging) return;
+      isDragging = false;
+
+      if (totalDragDistance < 7 && clickedCardIndex !== null) {
+        if (clickedCardIndex === currentIndex) {
+          abrirFicha(carruselItems[currentIndex]);
+        } else {
+          targetIndex = clickedCardIndex;
+        }
+      } else {
+        targetIndex = Math.max(0, Math.min(carruselItems.length - 1, Math.round(currentPos)));
+      }
+      clickedCardIndex = null;
+    });
+
+    document.getElementById('btn-prev').addEventListener('click', () => {
+      targetIndex = Math.max(0, targetIndex - 1);
+    });
+    document.getElementById('btn-next').addEventListener('click', () => {
+      targetIndex = Math.min(carruselItems.length - 1, targetIndex + 1);
+    });
+
+    window.addEventListener('keydown', (e) => {
+      if (document.body.dataset.currentView !== 'catalogo') return;
+      if (e.target.tagName === 'INPUT') return;
+      if (e.key === 'ArrowLeft') targetIndex = Math.max(0, targetIndex - 1);
+      if (e.key === 'ArrowRight') targetIndex = Math.min(carruselItems.length - 1, targetIndex + 1);
+    });
+
+    // ══ CAMBIO DE VISTAS ══
+    const vistaHome = document.getElementById('vista-home');
+    const vistaCatalogo = document.getElementById('vista-catalogo');
+    const vistaFicha = document.getElementById('vista-ficha');
+    const navHome = document.getElementById('nav-home');
+    const navCatalogo = document.getElementById('nav-catalogo');
+
+    function mostrarVista(vista, desplazar = true) {
+      document.body.dataset.currentView = vista;
+      vistaHome.style.display = vista === 'home' ? 'block' : 'none';
+      vistaCatalogo.style.display = vista === 'catalogo' ? 'block' : 'none';
+      vistaFicha.style.display = vista === 'ficha' ? 'block' : 'none';
+
+      navHome.classList.toggle('active', vista === 'home');
+      navCatalogo.classList.toggle('active', vista === 'catalogo' || vista === 'ficha');
+      if (desplazar) window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function rutaParaVista(vista, id = null) {
+      if (vista === 'ficha' && id !== null) return `#ficha/${id}`;
+      return vista === 'catalogo' ? '#catalogo' : '#home';
+    }
+
+    function sincronizarVistaDesdeURL() {
+      const hash = window.location.hash;
+      const fichaMatch = hash.match(/^#ficha\/(\d+)$/);
+      if (fichaMatch) {
+        const item = catalogo.find(c => c.id === Number(fichaMatch[1]));
+        if (item) {
+          mostrarFicha(item, false);
+          return;
+        }
+      }
+      mostrarVista(hash === '#catalogo' ? 'catalogo' : 'home', false);
+    }
+
+    window.cambiarVista = function(vista) {
+      const ruta = rutaParaVista(vista);
+      if (window.location.hash !== ruta) {
+        window.history.pushState({ vista }, '', ruta);
+      }
+      mostrarVista(vista);
+    };
+    window.addEventListener('popstate', sincronizarVistaDesdeURL);
+    window.addEventListener('hashchange', sincronizarVistaDesdeURL);
+
+    function abrirFicha(item) {
+      if (!item) return;
+      const ruta = rutaParaVista('ficha', item.id);
+      if (window.location.hash !== ruta) {
+        window.history.pushState({ vista: 'ficha', itemId: item.id }, '', ruta);
+      }
+      mostrarFicha(item, true);
+    }
+
+    function mostrarFicha(item, desplazar) {
+      mostrarVista('ficha', desplazar);
+      const fichaImg = document.getElementById('ficha-img');
+      fichaImg.setAttribute('data-item-id', item.id);
+      fichaImg.src = item.poster;
+      fichaImg.alt = item.titulo;
+      fichaImg.onerror = () => manejarErrorImagen(fichaImg, item.id);
+
+      document.getElementById('ficha-tag-tipo').innerText = `${item.emoji} ${item.tipo.toUpperCase()}`;
+      document.getElementById('ficha-tag-year').innerText = item.year;
+      document.getElementById('ficha-headline').innerText = item.titulo;
+      document.getElementById('ficha-score-big').innerText = item.badge.toUpperCase();
+      document.getElementById('ficha-synopsis-text').innerText = item.sinopsis;
+    }
+
+    window.abrirFichaActual = function() {
+      if (carruselItems[currentIndex]) abrirFicha(carruselItems[currentIndex]);
+    };
+
+    window.abrirFichaPorId = function(id) {
+      const item = catalogo.find(c => c.id === id);
+      if (item) abrirFicha(item);
+    };
+
+    function applyFilters() {
+      items = catalogo.filter(item => {
+        const matchCat = currentCat === 'todo' || item.tipo === currentCat;
+        const q = searchQuery.toLowerCase();
+        const matchText = item.titulo.toLowerCase().includes(q) ||
+                          (item.anilist && item.anilist.toLowerCase().includes(q)) ||
+                          (item.itunes && item.itunes.toLowerCase().includes(q));
+        return matchCat && matchText;
+      }).sort(ORDENES[currentSort] || ORDENES.orden);
+
+      totalCount.innerText = `${items.length} ${items.length === 1 ? 'TÍTULO' : 'TÍTULOS'}`;
+      setupGridDOM();
+      setupCarouselDOM();
+      targetIndex = 0;
+      currentPos = 0;
+      currentIndex = 0;
+      updateDetails(0);
+    }
+
+    document.getElementById('buscador').addEventListener('input', (e) => {
+      searchQuery = e.target.value;
+      applyFilters();
+    });
+
+    document.querySelectorAll('.pill').forEach(pill => {
+      pill.addEventListener('click', function() {
+        document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+        this.classList.add('active');
+        currentCat = this.dataset.cat;
+        applyFilters();
+      });
+    });
+
+    function activarSort(btnId, sortKey) {
+      document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById(btnId).classList.add('active');
+      currentSort = sortKey;
+      applyFilters();
+    }
+
+    document.getElementById('sort-orden').addEventListener('click', () => activarSort('sort-orden', 'orden'));
+    document.getElementById('sort-caps').addEventListener('click', () => activarSort('sort-caps', 'caps'));
+    document.getElementById('sort-az').addEventListener('click', () => activarSort('sort-az', 'az'));
+
+    const backToTop = document.getElementById('back-to-top');
+    function actualizarBotonArriba() {
+      backToTop.classList.toggle('is-visible', window.scrollY > 300);
+    }
+
+    window.addEventListener('scroll', actualizarBotonArriba, { passive: true });
+    backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    actualizarBotonArriba();
+
+    applyFilters();
+    if (!window.location.hash) {
+      window.history.replaceState({ vista: 'home' }, '', rutaParaVista('home'));
+    }
+    sincronizarVistaDesdeURL();
+    requestAnimationFrame(loop);
+    cargarPortadasOficiales();
+  </script>
+</body>
+</html>
