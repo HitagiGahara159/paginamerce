@@ -935,21 +935,9 @@
       margin-bottom: 1rem;
     }
 
-    .ficha-big-score {
-      display: flex;
-      align-items: baseline;
-      gap: 0.75rem;
+    .ficha-availability {
+      display: block;
       margin-bottom: 1.25rem;
-    }
-
-    .ficha-score-num {
-      font-size: 2.2rem;
-      font-weight: 800;
-      line-height: 1;
-      color: var(--accent);
-    }
-
-    .ficha-score-label {
       font-size: 0.75rem;
       color: var(--muted);
       letter-spacing: 0.08em;
@@ -1269,7 +1257,7 @@
 
     <nav class="nav-links">
       <a id="nav-home" class="active" onclick="cambiarVista('home')"><span class="nav-num">01</span> HOME</a>
-      <a id="nav-catalogo" onclick="cambiarVista('catalogo')"><span class="nav-num">02</span> CATÁLOGO (87)</a>
+      <a id="nav-catalogo" onclick="cambiarVista('catalogo')"><span class="nav-num">02</span> CATÁLOGO (88)</a>
       <a href="https://kick.com/mercegallardo" target="_blank" rel="noopener"><span class="nav-num">03</span> KICK EN VIVO ↗</a>
       <a href="https://www.patreon.com/MerceGallardo" target="_blank" rel="noopener"><span class="nav-num">04</span> PATREON ↗</a>
       <a href="https://discord.com/invite/rzMVj8uaR9" target="_blank" rel="noopener"><span class="nav-num">05</span> DISCORD ↗</a>
@@ -1349,9 +1337,9 @@
       </div>
 
       <div class="filter-pills">
-        <button class="pill active" data-cat="todo">Todo (87)</button>
+        <button class="pill active" data-cat="todo">Todo (88)</button>
         <button class="pill" data-cat="anime">Animes (47)</button>
-        <button class="pill" data-cat="pelicula">Películas (40)</button>
+        <button class="pill" data-cat="pelicula">Películas (41)</button>
       </div>
 
       <div class="sort-bar">
@@ -1359,7 +1347,7 @@
         <button id="sort-orden" class="sort-btn active">ORDEN DEL CATÁLOGO</button>
         <button id="sort-caps" class="sort-btn">MÁS CAPÍTULOS / PARTES</button>
         <button id="sort-az" class="sort-btn">A · Z</button>
-        <span id="total-count" style="margin-left: 0.5rem; font-weight: 700; color: #fff;">87 TÍTULOS</span>
+        <span id="total-count" style="margin-left: 0.5rem; font-weight: 700; color: #fff;">88 TÍTULOS</span>
       </div>
     </section>
 
@@ -1375,7 +1363,7 @@
     <section class="detail-section">
       <div class="detail-nav">
         <button class="nav-arrow" id="btn-prev" type="button" aria-label="Anterior">‹</button>
-        <span class="nav-counter" id="nav-counter">1 de 87</span>
+        <span class="nav-counter" id="nav-counter">1 de 88</span>
         <button class="nav-arrow" id="btn-next" type="button" aria-label="Siguiente">›</button>
       </div>
 
@@ -1411,9 +1399,8 @@
         </div>
         <h1 class="ficha-headline" id="ficha-headline">Título</h1>
 
-        <div class="ficha-big-score">
-          <span class="ficha-score-num" id="ficha-score-big">51 CAPS</span>
-          <div class="ficha-score-label" id="ficha-score-unit">DISPONIBLE EN EL PATREON DE MERCE</div>
+        <div class="ficha-availability">
+          DISPONIBLE EN EL PATREON DE MERCE
         </div>
 
         <div class="ficha-section-title">SINOPSIS Y DETALLES DE LA REACCIÓN</div>
@@ -1509,7 +1496,7 @@
       return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
     }
 
-    // ══ CATÁLOGO OFICIAL DE MERCE: 47 ANIMES + 40 PELÍCULAS ══
+    // ══ CATÁLOGO OFICIAL DE MERCE: 47 ANIMES + 41 PELÍCULAS ══
     const catalogo = [
       // ── 47 ANIMES ──
       { id: 1, emoji: "⚔️🍷", titulo: "Fate", anilist: "Fate stay night Unlimited Blade Works", tipo: "anime", caps: 13, badge: "13 caps", year: 2014, poster: "https://media.kitsu.app/anime/poster_images/7882/large.jpg", sinopsis: "Siete magos y sus Espíritus Heroicos compiten en la Guerra del Santo Grial. Reacción en el Patreon de Merce." },
@@ -1560,7 +1547,7 @@
       { id: 46, emoji: "🏐", titulo: "Haikyuu!", anilist: "Haikyuu", tipo: "anime", caps: 31, badge: "31 caps", year: 2014, poster: "https://media.kitsu.app/anime/poster_images/8133/large.jpg", sinopsis: "Shoyo Hinata y Tobio Kageyama combinan su talento para llevar al equipo de voleibol del instituto Karasuno al torneo nacional." },
       { id: 47, emoji: "🎹🌸", titulo: "Your Lie in April", anilist: "Shigatsu wa Kimi no Uso", tipo: "anime", caps: 28, badge: "28 caps", year: 2014, poster: "https://media.kitsu.app/anime/poster_images/8403/large.jpg", sinopsis: "El prodigio del piano Kosei Arima recupera el color de la música tras conocer a la inolvidable violinista Kaori Miyazono." },
 
-      // ── 40 PELÍCULAS VISTAS POR MERCE ──
+      // ── 41 PELÍCULAS VISTAS POR MERCE ──
       { id: 48, emoji: "⚡🔴", titulo: "Iron Man 1", itunes: "Iron Man 2008", tipo: "pelicula", caps: 1, badge: "Película", year: 2008, poster: "https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_.jpg", sinopsis: "¡La película que cambió Marvel para siempre! Tony Stark construye su primera armadura de Iron Man para convertirse en superhéroe." },
       { id: 49, emoji: "😭🕷️", titulo: "Spider-Man 2", itunes: "Spider-Man 2 2004", tipo: "pelicula", caps: 1, badge: "Película", year: 2004, poster: "https://m.media-amazon.com/images/M/MV5BMzY2ODk4NmUtOTVmNi00ZTdkLTlmOWYtMmE2OWVhNTU2OTVkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg", sinopsis: "Peter Parker lucha por equilibrar su vida universitaria y su amor por Mary Jane mientras enfrenta al brillante Doctor Octopus." },
       { id: 50, emoji: "🌊🏄‍♀️", titulo: "Ride Your Wave", anilist: "Kimi to Nami ni Noretara", tipo: "pelicula", caps: 1, badge: "Película", year: 2019, poster: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx105018-XM7rFyryltjb.jpg", sinopsis: "Hinako, una joven amante del surf, se enamora del bombero Minato y descubre un vínculo mágico en el agua tras una tragedia." },
@@ -1600,8 +1587,104 @@
       { id: 84, emoji: "⚡", titulo: "Harry Potter y el Cáliz de Fuego", itunes: "Harry Potter and the Goblet of Fire", tipo: "pelicula", caps: 3, badge: "3 partes", year: 2005, poster: "https://m.media-amazon.com/images/M/MV5BMTI1NDMyMjExOF5BMl5BanBnXkFtZTcwOTc4MjQzMQ@@._V1_.jpg", sinopsis: "El nombre de Harry emerge misteriosamente del Cáliz de Fuego, obligándolo a competir en el peligroso Torneo de los Tres Magos (3 partes en Patreon)." },
       { id: 85, emoji: "⚡", titulo: "Harry Potter y el Prisionero de Azkaban", itunes: "Harry Potter and the Prisoner of Azkaban", tipo: "pelicula", caps: 3, badge: "3 partes", year: 2004, poster: "https://m.media-amazon.com/images/M/MV5BMTY4NTIwODg0N15BMl5BanBnXkFtZTcwOTc0MjEzMw@@._V1_.jpg", sinopsis: "Sirius Black escapa de la prisión de Azkaban mientras Harry descubre la verdad sobre el pasado de sus padres (3 partes en Patreon)." },
       { id: 86, emoji: "⚡", titulo: "Harry Potter y la Cámara Secreta", itunes: "Harry Potter and the Chamber of Secrets", tipo: "pelicula", caps: 3, badge: "3 partes", year: 2002, poster: "https://m.media-amazon.com/images/M/MV5BMjE0YjUzNDUtMjc5OS00MTU3LTgxMmUtODhkOThkMzdjNWI4XkEyXkFqcGdeQXVyMTA3MzQ4MTc0._V1_.jpg", sinopsis: "En su segundo año en Hogwarts, una fuerza misteriosa petrifica a los estudiantes tras abrirse la Cámara de los Secretos (3 partes en Patreon)." },
-      { id: 87, emoji: "⚡", titulo: "Harry Potter y la Piedra Filosofal", itunes: "Harry Potter and the Sorcerer's Stone", tipo: "pelicula", caps: 3, badge: "3 partes", year: 2001, poster: "https://m.media-amazon.com/images/M/MV5BNTU1MzgyMDMtMzBlZS00YzczLThmYWEtMjU3YmFlOWEyMjE1XkEyXkFqcGc@._V1_.jpg", sinopsis: "En su undécimo cumpleaños, Harry Potter descubre que es un mago e inicia su aventura en el Colegio Hogwarts (3 partes en Patreon)." }
+      { id: 87, emoji: "⚡", titulo: "Harry Potter y la Piedra Filosofal", itunes: "Harry Potter and the Sorcerer's Stone", tipo: "pelicula", caps: 3, badge: "3 partes", year: 2001, poster: "https://m.media-amazon.com/images/M/MV5BNTU1MzgyMDMtMzBlZS00YzczLThmYWEtMjU3YmFlOWEyMjE1XkEyXkFqcGc@._V1_.jpg", sinopsis: "En su undécimo cumpleaños, Harry Potter descubre que es un mago e inicia su aventura en el Colegio Hogwarts (3 partes en Patreon)." },
+      { id: 88, emoji: "🥊❄️", titulo: "Rocky IV", itunes: "Rocky IV 1985", tipo: "pelicula", caps: 1, badge: "Película", year: 1985, poster: "https://www.impawards.com/1985/posters/rocky_iv.jpg", sinopsis: "Rocky Balboa se enfrenta al imponente boxeador soviético Ivan Drago en una pelea que convierte el ring en un símbolo de rivalidad y superación." }
     ];
+
+    const coleccionesPatreon = {
+      1: "https://www.patreon.com/collection/2377159",
+      2: "https://www.patreon.com/collection/2364957",
+      3: "https://www.patreon.com/collection/2348284",
+      4: "https://www.patreon.com/collection/2313665",
+      5: "https://www.patreon.com/collection/2199122",
+      6: "https://www.patreon.com/collection/2162445",
+      7: "https://www.patreon.com/collection/2146013",
+      8: "https://www.patreon.com/collection/2118829",
+      9: "https://www.patreon.com/collection/2053912",
+      10: "https://www.patreon.com/collection/2020622",
+      11: "https://www.patreon.com/collection/2004286",
+      12: "https://www.patreon.com/collection/1980439",
+      13: "https://www.patreon.com/collection/1940754",
+      14: "https://www.patreon.com/collection/1897911",
+      15: "https://www.patreon.com/collection/1887572",
+      16: "https://www.patreon.com/collection/1881217",
+      17: "https://www.patreon.com/collection/1875953",
+      18: "https://www.patreon.com/collection/1818897",
+      19: "https://www.patreon.com/collection/1801223",
+      20: "https://www.patreon.com/collection/1749754",
+      21: "https://www.patreon.com/collection/1719628",
+      22: "https://www.patreon.com/collection/1654390",
+      23: "https://www.patreon.com/collection/1650712",
+      24: "https://www.patreon.com/collection/1621037",
+      25: "https://www.patreon.com/collection/1604060",
+      26: "https://www.patreon.com/collection/1569187",
+      27: "https://www.patreon.com/collection/1551970",
+      28: "https://www.patreon.com/collection/1526114",
+      29: "https://www.patreon.com/collection/1472403",
+      30: "https://www.patreon.com/collection/1448627",
+      31: "https://www.patreon.com/collection/1422733",
+      32: "https://www.patreon.com/collection/1369094",
+      33: "https://www.patreon.com/collection/1348570",
+      34: "https://www.patreon.com/collection/1311972",
+      35: "https://www.patreon.com/collection/1265133",
+      36: "https://www.patreon.com/collection/1253197",
+      37: "https://www.patreon.com/collection/1242214",
+      38: "https://www.patreon.com/collection/882308",
+      39: "https://www.patreon.com/collection/858680",
+      40: "https://www.patreon.com/collection/848995",
+      41: "https://www.patreon.com/collection/760960",
+      42: "https://www.patreon.com/collection/664630",
+      43: "https://www.patreon.com/collection/629134",
+      44: "https://www.patreon.com/collection/609539",
+      45: "https://www.patreon.com/collection/572277",
+      46: "https://www.patreon.com/collection/459899",
+      47: "https://www.patreon.com/collection/401862",
+      48: "https://www.patreon.com/posts/172542134?collection=386521",
+      49: "https://www.patreon.com/posts/171693279?collection=386521",
+      50: "https://www.patreon.com/posts/171117836?collection=386521",
+      51: "https://www.patreon.com/posts/170895532?collection=386521",
+      52: "https://www.patreon.com/posts/169241091?collection=386521",
+      53: "https://www.patreon.com/posts/168499398?collection=386521",
+      54: "https://www.patreon.com/posts/167660039?collection=386521",
+      55: "https://www.patreon.com/posts/167023719?collection=386521",
+      56: "https://www.patreon.com/posts/165469769?collection=386521",
+      57: "https://www.patreon.com/posts/165364113?collection=386521",
+      58: "https://www.patreon.com/posts/159922616?collection=386521",
+      59: "https://www.patreon.com/posts/159117517?collection=386521",
+      60: "https://www.patreon.com/posts/157886553?collection=386521",
+      61: "https://www.patreon.com/posts/155868228?collection=386521",
+      62: "https://www.patreon.com/posts/155515899?collection=386521",
+      63: "https://www.patreon.com/posts/155008374?collection=386521",
+      64: "https://www.patreon.com/posts/152962616?collection=386521",
+      65: "https://www.patreon.com/posts/151390067?collection=386521",
+      66: "https://www.patreon.com/posts/150771466?collection=386521",
+      67: "https://www.patreon.com/posts/149675436?collection=386521",
+      68: "https://www.patreon.com/posts/148042044?collection=386521",
+      69: "https://www.patreon.com/posts/145726040?collection=386521",
+      70: "https://www.patreon.com/posts/131182982?collection=386521",
+      71: "https://www.patreon.com/posts/123463189?collection=386521",
+      72: "https://www.patreon.com/posts/122298378?collection=386521",
+      73: "https://www.patreon.com/posts/115487134?collection=386521",
+      74: "https://www.patreon.com/posts/103487828?collection=386521",
+      75: "https://www.patreon.com/posts/103225684?collection=386521",
+      76: "https://www.patreon.com/posts/102980297?collection=386521",
+      77: "https://www.patreon.com/posts/102397958?collection=386521",
+      78: "https://www.patreon.com/posts/101582004?collection=386521",
+      79: "https://www.patreon.com/posts/101306194?collection=386521",
+      80: "https://www.patreon.com/posts/100297551?collection=386521",
+      81: "https://www.patreon.com/posts/100113308?collection=386521",
+      82: "https://www.patreon.com/posts/99751966?collection=386521",
+      83: "https://www.patreon.com/posts/99465892?collection=386521",
+      84: "https://www.patreon.com/posts/99202570?collection=386521",
+      85: "https://www.patreon.com/posts/99003312?collection=386521",
+      86: "https://www.patreon.com/posts/98843861?collection=386521",
+      87: "https://www.patreon.com/posts/98600754?collection=386521",
+      88: "https://www.patreon.com/posts/173277246?collection=386521"
+    };
+
+    catalogo.forEach(item => {
+      if (coleccionesPatreon[item.id]) item.patreon = coleccionesPatreon[item.id];
+    });
 
     catalogo.forEach(item => {
       if (!item.poster) {
@@ -1948,7 +2031,7 @@
       document.getElementById('ficha-tag-tipo').innerText = `${item.emoji} ${item.tipo.toUpperCase()}`;
       document.getElementById('ficha-tag-year').innerText = item.year;
       document.getElementById('ficha-headline').innerText = item.titulo;
-      document.getElementById('ficha-score-big').innerText = item.badge.toUpperCase();
+      document.getElementById('ficha-patreon-link').href = item.patreon || 'https://www.patreon.com/MerceGallardo';
       document.getElementById('ficha-synopsis-text').innerText = item.sinopsis;
     }
 
