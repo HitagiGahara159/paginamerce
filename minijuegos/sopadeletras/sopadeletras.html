@@ -2009,19 +2009,31 @@
 
     function prepararConfiguracionDelHost() {
       if (!roomData) return;
+      
+      // Evitamos sobrescribir si el usuario está interactuando activamente con los selectores
+      const timeSelect = document.getElementById('roomTimeLimit');
+      const wordSelect = document.getElementById('roomWordCount');
+      const maxPlayersSelect = document.getElementById('roomMaxPlayers');
+
       const timeLimit = Number(roomData.timeLimit) || GAME_DURATION_SECONDS;
       const wordCount = Number(roomData.wordCount) || 10;
       const maxJugadores = normalizarMaxJugadores(roomData.maxJugadores);
-      document.getElementById('roomTimeLimit').value = String(timeLimit);
-      const wordSelect = document.getElementById('roomWordCount');
-      wordSelect.value = [...wordSelect.options].some(option => option.value === String(wordCount))
-        ? String(wordCount)
-        : 'all';
-      const maxPlayersSelect = document.getElementById('roomMaxPlayers');
-      if (maxPlayersSelect) {
+
+      if (timeSelect && document.activeElement !== timeSelect) {
+        timeSelect.value = String(timeLimit);
+      }
+      
+      if (wordSelect && document.activeElement !== wordSelect) {
+        wordSelect.value = [...wordSelect.options].some(option => option.value === String(wordCount))
+          ? String(wordCount)
+          : 'all';
+      }
+
+      if (maxPlayersSelect && document.activeElement !== maxPlayersSelect) {
         maxPlayersSelect.value = String(maxJugadores);
         maxPlayersSelect.disabled = false;
       }
+
       document.getElementById('multiplayerLobby').classList.remove('hidden');
       document.getElementById('waitingRoomModal').classList.add('hidden');
       document.getElementById('btnCreateRoom').classList.add('hidden');
