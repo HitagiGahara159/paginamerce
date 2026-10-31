@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="es" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content">
+  <title>Merce Gallardo - Sopa de Letras Anime</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Bungee&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <link rel="icon" type="image/png" href="../imagenes/REZE.png">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Bungee"', 'cursive']
+          },
+          colors: {
+            cyber: {
+              950: '#0d0714',
+              900: '#160d22',
+              850: '#201331',
+              800: '#2b1a42',
+              700: '#422864',
+              pink: '#ec4899',
+              cyan: '#f472b6',
+              violet: '#a855f7',
+              amber: '#fbbf24',
+              emerald: '#10b981'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html {
+      -webkit-tap-highlight-color: transparent;
+      -webkit-text-size-adjust: 100%;
+      overscroll-behavior: none;
+    }
+    input, select, textarea { font-size: 16px; }
+    button, a, [role="button"] {
+      touch-action: manipulation;
+      user-select: none;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
+    }
+    body {
+      background-image: url('../imagenes/FONDOJUEGO.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      position: relative;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 10, 25, 0.88);
+      pointer-events: none;
+      z-index: 0;
+    }
+    body > * { position: relative; z-index: 1; }
+    #boardContainer { touch-action: none; user-select: none; -webkit-user-select: none; }
+    .word-cell { user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
+    @keyframes hintPulse {
+      0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.7); }
+      50% { transform: scale(1.15); box-shadow: 0 0 15px 4px rgba(251, 191, 36, 0.9); }
+    }
+    .hint-active { animation: hintPulse 0.9s infinite ease-in-out; z-index: 20 !important; position: relative; }
+    @keyframes countdownPop {
+      0% { opacity: 0; transform: scale(0.55); }
+      35% { opacity: 1; transform: scale(1.08); }
+      100% { opacity: 0.9; transform: scale(1); }
+    }
+    .countdown-pop { animation: countdownPop 0.85s ease-out both; }
+    @keyframes resultReveal {
+      0% { opacity: 0; transform: scale(0.82); }
+      65% { opacity: 1; transform: scale(1.04); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    .result-reveal { animation: resultReveal 0.45s cubic-bezier(0.22, 1, 0.36, 1) both; }
+    #roundResultOverlay img {
+      max-width: min(80vw, 34rem);
+      max-height: min(68vh, 30rem);
+      object-fit: contain;
+    }
+    .lobby-shell {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 1.25rem;
+      max-height: calc(100vh - 2rem);
+      overflow-y: auto;
+    }
+    @media (min-width: 768px) {
+      .lobby-shell {
+        grid-template-columns: minmax(0, 1fr) minmax(17rem, 21rem);
+        max-width: 58rem !important;
+        align-items: start;
+      }
+      .lobby-header { grid-column: 1 / -1; }
+      .lobby-controls { grid-column: 1; }
+      #configWaitingPlayersPanel { grid-column: 2; grid-row: 2; margin-top: 0; position: sticky; top: 0; }
+    }
+    ::-webkit-scrollbar { width: 5px; height: 5px; }
+    ::-webkit-scrollbar-track { background: #160d22; }
+    ::-webkit-scrollbar-thumb { background: #422864; border-radius: 9999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #ec4899; }
+  </style>
+</head>
+<body class="text-slate-100 min-h-screen flex flex-col font-sans select-none antialiased">
+
+  <!-- MODAL: LOBBY DE MULTIJUGADOR -->
+  <div id="multiplayerLobby" class="fixed inset-0 bg-cyber-950/95 backdrop-blur-md z-50 flex items-center justify-center p-4">
+    <div class="lobby-shell bg-cyber-900 border-2 border-cyber-700 max-w-md w-full rounded-3xl p-6 shadow-2xl">
+      <div class="lobby-header text-center mb-6">
+        <div class="w-12 h-12 mx-auto rounded-2xl bg-gradient-to-tr from-pink-500 via-purple-600 to-pink-300 p-0.5 mb-3">
+          <div class="w-full h-full bg-cyber-950 rounded-[14px] flex items-center justify-center text-xl font-display text-pink-400">✨</div>
+        </div>
+        <h2 class="text-2xl font-black text-white">MERCE GALLARDO LIVE</h2>
+        <p class="text-xs text-pink-300 mt-1">Sopa de letras competitiva en tiempo real</p>
+      </div>
+
+      <!-- Nickname -->
+      <div class="mb-5">
+        <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-1.5">Tu Nickname</label>
+        <div class="flex items-center gap-3">
+          <button id="selectedAvatarButton" type="button" aria-controls="avatarPickerModal" aria-expanded="false" class="w-12 h-12 shrink-0 rounded-xl overflow-hidden border-2 border-pink-400 bg-cyber-950 shadow-lg shadow-pink-950/40 focus:outline-none focus:ring-2 focus:ring-pink-300" title="Elegir avatar">
+            <img id="selectedAvatarPreview" src="./avatares/avatar.jpg" alt="Avatar seleccionado" class="w-full h-full object-cover">
+          </button>
+          <input id="inputNick" type="text" placeholder="Ej: MerceLover" maxlength="15"
+                 class="min-w-0 flex-1 px-4 py-2.5 bg-cyber-950 border border-cyber-700 rounded-xl text-white font-bold focus:border-pink-400 focus:outline-none">
+        </div>
+        <p class="mt-1.5 text-[10px] text-slate-500">Haz clic en tu avatar para elegir otro.</p>
+      </div>
+
+      <!-- Crear o Unirse -->
+      <div class="lobby-controls space-y-3">
+        <div>
+          <label for="roomTimeLimit" class="block text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-1.5">Duración de la partida</label>
+          <select id="roomTimeLimit" class="w-full px-3 py-2.5 bg-cyber-950 border border-cyber-700 rounded-xl text-white font-bold focus:border-pink-400 focus:outline-none">
+            <option value="180">3 minutos</option>
+            <option value="300">5 minutos</option>
+            <option value="600" selected>10 minutos</option>
+            <option value="900">15 minutos</option>
+          </select>
+        </div>
+        <div>
+          <label for="roomWordCount" class="block text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-1.5">Cantidad de palabras</label>
+          <select id="roomWordCount" class="w-full px-3 py-2.5 bg-cyber-950 border border-cyber-700 rounded-xl text-white font-bold focus:border-pink-400 focus:outline-none">
+            <option value="5">5 palabras</option>
+            <option value="6">6 palabras</option>
+            <option value="7">7 palabras</option>
+            <option value="8">8 palabras</option>
+            <option value="9">9 palabras</option>
+            <option value="10" selected>10 palabras</option>
+            <option value="all">Todas las disponibles</option>
+          </select>
+        </div>
+        <div>
+          <label for="roomMaxPlayers" class="block text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-1.5">Máximo de jugadores</label>
+          <select id="roomMaxPlayers" class="w-full px-3 py-2.5 bg-cyber-950 border border-cyber-700 rounded-xl text-white font-bold focus:border-pink-400 focus:outline-none">
+            <option value="2">2 jugadores</option>
+            <option value="4">4 jugadores</option>
+            <option value="6">6 jugadores</option>
+            <option value="8" selected>8 jugadores</option>
+          </select>
+        </div>
+        <button id="btnCreateRoom" onclick="multiCrearSala()" class="w-full py-3 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-400 hover:to-purple-500 text-white font-extrabold rounded-xl shadow-lg shadow-pink-950 transition active:scale-95 text-sm">
+          ✨ CREAR NUEVA SALA
+        </button>
+
+        <div id="roomJoinControls" class="flex items-center gap-2 pt-2">
+          <input id="inputRoomCode" type="text" placeholder="CÓDIGO (EJ: X4FA)" maxlength="6"
+                 class="w-2/3 px-3 py-2.5 bg-cyber-950 border border-cyber-700 rounded-xl text-white text-center font-mono font-bold tracking-widest focus:border-pink-400 focus:outline-none text-sm uppercase">
+          <button onclick="multiUnirseSala()" class="w-1/3 py-2.5 bg-cyber-800 hover:bg-cyber-700 border border-cyber-700 text-slate-200 font-bold rounded-xl transition active:scale-95 text-xs">
+            UNIRSE
+          </button>
+        </div>
+
+        <button onclick="jugarSolo()" class="w-full text-center text-xs text-slate-400 hover:text-slate-200 pt-3">
+          Jugar en solitario (Offline)
+        </button>
+        <button id="btnHostConfigStart" onclick="multiIniciarDesdeConfiguracion()" class="hidden w-full py-3 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white font-extrabold rounded-xl shadow-lg transition active:scale-95 text-sm">
+          ¡EMPEZAR PARTIDA!
+        </button>
+        <button id="btnUpdateRoomConfig" onclick="actualizarConfiguracionSala()" class="hidden w-full py-2.5 bg-cyber-800 hover:bg-cyber-700 border border-pink-500/40 text-pink-300 font-bold rounded-xl transition active:scale-95 text-xs">
+          ACTUALIZAR SALA
+        </button>
+      </div>
+      <section id="configWaitingPlayersPanel" class="hidden mt-5 bg-cyber-950 rounded-2xl p-4 border border-cyber-800 text-left">
+        <div class="flex items-center justify-between gap-2 mb-3">
+          <h3 class="text-xs font-black uppercase tracking-wider text-slate-300">Jugadores en sala</h3>
+          <span id="configWaitingPlayersCount" class="text-[10px] font-bold text-pink-400">0/8</span>
+        </div>
+        <ul id="configWaitingPlayersList" class="space-y-1.5 max-h-48 overflow-y-auto"></ul>
+      </section>
+    </div>
+  </div>
+
+  <!-- MODAL: SELECTOR DE AVATARES -->
+  <div id="avatarPickerModal" class="fixed inset-0 bg-cyber-950/80 backdrop-blur-sm z-[60] hidden items-center justify-center p-4" role="dialog" aria-modal="true">
+    <div class="bg-cyber-900 border-2 border-cyber-700 rounded-2xl p-4 sm:p-5 shadow-2xl w-full max-w-sm max-h-[min(30rem,calc(100vh-2rem))] overflow-hidden">
+      <div class="flex items-start justify-between gap-3 mb-4">
+        <div>
+          <h2 class="text-base font-black text-white">Elige tu avatar</h2>
+          <p class="text-[11px] text-slate-400 mt-1">Selecciona una imagen para tu perfil.</p>
+        </div>
+        <button id="closeAvatarPicker" type="button" class="shrink-0 p-2 rounded-lg bg-cyber-800 hover:bg-cyber-700 text-slate-300 transition">✕</button>
+      </div>
+      <div class="grid grid-cols-5 sm:grid-cols-6 gap-2 overflow-y-auto pr-1 max-h-[min(24rem,calc(100vh-10rem))]" id="avatarPicker"></div>
+    </div>
+  </div>
+
+  <!-- MODAL: SALA DE ESPERA -->
+  <div id="waitingRoomModal" class="fixed inset-0 bg-cyber-950/95 backdrop-blur-md z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-cyber-900 border border-cyber-700 max-w-md w-full rounded-3xl p-6 text-center shadow-2xl">
+      <span class="text-xs font-bold uppercase tracking-widest text-slate-400">Código de Sala</span>
+      <div id="lblRoomCode" class="text-4xl font-black font-mono text-pink-400 my-2 tracking-widest">----</div>
+
+      <button onclick="copiarEnlaceInvitacion()" class="text-xs bg-cyber-800 border border-cyber-700 hover:bg-cyber-700 text-slate-300 px-3.5 py-1.5 rounded-full transition mb-5">
+        📋 Copiar link de invitación
+      </button>
+
+      <div class="bg-cyber-950 rounded-2xl p-4 border border-cyber-800 text-left mb-5">
+        <div class="flex items-center justify-between gap-2 mb-2">
+          <h4 class="text-xs font-bold text-slate-400 uppercase">Jugadores:</h4>
+          <span id="lblMaxPlayers" class="text-[10px] font-bold text-pink-400">0/8</span>
+        </div>
+        <ul id="waitingList" class="space-y-1.5 text-sm"></ul>
+      </div>
+
+      <button id="btnHostStart" onclick="multiIniciarPartida()" class="w-full py-3 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-extrabold rounded-xl transition active:scale-95 text-sm shadow-lg hidden">
+        ¡EMPEZAR PARTIDA!
+      </button>
+      <p id="lblWaitingHost" class="text-xs text-slate-400 italic">Esperando que Merce o el anfitrión comience...</p>
+      <button onclick="salirDeSala()" class="mt-4 w-full py-2.5 rounded-xl border border-rose-500/40 bg-rose-500/10 text-rose-300 hover:bg-rose-500/20 font-bold text-xs transition">
+        ← VOLVER AL MENÚ
+      </button>
+    </div>
+  </div>
+
+  <div id="startCountdown" class="fixed inset-0 bg-cyber-950/90 backdrop-blur-sm z-[60] hidden items-center justify-center p-4">
+    <div class="text-center">
+      <p class="text-xs sm:text-sm uppercase tracking-[0.3em] font-bold text-pink-300 mb-4">SOPA DE LETRAS</p>
+      <div id="countdownNumber" class="font-display text-8xl sm:text-9xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-pink-300 leading-none">3</div>
+    </div>
+  </div>
+
+  <!-- Top Navigation Bar -->
+  <header class="game-header border-b border-cyber-800 bg-cyber-900/90 backdrop-blur sticky top-0 z-40 px-3 sm:px-6 py-3">
+    <div class="game-header-inner max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="game-brand flex items-center gap-3">
+        <div class="game-brand-logo w-10 h-10 rounded-xl bg-gradient-to-tr from-pink-500 via-purple-600 to-pink-300 p-0.5 shadow-lg">
+          <div class="w-full h-full bg-cyber-950 rounded-[10px] flex items-center justify-center font-display text-pink-400 text-lg">
+            ✨
+          </div>
+        </div>
+        <div class="game-brand-copy">
+          <div class="flex items-center gap-2">
+            <h1 class="text-lg sm:text-xl font-extrabold tracking-[0.08em] bg-gradient-to-r from-white via-slate-200 to-pink-300 bg-clip-text text-transparent">
+              MERCE GALLARDO
+            </h1>
+            <span class="text-[10px] uppercase tracking-[0.12em] font-bold px-1.5 py-0.5 rounded bg-pink-500/15 text-pink-300 border border-pink-400/30">
+              MINIJUEGOS
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-status flex items-center gap-2 sm:gap-4 bg-cyber-950/80 px-3 py-1.5 rounded-xl border border-cyber-800 text-xs sm:text-sm">
+        <div class="flex items-center gap-1.5 font-mono text-pink-400 font-semibold">
+          <span>⏱️</span>
+          <span id="gameTimer">00:00</span>
+        </div>
+        <div class="w-px h-4 bg-cyber-800"></div>
+        <div class="flex items-center gap-1.5 font-bold">
+          <span>🎯</span>
+          <span id="wordsProgress" class="text-white">0/0</span>
+        </div>
+        <div class="w-px h-4 bg-cyber-800"></div>
+        <button id="btnHint" class="hidden items-center gap-1 text-amber-400 hover:text-amber-300 transition" disabled>
+          <span>💡</span>
+          <span>Pista</span>
+        </button>
+      </div>
+
+      <div class="game-actions flex items-center gap-2">
+        <button id="btnLeaveGame" onclick="salirDeSala()" class="hidden px-2.5 py-2 rounded-xl border border-rose-500/40 bg-rose-500/10 text-rose-300 hover:bg-rose-500/20 font-bold text-xs transition">
+          ← SALIR
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Playing Area -->
+  <main class="game-layout flex-1 max-w-6xl w-full mx-auto p-3 sm:p-6 grid gap-6 items-start">
+    <div class="live-participants w-full mb-2 bg-cyber-900 border border-cyber-800 rounded-xl px-3 py-2">
+      <div class="flex items-center justify-between gap-3 mb-2">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0"></span>
+          <span class="text-[11px] text-slate-400 uppercase font-bold tracking-wider">Participantes en vivo</span>
+        </div>
+      </div>
+      <div id="liveParticipantsBar" class="flex items-center gap-2 overflow-x-auto pb-1 min-h-10">
+        <span class="text-xs text-slate-500">Esperando jugadores...</span>
+      </div>
+    </div>
+
+    <div class="game-board-column flex flex-col items-center">
+      <p id="gameInstruction" class="hidden w-full mb-2 text-center text-xs sm:text-sm font-bold uppercase tracking-wider text-pink-300">
+        SOPA DE LETRAS: <span class="text-slate-200 normal-case tracking-normal">Arrastra sobre las letras</span>
+      </p>
+      <div class="game-grid-frame relative bg-white p-2.5 sm:p-4 rounded-2xl border-2 border-slate-200 shadow-2xl flex justify-center items-center max-w-full overflow-hidden">
+        <div id="boardContainer" class="relative select-none touch-none p-1 sm:p-1.5 bg-slate-100 rounded-xl border border-slate-200">
+          <div id="boardGrid" class="grid gap-1 sm:gap-1.5"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="game-words-column">
+      <div class="bg-cyber-900 rounded-2xl border border-cyber-800 p-3 shadow-xl">
+        <div class="flex items-center justify-between pb-2 border-b border-cyber-800">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-pink-500"></span>
+            <h2 class="text-sm font-bold tracking-wide uppercase text-white">Palabras a Buscar</h2>
+          </div>
+          <span id="badgeWordCount" class="text-xs font-semibold px-2 py-0.5 rounded-full bg-cyber-800 text-slate-300">
+            0 restantes
+          </span>
+        </div>
+        <div id="wordsList" class="mt-2 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-1 gap-1"></div>
+      </div>
+    </div>
+  </main>
+
+  <div id="roundResultOverlay" class="fixed inset-0 bg-black/90 backdrop-blur-md z-[70] hidden items-center justify-center p-5">
+    <div class="text-center">
+      <img id="roundResultImage" src="../imagenes/sonicperdiste.png" alt="" class="result-reveal mx-auto rounded-2xl border-2 border-pink-400/50 shadow-2xl">
+      <p id="roundResultLabel" class="mt-4 text-sm sm:text-base font-black uppercase tracking-[0.2em] text-white">Partida terminada</p>
+    </div>
+  </div>
+
+  <div id="victoryModal" class="fixed inset-0 bg-black/85 backdrop-blur-md z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-cyber-900 border-2 border-pink-500 rounded-3xl p-6 sm:p-8 max-w-md w-full text-center shadow-2xl relative overflow-hidden">
+      <div class="w-16 h-16 mx-auto mb-3 bg-gradient-to-tr from-amber-400 to-pink-500 rounded-2xl flex items-center justify-center text-3xl">
+        🎉
+      </div>
+      <h3 class="text-2xl font-black text-white tracking-tight uppercase mb-1">RESULTADOS</h3>
+      <p id="victorySubtitle" class="text-slate-300 text-sm mb-5">Has encontrado todas las palabras.</p>
+
+      <div class="mb-6 text-left">
+        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Tabla final</h4>
+        <div id="finalLeaderboard" class="space-y-1.5"></div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-2.5">
+        <button id="btnReplayGame" class="flex-1 py-3 px-4 rounded-xl font-bold text-sm bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-lg transition active:scale-95">
+          Rejugar
+        </button>
+        <button id="btnReturnToConfig" class="py-3 px-4 rounded-xl font-bold text-sm bg-cyber-800 hover:bg-cyber-700 text-slate-200 border border-cyber-700 transition">
+          Menú / Config
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 bg-cyber-850 border border-cyber-700 text-white text-xs px-4 py-2.5 rounded-full shadow-2xl transition-all duration-300 opacity-0 pointer-events-none flex items-center gap-2">
+    <span id="toastIcon">✨</span>
+    <span id="toastMessage">Alerta</span>
+  </div>
+
+  <!-- SCRIPT BASE DEL JUEGO -->
+  <script>
+    let animeDatabase = [];
+    async function cargarBaseDeDatos() {
+      try {
+        const respuesta = await fetch('./basededatos.json');
+        if (!respuesta.ok) throw new Error(`Error HTTP: ${respuesta.status}`);
+        animeDatabase = await respuesta.json();
+        iniciarNuevaPartida();
+      } catch (error) {
+        console.error("No se pudo cargar basededatos.json:", error);
+      }
+    }
+
+    function obtenerPalabrasDisponibles(categoria = 'all', longitudMax = 12) {
+      let disponibles = animeDatabase.filter(item => item.w.length <= longitudMax);
+      if (categoria !== 'all') disponibles = disponibles.filter(item => item.cat === categoria);
+      return disponibles;
+    }
+
+    function obtenerPalabrasAleatorias(categoria = 'all', cantidad = 8, longitudMax = 12, random = Math.random) {
+      const disponibles = obtenerPalabrasDisponibles(categoria, longitudMax);
+      disponibles.sort(() => 0.5 - random());
+      return disponibles.slice(0, cantidad);
+    }
+
+    class AudioController {
+      constructor() { this.ctx = null; this.enabled = true; }
+      init() {
+        if (!this.ctx) {
+          const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+          if (AudioContextClass) this.ctx = new AudioContextClass();
+        }
+        if (this.ctx && this.ctx.state === 'suspended') this.ctx.resume();
+      }
+      playSelect() { if (this.enabled) { this.init(); } }
+      playFound() { if (this.enabled) { this.init(); } }
+      playError() { if (this.enabled) { this.init(); } }
+      playVictory() { if (this.enabled) { this.init(); } }
+    }
+    const audio = new AudioController();
+
+    const CATEGORIES = [
+      { id: 'all', name: 'Todos los Temas', gridSize: 12 },
+      { id: 'anime', name: 'Series Anime', gridSize: 12 }
+    ];
+
+    const FOUND_COLORS = [
+      { bg: 'bg-pink-500', border: 'border-pink-600', text: 'text-white' },
+      { bg: 'bg-purple-600', border: 'border-purple-700', text: 'text-white' },
+      { bg: 'bg-cyan-600', border: 'border-cyan-700', text: 'text-white' },
+      { bg: 'bg-amber-400', border: 'border-amber-500', text: 'text-slate-950' }
+    ];
+
+    let currentCategoryIndex = 0;
+    let gridSize = 12;
+    let gridMatrix = [];
+    let placedWords = [];
+    let hintsUsed = 0;
+    const GAME_DURATION_SECONDS = 10 * 60;
+    let gameEnded = false;
+    let gameReady = true;
+    let currentGameDurationSeconds = GAME_DURATION_SECONDS;
+    let countdownInterval = null;
+    let countdownGoTimeout = null;
+    const pendingScoreUpdates = new Set();
+
+    let isSelecting = false;
+    let startCell = null;
+    let currentPath = [];
+
+    let timerInterval = null;
+    let secondsRemaining = GAME_DURATION_SECONDS;
+    let timerDeadline = null;
+    let finishTimeout = null;
+    let resultTransitionTimeout = null;
+    const playerIdKey = 'merce-sopa-player-id';
+    const playerId = localStorage.getItem(playerIdKey) || crypto.randomUUID();
+    localStorage.setItem(playerIdKey, playerId);
+    let roomData = null;
+    let esMultijugador = false;
+    let localCompletionTransitionStarted = false;
+    const AVATAR_BASE_PATH = './avatares/';
+    const AVATAR_FILES = ['avatar.jpg', 'avatar1.jpg', 'avatar2.jpg', 'avatar3.jpg'];
+    let selectedAvatar = localStorage.getItem('merce-sopa-avatar') || AVATAR_FILES[0];
+    let lastGameConfig = { categoryId: 'all', durationSeconds: GAME_DURATION_SECONDS, wordCount: 10 };
+
+    function obtenerTiempoEnMilisegundos(value) {
+      if (typeof value === 'number' && Number.isFinite(value)) return value;
+      if (value && typeof value.toMillis === 'function') return value.toMillis();
+      const numericValue = Number(value);
+      return Number.isFinite(numericValue) ? numericValue : null;
+    }
+
+    function renderAvatarPicker() {
+      const picker = document.getElementById('avatarPicker');
+      const preview = document.getElementById('selectedAvatarPreview');
+      if (!picker || !preview) return;
+      preview.src = `${AVATAR_BASE_PATH}${selectedAvatar}`;
+      picker.innerHTML = AVATAR_FILES.map(file => `
+        <button type="button" data-avatar="${file}" class="avatar-option aspect-square rounded-lg overflow-hidden border-2 ${file === selectedAvatar ? 'border-pink-400' : 'border-cyber-700'} bg-cyber-950">
+          <img src="${AVATAR_BASE_PATH}${file}" alt="" class="w-full h-full object-cover">
+        </button>
+      `).join('');
+      picker.querySelectorAll('.avatar-option').forEach(btn => {
+        btn.addEventListener('click', () => {
+          selectedAvatar = btn.dataset.avatar;
+          localStorage.setItem('merce-sopa-avatar', selectedAvatar);
+          renderAvatarPicker();
+        });
+      });
+    }
+
+    const DIRECTIONS = [{ dr: 0, dc: 1 }, { dr: 1, dc: 0 }, { dr: 1, dc: 1 }, { dr: 1, dc: -1 }];
+
+    function generateBoard(wordsList, category, random = Math.random) {
+      gridSize = (category && category.gridSize) || 12;
+      gridMatrix = Array.from({ length: gridSize }, () => Array(gridSize).fill(''));
+      placedWords = [];
+
+      const wordsToPlace = [...wordsList].sort((a, b) => (b.w || '').length - (a.w || '').length);
+      for (const item of wordsToPlace) {
+        const rawWord = item.w || item.word || '';
+        const cleanWord = rawWord.toUpperCase().replace(/\s+/g, '').normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        let placed = false;
+        let attempts = 0;
+        while (!placed && attempts < 200) {
+          attempts++;
+          const dir = DIRECTIONS[Math.floor(random() * DIRECTIONS.length)];
+          const r = Math.floor(random() * gridSize);
+          const c = Math.floor(random() * gridSize);
+          const endR = r + dir.dr * (cleanWord.length - 1);
+          const endC = c + dir.dc * (cleanWord.length - 1);
+          if (endR >= 0 && endR < gridSize && endC >= 0 && endC < gridSize) {
+            let canPlace = true;
+            for (let i = 0; i < cleanWord.length; i++) {
+              if (gridMatrix[r + dir.dr * i][c + dir.dc * i] !== '' && gridMatrix[r + dir.dr * i][c + dir.dc * i] !== cleanWord[i]) {
+                canPlace = false; break;
+              }
+            }
+            if (canPlace) {
+              const path = [];
+              for (let i = 0; i < cleanWord.length; i++) {
+                gridMatrix[r + dir.dr * i][c + dir.dc * i] = cleanWord[i];
+                path.push({ r: r + dir.dr * i, c: c + dir.dc * i });
+              }
+              placedWords.push({ word: cleanWord, displayWord: rawWord, hint: item.hint || '', path, found: false, colorIdx: placedWords.length % FOUND_COLORS.length });
+              placed = true;
+            }
+          }
+        }
+      }
+      const ALPHABET = 'ABCDEFGHIJKLMNPRSTUVWXYZ';
+      for (let r = 0; r < gridSize; r++) {
+        for (let c = 0; c < gridSize; c++) {
+          if (gridMatrix[r][c] === '') gridMatrix[r][c] = ALPHABET[Math.floor(random() * ALPHABET.length)];
+        }
+      }
+    }
+
+    function renderBoardUI() {
+      const boardGrid = document.getElementById('boardGrid');
+      boardGrid.innerHTML = '';
+      boardGrid.style.gridTemplateColumns = `repeat(${gridSize}, minmax(0, 1fr))`;
+      for (let r = 0; r < gridSize; r++) {
+        for (let c = 0; c < gridSize; c++) {
+          const cell = document.createElement('div');
+          cell.dataset.row = r; cell.dataset.col = c;
+          cell.id = `cell-${r}-${c}`;
+          cell.className = 'word-cell w-7 h-7 sm:w-9 sm:h-9 md:w-10 md:h-10 rounded-lg flex items-center justify-center font-black text-xs sm:text-base md:text-lg bg-white text-slate-950 border border-slate-300 shadow-sm cursor-pointer';
+          cell.innerText = gridMatrix[r][c];
+          boardGrid.appendChild(cell);
+        }
+      }
+    }
+
+    function renderWordsListUI() {
+      const container = document.getElementById('wordsList');
+      container.innerHTML = '';
+      placedWords.forEach((pw) => {
+        const item = document.createElement('div');
+        item.id = `wordItem-${pw.word}`;
+        item.className = 'p-1.5 sm:p-2 rounded-xl bg-cyber-850/80 border border-cyber-800 flex items-center justify-between gap-1.5';
+        item.innerHTML = `
+          <div class="min-w-0 flex-1">
+            <p class="font-extrabold text-xs sm:text-sm text-slate-200 tracking-wide word-label">${pw.displayWord}</p>
+          </div>
+          <div class="status-icon w-5 h-5 rounded-full bg-cyber-800 flex items-center justify-center text-[10px] text-slate-500">○</div>
+        `;
+        container.appendChild(item);
+      });
+      updateStatsUI();
+    }
+
+    function updateStatsUI() {
+      const foundCount = placedWords.filter(w => w.found).length;
+      document.getElementById('wordsProgress').innerText = `${foundCount}/${placedWords.length}`;
+      document.getElementById('badgeWordCount').innerText = `${placedWords.length - foundCount} restantes`;
+    }
+
+    function getCellCoordinates(el) {
+      const cell = el?.closest('.word-cell');
+      return cell ? { r: parseInt(cell.dataset.row, 10), c: parseInt(cell.dataset.col, 10) } : null;
+    }
+
+    function getLinePath(start, end) {
+      const dr = end.r - start.r, dc = end.c - start.c;
+      const steps = Math.max(Math.abs(dr), Math.abs(dc));
+      if (steps === 0) return [start];
+      const stepR = dr === 0 ? 0 : dr / steps, stepC = dc === 0 ? 0 : dc / steps;
+      return Array.from({ length: steps + 1 }, (_, i) => ({ r: start.r + Math.round(stepR * i), c: start.c + Math.round(stepC * i) }));
+    }
+
+    function highlightCurrentPath(path) {
+      document.querySelectorAll('.word-cell.selecting').forEach(el => el.classList.remove('selecting', 'bg-pink-500', 'text-white', 'scale-105'));
+      path.forEach(pos => {
+        document.getElementById(`cell-${pos.r}-${pos.c}`)?.classList.add('selecting', 'bg-pink-500', 'text-white', 'scale-105');
+      });
+    }
+
+    function checkSelectedWord(path) {
+      if (!path || path.length < 2) return;
+      let forward = '', backward = '';
+      path.forEach(p => { const char = gridMatrix[p.r][p.c]; forward += char; backward = char + backward; });
+      const match = placedWords.find(w => !w.found && (w.word === forward || w.word === backward));
+      if (match) {
+        match.found = true;
+        window.registrarPalabraEncontrada?.(match.word);
+        applyPermanentFoundStyle(match);
+        updateStatsUI();
+        finalizarPartidaPorCompletado();
+      }
+    }
+
+    function applyPermanentFoundStyle(wordObj) {
+      const palette = FOUND_COLORS[wordObj.colorIdx];
+      wordObj.path.forEach(pos => {
+        const cell = document.getElementById(`cell-${pos.r}-${pos.c}`);
+        if (cell) cell.className = `word-cell w-7 h-7 sm:w-9 sm:h-9 md:w-10 md:h-10 rounded-lg flex items-center justify-center font-black text-xs sm:text-base md:text-lg ${palette.bg} ${palette.text} border-2 shadow-md`;
+      });
+      const item = document.getElementById(`wordItem-${wordObj.word}`);
+      if (item) {
+        item.classList.add('bg-emerald-950/40', 'border-emerald-600/60');
+        item.querySelector('.word-label')?.classList.add('line-through', 'text-emerald-400');
+        const icon = item.querySelector('.status-icon');
+        if (icon) { icon.className = 'status-icon w-5 h-5 rounded-full bg-emerald-500 text-white flex items-center justify-center text-xs font-bold'; icon.innerHTML = '✓'; }
+      }
+    }
+
+    function attachBoardEvents() {
+      const boardContainer = document.getElementById('boardContainer');
+      boardContainer.addEventListener('pointerdown', (e) => {
+        if (!gameReady || gameEnded) return;
+        const coords = getCellCoordinates(e.target);
+        if (!coords) return;
+        isSelecting = true; startCell = coords; currentPath = [startCell];
+        highlightCurrentPath(currentPath);
+        boardContainer.setPointerCapture(e.pointerId);
+      });
+      boardContainer.addEventListener('pointermove', (e) => {
+        if (!isSelecting || !startCell) return;
+        const currentCoords = getCellCoordinates(document.elementFromPoint(e.clientX, e.clientY));
+        if (!currentCoords) return;
+        currentPath = getLinePath(startCell, currentCoords);
+        highlightCurrentPath(currentPath);
+      });
+      const endSelection = (e) => {
+        if (!isSelecting) return;
+        isSelecting = false; checkSelectedWord(currentPath);
+        document.querySelectorAll('.word-cell.selecting').forEach(el => el.classList.remove('selecting', 'bg-pink-500', 'text-white', 'scale-105'));
+        startCell = null; currentPath = [];
+      };
+      boardContainer.addEventListener('pointerup', endSelection);
+      boardContainer.addEventListener('pointercancel', endSelection);
+    }
+
+    function iniciarNuevaPartida(categoriaSeleccionada = 'all', seed = null, startTime = null, durationSeconds = GAME_DURATION_SECONDS, wordCount = 10) {
+      const currentCat = CATEGORIES[0];
+      const random = seed === null ? Math.random : (() => { let s = seed; return () => { s = (1664525 * s + 1013904223) >>> 0; return s / 4294967296; }; })();
+      const palabrasRonda = obtenerPalabrasAleatorias(currentCat.id, wordCount, 12, random);
+      document.getElementById('victoryModal').classList.add('hidden');
+      gameEnded = false; gameReady = true; secondsRemaining = durationSeconds;
+      document.getElementById('gameInstruction').classList.remove('hidden');
+      document.getElementById('btnLeaveGame').classList.remove('hidden');
+      generateBoard(palabrasRonda, currentCat, random);
+      renderBoardUI();
+      renderWordsListUI();
+      startTimer(Date.now(), durationSeconds);
+    }
+
+    function startTimer(startTime, durationSeconds) {
+      clearInterval(timerInterval);
+      timerInterval = setInterval(() => {
+        secondsRemaining--;
+        const mins = Math.floor(secondsRemaining / 60), secs = secondsRemaining % 60;
+        document.getElementById('gameTimer').innerText = `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+        if (secondsRemaining <= 0) { clearInterval(timerInterval); triggerVictory({ outcome: 'lose' }); }
+      }, 1000);
+    }
+
+    function triggerVictory({ outcome = 'win', showResults = true } = {}) {
+      clearInterval(timerInterval); gameEnded = true;
+      document.getElementById('victoryModal').classList.remove('hidden');
+    }
+
+    function finalizarPartidaPorCompletado() {
+      if (gameEnded || !placedWords.every(w => w.found)) return;
+      gameEnded = true;
+      triggerVictory({ outcome: 'win' });
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      attachBoardEvents();
+      renderAvatarPicker();
+      document.getElementById('selectedAvatarButton').addEventListener('click', () => {
+        const modal = document.getElementById('avatarPickerModal');
+        modal.classList.toggle('hidden'); modal.classList.toggle('flex');
+      });
+      document.getElementById('closeAvatarPicker').addEventListener('click', () => {
+        document.getElementById('avatarPickerModal').classList.add('hidden');
+      });
+      cargarBaseDeDatos();
+    });
+  </script>
+
+  <!-- SCRIPT DE SUPABASE (MULTIJUGADOR EN TIEMPO REAL) -->
+  <script type="module">
+    import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
+    import { SUPABASE_URL, SUPABASE_ANON_KEY } from './supabase-config.js';
+
+    const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    let roomChannel = null;
+    let miNick = '';
+    let codigoSala = '';
+    let esHost = false;
+
+    const generarCodigoSala = () => Math.random().toString(36).slice(2, 7).toUpperCase();
+
+    function renderLiveParticipants(players = {}) {
+      const bar = document.getElementById('liveParticipantsBar');
+      if (!bar) return;
+      const ranking = Object.values(players).sort((a, b) => (b.score || 0) - (a.score || 0));
+      bar.innerHTML = ranking.length ? ranking.map(p => `
+        <div class="flex items-center gap-2 shrink-0 rounded-lg bg-cyber-950/80 border border-cyber-800 px-2 py-1.5 min-w-32">
+          <img src="./avatares/${p.avatar || 'avatar.jpg'}" class="w-7 h-7 rounded-lg object-cover border border-cyber-700">
+          <span class="flex-1 truncate text-xs font-bold text-slate-200">${p.nick}</span>
+          <span class="font-mono text-xs font-black text-pink-400">${p.score || 0}</span>
+        </div>
+      `).join('') : '<span class="text-xs text-slate-500">Esperando jugadores...</span>';
+    }
+
+    window.multiCrearSala = async () => {
+      miNick = document.getElementById('inputNick').value.trim() || 'MerceLover';
+      codigoSala = generarCodigoSala();
+      esHost = true;
+      const nuevaSala = {
+        codigo: codigoSala,
+        host_id: playerId,
+        state: 'waiting',
+        seed: Math.floor(Math.random() * 1000000),
+        time_limit: 600,
+        word_count: 10,
+        max_jugadores: 8,
+        players: { [playerId]: { nick: miNick, avatar: selectedAvatar, score: 0, isHost: true, connected: true } }
+      };
+      await supabase.from('salas_sopa').insert([nuevaSala]);
+      abrirSalaEspera();
+      escucharSala(codigoSala);
+    };
+
+    window.multiUnirseSala = async () => {
+      miNick = document.getElementById('inputNick').value.trim() || 'Jugador';
+      codigoSala = document.getElementById('inputRoomCode').value.trim().toUpperCase();
+      const { data } = await supabase.from('salas_sopa').select('*').eq('codigo', codigoSala).single();
+      if (!data) return alert('La sala no existe.');
+      data.players[playerId] = { nick: miNick, avatar: selectedAvatar, score: 0, isHost: false, connected: true };
+      await supabase.from('salas_sopa').update({ players: data.players }).eq('codigo', codigoSala);
+      abrirSalaEspera();
+      escucharSala(codigoSala);
+    };
+
+    function abrirSalaEspera() {
+      document.getElementById('multiplayerLobby').classList.add('hidden');
+      document.getElementById('waitingRoomModal').classList.remove('hidden');
+      document.getElementById('lblRoomCode').innerText = codigoSala;
+      document.getElementById('btnHostStart').classList.toggle('hidden', !esHost);
+    }
+
+    async function escucharSala(roomId) {
+      if (roomChannel) supabase.removeChannel(roomChannel);
+      roomChannel = supabase.channel(`sala_${roomId}`)
+        .on('postgres_changes', { event: 'UPDATE', schema: 'public', table: 'salas_sopa', filter: `codigo=eq.${roomId}` }, payload => {
+          renderLiveParticipants(payload.new.players);
+        })
+        .subscribe();
+    }
+
+    window.salirDeSala = () => { location.reload(); };
+    window.jugarSolo = () => { document.getElementById('multiplayerLobby').classList.add('hidden'); };
+    window.copiarEnlaceInvitacion = () => { navigator.clipboard.writeText(`${location.origin}${location.pathname}?room=${codigoSala}`); };
+    window.registrarPalabraEncontrada = async (word) => {
+      if (!codigoSala) return;
+      const { data } = await supabase.from('salas_sopa').select('players').eq('codigo', codigoSala).single();
+      if (data?.players?.[playerId]) {
+        data.players[playerId].score = (data.players[playerId].score || 0) + 1;
+        await supabase.from('salas_sopa').update({ players: data.players }).eq('codigo', codigoSala);
+      }
+    };
+  </script>
+</body>
+</html>
