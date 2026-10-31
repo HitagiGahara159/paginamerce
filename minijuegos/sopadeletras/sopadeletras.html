@@ -2296,11 +2296,12 @@
         codigoSala = normalizarCodigoSala(document.getElementById('inputRoomCode').value);
         if (!codigoSala) return alert('Ingresa un código de sala.');
 
-        const { data: latest, error: fetchErr } = await supabase
+        const { data: rows, error: fetchErr } = await supabase
           .from(TABLE_NAME)
           .select('*')
-          .eq('codigo', codigoSala)
-          .maybeSingle(); // <-- Evita el error 406
+          .filter('codigo', 'eq', codigoSala);
+
+        const latest = rows && rows.length > 0 ? rows[0] : null;
 
         if (fetchErr || !latest) return alert('La sala no existe o ya caducó.');
         if (latest.state !== 'waiting') return alert('La partida ya comenzó.');
