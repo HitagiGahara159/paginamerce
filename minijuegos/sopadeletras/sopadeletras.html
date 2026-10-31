@@ -552,14 +552,11 @@
 <body class="text-slate-100 min-h-screen flex flex-col font-sans select-none antialiased">
 
   <!-- MODAL: LOBBY DE MULTIJUGADOR -->
+  <!-- MODAL: LOBBY DE MULTIJUGADOR -->
   <div id="multiplayerLobby" class="fixed inset-0 bg-cyber-950/95 backdrop-blur-md z-50 flex items-center justify-center p-4">
     <div class="lobby-shell bg-cyber-900 border-2 border-cyber-700 max-w-md w-full rounded-3xl p-6 shadow-2xl shadow-pink-950/50">
-      <div class="lobby-header text-center mb-6">
-        <div class="w-14 h-14 mx-auto rounded-2xl bg-gradient-to-tr from-rose-500 via-pink-500 to-fuchsia-500 p-0.5 mb-3 shadow-lg shadow-pink-900/40">
-          <div class="w-full h-full bg-cyber-950 rounded-[14px] flex items-center justify-center text-2xl font-display text-pink-400">🌸</div>
-        </div>
-        <h2 class="text-2xl font-black text-white font-display tracking-wide">MERCE GALLARDO LIVE</h2>
-        <p class="text-xs text-pink-200/80 mt-1">Sopa de letras competitiva en tiempo real</p>
+      <div class="lobby-header text-center mb-4">
+        <h2 class="text-xl font-black text-white uppercase tracking-wider font-display">SOPA DE LETRAS</h2>
       </div>
 
       <!-- Nickname y Avatar -->
@@ -2195,7 +2192,7 @@
         .from(TABLE_NAME)
         .select('*')
         .eq('codigo', roomId)
-        .single();
+        .maybeSingle(); // <-- Evita el error 406
 
       if (initialError || !initialData) {
         alert('La sala no existe o ya caducó.');
@@ -2303,7 +2300,7 @@
           .from(TABLE_NAME)
           .select('*')
           .eq('codigo', codigoSala)
-          .single();
+          .maybeSingle(); // <-- Evita el error 406
 
         if (fetchErr || !latest) return alert('La sala no existe o ya caducó.');
         if (latest.state !== 'waiting') return alert('La partida ya comenzó.');
