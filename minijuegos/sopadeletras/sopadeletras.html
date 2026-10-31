@@ -2163,18 +2163,19 @@
       clearInterval(syncInterval);
 
       // Carga inicial directa desde la tabla
-      const { data: rows, error: fetchErr } = await supabase
-          .from(TABLE_NAME)
-          .select('*')
-          .eq('codigo', codigoSala);
+      const { data: rows, error: initialError } = await supabase
+        .from(TABLE_NAME)
+        .select('*')
+        .eq('codigo', roomId);
 
-      const latest = rows && rows.length > 0 ? rows[0] : null;
+      const initialData = rows && rows.length > 0 ? rows[0] : null;
 
-      if (fetchErr) {
-          console.error("ERROR EXACTO DE SUPABASE:", JSON.stringify(fetchErr, null, 2));
+      if (initialError || !initialData) {
+        alert('La sala no existe o ya caducó.');
+        return;
       }
 
-      procesarSala(initialData);
+      procesarSala(initialData)
 
       // Suscripción Realtime por Broadcast y Postgres Changes
       realtimeChannel = supabase.channel(`sala_sopa_${roomId}`)
