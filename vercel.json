@@ -1,8 +1,6 @@
 {
+  "cleanUrls": true,
   "rewrites": [
-    {
-      "source": "/minijuegos/sopadeletras",
-      "destination": "/minijuegos/sopadeletras/sopadeletras.html"
-    }
+    { "source": "minijuegos/sopadeletras", "destination": "minijuegos/sopadeletras/sopadeletras.html" }
   ]
 }
