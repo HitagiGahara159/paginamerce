@@ -2007,31 +2007,33 @@
       renderPlayers(roomData?.players);
     }
 
+    let configInicializada = false;
+
     function prepararConfiguracionDelHost() {
       if (!roomData) return;
-      
-      // Evitamos sobrescribir si el usuario está interactuando activamente con los selectores
+
       const timeSelect = document.getElementById('roomTimeLimit');
       const wordSelect = document.getElementById('roomWordCount');
       const maxPlayersSelect = document.getElementById('roomMaxPlayers');
 
-      const timeLimit = Number(roomData.timeLimit) || GAME_DURATION_SECONDS;
-      const wordCount = Number(roomData.wordCount) || 10;
-      const maxJugadores = normalizarMaxJugadores(roomData.maxJugadores);
+      // Solo cargamos los datos del servidor la primera vez que entramos a la configuración
+      // para evitar que los selectores se reseteen al cambiar de opción.
+      if (!configInicializada) {
+        const timeLimit = Number(roomData.timeLimit) || GAME_DURATION_SECONDS;
+        const wordCount = Number(roomData.wordCount) || 10;
+        const maxJugadores = normalizarMaxJugadores(roomData.maxJugadores);
 
-      if (timeSelect && document.activeElement !== timeSelect) {
-        timeSelect.value = String(timeLimit);
-      }
-      
-      if (wordSelect && document.activeElement !== wordSelect) {
-        wordSelect.value = [...wordSelect.options].some(option => option.value === String(wordCount))
-          ? String(wordCount)
-          : 'all';
-      }
-
-      if (maxPlayersSelect && document.activeElement !== maxPlayersSelect) {
-        maxPlayersSelect.value = String(maxJugadores);
-        maxPlayersSelect.disabled = false;
+        if (timeSelect) timeSelect.value = String(timeLimit);
+        if (wordSelect) {
+          wordSelect.value = [...wordSelect.options].some(option => option.value === String(wordCount))
+            ? String(wordCount)
+            : 'all';
+        }
+        if (maxPlayersSelect) {
+          maxPlayersSelect.value = String(maxJugadores);
+          maxPlayersSelect.disabled = false;
+        }
+        configInicializada = true;
       }
 
       document.getElementById('multiplayerLobby').classList.remove('hidden');
