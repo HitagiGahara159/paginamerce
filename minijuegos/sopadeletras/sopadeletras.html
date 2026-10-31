@@ -2163,16 +2163,16 @@
       clearInterval(syncInterval);
 
       // Carga inicial directa desde la tabla
-      const { data: latest, error: fetchErr } = await supabase
+      const { data: rows, error: fetchErr } = await supabase
           .from(TABLE_NAME)
           .select('*')
-          .eq('codigo', codigoSala)
-          .maybeSingle();
+          .eq('codigo', codigoSala);
 
-        // <-- PON ESTO AQUÍ DEBAJO
-        if (fetchErr) {
+      const latest = rows && rows.length > 0 ? rows[0] : null;
+
+      if (fetchErr) {
           console.error("ERROR EXACTO DE SUPABASE:", JSON.stringify(fetchErr, null, 2));
-        }
+      }
 
       procesarSala(initialData);
 

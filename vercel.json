@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/minijuegos/sopadeletras",
+      "destination": "/minijuegos/sopadeletras/sopadeletras.html"
+    }
+  ]
+}
