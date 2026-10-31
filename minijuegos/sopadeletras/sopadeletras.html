@@ -1688,31 +1688,6 @@
         audio.playError();
       }
 
-      try {
-        confetti({
-          particleCount: 100,
-          spread: 70,
-          origin: { y: 0.6 },
-          colors: ['#f472b6', '#ec4899', '#fbcfe8', '#fbbf24', '#ffffff']
-        });
-        setTimeout(() => {
-          confetti({
-            particleCount: 60,
-            angle: 60,
-            spread: 55,
-            origin: { x: 0 },
-            colors: ['#f472b6', '#ec4899', '#fbcfe8', '#fbbf24', '#ffffff']
-          });
-          confetti({
-            particleCount: 60,
-            angle: 120,
-            spread: 55,
-            origin: { x: 1 },
-            colors: ['#f472b6', '#ec4899', '#fbcfe8', '#fbbf24', '#ffffff']
-          });
-        }, 400);
-      } catch(e) {}
-
       const elapsedSeconds = currentGameDurationSeconds - secondsRemaining;
       const mins = Math.floor(elapsedSeconds / 60);
       const secs = elapsedSeconds % 60;
@@ -2188,16 +2163,16 @@
       clearInterval(syncInterval);
 
       // Carga inicial directa desde la tabla
-      const { data: initialData, error: initialError } = await supabase
-        .from(TABLE_NAME)
-        .select('*')
-        .eq('codigo', roomId)
-        .maybeSingle(); // <-- Evita el error 406
+      const { data: latest, error: fetchErr } = await supabase
+          .from(TABLE_NAME)
+          .select('*')
+          .eq('codigo', codigoSala)
+          .maybeSingle();
 
-      if (initialError || !initialData) {
-        alert('La sala no existe o ya caducó.');
-        return;
-      }
+        // <-- PON ESTO AQUÍ DEBAJO
+        if (fetchErr) {
+          console.error("ERROR EXACTO DE SUPABASE:", JSON.stringify(fetchErr, null, 2));
+        }
 
       procesarSala(initialData);
 
