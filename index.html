@@ -1329,6 +1329,45 @@
     </div>
   </main>
 
+  <!-- ══════════ VISTA MINIJUEGOS ══════════ -->
+  <main id="vista-minijuegos" style="display: none;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 3.5rem 2rem 4.5rem;">
+      <div class="mb-6 text-center sm:text-left" style="margin-bottom: 2rem;">
+        <h2 style="font-family: var(--font-display); font-size: 1.8rem; font-weight: 700; color: #fff; text-transform: uppercase;">Minijuegos de la Comunidad</h2>
+        <p style="font-size: 0.85rem; color: var(--accent-soft); margin-top: 0.25rem;">¡Diviértete jugando mientras esperas el siguiente directo!</p>
+      </div>
+
+      <!-- Cuadrícula ordenada de minijuegos (tipo tarjetas compactas como en tu dibujo) -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem;">
+        
+        <!-- Tarjeta 1: Sopa de Letras (Compacta) -->
+        <div style="background: rgba(38, 12, 27, 0.86); border: 1px solid var(--border); border-radius: 16px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 10px 25px rgba(0,0,0,0.3); transition: transform 0.2s ease, border-color 0.2s ease;">
+          <div>
+            <div style="width: 42px; height: 42px; display: flex; align-items: center; justify-content: center; border-radius: 10px; background: rgba(244,114,182,0.2); border: 1px solid rgba(244,114,182,0.4); margin-bottom: 1rem; font-size: 1.25rem;">
+              🔍
+            </div>
+            <h3 style="font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: #fff; margin-bottom: 0.4rem;">Sopa de Letras Anime</h3>
+            <p style="font-size: 0.8rem; color: var(--muted); line-height: 1.5;">
+              Encuentra los nombres de tus animes y películas favoritas en tiempo real compitiendo con la comunidad.
+            </p>
+          </div>
+          <div style="margin-top: 1.5rem;">
+            <a href="minijuegos/sopadeletras/sopadeletras.html" style="display: block; width: 100%; padding: 0.6rem 1rem; border-radius: 9999px; font-weight: 700; font-size: 0.74rem; text-align: center; background: linear-gradient(135deg, #f472b6, #ec4899); color: #fff; text-decoration: none; box-shadow: 0 4px 16px rgba(236,72,153,0.45);">
+              JUGAR AHORA ➔
+            </a>
+          </div>
+        </div>
+
+        <!-- Espacio vacío simétrico para futuros juegos (opcional, puedes duplicarlo si quieres más huecos) -->
+        <div style="background: rgba(38, 12, 27, 0.3); border: 2px dashed rgba(244,114,182,0.2); border-radius: 16px; padding: 2rem; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; min-height: 180px;">
+          <span style="font-size: 1.5rem; margin-bottom: 0.3rem; opacity: 0.5;">🎮</span>
+          <p style="font-size: 0.75rem; color: var(--muted); font-weight: 600;">Próximo minijuego</p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
   <!-- ══════════ VISTA 02: CATÁLOGO ══════════ -->
   <main id="vista-catalogo">
     <section class="controls-wrapper">
@@ -1969,26 +2008,31 @@
       if (e.key === 'ArrowRight') targetIndex = Math.min(carruselItems.length - 1, targetIndex + 1);
     });
 
-    // ══ CAMBIO DE VISTAS ══
+// ══ CAMBIO DE VISTAS ══
     const vistaHome = document.getElementById('vista-home');
+    const vistaMinijuegos = document.getElementById('vista-minijuegos'); // <--- NUEVO
     const vistaCatalogo = document.getElementById('vista-catalogo');
     const vistaFicha = document.getElementById('vista-ficha');
     const navHome = document.getElementById('nav-home');
     const navCatalogo = document.getElementById('nav-catalogo');
+    const navMinijuegos = document.getElementById('nav-minijuegos'); // <--- NUEVO
 
     function mostrarVista(vista, desplazar = true) {
       document.body.dataset.currentView = vista;
       vistaHome.style.display = vista === 'home' ? 'block' : 'none';
+      vistaMinijuegos.style.display = vista === 'minijuegos' ? 'block' : 'none'; // <--- NUEVO
       vistaCatalogo.style.display = vista === 'catalogo' ? 'block' : 'none';
       vistaFicha.style.display = vista === 'ficha' ? 'block' : 'none';
 
       navHome.classList.toggle('active', vista === 'home');
+      navMinijuegos.classList.toggle('active', vista === 'minijuegos'); // <--- NUEVO
       navCatalogo.classList.toggle('active', vista === 'catalogo' || vista === 'ficha');
       if (desplazar) window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     function rutaParaVista(vista, id = null) {
       if (vista === 'ficha' && id !== null) return `#ficha/${id}`;
+      if (vista === 'minijuegos') return '#minijuegos'; // <--- NUEVO
       return vista === 'catalogo' ? '#catalogo' : '#home';
     }
 
@@ -2001,6 +2045,10 @@
           mostrarFicha(item, false);
           return;
         }
+      }
+      if (hash === '#minijuegos') { // <--- NUEVO
+        mostrarVista('minijuegos', false);
+        return;
       }
       mostrarVista(hash === '#catalogo' ? 'catalogo' : 'home', false);
     }
