@@ -176,6 +176,110 @@
       text-shadow: 0 0 12px rgba(244, 114, 182, 0.7);
     }
 
+    .mobile-menu-toggle,
+    .mobile-menu-panel {
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      .mobile-menu-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border: 1px solid rgba(244, 114, 182, 0.45);
+        border-radius: 14px;
+        background: rgba(61, 20, 45, 0.86);
+        color: #fff5fa;
+        font-size: 1.35rem;
+        cursor: pointer;
+        transition: background 0.2s ease, transform 0.2s ease;
+      }
+
+      .mobile-menu-toggle:hover,
+      .mobile-menu-toggle:focus-visible {
+        background: rgba(244, 114, 182, 0.22);
+        transform: translateY(-1px);
+      }
+
+      .mobile-menu-panel {
+        position: fixed;
+        inset: 0;
+        z-index: 80;
+        display: flex;
+        flex-direction: column;
+        gap: 0.35rem;
+        padding: calc(1rem + env(safe-area-inset-top, 0px)) max(1rem, env(safe-area-inset-right, 0px)) calc(1rem + env(safe-area-inset-bottom, 0px)) max(1rem, env(safe-area-inset-left, 0px));
+        background: rgba(20, 5, 16, 0.97);
+        backdrop-filter: blur(18px);
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-12px);
+        transition: opacity 0.22s ease, transform 0.22s ease;
+      }
+
+      .mobile-menu-panel.is-open {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+      }
+
+      .mobile-menu-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding-bottom: 1rem;
+        margin-bottom: 0.35rem;
+        border-bottom: 1px solid rgba(244, 114, 182, 0.2);
+      }
+
+      .mobile-menu-title {
+        color: #fbcfe8;
+        font-family: var(--font-display);
+        font-size: 1.2rem;
+        font-weight: 700;
+      }
+
+      .mobile-menu-close {
+        width: 44px;
+        height: 44px;
+        border: 1px solid rgba(244, 114, 182, 0.38);
+        border-radius: 14px;
+        background: rgba(61, 20, 45, 0.86);
+        color: #fff5fa;
+        font-size: 1.25rem;
+        cursor: pointer;
+      }
+
+      .mobile-menu-panel a {
+        display: flex;
+        align-items: center;
+        min-height: 48px;
+        padding: 0.75rem 0.9rem;
+        border: 1px solid rgba(244, 114, 182, 0.14);
+        border-radius: 14px;
+        color: #fbcfe8;
+        text-decoration: none;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        background: rgba(61, 20, 45, 0.45);
+      }
+
+      .mobile-menu-panel a:hover,
+      .mobile-menu-panel a:focus-visible {
+        color: #fff;
+        border-color: rgba(244, 114, 182, 0.48);
+        background: rgba(244, 114, 182, 0.16);
+      }
+
+      body.mobile-menu-open {
+        overflow: hidden;
+      }
+    }
+
     .nav-num {
       color: var(--accent);
       font-weight: 700;
@@ -247,6 +351,9 @@
       }
 
       .nav-links {
+        display: flex;
+        width: 100%;
+        order: 3;
         gap: 0.35rem;
         padding-top: 0.15rem;
         overflow: visible;
@@ -256,6 +363,10 @@
         flex: 1;
         padding: 0.45rem 0.25rem;
         text-align: center;
+      }
+
+      .nav-links a:nth-child(n + 3) {
+        display: none;
       }
 
       .nav-num { display: none; }
@@ -1256,7 +1367,6 @@
     </a>
 
     <nav class="nav-links">
-      <nav class="nav-links">
       <a id="nav-home" class="active" onclick="cambiarVista('home')"><span class="nav-num">01</span> HOME</a>
       <a id="nav-catalogo" onclick="cambiarVista('catalogo')"><span class="nav-num">02</span> CATÁLOGO (89)</a>
       <a href="https://kick.com/mercegallardo" target="_blank" rel="noopener"><span class="nav-num">03</span> KICK EN VIVO ↗</a>
@@ -1269,7 +1379,21 @@
     <a href="https://kick.com/mercegallardo" target="_blank" rel="noopener" class="kick-live-badge">
       <span class="kick-dot"></span> ONLINE
     </a>
+    <button class="mobile-menu-toggle" id="mobile-menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu-panel">☰</button>
   </header>
+
+  <div class="mobile-menu-panel" id="mobile-menu-panel" aria-hidden="true">
+    <div class="mobile-menu-header">
+      <span class="mobile-menu-title">Menú de Merce</span>
+      <button class="mobile-menu-close" id="mobile-menu-close" type="button" aria-label="Cerrar menú">✕</button>
+    </div>
+    <a href="#home" data-mobile-menu-link onclick="cambiarVista('home')">01 · HOME</a>
+    <a href="#catalogo" data-mobile-menu-link onclick="cambiarVista('catalogo')">02 · CATÁLOGO</a>
+    <a href="https://kick.com/mercegallardo" target="_blank" rel="noopener" data-mobile-menu-link>03 · KICK EN VIVO ↗</a>
+    <a href="https://www.patreon.com/MerceGallardo" target="_blank" rel="noopener" data-mobile-menu-link>04 · PATREON ↗</a>
+    <a href="https://discord.com/invite/rzMVj8uaR9" target="_blank" rel="noopener" data-mobile-menu-link>05 · DISCORD ↗</a>
+    <a href="#minijuegos" data-mobile-menu-link onclick="cambiarVista('minijuegos')">06 · MINIJUEGOS</a>
+  </div>
 
   <!-- ══════════ VISTA 01: HOME ══════════ -->
   <main id="vista-home">
@@ -1327,7 +1451,7 @@
         </a>
       </div>
     </div>
-  </main>
+   </main>
 
   <!-- ══════════ VISTA MINIJUEGOS ══════════ -->
   <main id="vista-minijuegos" style="display: none;">
@@ -2168,6 +2292,31 @@
     sincronizarVistaDesdeURL();
     requestAnimationFrame(loop);
     cargarPortadasOficiales();
+  </script>
+  <script>
+    (() => {
+      const toggle = document.getElementById('mobile-menu-toggle');
+      const close = document.getElementById('mobile-menu-close');
+      const panel = document.getElementById('mobile-menu-panel');
+      if (!toggle || !close || !panel) return;
+
+      const setMenuOpen = (isOpen) => {
+        panel.classList.toggle('is-open', isOpen);
+        panel.setAttribute('aria-hidden', String(!isOpen));
+        toggle.setAttribute('aria-expanded', String(isOpen));
+        toggle.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+        document.body.classList.toggle('mobile-menu-open', isOpen);
+      };
+
+      toggle.addEventListener('click', () => setMenuOpen(!panel.classList.contains('is-open')));
+      close.addEventListener('click', () => setMenuOpen(false));
+      panel.querySelectorAll('[data-mobile-menu-link]').forEach((link) => {
+        link.addEventListener('click', () => setMenuOpen(false));
+      });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') setMenuOpen(false);
+      });
+    })();
   </script>
 </body>
 </html>

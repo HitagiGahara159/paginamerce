@@ -68,7 +68,7 @@
 
     body {
       background-color: var(--bg);
-      background-image: url('./FONDOJUEGO.png'), url('../FONDOJUEGO.png');
+      background-image: url('./FONDOJUEGO.png');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -77,16 +77,7 @@
     }
 
     body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      background:
-        radial-gradient(circle at 18% 20%, rgba(244, 114, 182, 0.20), transparent 50%),
-        radial-gradient(circle at 82% 25%, rgba(251, 113, 133, 0.16), transparent 52%),
-        radial-gradient(circle at 50% 85%, rgba(219, 39, 119, 0.22), transparent 60%),
-        linear-gradient(180deg, rgba(33, 11, 23, 0.92) 0%, rgba(20, 5, 16, 0.97) 100%);
-      pointer-events: none;
-      z-index: 0;
+      display: none;
     }
 
     body > * {
@@ -96,7 +87,7 @@
 
     /* Modo transparente limpio para OBS */
     body.obs-mode::before {
-      background: rgba(20, 5, 16, 0.78);
+      display: none;
     }
     body.obs-mode header,
     body.obs-mode #hostRoomPanel,
@@ -137,6 +128,100 @@
     ::-webkit-scrollbar-thumb:hover {
       background: #f472b6;
     }
+
+    .site-mobile-menu-toggle,
+    .site-mobile-menu {
+      display: none;
+    }
+
+    @media (max-width: 640px) {
+      .site-mobile-menu-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border: 1px solid rgba(244, 114, 182, 0.45);
+        border-radius: 14px;
+        background: rgba(61, 20, 45, 0.86);
+        color: #fff5fa;
+        font-size: 1.3rem;
+        cursor: pointer;
+      }
+
+      .site-mobile-menu {
+        position: fixed;
+        inset: 0;
+        z-index: 80;
+        display: flex;
+        flex-direction: column;
+        gap: 0.35rem;
+        padding: calc(1rem + env(safe-area-inset-top, 0px)) max(1rem, env(safe-area-inset-right, 0px)) calc(1rem + env(safe-area-inset-bottom, 0px)) max(1rem, env(safe-area-inset-left, 0px));
+        background: rgba(20, 5, 16, 0.97);
+        backdrop-filter: blur(18px);
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-12px);
+        transition: opacity 0.22s ease, transform 0.22s ease;
+      }
+
+      .site-mobile-menu.is-open {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+      }
+
+      .site-mobile-menu-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+        margin-bottom: 0.35rem;
+        border-bottom: 1px solid rgba(244, 114, 182, 0.2);
+      }
+
+      .site-mobile-menu-header strong {
+        color: #fbcfe8;
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: 1.2rem;
+      }
+
+      .site-mobile-menu-close {
+        width: 44px;
+        height: 44px;
+        border: 1px solid rgba(244, 114, 182, 0.38);
+        border-radius: 14px;
+        background: rgba(61, 20, 45, 0.86);
+        color: #fff5fa;
+        font-size: 1.2rem;
+      }
+
+      .site-mobile-menu a {
+        min-height: 48px;
+        display: flex;
+        align-items: center;
+        padding: 0.75rem 0.9rem;
+        border: 1px solid rgba(244, 114, 182, 0.14);
+        border-radius: 14px;
+        background: rgba(61, 20, 45, 0.45);
+        color: #fbcfe8;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-decoration: none;
+      }
+
+      .site-mobile-menu a:hover,
+      .site-mobile-menu a:focus-visible {
+        color: #fff;
+        border-color: rgba(244, 114, 182, 0.48);
+        background: rgba(244, 114, 182, 0.16);
+      }
+
+      body.site-mobile-menu-open {
+        overflow: hidden;
+      }
+    }
   </style>
 </head>
 <body class="text-slate-100 min-h-screen flex flex-col font-sans select-none antialiased">
@@ -144,10 +229,7 @@
   <!-- HEADER SUPERIOR ESTILO MERCE GALLARDO -->
   <header class="border-b border-cyber-800 bg-cyber-900/95 backdrop-blur sticky top-0 z-40 px-3 sm:px-6 py-3">
     <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
-      <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-rose-500 via-pink-500 to-fuchsia-600 p-0.5 shadow-lg shadow-pink-900/40">
-          <div class="w-full h-full bg-cyber-950 rounded-[10px] flex items-center justify-center text-lg">🌸</div>
-        </div>
+      <div>
         <div>
           <div class="flex items-center gap-2">
             <h1 class="text-lg sm:text-xl font-extrabold tracking-[0.05em] bg-gradient-to-r from-white via-pink-100 to-pink-300 bg-clip-text text-transparent font-display">
@@ -165,12 +247,26 @@
           <svg id="soundIconOn" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072M18.364 5.636a9 9 0 010 12.728M11 5L6 9H2v6h4l5 4V5z"/></svg>
           <svg id="soundIconOff" class="w-4 h-4 hidden text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"/></svg>
         </button>
-        <a id="btnBackMenu" href="../index.html#minijuegos" class="px-3 py-2 rounded-xl border border-pink-500/40 bg-pink-500/10 text-pink-200 hover:bg-pink-500/20 hover:text-white font-bold text-xs transition active:scale-95 flex items-center gap-1.5">
+        <a id="btnBackMenu" href="../../index.html#minijuegos" class="px-3 py-2 rounded-xl border border-pink-500/40 bg-pink-500/10 text-pink-200 hover:bg-pink-500/20 hover:text-white font-bold text-xs transition active:scale-95 flex items-center gap-1.5">
           <span>←</span> <span>MINIJUEGOS</span>
         </a>
+        <button id="site-mobile-menu-toggle" class="site-mobile-menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-mobile-menu">☰</button>
       </div>
     </div>
   </header>
+
+  <div id="site-mobile-menu" class="site-mobile-menu" aria-hidden="true">
+    <div class="site-mobile-menu-header">
+      <strong>Menú de Merce</strong>
+      <button id="site-mobile-menu-close" class="site-mobile-menu-close" type="button" aria-label="Cerrar menú">✕</button>
+    </div>
+    <a href="../../index.html#home" data-site-mobile-link>01 · HOME</a>
+    <a href="../../index.html#catalogo" data-site-mobile-link>02 · CATÁLOGO</a>
+    <a href="https://kick.com/mercegallardo" target="_blank" rel="noopener" data-site-mobile-link>03 · KICK EN VIVO ↗</a>
+    <a href="https://www.patreon.com/MerceGallardo" target="_blank" rel="noopener" data-site-mobile-link>04 · PATREON ↗</a>
+    <a href="https://discord.com/invite/rzMVj8uaR9" target="_blank" rel="noopener" data-site-mobile-link>05 · DISCORD ↗</a>
+    <a href="../../index.html#minijuegos" data-site-mobile-link>06 · MINIJUEGOS</a>
+  </div>
 
   <!-- CONTENIDO PRINCIPAL -->
   <main class="flex-1 max-w-7xl w-full mx-auto p-4 sm:p-6">
@@ -909,6 +1005,7 @@
     let esEspectador = false;
     let hostConfigInicializada = false;
     let lastRevealedCharId = null;
+    let salidaEnCurso = false;
 
     // Estado unificado de la sala (funciona igual en Solo y en Multijugador)
     let gameState = {
@@ -1226,6 +1323,56 @@
       actualizarVistaSala();
     }
 
+    async function eliminarJugadorDeSala(playerIdToRemove, roomId = codigoSala) {
+      if (!supabase || !roomId || gameState.state !== 'waiting' || !playerIdToRemove) return false;
+
+      const { data: rows, error: readError } = await supabase
+        .from(TABLE_NAME)
+        .select('*')
+        .eq('codigo', roomId);
+      const latest = rows && rows.length > 0 ? rows[0] : null;
+      if (readError || !latest || latest.state !== 'waiting') return false;
+
+      const players = { ...(latest.players || {}) };
+      if (!players[playerIdToRemove]) return true;
+      delete players[playerIdToRemove];
+      const nextHostId = latest.host_id === playerIdToRemove
+        ? Object.keys(players).find(id => id !== '__meta')
+        : latest.host_id;
+      if (nextHostId && players[nextHostId]) {
+        players[nextHostId] = { ...players[nextHostId], isHost: true };
+      }
+
+      const { error: updateError } = await supabase
+        .from(TABLE_NAME)
+        .update({ players, ...(nextHostId ? { host_id: nextHostId } : {}) })
+        .eq('codigo', roomId);
+      if (updateError) {
+        console.error('No se pudo retirar al jugador desconectado:', updateError);
+        return false;
+      }
+
+      if (roomId === codigoSala && gameState.players[playerIdToRemove]) {
+        delete gameState.players[playerIdToRemove];
+        if (nextHostId && gameState.players[nextHostId]) {
+          gameState.players[nextHostId].isHost = true;
+        }
+        actualizarVistaSala();
+      }
+
+      realtimeChannel?.send({
+        type: 'broadcast',
+        event: 'top_state',
+        payload: {
+          codigo: roomId,
+          state: latest.state,
+          host_id: nextHostId,
+          players
+        }
+      });
+      return true;
+    }
+
     async function escucharSalaSupabase(roomId) {
       if (!supabase) return;
       if (realtimeChannel) {
@@ -1244,6 +1391,15 @@
       desempaquetarDesdeSupabase(initialRow);
 
       realtimeChannel = supabase.channel(`sala_top_${roomId}`)
+        .on('presence', { event: 'leave' }, ({ leftPresences }) => {
+          if (gameState.state !== 'waiting') return;
+          leftPresences
+            .map(presence => presence.player_id)
+            .filter(Boolean)
+            .forEach(playerIdToRemove => {
+              eliminarJugadorDeSala(playerIdToRemove);
+            });
+        })
         .on(
           'postgres_changes',
           { event: '*', schema: 'public', table: TABLE_NAME, filter: `codigo=eq.${roomId}` },
@@ -1252,7 +1408,14 @@
         .on('broadcast', { event: 'top_state' }, (msg) => {
           if (msg.payload) desempaquetarDesdeSupabase(msg.payload);
         })
-        .subscribe();
+        .subscribe(async (status) => {
+          if (status === 'SUBSCRIBED' && esMultijugador && !esEspectador) {
+            await realtimeChannel.track({
+              player_id: playerId,
+              state: gameState.state
+            });
+          }
+        });
 
       // Respaldo suave sin .single() para evitar errores 406 en consola
       syncInterval = setInterval(async () => {
@@ -1436,12 +1599,17 @@
     window.salirDeSala = async () => {
       if (esMultijugador && codigoSala && supabase && gameState.players[playerId]) {
         try {
-          gameState.players[playerId].connected = false;
-          const updates = empaquetarParaSupabase();
-          await supabase.from(TABLE_NAME).update(updates).eq('codigo', codigoSala);
+          if (gameState.state === 'waiting') {
+            await eliminarJugadorDeSala(playerId);
+          } else {
+            gameState.players[playerId].connected = false;
+            const updates = empaquetarParaSupabase();
+            await supabase.from(TABLE_NAME).update(updates).eq('codigo', codigoSala);
+          }
         } catch(e) {}
       }
       if (realtimeChannel && supabase) {
+        await realtimeChannel.untrack().catch(() => {});
         supabase.removeChannel(realtimeChannel);
         realtimeChannel = null;
       }
@@ -1453,6 +1621,36 @@
       document.getElementById('roomView').classList.add('hidden');
       document.getElementById('lobbyView').classList.remove('hidden');
     };
+
+    window.addEventListener('beforeunload', () => {
+      if (
+        salidaEnCurso ||
+        !esMultijugador ||
+        esEspectador ||
+        !codigoSala ||
+        gameState.state !== 'waiting' ||
+        !gameState.players[playerId]
+      ) return;
+
+      salidaEnCurso = true;
+      realtimeChannel?.untrack().catch(() => {});
+      void eliminarJugadorDeSala(playerId, codigoSala);
+    });
+
+    window.addEventListener('pagehide', () => {
+      if (
+        salidaEnCurso ||
+        !esMultijugador ||
+        esEspectador ||
+        !codigoSala ||
+        gameState.state !== 'waiting' ||
+        !gameState.players[playerId]
+      ) return;
+
+      salidaEnCurso = true;
+      realtimeChannel?.untrack().catch(() => {});
+      void eliminarJugadorDeSala(playerId, codigoSala);
+    });
 
     /* ==========================================================================
        INICIALIZACIÓN AL CARGAR LA PÁGINA
@@ -1505,6 +1703,30 @@
     } else {
       initializePage();
     }
+  </script>
+  <script>
+    (() => {
+      const toggle = document.getElementById('site-mobile-menu-toggle');
+      const close = document.getElementById('site-mobile-menu-close');
+      const menu = document.getElementById('site-mobile-menu');
+      if (!toggle || !close || !menu) return;
+
+      const setMenuOpen = (isOpen) => {
+        menu.classList.toggle('is-open', isOpen);
+        menu.setAttribute('aria-hidden', String(!isOpen));
+        toggle.setAttribute('aria-expanded', String(isOpen));
+        document.body.classList.toggle('site-mobile-menu-open', isOpen);
+      };
+
+      toggle.addEventListener('click', () => setMenuOpen(!menu.classList.contains('is-open')));
+      close.addEventListener('click', () => setMenuOpen(false));
+      menu.querySelectorAll('[data-site-mobile-link]').forEach((link) => {
+        link.addEventListener('click', () => setMenuOpen(false));
+      });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') setMenuOpen(false);
+      });
+    })();
   </script>
 </body>
 </html>

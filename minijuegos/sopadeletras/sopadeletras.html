@@ -91,19 +91,6 @@
       color: var(--text);
     }
 
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      background:
-        radial-gradient(circle at 18% 20%, rgba(244, 114, 182, 0.22), transparent 50%),
-        radial-gradient(circle at 82% 25%, rgba(251, 113, 133, 0.18), transparent 52%),
-        radial-gradient(circle at 50% 85%, rgba(219, 39, 119, 0.25), transparent 60%),
-        linear-gradient(180deg, rgba(33, 11, 23, 0.90) 0%, rgba(20, 5, 16, 0.96) 100%);
-      pointer-events: none;
-      z-index: 0;
-    }
-
     body > * {
       position: relative;
       z-index: 1;
@@ -464,23 +451,15 @@
       }
 
       header.game-header > .game-header-inner {
-        display: grid;
-        grid-template-columns: auto minmax(0, 1fr) auto;
+        display: flex;
         align-items: center;
         gap: 0.5rem;
         width: 100%;
       }
 
-      .game-brand-copy {
-        display: none;
-      }
-
-      .game-brand-logo {
-        width: 2.5rem;
-        height: 2.5rem;
-      }
-
       .game-status {
+        order: 1;
+        flex: 1 1 100%;
         min-width: 0;
         width: 100%;
         justify-content: center;
@@ -493,8 +472,11 @@
       }
 
       .game-actions {
+        order: 2;
+        flex: 1 1 100%;
         gap: 0.375rem;
         justify-content: flex-end;
+        flex-wrap: wrap;
       }
 
       .game-layout {
@@ -546,6 +528,100 @@
     }
     ::-webkit-scrollbar-thumb:hover {
       background: #f472b6;
+    }
+
+    .site-mobile-menu-toggle,
+    .site-mobile-menu {
+      display: none;
+    }
+
+    @media (max-width: 640px) {
+      .site-mobile-menu-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border: 1px solid rgba(244, 114, 182, 0.45);
+        border-radius: 14px;
+        background: rgba(61, 20, 45, 0.86);
+        color: #fff5fa;
+        font-size: 1.3rem;
+        cursor: pointer;
+      }
+
+      .site-mobile-menu {
+        position: fixed;
+        inset: 0;
+        z-index: 80;
+        display: flex;
+        flex-direction: column;
+        gap: 0.35rem;
+        padding: calc(1rem + env(safe-area-inset-top, 0px)) max(1rem, env(safe-area-inset-right, 0px)) calc(1rem + env(safe-area-inset-bottom, 0px)) max(1rem, env(safe-area-inset-left, 0px));
+        background: rgba(20, 5, 16, 0.97);
+        backdrop-filter: blur(18px);
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-12px);
+        transition: opacity 0.22s ease, transform 0.22s ease;
+      }
+
+      .site-mobile-menu.is-open {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+      }
+
+      .site-mobile-menu-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+        margin-bottom: 0.35rem;
+        border-bottom: 1px solid rgba(244, 114, 182, 0.2);
+      }
+
+      .site-mobile-menu-header strong {
+        color: #fbcfe8;
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: 1.2rem;
+      }
+
+      .site-mobile-menu-close {
+        width: 44px;
+        height: 44px;
+        border: 1px solid rgba(244, 114, 182, 0.38);
+        border-radius: 14px;
+        background: rgba(61, 20, 45, 0.86);
+        color: #fff5fa;
+        font-size: 1.2rem;
+      }
+
+      .site-mobile-menu a {
+        min-height: 48px;
+        display: flex;
+        align-items: center;
+        padding: 0.75rem 0.9rem;
+        border: 1px solid rgba(244, 114, 182, 0.14);
+        border-radius: 14px;
+        background: rgba(61, 20, 45, 0.45);
+        color: #fbcfe8;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-decoration: none;
+      }
+
+      .site-mobile-menu a:hover,
+      .site-mobile-menu a:focus-visible {
+        color: #fff;
+        border-color: rgba(244, 114, 182, 0.48);
+        background: rgba(244, 114, 182, 0.16);
+      }
+
+      body.site-mobile-menu-open {
+        overflow: hidden;
+      }
     }
   </style>
 </head>
@@ -712,25 +788,6 @@
   <header class="game-header border-b border-cyber-800 bg-cyber-900/95 backdrop-blur sticky top-0 z-40 px-3 sm:px-6 py-3">
     <div class="game-header-inner max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-3">
       
-      <!-- Brand Merce Gallardo -->
-      <div class="game-brand flex items-center gap-3">
-        <div class="game-brand-logo w-10 h-10 rounded-xl bg-gradient-to-tr from-rose-500 via-pink-500 to-fuchsia-600 p-0.5 shadow-lg shadow-pink-900/40">
-          <div class="w-full h-full bg-cyber-950 rounded-[10px] flex items-center justify-center text-lg">
-            🌸
-          </div>
-        </div>
-        <div class="game-brand-copy">
-          <div class="flex items-center gap-2">
-            <h1 class="text-lg sm:text-xl font-extrabold tracking-[0.05em] bg-gradient-to-r from-white via-pink-100 to-pink-300 bg-clip-text text-transparent font-display">
-              MERCE GALLARDO
-            </h1>
-            <span class="text-[10px] uppercase tracking-[0.12em] font-bold px-1.5 py-0.5 rounded bg-pink-500/20 text-pink-300 border border-pink-400/30">
-              SOPA DE LETRAS
-            </span>
-          </div>
-        </div>
-      </div>
-
       <!-- Real-time Status Badges -->
       <div class="game-status flex items-center gap-2 sm:gap-4 bg-cyber-950/80 px-3 py-1.5 rounded-xl border border-cyber-800 text-xs sm:text-sm">
         <!-- Timer -->
@@ -764,9 +821,23 @@
           <svg id="soundIconOn" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072M18.364 5.636a9 9 0 010 12.728M11 5L6 9H2v6h4l5 4V5z"/></svg>
           <svg id="soundIconOff" class="w-4 h-4 hidden text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"/></svg>
         </button>
+        <button id="site-mobile-menu-toggle" class="site-mobile-menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-mobile-menu">☰</button>
       </div>
     </div>
   </header>
+
+  <div id="site-mobile-menu" class="site-mobile-menu" aria-hidden="true">
+    <div class="site-mobile-menu-header">
+      <strong>Menú de Merce</strong>
+      <button id="site-mobile-menu-close" class="site-mobile-menu-close" type="button" aria-label="Cerrar menú">✕</button>
+    </div>
+    <a href="../../index.html#home" data-site-mobile-link>01 · HOME</a>
+    <a href="../../index.html#catalogo" data-site-mobile-link>02 · CATÁLOGO</a>
+    <a href="https://kick.com/mercegallardo" target="_blank" rel="noopener" data-site-mobile-link>03 · KICK EN VIVO ↗</a>
+    <a href="https://www.patreon.com/MerceGallardo" target="_blank" rel="noopener" data-site-mobile-link>04 · PATREON ↗</a>
+    <a href="https://discord.com/invite/rzMVj8uaR9" target="_blank" rel="noopener" data-site-mobile-link>05 · DISCORD ↗</a>
+    <a href="../../index.html#minijuegos" data-site-mobile-link>06 · MINIJUEGOS</a>
+  </div>
 
   <!-- Main Playing Area -->
   <main class="game-layout flex-1 max-w-6xl w-full mx-auto p-3 sm:p-6 grid gap-6 items-start">
@@ -2690,6 +2761,30 @@
       const input = document.getElementById('inputRoomCode');
       if (room && input) input.value = room;
     });
+  </script>
+  <script>
+    (() => {
+      const toggle = document.getElementById('site-mobile-menu-toggle');
+      const close = document.getElementById('site-mobile-menu-close');
+      const menu = document.getElementById('site-mobile-menu');
+      if (!toggle || !close || !menu) return;
+
+      const setMenuOpen = (isOpen) => {
+        menu.classList.toggle('is-open', isOpen);
+        menu.setAttribute('aria-hidden', String(!isOpen));
+        toggle.setAttribute('aria-expanded', String(isOpen));
+        document.body.classList.toggle('site-mobile-menu-open', isOpen);
+      };
+
+      toggle.addEventListener('click', () => setMenuOpen(!menu.classList.contains('is-open')));
+      close.addEventListener('click', () => setMenuOpen(false));
+      menu.querySelectorAll('[data-site-mobile-link]').forEach((link) => {
+        link.addEventListener('click', () => setMenuOpen(false));
+      });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') setMenuOpen(false);
+      });
+    })();
   </script>
 </body>
 </html>
