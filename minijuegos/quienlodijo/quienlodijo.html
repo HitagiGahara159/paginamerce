@@ -788,7 +788,7 @@
 
     <div class="topbar-actions">
       <button id="muteBtn" class="btn-icon" title="Sonido">🔊</button>
-      <a href="../../index.html" class="btn-nav desktop-only">← MINIJUEGOS</a>
+      <a href="../../index.html#minijuegos" class="btn-nav desktop-only">← MINIJUEGOS</a>
       <button id="hamburgerBtn" class="hamburger-btn" aria-label="Abrir menú">☰</button>
     </div>
   </header>
@@ -796,6 +796,7 @@
   <!-- MENÚ DESPLEGABLE PARA CELULAR (3 líneas / X) -->
   <nav id="mobileDropdown" class="mobile-dropdown">
     <a href="../../index.html">HOME <span>→</span></a>
+    <a href="../../index.html#minijuegos">OTROS MINIJUEGOS <span>→</span></a>
     <a href="../../index.html#catalogo">CATÁLOGO (89) <span>→</span></a>
     <a href="../ordenatutop/ordenatutop.html">ORDENA TU TOP <span>→</span></a>
     <a href="../../sopadeletras.html">SOPA DE LETRAS <span>→</span></a>
@@ -1060,6 +1061,7 @@
     let roomCode = null;
     let roomChannel = null;
     let roomPlayers = {};
+    let charactersByName = new Map();
 
     // Las frases son la fuente de contenido y personajes.json aporta las imágenes.
     async function loadExternalPersonajesJson() {
@@ -1077,6 +1079,7 @@
           charactersResponse.json()
         ]);
         const charactersById = new Map(characters.map((character) => [character.id, character]));
+        charactersByName = new Map(characters.map((character) => [character.name, character]));
         quotesPool = phrases.map((phrase) => {
           const character = charactersById.get(phrase.id);
           if (!character) throw new Error(`Falta la imagen del personaje ${phrase.id}.`);
@@ -1323,12 +1326,32 @@
       const container = document.getElementById("multipleChoiceContainer");
       container.innerHTML = "";
 
-      const distractors = quotesPool
-        .filter(q => q.name !== correctChar.name)
-        .sort(() => Math.random() - 0.5)
-        .slice(0, 3);
+      const optionByName = new Map([[correctChar.name, correctChar]]);
+      const similarOptions = (correctChar.similares || [])
+        .map((name) => charactersByName.get(name))
+        .filter((character) => character && character.name !== correctChar.name)
+        .sort(() => Math.random() - 0.5);
 
-      const options = [correctChar, ...distractors].sort(() => Math.random() - 0.5);
+      similarOptions.forEach((character) => {
+        if (optionByName.size < 4) {
+          optionByName.set(character.name, character);
+        }
+      });
+
+      const activePool = getFilteredQuotes();
+      const fallbackOptions = [
+        ...activePool.filter((character) =>
+          character.anime === correctChar.anime && !optionByName.has(character.name)
+        ),
+        ...activePool.filter((character) => !optionByName.has(character.name))
+      ];
+      fallbackOptions.sort(() => Math.random() - 0.5).forEach((character) => {
+        if (optionByName.size < 4) {
+          optionByName.set(character.name, character);
+        }
+      });
+
+      const options = [...optionByName.values()].sort(() => Math.random() - 0.5);
 
       options.forEach(opt => {
         const btn = document.createElement("button");

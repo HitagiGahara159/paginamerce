@@ -3,329 +3,2951 @@
     "id": "Fate-500",
     "name": "Sakura Matou",
     "anime": "Fate",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b500-NQrLbnBr1sDv.png",
     "quote": "No necesito que me salves; solo quiero que no me abandones.",
-    "hint": "Una joven amable que carga con un destino oscuro y una gran fortaleza interior."
+    "hint": "Una joven amable que carga con un destino oscuro y una gran fortaleza interior.",
+    "similares": [
+      "Gilgamesh",
+      "Satoru Gojou",
+      "Levi",
+      "Saitama",
+      "Makima",
+      "Jin-U Seong"
+    ]
+  },
+  {
+    "id": "Fate-498",
+    "name": "Rin Toosaka",
+    "anime": "Fate",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b498-lwawtSpLyATL.png",
+    "quote": "Si voy a avanzar, ser? dejando claro qui?n tiene el control.",
+    "hint": "Presencia dominante y confianza suficiente para desafiar a cualquiera.",
+    "similares": [
+      "Gilgamesh",
+      "Satoru Gojou",
+      "Levi",
+      "Saitama",
+      "Makima",
+      "Jin-U Seong"
+    ]
+  },
+  {
+    "id": "Fate-497",
+    "name": "Artoria Pendragon",
+    "anime": "Fate",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b497-Yg5pNmC8kxzs.png",
+    "quote": "Si voy a avanzar, ser? dejando claro qui?n tiene el control.",
+    "hint": "Presencia dominante y confianza suficiente para desafiar a cualquiera.",
+    "similares": [
+      "Gilgamesh",
+      "Satoru Gojou",
+      "Levi",
+      "Saitama",
+      "Makima",
+      "Jin-U Seong"
+    ]
+  },
+  {
+    "id": "Fate-2514",
+    "name": "Gilgamesh",
+    "anime": "Fate",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b2514-hnE6LEdqm7Su.png",
+    "quote": "Si voy a avanzar, ser? dejando claro qui?n tiene el control.",
+    "hint": "Presencia dominante y confianza suficiente para desafiar a cualquiera.",
+    "similares": [
+      "Satoru Gojou",
+      "Levi",
+      "Saitama",
+      "Makima",
+      "Jin-U Seong"
+    ]
   },
   {
     "id": "La nobleza de las Flores-268676",
     "name": "Kaoruko Waguri",
     "anime": "La nobleza de las Flores",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b268676-aQmqvqj0DNoJ.png",
     "quote": "No quiero juzgar a nadie por su apariencia; quiero conocer su corazón.",
-    "hint": "Una estudiante elegante y firme que defiende la bondad por encima de las diferencias."
+    "hint": "Una estudiante elegante y firme que defiende la bondad por encima de las diferencias.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "La nobleza de las Flores-268677",
+    "name": "Rintarou Tsumugi",
+    "anime": "La nobleza de las Flores",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b268677-APMPGH67QqPr.jpg",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "La nobleza de las Flores-270095",
+    "name": "Subaru Hoshina",
+    "anime": "La nobleza de las Flores",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b270095-Z5KpvacVXp1S.jpg",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "La nobleza de las Flores-272241",
+    "name": "Saku Natsusawa",
+    "anime": "La nobleza de las Flores",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b272241-6NHTwQDIUXQk.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
   },
   {
     "id": "Gachiakuta-266438",
     "name": "Enjin",
     "anime": "Gachiakuta",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b266438-3Veykti1lXgg.png",
     "quote": "Lo que otros tiran puede tener un valor que todavía no han sabido ver.",
-    "hint": "Un líder carismático que encuentra potencial en las personas y en los objetos olvidados."
+    "hint": "Un líder carismático que encuentra potencial en las personas y en los objetos olvidados.",
+    "similares": [
+      "Megumin",
+      "Kazuma Satou",
+      "Takopi",
+      "Momo Ayase",
+      "Saitama",
+      "Marin Kitagawa"
+    ]
+  },
+  {
+    "id": "Gachiakuta-266433",
+    "name": "Rudo",
+    "anime": "Gachiakuta",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b266433-8JWks5k2OPJn.png",
+    "quote": "Si todo va a salir mal, al menos hag?moslo de una forma inolvidable.",
+    "hint": "Energ?a impredecible, humor extra?o y talento para convertir todo en un desastre.",
+    "similares": [
+      "Megumin",
+      "Kazuma Satou",
+      "Takopi",
+      "Momo Ayase",
+      "Saitama",
+      "Marin Kitagawa"
+    ]
+  },
+  {
+    "id": "Gachiakuta-275749",
+    "name": "Riyou Reaper",
+    "anime": "Gachiakuta",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b275749-fglzDjaLZh1H.png",
+    "quote": "Si todo va a salir mal, al menos hag?moslo de una forma inolvidable.",
+    "hint": "Energ?a impredecible, humor extra?o y talento para convertir todo en un desastre.",
+    "similares": [
+      "Megumin",
+      "Kazuma Satou",
+      "Takopi",
+      "Momo Ayase",
+      "Saitama",
+      "Marin Kitagawa"
+    ]
+  },
+  {
+    "id": "Gachiakuta-268742",
+    "name": "Zanka Nijiku",
+    "anime": "Gachiakuta",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b268742-PSWLnWDJH7HJ.png",
+    "quote": "Si todo va a salir mal, al menos hag?moslo de una forma inolvidable.",
+    "hint": "Energ?a impredecible, humor extra?o y talento para convertir todo en un desastre.",
+    "similares": [
+      "Megumin",
+      "Kazuma Satou",
+      "Takopi",
+      "Momo Ayase",
+      "Saitama",
+      "Marin Kitagawa"
+    ]
   },
   {
     "id": "MHA Vigilantes-89028",
     "name": "Izuku Midoriya",
     "anime": "MHA Vigilantes",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89028-8w1I9o1ISHMg.png",
     "quote": "Mi cuerpo se movió solo antes de que pudiera pensar.",
-    "hint": "Un héroe estudioso que analiza cada poder y siempre corre a proteger a los demás."
+    "hint": "Un héroe estudioso que analiza cada poder y siempre corre a proteger a los demás.",
+    "similares": [
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "MHA Vigilantes-89225",
+    "name": "Shouta Aizawa",
+    "anime": "MHA Vigilantes",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89225-XBgvUhI9naVI.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "MHA Vigilantes-89224",
+    "name": "Toshinori Yagi",
+    "anime": "MHA Vigilantes",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89224-K6KEuQAuYKzq.jpg",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "MHA Vigilantes-89222",
+    "name": "Tenya Iida",
+    "anime": "MHA Vigilantes",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89222-TL8MQM3wJgEB.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
   },
   {
     "id": "My Hero Academia-89220",
     "name": "Shouto Todoroki",
     "anime": "My Hero Academia",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89220-KNBwaVFAR8FD.png",
     "quote": "Mi poder es mío. No tengo que vivir bajo la sombra de nadie.",
-    "hint": "Un estudiante de dos elementos que intenta reconciliarse con su familia y su pasado."
+    "hint": "Un estudiante de dos elementos que intenta reconciliarse con su familia y su pasado.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "My Hero Academia-88892",
+    "name": "Katsuki Bakugou",
+    "anime": "My Hero Academia",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b88892-bdOha3lNcaN6.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "My Hero Academia-89028",
+    "name": "Izuku Midoriya",
+    "anime": "My Hero Academia",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89028-8w1I9o1ISHMg.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "My Hero Academia-89225",
+    "name": "Shouta Aizawa",
+    "anime": "My Hero Academia",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89225-XBgvUhI9naVI.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
   },
   {
     "id": "Konosuba-89361",
     "name": "Megumin",
     "anime": "Konosuba",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89361-tq8PQQ4MmF0M.png",
     "quote": "¡Más negro que la oscuridad, más oscuro que lo negro... Explosion!",
-    "hint": "Una maga carmesí que solo piensa en lanzar su hechizo definitivo una vez al día."
+    "hint": "Una maga carmesí que solo piensa en lanzar su hechizo definitivo una vez al día.",
+    "similares": [
+      "Kazuma Satou",
+      "Takopi",
+      "Momo Ayase",
+      "Saitama",
+      "Marin Kitagawa"
+    ]
+  },
+  {
+    "id": "Konosuba-89364",
+    "name": "Kazuma Satou",
+    "anime": "Konosuba",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89364-7Th8Tv1XKJtt.png",
+    "quote": "Si todo va a salir mal, al menos hag?moslo de una forma inolvidable.",
+    "hint": "Energ?a impredecible, humor extra?o y talento para convertir todo en un desastre.",
+    "similares": [
+      "Megumin",
+      "Takopi",
+      "Momo Ayase",
+      "Saitama",
+      "Marin Kitagawa"
+    ]
+  },
+  {
+    "id": "Konosuba-89362",
+    "name": "Aqua",
+    "anime": "Konosuba",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89362-ibkc0eoECaW1.png",
+    "quote": "Si todo va a salir mal, al menos hag?moslo de una forma inolvidable.",
+    "hint": "Energ?a impredecible, humor extra?o y talento para convertir todo en un desastre.",
+    "similares": [
+      "Megumin",
+      "Kazuma Satou",
+      "Takopi",
+      "Momo Ayase",
+      "Saitama",
+      "Marin Kitagawa"
+    ]
+  },
+  {
+    "id": "Konosuba-89363",
+    "name": "Darkness",
+    "anime": "Konosuba",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89363-mm21Ll4NegUD.png",
+    "quote": "Si todo va a salir mal, al menos hag?moslo de una forma inolvidable.",
+    "hint": "Energ?a impredecible, humor extra?o y talento para convertir todo en un desastre.",
+    "similares": [
+      "Megumin",
+      "Kazuma Satou",
+      "Takopi",
+      "Momo Ayase",
+      "Saitama",
+      "Marin Kitagawa"
+    ]
   },
   {
     "id": "86: Eighty-Six-141061",
     "name": "Vladilena Milizé",
     "anime": "86: Eighty-Six",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b141061-jqIhB9jmClQ3.png",
     "quote": "No permitiré que los traten como números; todos tienen un nombre.",
-    "hint": "Una comandante idealista que lucha contra un sistema que deshumaniza a sus soldados."
+    "hint": "Una comandante idealista que lucha contra un sistema que deshumaniza a sus soldados.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "86: Eighty-Six-174873",
+    "name": "Kurena Kukumila",
+    "anime": "86: Eighty-Six",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b174873-FNf08aPYTVXY.jpg",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "86: Eighty-Six-141060",
+    "name": "Shinei Nouzen",
+    "anime": "86: Eighty-Six",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b141060-ZJFvHqBBSvhN.png",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "86: Eighty-Six-174875",
+    "name": "Anju Emma",
+    "anime": "86: Eighty-Six",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b174875-PvSTadcuATtH.png",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
   },
   {
     "id": "La Boticaria-126824",
     "name": "Maomao",
     "anime": "La Boticaria",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b126824-MqsCncTO1qpv.png",
     "quote": "¿Esto es veneno? Déjame probar solo un poquito.",
-    "hint": "Una joven curiosa que resuelve misterios del palacio y siente fascinación por las toxinas."
+    "hint": "Una joven curiosa que resuelve misterios del palacio y siente fascinación por las toxinas.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "La Boticaria-127278",
+    "name": "Jinshi",
+    "anime": "La Boticaria",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b127278-0qCQciTkPOMS.jpg",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "La Boticaria-244995",
+    "name": "Rouran",
+    "anime": "La Boticaria",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b244995-dv4lX99O8aCZ.jpg",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "La Boticaria-156767",
+    "name": "Gyokuyou",
+    "anime": "La Boticaria",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b156767-6ncEJKdsEQ3O.jpg",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
   },
   {
     "id": "Fullmetal Alchemist Brotherhood-11",
     "name": "Edward Elric",
     "anime": "Fullmetal Alchemist Brotherhood",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b11-TA5Nuk7EDUZG.jpg",
     "quote": "Para obtener algo, hay que sacrificar algo de igual valor.",
-    "hint": "Un alquimista de baja estatura que busca recuperar lo que perdió junto a su hermano."
+    "hint": "Un alquimista de baja estatura que busca recuperar lo que perdió junto a su hermano.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Fullmetal Alchemist Brotherhood-68",
+    "name": "Roy Mustang",
+    "anime": "Fullmetal Alchemist Brotherhood",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b68-moBLY2WO2am3.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Fullmetal Alchemist Brotherhood-12",
+    "name": "Alphonse Elric",
+    "anime": "Fullmetal Alchemist Brotherhood",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b12-tCKu8yK5kFL5.jpg",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Fullmetal Alchemist Brotherhood-63",
+    "name": "Winry Rockbell",
+    "anime": "Fullmetal Alchemist Brotherhood",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/63-xloedtYxiJ2E.jpg",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
   },
   {
     "id": "Clannad-4606",
     "name": "Tomoya Okazaki",
     "anime": "Clannad",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b4606-61r9h3WUrkA9.png",
     "quote": "La vida puede ser difícil, pero eso no significa que no tenga momentos hermosos.",
-    "hint": "Un estudiante desencantado que vuelve a encontrar esperanza gracias a sus vínculos."
+    "hint": "Un estudiante desencantado que vuelve a encontrar esperanza gracias a sus vínculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima"
+    ]
+  },
+  {
+    "id": "Clannad-4604",
+    "name": "Nagisa Furukawa",
+    "anime": "Clannad",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b4604-YFJiWeuGSIYf.png",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "Clannad-4603",
+    "name": "Tomoyo Sakagami",
+    "anime": "Clannad",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b4603-pq4b7UGmmOyH.png",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "Clannad-4601",
+    "name": "Fuuko Ibuki",
+    "anime": "Clannad",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b4601-ndvzx7vVREJU.jpg",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
   },
   {
     "id": "Hyouka-55131",
     "name": "Houtarou Oreki",
     "anime": "Hyouka",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b55131-ypodHQCyHbzD.png",
     "quote": "Si no tengo que hacerlo, no lo haré; si tengo que hacerlo, lo haré rápido.",
-    "hint": "Un detective perezoso que resuelve cualquier misterio con una lógica brillante."
+    "hint": "Un detective perezoso que resuelve cualquier misterio con una lógica brillante.",
+    "similares": [
+      "Kiyotaka Ayanokouji",
+      "Light Yagami",
+      "Johan Liebert",
+      "L Lawliet",
+      "Makima"
+    ]
+  },
+  {
+    "id": "Hyouka-55133",
+    "name": "Eru Chitanda",
+    "anime": "Hyouka",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b55133-S7lRrP0gKXpX.png",
+    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
+    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "similares": [
+      "Kiyotaka Ayanokouji",
+      "Light Yagami",
+      "Johan Liebert",
+      "L Lawliet",
+      "Makima",
+      "Houtarou Oreki"
+    ]
+  },
+  {
+    "id": "Hyouka-55137",
+    "name": "Mayaka Ibara",
+    "anime": "Hyouka",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b55137-PO5CLLnbTwyg.png",
+    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
+    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "similares": [
+      "Kiyotaka Ayanokouji",
+      "Light Yagami",
+      "Johan Liebert",
+      "L Lawliet",
+      "Makima",
+      "Houtarou Oreki"
+    ]
+  },
+  {
+    "id": "Hyouka-55135",
+    "name": "Satoshi Fukube",
+    "anime": "Hyouka",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b55135-rSgLOX86JRSO.png",
+    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
+    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "similares": [
+      "Kiyotaka Ayanokouji",
+      "Light Yagami",
+      "Johan Liebert",
+      "L Lawliet",
+      "Makima",
+      "Houtarou Oreki"
+    ]
   },
   {
     "id": "Record Of Ragnarok-140637",
     "name": "Adam",
     "anime": "Record Of Ragnarok",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b140637-jTJb40wOjsPs.png",
     "quote": "Estoy aquí para proteger a mis hijos.",
-    "hint": "El primer hombre de la humanidad, dispuesto a enfrentarse a cualquier dios por sus descendientes."
+    "hint": "El primer hombre de la humanidad, dispuesto a enfrentarse a cualquier dios por sus descendientes.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Record Of Ragnarok-159840",
+    "name": "Jack the Ripper",
+    "anime": "Record Of Ragnarok",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b159840-MvF5LfHGiZdB.jpg",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Record Of Ragnarok-140636",
+    "name": "Brunhilde",
+    "anime": "Record Of Ragnarok",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b140636-nuL1uHEuedtJ.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Record Of Ragnarok-140646",
+    "name": "Kojirou Sasaki",
+    "anime": "Record Of Ragnarok",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b140646-j8tTUNjhFYPQ.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
   },
   {
     "id": "MONSTER-719",
     "name": "Johan Liebert",
     "anime": "MONSTER",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b719-y984mDWyGf5n.jpg",
     "quote": "El verdadero monstruo no necesita un rostro para existir.",
-    "hint": "Un hombre enigmático y peligrosamente carismático que representa el vacío moral."
+    "hint": "Un hombre enigmático y peligrosamente carismático que representa el vacío moral.",
+    "similares": [
+      "Kiyotaka Ayanokouji",
+      "Light Yagami",
+      "L Lawliet",
+      "Makima",
+      "Houtarou Oreki"
+    ]
+  },
+  {
+    "id": "MONSTER-718",
+    "name": "Kenzou Tenma",
+    "anime": "MONSTER",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b718-b6ZZVp822lw0.png",
+    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
+    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "similares": [
+      "Kiyotaka Ayanokouji",
+      "Light Yagami",
+      "Johan Liebert",
+      "L Lawliet",
+      "Makima",
+      "Houtarou Oreki"
+    ]
+  },
+  {
+    "id": "MONSTER-3096",
+    "name": "Wolfgang Grimmer",
+    "anime": "MONSTER",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b3096-qCXXA8G0J8rk.png",
+    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
+    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "similares": [
+      "Kiyotaka Ayanokouji",
+      "Light Yagami",
+      "Johan Liebert",
+      "L Lawliet",
+      "Makima",
+      "Houtarou Oreki"
+    ]
+  },
+  {
+    "id": "MONSTER-721",
+    "name": "Heinrich Runge",
+    "anime": "MONSTER",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b721-VSOxZHBedxtD.png",
+    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
+    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "similares": [
+      "Kiyotaka Ayanokouji",
+      "Light Yagami",
+      "Johan Liebert",
+      "L Lawliet",
+      "Makima",
+      "Houtarou Oreki"
+    ]
   },
   {
     "id": "Akame Ga Kill-63351",
     "name": "Akame",
     "anime": "Akame Ga Kill",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b63351-0WmsDENpiscp.png",
     "quote": "Si no hacemos nada, nada cambiará.",
-    "hint": "Una asesina silenciosa de mirada fría que pelea por acabar con la corrupción."
+    "hint": "Una asesina silenciosa de mirada fría que pelea por acabar con la corrupción.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Akame Ga Kill-65239",
+    "name": "Esdeath",
+    "anime": "Akame Ga Kill",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b65239-2S3t2vSyUew9.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Akame Ga Kill-65229",
+    "name": "Mine",
+    "anime": "Akame Ga Kill",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b65229-hYOZtUlIpd5G.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Akame Ga Kill-65227",
+    "name": "Leone",
+    "anime": "Akame Ga Kill",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b65227-PWmfiEVJbCwQ.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
   },
   {
     "id": "Blue Box-218648",
     "name": "Hina Chouno",
     "anime": "Blue Box",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b218648-kXxXy8lPkeGV.png",
     "quote": "Aunque duela, mis sentimientos también son algo que debo cuidar.",
-    "hint": "Una gimnasta expresiva que enfrenta el amor no correspondido sin dejar de sonreír."
+    "hint": "Una gimnasta expresiva que enfrenta el amor no correspondido sin dejar de sonreír.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Blue Box-191241",
+    "name": "Chinatsu Kano",
+    "anime": "Blue Box",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b191241-FaDEXRL1CgJr.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Blue Box-191242",
+    "name": "Taiki Inomata",
+    "anime": "Blue Box",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b191242-uQJUPMyknaTb.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Blue Box-218647",
+    "name": "Kyou Kasahara",
+    "anime": "Blue Box",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b218647-A2ngPlh7Yucn.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
   },
   {
     "id": "Cyberpunk: Edgerunners-284157",
     "name": "Lucy",
     "anime": "Cyberpunk: Edgerunners",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b284157-cqYawN7XCNJx.jpg",
     "quote": "No quiero estar en ningún lugar de este mundo; quiero estar contigo en la luna.",
-    "hint": "Una netrunner reservada que sueña con escapar de Night City."
+    "hint": "Una netrunner reservada que sueña con escapar de Night City.",
+    "similares": [
+      "Kiyotaka Ayanokouji",
+      "Light Yagami",
+      "Johan Liebert",
+      "L Lawliet",
+      "Makima",
+      "Houtarou Oreki"
+    ]
+  },
+  {
+    "id": "Cyberpunk: Edgerunners-284158",
+    "name": "David Martinez",
+    "anime": "Cyberpunk: Edgerunners",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b284158-z1uGKC3IYVa1.png",
+    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
+    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "similares": [
+      "Kiyotaka Ayanokouji",
+      "Light Yagami",
+      "Johan Liebert",
+      "L Lawliet",
+      "Makima",
+      "Houtarou Oreki"
+    ]
+  },
+  {
+    "id": "Cyberpunk: Edgerunners-284163",
+    "name": "Rebecca",
+    "anime": "Cyberpunk: Edgerunners",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b284163-tt8smoAXl24x.jpg",
+    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
+    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "similares": [
+      "Kiyotaka Ayanokouji",
+      "Light Yagami",
+      "Johan Liebert",
+      "L Lawliet",
+      "Makima",
+      "Houtarou Oreki"
+    ]
+  },
+  {
+    "id": "Cyberpunk: Edgerunners-284159",
+    "name": "Maine",
+    "anime": "Cyberpunk: Edgerunners",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b284159-RvuKShSpDOS5.png",
+    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
+    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "similares": [
+      "Kiyotaka Ayanokouji",
+      "Light Yagami",
+      "Johan Liebert",
+      "L Lawliet",
+      "Makima",
+      "Houtarou Oreki"
+    ]
   },
   {
     "id": "More Than a Married Couple-273105",
     "name": "Shiori Sakurazaka",
     "anime": "More Than a Married Couple",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b273105-BUCVawntAuJF.png",
     "quote": "A veces, querer a alguien también significa atreverse a dar el primer paso.",
-    "hint": "Una chica tranquila y dulce que descubre el valor de expresar lo que siente."
+    "hint": "Una chica tranquila y dulce que descubre el valor de expresar lo que siente.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "More Than a Married Couple-191672",
+    "name": "Akari Watanabe",
+    "anime": "More Than a Married Couple",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b191672-MozVAnqyv9oZ.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "More Than a Married Couple-191673",
+    "name": "Jirou Yakuin",
+    "anime": "More Than a Married Couple",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b191673-eD8IFBOdAFv5.jpg",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "More Than a Married Couple-273109",
+    "name": "Sadaharu Kamo",
+    "anime": "More Than a Married Couple",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b273109-MLnliqfOwuAh.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
   },
   {
     "id": "Attack on Titan-45627",
     "name": "Levi",
     "anime": "Attack on Titan",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b45627-CR68RyZmddGG.png",
     "quote": "Elige la decisión de la que te arrepientas menos.",
-    "hint": "El soldado más fuerte de la humanidad, exigente y obsesionado con la limpieza."
+    "hint": "El soldado más fuerte de la humanidad, exigente y obsesionado con la limpieza.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Attack on Titan-40882",
+    "name": "Eren Yeager",
+    "anime": "Attack on Titan",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b40882-dsj7IP943WFF.jpg",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Attack on Titan-40881",
+    "name": "Mikasa Ackerman",
+    "anime": "Attack on Titan",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b40881-F3gr1PkreDvj.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Attack on Titan-46494",
+    "name": "Armin Arlert",
+    "anime": "Attack on Titan",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b46494-g7xYYuBtYPnO.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
   },
   {
     "id": "Kaiju No. 8-205579",
     "name": "Soushirou Hoshina",
     "anime": "Kaiju No. 8",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b205579-FRvVyrOIG8Yz.jpg",
     "quote": "No necesito ser el más fuerte; necesito ser útil cuando llegue el momento.",
-    "hint": "Un vicecapitán de estilo veloz que disfruta enfrentarse a monstruos enormes."
+    "hint": "Un vicecapitán de estilo veloz que disfruta enfrentarse a monstruos enormes.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "Kaiju No. 8-180693",
+    "name": "Mina Ashiro",
+    "anime": "Kaiju No. 8",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b180693-i9RZuHTDwXov.png",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "Kaiju No. 8-180692",
+    "name": "Kafka Hibino",
+    "anime": "Kaiju No. 8",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b180692-rPGXuxhcKw5N.png",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "Kaiju No. 8-180694",
+    "name": "Reno Ichikawa",
+    "anime": "Kaiju No. 8",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b180694-Q0Ocr4aqBu4k.png",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
   },
   {
     "id": "Erased-89275",
     "name": "Satoru Fujinuma",
     "anime": "Erased",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89275-xCGzh6jAGe2v.png",
     "quote": "Si puedo cambiar el pasado, también puedo salvar a alguien.",
-    "hint": "Un joven que regresa en el tiempo para impedir una tragedia de su infancia."
+    "hint": "Un joven que regresa en el tiempo para impedir una tragedia de su infancia.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Erased-89276",
+    "name": "Kayo Hinazuki",
+    "anime": "Erased",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/89276-LjlYvXfOnjHB.jpg",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Erased-89357",
+    "name": "Kenya Kobayashi",
+    "anime": "Erased",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89357-E9erSMef5EJC.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Erased-89326",
+    "name": "Sachiko Fujinuma",
+    "anime": "Erased",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/89326-zNVEqTuDt7kL.jpg",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
   },
   {
     "id": "Las 100 Novias-173760",
     "name": "Karane Inda",
     "anime": "Las 100 Novias",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b173760-Gj3fK5VpbpT3.png",
     "quote": "¡No es que me gustes ni nada, tonto!",
-    "hint": "Una chica de carácter explosivo cuyo orgullo intenta ocultar un gran cariño."
+    "hint": "Una chica de carácter explosivo cuyo orgullo intenta ocultar un gran cariño.",
+    "similares": [
+      "Kiyotaka Ayanokouji",
+      "Light Yagami",
+      "Johan Liebert",
+      "L Lawliet",
+      "Makima",
+      "Houtarou Oreki"
+    ]
+  },
+  {
+    "id": "Las 100 Novias-173761",
+    "name": "Shizuka Yoshimoto",
+    "anime": "Las 100 Novias",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b173761-1FcQvX74KVW7.png",
+    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
+    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "similares": [
+      "Kiyotaka Ayanokouji",
+      "Light Yagami",
+      "Johan Liebert",
+      "L Lawliet",
+      "Makima",
+      "Houtarou Oreki"
+    ]
+  },
+  {
+    "id": "Las 100 Novias-173762",
+    "name": "Nano Eiai",
+    "anime": "Las 100 Novias",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b173762-bmdMGoIMVz2E.png",
+    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
+    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "similares": [
+      "Kiyotaka Ayanokouji",
+      "Light Yagami",
+      "Johan Liebert",
+      "L Lawliet",
+      "Makima",
+      "Houtarou Oreki"
+    ]
+  },
+  {
+    "id": "Las 100 Novias-173759",
+    "name": "Hakari Hanazono",
+    "anime": "Las 100 Novias",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b173759-Bu2KIzM1JELG.png",
+    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
+    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "similares": [
+      "Kiyotaka Ayanokouji",
+      "Light Yagami",
+      "Johan Liebert",
+      "L Lawliet",
+      "Makima",
+      "Houtarou Oreki"
+    ]
   },
   {
     "id": "Re: ZERO-88572",
     "name": "Emilia",
     "anime": "Re: ZERO",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b88572-IzTwXEHSobRs.jpg",
     "quote": "Aunque el mundo me rechace, seguiré creyendo en lo que considero correcto.",
-    "hint": "Una medio elfa de cabello plateado que busca convertirse en gobernante."
+    "hint": "Una medio elfa de cabello plateado que busca convertirse en gobernante.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "Re: ZERO-88575",
+    "name": "Rem",
+    "anime": "Re: ZERO",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b88575-Ayu8UPDA8NS6.png",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "Re: ZERO-88573",
+    "name": "Subaru Natsuki",
+    "anime": "Re: ZERO",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b88573-F8yMTK9GhnTA.png",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "Re: ZERO-90181",
+    "name": "Beatrice",
+    "anime": "Re: ZERO",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b90181-wRPm0OEaucmw.png",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
   },
   {
     "id": "Takopis Original Sin-266372",
     "name": "Takopi",
     "anime": "Takopis Original Sin",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b266372-zUgh0xxukbW8.png",
     "quote": "¡Quiero que todos vuelvan a sonreír!",
-    "hint": "Una criatura extraterrestre inocente que intenta arreglar los problemas humanos."
+    "hint": "Una criatura extraterrestre inocente que intenta arreglar los problemas humanos.",
+    "similares": [
+      "Megumin",
+      "Kazuma Satou",
+      "Momo Ayase",
+      "Saitama",
+      "Marin Kitagawa"
+    ]
+  },
+  {
+    "id": "Takopis Original Sin-266369",
+    "name": "Shizuka Kuze",
+    "anime": "Takopis Original Sin",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b266369-vhLyGsVBIlAT.jpg",
+    "quote": "Si todo va a salir mal, al menos hag?moslo de una forma inolvidable.",
+    "hint": "Energ?a impredecible, humor extra?o y talento para convertir todo en un desastre.",
+    "similares": [
+      "Megumin",
+      "Kazuma Satou",
+      "Takopi",
+      "Momo Ayase",
+      "Saitama",
+      "Marin Kitagawa"
+    ]
+  },
+  {
+    "id": "Takopis Original Sin-266370",
+    "name": "Marina Kirarazaka",
+    "anime": "Takopis Original Sin",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b266370-OClTuCBxS13v.jpg",
+    "quote": "Si todo va a salir mal, al menos hag?moslo de una forma inolvidable.",
+    "hint": "Energ?a impredecible, humor extra?o y talento para convertir todo en un desastre.",
+    "similares": [
+      "Megumin",
+      "Kazuma Satou",
+      "Takopi",
+      "Momo Ayase",
+      "Saitama",
+      "Marin Kitagawa"
+    ]
+  },
+  {
+    "id": "Takopis Original Sin-266371",
+    "name": "Naoki Azuma",
+    "anime": "Takopis Original Sin",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b266371-8ytjDeW2vHba.jpg",
+    "quote": "Si todo va a salir mal, al menos hag?moslo de una forma inolvidable.",
+    "hint": "Energ?a impredecible, humor extra?o y talento para convertir todo en un desastre.",
+    "similares": [
+      "Megumin",
+      "Kazuma Satou",
+      "Takopi",
+      "Momo Ayase",
+      "Saitama",
+      "Marin Kitagawa"
+    ]
   },
   {
     "id": "One Punch Man-73935",
     "name": "Saitama",
     "anime": "One Punch Man",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b73935-ON5d0mAcrItd.jpg",
     "quote": "¡Cien flexiones, cien abdominales, cien sentadillas y diez kilómetros cada día!",
-    "hint": "Un héroe calvo que derrota a cualquiera de un golpe y busca una buena pelea."
+    "hint": "Un héroe calvo que derrota a cualquiera de un golpe y busca una buena pelea.",
+    "similares": [
+      "Gilgamesh",
+      "Satoru Gojou",
+      "Levi",
+      "Makima",
+      "Jin-U Seong"
+    ]
+  },
+  {
+    "id": "One Punch Man-81929",
+    "name": "Tatsumaki",
+    "anime": "One Punch Man",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b81929-WPVp2LQoWgkc.png",
+    "quote": "Si voy a avanzar, ser? dejando claro qui?n tiene el control.",
+    "hint": "Presencia dominante y confianza suficiente para desafiar a cualquiera.",
+    "similares": [
+      "Gilgamesh",
+      "Satoru Gojou",
+      "Levi",
+      "Saitama",
+      "Makima",
+      "Jin-U Seong"
+    ]
+  },
+  {
+    "id": "One Punch Man-73979",
+    "name": "Genos",
+    "anime": "One Punch Man",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b73979-tVi9maPID881.jpg",
+    "quote": "Si voy a avanzar, ser? dejando claro qui?n tiene el control.",
+    "hint": "Presencia dominante y confianza suficiente para desafiar a cualquiera.",
+    "similares": [
+      "Gilgamesh",
+      "Satoru Gojou",
+      "Levi",
+      "Saitama",
+      "Makima",
+      "Jin-U Seong"
+    ]
+  },
+  {
+    "id": "One Punch Man-89277",
+    "name": "Garou",
+    "anime": "One Punch Man",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89277-xBGb4B5YISXg.png",
+    "quote": "Si voy a avanzar, ser? dejando claro qui?n tiene el control.",
+    "hint": "Presencia dominante y confianza suficiente para desafiar a cualquiera.",
+    "similares": [
+      "Gilgamesh",
+      "Satoru Gojou",
+      "Levi",
+      "Saitama",
+      "Makima",
+      "Jin-U Seong"
+    ]
   },
   {
     "id": "Darling in the Franxx-124382",
     "name": "Ichigo",
     "anime": "Darling in the Franxx",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b124382-bSBkjtYjJQtr.png",
     "quote": "Ser fuerte también significa proteger a quienes no pueden hacerlo solos.",
-    "hint": "La responsable líder del escuadrón que intenta mantener unidos a sus compañeros."
+    "hint": "La responsable líder del escuadrón que intenta mantener unidos a sus compañeros.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "Darling in the Franxx-124381",
+    "name": "Zero Two",
+    "anime": "Darling in the Franxx",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b124381-2gAVq76HPfL2.png",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "Darling in the Franxx-124380",
+    "name": "Hiro",
+    "anime": "Darling in the Franxx",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b124380-ct1wJHIl9BY1.jpg",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "Darling in the Franxx-124386",
+    "name": "Kokoro",
+    "anime": "Darling in the Franxx",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b124386-vc248g43ap3m.jpg",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
   },
   {
     "id": "Death Note-71",
     "name": "L Lawliet",
     "anime": "Death Note",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b71-1W4panC53vfs.png",
     "quote": "La justicia siempre prevalecerá, porque quien gane se convierte en la justicia.",
-    "hint": "Un detective excéntrico que se sienta en cuclillas y adora los dulces."
+    "hint": "Un detective excéntrico que se sienta en cuclillas y adora los dulces.",
+    "similares": [
+      "Kiyotaka Ayanokouji",
+      "Light Yagami",
+      "Johan Liebert",
+      "Makima",
+      "Houtarou Oreki"
+    ]
+  },
+  {
+    "id": "Death Note-80",
+    "name": "Light Yagami",
+    "anime": "Death Note",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b80-26EhwSsSqQ50.png",
+    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
+    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "similares": [
+      "Kiyotaka Ayanokouji",
+      "Johan Liebert",
+      "L Lawliet",
+      "Makima",
+      "Houtarou Oreki"
+    ]
+  },
+  {
+    "id": "Death Note-75",
+    "name": "Ryuk",
+    "anime": "Death Note",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b75-IkEpzO21LgFy.jpg",
+    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
+    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "similares": [
+      "Kiyotaka Ayanokouji",
+      "Light Yagami",
+      "Johan Liebert",
+      "L Lawliet",
+      "Makima",
+      "Houtarou Oreki"
+    ]
+  },
+  {
+    "id": "Death Note-835",
+    "name": "Misa Amane",
+    "anime": "Death Note",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b835-CiZa8y2z2gCz.png",
+    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
+    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "similares": [
+      "Kiyotaka Ayanokouji",
+      "Light Yagami",
+      "Johan Liebert",
+      "L Lawliet",
+      "Makima",
+      "Houtarou Oreki"
+    ]
   },
   {
     "id": "Wind Breaker-230204",
     "name": "Haruka Sakura",
     "anime": "Wind Breaker",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b230204-cNRNjAj1FP4j.png",
     "quote": "No necesito caerle bien a nadie; solo quiero demostrar lo que valgo.",
-    "hint": "Un peleador solitario que aprende que proteger a su barrio también es pertenecer."
+    "hint": "Un peleador solitario que aprende que proteger a su barrio también es pertenecer.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Wind Breaker-255629",
+    "name": "Hayato Suou",
+    "anime": "Wind Breaker",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b255629-dnDEPOiRH5Wo.jpg",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Wind Breaker-255630",
+    "name": "Hajime Umemiya",
+    "anime": "Wind Breaker",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b255630-lz7qcvEvmj3y.jpg",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Wind Breaker-332991",
+    "name": "Jou Togame",
+    "anime": "Wind Breaker",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b332991-Bqp9MwdolhBu.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
   },
   {
     "id": "Las Quintillizas-126375",
     "name": "Itsuki Nakano",
     "anime": "Las Quintillizas",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b126375-dEe9IyQ9By09.png",
     "quote": "Aunque discutamos, seguimos siendo hermanas.",
-    "hint": "La quinta hermana, estudiosa y responsable, que siempre está pensando en comer."
+    "hint": "La quinta hermana, estudiosa y responsable, que siempre está pensando en comer.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "Las Quintillizas-126373",
+    "name": "Miku Nakano",
+    "anime": "Las Quintillizas",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b126373-CWeyXb822uDN.png",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "Las Quintillizas-126372",
+    "name": "Nino Nakano",
+    "anime": "Las Quintillizas",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b126372-DtorHRgQaYUJ.png",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "Las Quintillizas-126374",
+    "name": "Yotsuba Nakano",
+    "anime": "Las Quintillizas",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b126374-Aal36iSQ5nKz.png",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
   },
   {
     "id": "Blue Lock-162213",
     "name": "Meguru Bachira",
     "anime": "Blue Lock",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b162213-4czykzdxmWG6.png",
     "quote": "Mi monstruo siempre me dice que siga jugando.",
-    "hint": "Un delantero impredecible que juega guiado por su imaginación y su instinto."
+    "hint": "Un delantero impredecible que juega guiado por su imaginación y su instinto.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Blue Lock-162969",
+    "name": "Seishirou Nagi",
+    "anime": "Blue Lock",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b162969-WGnGyVQrFi0X.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Blue Lock-140856",
+    "name": "Yoichi Isagi",
+    "anime": "Blue Lock",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b140856-wVzKSyvU7R5B.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Blue Lock-167444",
+    "name": "Hyouma Chigiri",
+    "anime": "Blue Lock",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b167444-JTHkkJAX4E3q.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
   },
   {
     "id": "Frieren-176754",
     "name": "Frieren",
     "anime": "Frieren",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b176754-PCnpqIOkjhFk.png",
     "quote": "Solo fueron diez años juntos, pero para mí cambiaron mil años de soledad.",
-    "hint": "Una maga elfa longeva que aprende demasiado tarde cuánto significan los recuerdos."
+    "hint": "Una maga elfa longeva que aprende demasiado tarde cuánto significan los recuerdos.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Frieren-183965",
+    "name": "Fern",
+    "anime": "Frieren",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b183965-uGFohBjlFoTp.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Frieren-184313",
+    "name": "Stark",
+    "anime": "Frieren",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b184313-CQl6GSt4RSny.jpg",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Frieren-184311",
+    "name": "Himmel",
+    "anime": "Frieren",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b184311-wQFySqYXEqf1.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
   },
   {
     "id": "Classroom of the Elite-123212",
     "name": "Kiyotaka Ayanokouji",
     "anime": "Classroom of the Elite",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b123212-ewZgUQr9vvEM.png",
     "quote": "Todas las personas no son más que herramientas.",
-    "hint": "Un estudiante inexpresivo que oculta una capacidad extraordinaria para manipular el tablero."
+    "hint": "Un estudiante inexpresivo que oculta una capacidad extraordinaria para manipular el tablero.",
+    "similares": [
+      "Light Yagami",
+      "Johan Liebert",
+      "L Lawliet",
+      "Makima",
+      "Houtarou Oreki"
+    ]
+  },
+  {
+    "id": "Classroom of the Elite-123213",
+    "name": "Suzune Horikita",
+    "anime": "Classroom of the Elite",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b123213-jUfrGBXfW7BL.png",
+    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
+    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "similares": [
+      "Kiyotaka Ayanokouji",
+      "Light Yagami",
+      "Johan Liebert",
+      "L Lawliet",
+      "Makima",
+      "Houtarou Oreki"
+    ]
+  },
+  {
+    "id": "Classroom of the Elite-141122",
+    "name": "Kei Karuizawa",
+    "anime": "Classroom of the Elite",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b141122-6Zk52eU3VK3O.png",
+    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
+    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "similares": [
+      "Kiyotaka Ayanokouji",
+      "Light Yagami",
+      "Johan Liebert",
+      "L Lawliet",
+      "Makima",
+      "Houtarou Oreki"
+    ]
+  },
+  {
+    "id": "Classroom of the Elite-123216",
+    "name": "Honami Ichinose",
+    "anime": "Classroom of the Elite",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b123216-N9tQZf2XIKu6.png",
+    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
+    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "similares": [
+      "Kiyotaka Ayanokouji",
+      "Light Yagami",
+      "Johan Liebert",
+      "L Lawliet",
+      "Makima",
+      "Houtarou Oreki"
+    ]
   },
   {
     "id": "Citrus-83367",
     "name": "Yuzu Aihara",
     "anime": "Citrus",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b83367-qOJp0tfOZf7r.jpg",
     "quote": "No voy a fingir que no siento nada solo para encajar.",
-    "hint": "Una chica alegre y rebelde que descubre sentimientos inesperados en su nueva escuela."
+    "hint": "Una chica alegre y rebelde que descubre sentimientos inesperados en su nueva escuela.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Citrus-83209",
+    "name": "Mei Aihara",
+    "anime": "Citrus",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b83209-gv2ABy7LBr5x.jpg",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Citrus-83387",
+    "name": "Harumi Taniguchi",
+    "anime": "Citrus",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b83387-UImdNRsseICO.jpg",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Citrus-88667",
+    "name": "Matsuri Mizusawa",
+    "anime": "Citrus",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b88667-1uLbk7yHhnz6.jpg",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
   },
   {
     "id": "Chainsaw Man-137080",
     "name": "Makima",
     "anime": "Chainsaw Man",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b137080-UHcynYNjb5ZU.png",
     "quote": "Si te conviertes en mi perro, te daré de comer y cuidaré de ti.",
-    "hint": "Una figura amable y controladora que siempre parece estar varios pasos por delante."
+    "hint": "Una figura amable y controladora que siempre parece estar varios pasos por delante.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Chainsaw Man-130102",
+    "name": "Denji",
+    "anime": "Chainsaw Man",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b130102-FO1VHNnEnLlB.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Chainsaw Man-137079",
+    "name": "Power",
+    "anime": "Chainsaw Man",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Chainsaw Man-137081",
+    "name": "Aki Hayakawa",
+    "anime": "Chainsaw Man",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b137081-TSrUR3mUJL6r.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
   },
   {
     "id": "ARCANE-67",
     "name": "Vi",
     "anime": "ARCANE",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b90169-4wr1Zehnsac8.png",
     "quote": "No importa cuánto me golpeen; siempre voy a levantarme.",
-    "hint": "Una luchadora de Zaun con guanteletes enormes y un fuerte instinto protector."
+    "hint": "Una luchadora de Zaun con guanteletes enormes y un fuerte instinto protector.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "ARCANE-68",
+    "name": "Jinx",
+    "anime": "ARCANE",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b318488-nDSqz6AlFCT9.png",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
   },
   {
     "id": "Tokyo Revengers-145341",
     "name": "Manjirou Sano",
     "anime": "Tokyo Revengers",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b145341-CuPldCLZMvvf.png",
     "quote": "Si protejo a mis amigos, no me importa lo que tenga que enfrentar.",
-    "hint": "El líder carismático de una pandilla, temido por su fuerza y marcado por la pérdida."
+    "hint": "El líder carismático de una pandilla, temido por su fuerza y marcado por la pérdida.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Tokyo Revengers-145344",
+    "name": "Chifuyu Matsuno",
+    "anime": "Tokyo Revengers",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b145344-q4BqRljEBYNc.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Tokyo Revengers-145345",
+    "name": "Ken Ryuuguji",
+    "anime": "Tokyo Revengers",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b145345-zyirrSsKIDCb.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Tokyo Revengers-145343",
+    "name": "Keisuke Baji",
+    "anime": "Tokyo Revengers",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b145343-vRrkdWEUXwYM.jpg",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
   },
   {
     "id": "Dan Da Dan-222594",
     "name": "Momo Ayase",
     "anime": "Dan Da Dan",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b222594-24Jn7qlI5spH.png",
     "quote": "¡No voy a dejar que ningún fantasma ni alienígena se salga con la suya!",
-    "hint": "Una estudiante de voluntad fuerte que combina poderes psíquicos con mucho carácter."
+    "hint": "Una estudiante de voluntad fuerte que combina poderes psíquicos con mucho carácter.",
+    "similares": [
+      "Megumin",
+      "Kazuma Satou",
+      "Takopi",
+      "Saitama",
+      "Marin Kitagawa"
+    ]
+  },
+  {
+    "id": "Dan Da Dan-245466",
+    "name": "Aira Shiratori",
+    "anime": "Dan Da Dan",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b245466-rd5I5mchZ3bv.png",
+    "quote": "Si todo va a salir mal, al menos hag?moslo de una forma inolvidable.",
+    "hint": "Energ?a impredecible, humor extra?o y talento para convertir todo en un desastre.",
+    "similares": [
+      "Megumin",
+      "Kazuma Satou",
+      "Takopi",
+      "Momo Ayase",
+      "Saitama",
+      "Marin Kitagawa"
+    ]
+  },
+  {
+    "id": "Dan Da Dan-222593",
+    "name": "Ken Takakura",
+    "anime": "Dan Da Dan",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b222593-qBqUvpodooAI.png",
+    "quote": "Si todo va a salir mal, al menos hag?moslo de una forma inolvidable.",
+    "hint": "Energ?a impredecible, humor extra?o y talento para convertir todo en un desastre.",
+    "similares": [
+      "Megumin",
+      "Kazuma Satou",
+      "Takopi",
+      "Momo Ayase",
+      "Saitama",
+      "Marin Kitagawa"
+    ]
+  },
+  {
+    "id": "Dan Da Dan-234824",
+    "name": "Seiko Ayase",
+    "anime": "Dan Da Dan",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b234824-i3s64ueaBqGq.png",
+    "quote": "Si todo va a salir mal, al menos hag?moslo de una forma inolvidable.",
+    "hint": "Energ?a impredecible, humor extra?o y talento para convertir todo en un desastre.",
+    "similares": [
+      "Megumin",
+      "Kazuma Satou",
+      "Takopi",
+      "Momo Ayase",
+      "Saitama",
+      "Marin Kitagawa"
+    ]
   },
   {
     "id": "A Sign of Affection-179809",
     "name": "Yuki Itose",
     "anime": "A Sign of Affection",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b179809-pxG89n30MGwl.jpg",
     "quote": "Quiero conocer el mundo, aunque tenga que hacerlo de una forma diferente.",
-    "hint": "Una universitaria sorda que se comunica con ternura y está descubriendo el amor."
+    "hint": "Una universitaria sorda que se comunica con ternura y está descubriendo el amor.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "A Sign of Affection-179810",
+    "name": "Itsuomi Nagi",
+    "anime": "A Sign of Affection",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b179810-E34imq24Z2Gw.jpg",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "A Sign of Affection-206489",
+    "name": "Oushi Ashioki",
+    "anime": "A Sign of Affection",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b206489-6Ewj3mocooVc.png",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "A Sign of Affection-246023",
+    "name": "Shin Iryuu",
+    "anime": "A Sign of Affection",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b246023-JY3YgmQALjHM.png",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
   },
   {
     "id": "Demon Slayer-126071",
     "name": "Tanjirou Kamado",
     "anime": "Demon Slayer",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b126071-BTNEc1nRIv68.png",
     "quote": "No importa cuántas veces caiga; seguiré avanzando.",
-    "hint": "Un espadachín de gran olfato que busca salvar a su hermana y mantiene un corazón compasivo."
+    "hint": "Un espadachín de gran olfato que busca salvar a su hermana y mantiene un corazón compasivo.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Demon Slayer-127518",
+    "name": "Nezuko Kamado",
+    "anime": "Demon Slayer",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b127518-NRlq1CQ1v1ro.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Demon Slayer-129130",
+    "name": "Inosuke Hashibira",
+    "anime": "Demon Slayer",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/n129130-SJC0Kn1DU39E.jpg",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Demon Slayer-129131",
+    "name": "Zenitsu Agatsuma",
+    "anime": "Demon Slayer",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b129131-FZrQ7lSlxmEr.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
   },
   {
     "id": "Solo Leveling-129928",
     "name": "Jin-U Seong",
     "anime": "Solo Leveling",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b129928-BCEjVaP0AQSw.png",
     "quote": "A partir de ahora, yo subiré de nivel solo.",
-    "hint": "El cazador más débil que recibe un sistema capaz de convertirlo en una fuerza imparable."
+    "hint": "El cazador más débil que recibe un sistema capaz de convertirlo en una fuerza imparable.",
+    "similares": [
+      "Gilgamesh",
+      "Satoru Gojou",
+      "Levi",
+      "Saitama",
+      "Makima"
+    ]
+  },
+  {
+    "id": "Solo Leveling-138789",
+    "name": "Hae-In Cha",
+    "anime": "Solo Leveling",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b138789-AhE8m0LWjE7E.png",
+    "quote": "Si voy a avanzar, ser? dejando claro qui?n tiene el control.",
+    "hint": "Presencia dominante y confianza suficiente para desafiar a cualquiera.",
+    "similares": [
+      "Gilgamesh",
+      "Satoru Gojou",
+      "Levi",
+      "Saitama",
+      "Makima",
+      "Jin-U Seong"
+    ]
+  },
+  {
+    "id": "Solo Leveling-145722",
+    "name": "Igris",
+    "anime": "Solo Leveling",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b145722-qSJ71S6vpeeM.png",
+    "quote": "Si voy a avanzar, ser? dejando claro qui?n tiene el control.",
+    "hint": "Presencia dominante y confianza suficiente para desafiar a cualquiera.",
+    "similares": [
+      "Gilgamesh",
+      "Satoru Gojou",
+      "Levi",
+      "Saitama",
+      "Makima",
+      "Jin-U Seong"
+    ]
+  },
+  {
+    "id": "Solo Leveling-136074",
+    "name": "Ju-Hui Lee",
+    "anime": "Solo Leveling",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b136074-pLyumEnxjL7P.png",
+    "quote": "Si voy a avanzar, ser? dejando claro qui?n tiene el control.",
+    "hint": "Presencia dominante y confianza suficiente para desafiar a cualquiera.",
+    "similares": [
+      "Gilgamesh",
+      "Satoru Gojou",
+      "Levi",
+      "Saitama",
+      "Makima",
+      "Jin-U Seong"
+    ]
   },
   {
     "id": "My Dress up Darling-133676",
     "name": "Marin Kitagawa",
     "anime": "My Dress up Darling",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b133676-kV2czE3C8Qls.png",
     "quote": "Si te gusta algo, no deberías avergonzarte de ello.",
-    "hint": "Una estudiante popular apasionada por el cosplay que celebra sus aficiones sin miedo."
+    "hint": "Una estudiante popular apasionada por el cosplay que celebra sus aficiones sin miedo.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "My Dress up Darling-133678",
+    "name": "Wakana Gojou",
+    "anime": "My Dress up Darling",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b133678-IitCgjDxQGgu.png",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "My Dress up Darling-133677",
+    "name": "Sajuna Inui",
+    "anime": "My Dress up Darling",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b133677-PqshvUeVFB7u.jpg",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "My Dress up Darling-207937",
+    "name": "Shinju Inui",
+    "anime": "My Dress up Darling",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b207937-ytYjcNtNX77K.png",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
   },
   {
     "id": "Jujutsu Kaisen-127691",
     "name": "Satoru Gojou",
     "anime": "Jujutsu Kaisen",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b127691-9zqh1xpIubn7.png",
     "quote": "En el cielo y en la tierra, yo soy el único honrado.",
-    "hint": "Un profesor de ojos cubiertos que domina los Seis Ojos y el Infinito."
+    "hint": "Un profesor de ojos cubiertos que domina los Seis Ojos y el Infinito.",
+    "similares": [
+      "Gilgamesh",
+      "Levi",
+      "Saitama",
+      "Makima",
+      "Jin-U Seong"
+    ]
+  },
+  {
+    "id": "Jujutsu Kaisen-127212",
+    "name": "Yuuji Itadori",
+    "anime": "Jujutsu Kaisen",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b127212-FVm2tD0erQ5B.png",
+    "quote": "Si voy a avanzar, ser? dejando claro qui?n tiene el control.",
+    "hint": "Presencia dominante y confianza suficiente para desafiar a cualquiera.",
+    "similares": [
+      "Gilgamesh",
+      "Satoru Gojou",
+      "Levi",
+      "Saitama",
+      "Makima",
+      "Jin-U Seong"
+    ]
+  },
+  {
+    "id": "Jujutsu Kaisen-126635",
+    "name": "Megumi Fushiguro",
+    "anime": "Jujutsu Kaisen",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b126635-L0y3I92JSUkN.png",
+    "quote": "Si voy a avanzar, ser? dejando claro qui?n tiene el control.",
+    "hint": "Presencia dominante y confianza suficiente para desafiar a cualquiera.",
+    "similares": [
+      "Gilgamesh",
+      "Satoru Gojou",
+      "Levi",
+      "Saitama",
+      "Makima",
+      "Jin-U Seong"
+    ]
+  },
+  {
+    "id": "Jujutsu Kaisen-133704",
+    "name": "Kento Nanami",
+    "anime": "Jujutsu Kaisen",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b133704-8wLTGjc234q2.png",
+    "quote": "Si voy a avanzar, ser? dejando claro qui?n tiene el control.",
+    "hint": "Presencia dominante y confianza suficiente para desafiar a cualquiera.",
+    "similares": [
+      "Gilgamesh",
+      "Satoru Gojou",
+      "Levi",
+      "Saitama",
+      "Makima",
+      "Jin-U Seong"
+    ]
   },
   {
     "id": "Violet Evergarden-90169",
     "name": "Violet Evergarden",
     "anime": "Violet Evergarden",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b90169-4wr1Zehnsac8.png",
     "quote": "Quiero saber qué significa te quiero.",
-    "hint": "Una exsoldado que aprende a expresar emociones escribiendo cartas para otras personas."
+    "hint": "Una exsoldado que aprende a expresar emociones escribiendo cartas para otras personas.",
+    "similares": [
+      "Kaori Miyazono",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "Violet Evergarden-124790",
+    "name": "Gilbert Bougainvillea",
+    "anime": "Violet Evergarden",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b124790-QR7zyemTK0zq.png",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "Violet Evergarden-124788",
+    "name": "Benedict Blue",
+    "anime": "Violet Evergarden",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b124788-upZ5vtGwndzt.jpg",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "Violet Evergarden-124787",
+    "name": "Cattleya Baudelaire",
+    "anime": "Violet Evergarden",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b124787-1HuZGawvoejp.jpg",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
   },
   {
     "id": "Charlotte-88951",
     "name": "Nao Tomori",
     "anime": "Charlotte",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/88951-bRm610RrrXp9.jpg",
     "quote": "Aunque nadie me vea, seguiré haciendo lo que creo correcto.",
-    "hint": "Una presidenta estudiantil directa que puede volverse invisible para una persona."
+    "hint": "Una presidenta estudiantil directa que puede volverse invisible para una persona.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Charlotte-22369",
+    "name": "Kanade Tachibana",
+    "anime": "Charlotte",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b22369-zC7OgGbfO7b6.jpg",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Charlotte-88950",
+    "name": "Yuu Otosaka",
+    "anime": "Charlotte",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b88950-0ER2ke5pswxq.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Charlotte-88955",
+    "name": "Ayumi Otosaka",
+    "anime": "Charlotte",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/88955-iKYbTaBsmIF0.jpg",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
   },
   {
     "id": "Bunny Girl Senpai-127222",
     "name": "Mai Sakurajima",
     "anime": "Bunny Girl Senpai",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b127222-Jh5hhP7vZ7s1.png",
     "quote": "Incluso si el mundo entero me olvida, me basta con que tú aún puedas verme.",
-    "hint": "Una actriz famosa que sufre un fenómeno sobrenatural y viste un traje de conejita."
+    "hint": "Una actriz famosa que sufre un fenómeno sobrenatural y viste un traje de conejita.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "Bunny Girl Senpai-127221",
+    "name": "Sakuta Azusagawa",
+    "anime": "Bunny Girl Senpai",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/n127221-Wxg4xFtW4kaJ.png",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "Bunny Girl Senpai-127633",
+    "name": "Rio Futaba",
+    "anime": "Bunny Girl Senpai",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b127633-FcCwWK5sQRhK.png",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "Bunny Girl Senpai-127613",
+    "name": "Kaede Azusagawa",
+    "anime": "Bunny Girl Senpai",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b127613-LBtFkMJfUWpg.png",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
   },
   {
     "id": "Summer Time Rendering-155706",
     "name": "Mio Kofune",
     "anime": "Summer Time Rendering",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b155706-guouOSwrSqso.jpg",
     "quote": "Aunque el futuro se repita, intentaré cambiarlo las veces que haga falta.",
-    "hint": "Una chica de la isla que queda atrapada en un misterio de sombras y bucles temporales."
+    "hint": "Una chica de la isla que queda atrapada en un misterio de sombras y bucles temporales.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "Summer Time Rendering-155703",
+    "name": "Shinpei Ajiro",
+    "anime": "Summer Time Rendering",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b155703-1CNh5yTk8xWO.jpg",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "Summer Time Rendering-155711",
+    "name": "Hizuru Minakata",
+    "anime": "Summer Time Rendering",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b155711-VwaqEhjhI0FL.png",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "Summer Time Rendering-155712",
+    "name": "Ushio Kofune",
+    "anime": "Summer Time Rendering",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b155712-zMvjVpfc4WQN.png",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
   },
   {
     "id": "Haikyuu!-64769",
     "name": "Shouyou Hinata",
     "anime": "Haikyuu!",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b64769-WoWlCMLLgJ14.png",
     "quote": "El que no puede saltar más alto todavía puede seguir saltando.",
-    "hint": "Un rematador bajito y explosivo que sueña con convertirse en un gran jugador de voleibol."
+    "hint": "Un rematador bajito y explosivo que sueña con convertirse en un gran jugador de voleibol.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki"
+    ]
+  },
+  {
+    "id": "Haikyuu!-64771",
+    "name": "Tobio Kageyama",
+    "anime": "Haikyuu!",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b64771-BuCVs7B8bBdh.png",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Haikyuu!-67327",
+    "name": "Yuu Nishinoya",
+    "anime": "Haikyuu!",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b67327-zQb1dlC7joPb.jpg",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
+  },
+  {
+    "id": "Haikyuu!-71267",
+    "name": "Kenma Kozume",
+    "anime": "Haikyuu!",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b71267-q44J2MXMinXD.jpg",
+    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
+    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "similares": [
+      "Izuku Midoriya",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Edward Elric",
+      "Subaru Natsuki",
+      "Shouyou Hinata"
+    ]
   },
   {
     "id": "Your Lie in April-69411",
     "name": "Kaori Miyazono",
     "anime": "Your Lie in April",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b69411-lxM0FRvWHqlv.png",
     "quote": "¿Llegó mi música hasta tu corazón?",
-    "hint": "Una violinista de espíritu libre que transforma la vida de un pianista."
+    "hint": "Una violinista de espíritu libre que transforma la vida de un pianista.",
+    "similares": [
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "Your Lie in April-69407",
+    "name": "Kousei Arima",
+    "anime": "Your Lie in April",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b69407-eyIvpsFPeARS.png",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "Your Lie in April-69405",
+    "name": "Ryouta Watari",
+    "anime": "Your Lie in April",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/69405-IpsjziJkHrHj.png",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
+  },
+  {
+    "id": "Your Lie in April-85841",
+    "name": "Emi Igawa",
+    "anime": "Your Lie in April",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b85841-728eVWAvzifr.png",
+    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
+    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "similares": [
+      "Kaori Miyazono",
+      "Violet Evergarden",
+      "Marin Kitagawa",
+      "Yuki Itose",
+      "Mai Sakurajima",
+      "Tomoya Okazaki"
+    ]
   }
 ]
