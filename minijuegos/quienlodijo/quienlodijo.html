@@ -814,7 +814,7 @@
         <div class="hero-info">
           <h1 class="serif-title">¿Quién lo dijo?</h1>
           <p>
-            La IA y el archivo de reacciones muestran <span class="highlight-yellow">frases icónicas o adaptadas</span> de los animes que vio Merce. Adivina qué personaje de anime lo dijo antes de que acabe el reloj para sumar más puntos.
+            El archivo de reacciones muestra <span class="highlight-yellow">frases icónicas o adaptadas</span> de los animes que vio Merce. Adivina qué personaje de anime lo dijo antes de que acabe el reloj para sumar más puntos.
           </p>
         </div>
 
@@ -867,14 +867,6 @@
             </select>
           </div>
 
-          <div class="field-group">
-            <label class="field-label" for="aiGeneratorToggle">MOTOR DE IA EN VIVO</label>
-            <select id="aiGeneratorToggle" class="select-control">
-              <option value="hybrid">Base de Merce + Pistas dinámicas de IA</option>
-              <option value="ai_live">Generar nuevas citas con IA en tiempo real</option>
-            </select>
-          </div>
-
           <div class="solo-footer">
             <div>
               <span id="soloBottomBadge" class="pill-yellow">0 FRASES ENTRAN</span>
@@ -922,7 +914,6 @@
 
         <div style="display:flex; align-items:center; gap:10px;">
           <button id="hostStartRoomBtn" class="btn-yellow hidden" style="padding:8px 16px; font-size:0.78rem;">▶ INICIAR PARTIDA</button>
-          <button id="generateAiQuoteBtn" class="btn-small" title="Pedir frase nueva a la IA">✨ Frase IA</button>
           <button id="leaveGameBtn" class="btn-icon">← SALIR DE SALA</button>
         </div>
       </div>
@@ -936,7 +927,7 @@
 
           <div class="quote-box">
             <p id="quoteDisplay" class="quote-text">“Cargando frase...”</p>
-            <div id="aiHintBox" class="ai-hint-badge">💡 Pista IA: Analizando personalidad...</div>
+            <div id="aiHintBox" class="ai-hint-badge">💡 Pista: Cargando...</div>
           </div>
 
           <!-- Modo 4 opciones -->
@@ -1061,7 +1052,9 @@
     let roomCode = null;
     let roomChannel = null;
     let roomPlayers = {};
+    let charactersById = new Map();
     let charactersByName = new Map();
+    let recentDistractors = [];
 
     // Las frases son la fuente de contenido y personajes.json aporta las imágenes.
     async function loadExternalPersonajesJson() {
@@ -1078,12 +1071,18 @@
           phrasesResponse.json(),
           charactersResponse.json()
         ]);
-        const charactersById = new Map(characters.map((character) => [character.id, character]));
-        charactersByName = new Map(characters.map((character) => [character.name, character]));
+        charactersById = new Map(characters.map((character) => [character.id, character]));
+        charactersByName = new Map(characters.map((character) => [character.name.toLowerCase(), character]));
         quotesPool = phrases.map((phrase) => {
           const character = charactersById.get(phrase.id);
           if (!character) throw new Error(`Falta la imagen del personaje ${phrase.id}.`);
-          return { ...phrase, img: character.img };
+          return {
+            ...phrase,
+            id: character.id,
+            name: character.name,
+            anime: character.anime,
+            img: character.img
+          };
         });
         if (!quotesPool.length) throw new Error("frases.json no contiene frases.");
       } catch (error) {
@@ -1184,26 +1183,43 @@
     }
 
     /**************************************************************
-     * 5. GENERADOR IA EN TIEMPO REAL (SIN API KEY NECESARIA)
-     **************************************************************/
-    async function fetchAiQuoteForCharacter(characterObj) {
-      try {
-        const prompt = `Genera SOLO una frase corta e icónica en español (máximo 18 palabras, sin decir su propio nombre) que diría el personaje ${characterObj.name} del anime ${characterObj.anime}. Devuelve únicamente la frase entre comillas.`;
-        const res = await fetch(`https://text.pollinations.ai/${encodeURIComponent(prompt)}`);
-        if (!res.ok) throw new Error("Fallback local");
-        const text = (await res.text()).trim();
-        if (text && text.length > 8 && text.length < 220) {
-          return text.replace(/^["“]|["”]$/g, "");
-        }
-      } catch (e) {
-        // Fallback silencioso a la cita curada
-      }
-      return characterObj.quote;
-    }
-
-    /**************************************************************
      * 6. LÓGICA DE JUEGO (SOLITARIO Y MULTIJUGADOR HASTA 8 PLAYERS)
      **************************************************************/
+    function getPlayedQuoteIds() {
+      try {
+        const stored = JSON.parse(localStorage.getItem("merce_played_quotes") || "[]");
+        return new Set(Array.isArray(stored) ? stored : []);
+      } catch (error) {
+        console.error("No se pudo leer el historial de frases jugadas.", error);
+        return new Set();
+      }
+    }
+
+    function savePlayedQuoteIds(ids) {
+      localStorage.setItem("merce_played_quotes", JSON.stringify([...ids]));
+    }
+
+    function chooseQuestions(pool, totalRounds) {
+      let playedIds = getPlayedQuoteIds();
+      let available = pool.filter((quote) => !playedIds.has(quote.id));
+      if (!available.length) {
+        playedIds = new Set();
+        available = [...pool];
+      }
+
+      const selected = [];
+      const usedNames = new Set();
+      for (const quote of available.sort(() => Math.random() - 0.5)) {
+        if (usedNames.has(quote.name)) continue;
+        selected.push(quote);
+        usedNames.add(quote.name);
+        playedIds.add(quote.id);
+        if (selected.length >= totalRounds) break;
+      }
+      savePlayedQuoteIds(playedIds);
+      return selected;
+    }
+
     function getPlayerName() {
       const val = document.getElementById("playerNick").value.trim();
       const nick = val || "Hitagi";
@@ -1225,9 +1241,10 @@
       const totalRounds = parseInt(document.getElementById("soloRounds").value, 10) || 10;
 
       // Barajar preguntas
-      activeQuestions = [...pool].sort(() => Math.random() - 0.5).slice(0, totalRounds);
+      activeQuestions = chooseQuestions(pool, totalRounds);
       currentQuestionIndex = 0;
       currentScore = 0;
+      recentDistractors = [];
 
       roomPlayers = {
         [myPlayerId]: {
@@ -1265,17 +1282,8 @@
 
       document.getElementById("roundCounterText").textContent = `Ronda ${index + 1} / ${activeQuestions.length}`;
       document.getElementById("roundFeedback").textContent = "";
-      document.getElementById("aiHintBox").textContent = `💡 Pista IA: Anime de la piscina de Merce...`;
-
-      // Si el usuario eligió IA en vivo, genera frase dinámica
-      const aiMode = document.getElementById("aiGeneratorToggle").value;
-      if (aiMode === "ai_live") {
-        document.getElementById("quoteDisplay").textContent = "✨ La IA está generando una frase del personaje...";
-        const dynamicQuote = await fetchAiQuoteForCharacter(currentQ);
-        document.getElementById("quoteDisplay").textContent = `“${dynamicQuote}”`;
-      } else {
-        document.getElementById("quoteDisplay").textContent = `“${currentQ.quote.replace(/^["“]|["”]$/g, "")}”`;
-      }
+      document.getElementById("aiHintBox").textContent = `💡 Pista: ${currentQ.hint}`;
+      document.getElementById("quoteDisplay").textContent = `“${currentQ.quote.replace(/^["“]|["”]$/g, "")}”`;
 
       // Preparar modo 4 opciones o modo Experto
       const multiBox = document.getElementById("multipleChoiceContainer");
@@ -1300,15 +1308,6 @@
         timerSeconds--;
         updateTimerUI();
 
-        // A los 9 segundos la IA revela pista de personalidad
-        if (timerSeconds === 9) {
-          document.getElementById("aiHintBox").textContent = `💡 Pista IA: ${currentQ.hint}`;
-        }
-        // A los 4 segundos revela el anime al que pertenece
-        if (timerSeconds === 4) {
-          document.getElementById("aiHintBox").textContent = `💡 Pista IA: Pertenece a "${currentQ.anime}"`;
-        }
-
         if (timerSeconds <= 0) {
           clearInterval(timerInterval);
           revealAnswer(null);
@@ -1326,10 +1325,20 @@
       const container = document.getElementById("multipleChoiceContainer");
       container.innerHTML = "";
 
-      const optionByName = new Map([[correctChar.name, correctChar]]);
+      const canonicalCorrect = charactersById.get(correctChar.id)
+        || charactersByName.get(correctChar.name.toLowerCase());
+      if (!canonicalCorrect) {
+        throw new Error(`No existe el personaje correcto ${correctChar.name} en personajes.json.`);
+      }
+
+      const optionByName = new Map([[canonicalCorrect.name, canonicalCorrect]]);
       const similarOptions = (correctChar.similares || [])
-        .map((name) => charactersByName.get(name))
-        .filter((character) => character && character.name !== correctChar.name)
+        .map((name) => charactersByName.get(name.toLowerCase()))
+        .filter((character) =>
+          character
+          && character.name !== canonicalCorrect.name
+          && !recentDistractors.includes(character.name)
+        )
         .sort(() => Math.random() - 0.5);
 
       similarOptions.forEach((character) => {
@@ -1340,18 +1349,38 @@
 
       const activePool = getFilteredQuotes();
       const fallbackOptions = [
-        ...activePool.filter((character) =>
-          character.anime === correctChar.anime && !optionByName.has(character.name)
+        ...activePool.map((quote) => charactersById.get(quote.id)).filter((character) =>
+          character
+          && character.anime === canonicalCorrect.anime
+          && !optionByName.has(character.name)
+          && !recentDistractors.includes(character.name)
         ),
-        ...activePool.filter((character) => !optionByName.has(character.name))
+        ...activePool.map((quote) => charactersById.get(quote.id)).filter((character) =>
+          character
+          && !optionByName.has(character.name)
+          && !recentDistractors.includes(character.name)
+        )
       ];
       fallbackOptions.sort(() => Math.random() - 0.5).forEach((character) => {
         if (optionByName.size < 4) {
           optionByName.set(character.name, character);
         }
       });
+      if (optionByName.size < 4) {
+        activePool
+          .map((quote) => charactersById.get(quote.id))
+          .filter((character) => character && !optionByName.has(character.name))
+          .sort(() => Math.random() - 0.5)
+          .forEach((character) => {
+            if (optionByName.size < 4) optionByName.set(character.name, character);
+          });
+      }
 
       const options = [...optionByName.values()].sort(() => Math.random() - 0.5);
+      const distractorNames = options
+        .filter((option) => option.name !== canonicalCorrect.name)
+        .map((option) => option.name);
+      recentDistractors = [...recentDistractors, ...distractorNames].slice(-9);
 
       options.forEach(opt => {
         const btn = document.createElement("button");
@@ -1591,6 +1620,10 @@
       } else if (msg.event === "start_match") {
         activeQuestions = msg.payload.questions;
         currentMode = msg.payload.mode;
+        recentDistractors = [];
+        const playedIds = getPlayedQuoteIds();
+        activeQuestions.forEach((question) => playedIds.add(question.id));
+        savePlayedQuoteIds(playedIds);
         loadRound(0);
       } else if (msg.event === "player_score") {
         if (roomPlayers[msg.payload.id]) {
@@ -1691,7 +1724,8 @@
       document.getElementById("hostStartRoomBtn").addEventListener("click", () => {
         const pool = getFilteredQuotes();
         const totalRounds = parseInt(document.getElementById("soloRounds").value, 10) || 10;
-        activeQuestions = [...pool].sort(() => Math.random() - 0.5).slice(0, totalRounds);
+        activeQuestions = chooseQuestions(pool, totalRounds);
+        recentDistractors = [];
         currentMode = document.getElementById("soloGameMode").value;
         document.getElementById("hostStartRoomBtn").classList.add("hidden");
 
@@ -1706,15 +1740,6 @@
       });
 
       document.getElementById("leaveGameBtn").addEventListener("click", leaveCurrentRoom);
-
-      // Botón para pedir una frase nueva generada por IA en vivo
-      document.getElementById("generateAiQuoteBtn").addEventListener("click", async () => {
-        const currentQ = activeQuestions[currentQuestionIndex];
-        if (!currentQ) return;
-        document.getElementById("quoteDisplay").textContent = "✨ Generando nueva cita con IA...";
-        const newQuote = await fetchAiQuoteForCharacter(currentQ);
-        document.getElementById("quoteDisplay").textContent = `“${newQuote}”`;
-      });
 
       // Responder en modo experto
       document.getElementById("submitExpertGuessBtn").addEventListener("click", () => {

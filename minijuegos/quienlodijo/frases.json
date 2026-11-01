@@ -4,15 +4,15 @@
     "name": "Sakura Matou",
     "anime": "Fate",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b500-NQrLbnBr1sDv.png",
-    "quote": "No necesito que me salves; solo quiero que no me abandones.",
-    "hint": "Una joven amable que carga con un destino oscuro y una gran fortaleza interior.",
+    "quote": "No necesito mostrar mis intenciones para controlar el resultado.",
+    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
+    "arquetipo": "frio_calculador",
     "similares": [
-      "Gilgamesh",
-      "Satoru Gojou",
-      "Levi",
-      "Saitama",
-      "Makima",
-      "Jin-U Seong"
+      "Subaru Hoshina",
+      "Izuku Midoriya",
+      "Izuku Midoriya",
+      "Vladilena Milizé",
+      "Rouran"
     ]
   },
   {
@@ -20,15 +20,15 @@
     "name": "Rin Toosaka",
     "anime": "Fate",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b498-lwawtSpLyATL.png",
-    "quote": "Si voy a avanzar, ser? dejando claro qui?n tiene el control.",
-    "hint": "Presencia dominante y confianza suficiente para desafiar a cualquiera.",
+    "quote": "No hay rival capaz de detenerme cuando decido avanzar.",
+    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
+    "arquetipo": "poder_arrogante",
     "similares": [
-      "Gilgamesh",
-      "Satoru Gojou",
-      "Levi",
-      "Saitama",
-      "Makima",
-      "Jin-U Seong"
+      "Saku Natsusawa",
+      "Shouta Aizawa",
+      "Shouta Aizawa",
+      "Kurena Kukumila",
+      "Gyokuyou"
     ]
   },
   {
@@ -36,15 +36,15 @@
     "name": "Artoria Pendragon",
     "anime": "Fate",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b497-Yg5pNmC8kxzs.png",
-    "quote": "Si voy a avanzar, ser? dejando claro qui?n tiene el control.",
-    "hint": "Presencia dominante y confianza suficiente para desafiar a cualquiera.",
+    "quote": "Aunque tenga miedo, daré el siguiente paso.",
+    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
+    "arquetipo": "heroe_determinado",
     "similares": [
-      "Gilgamesh",
-      "Satoru Gojou",
-      "Levi",
-      "Saitama",
-      "Makima",
-      "Jin-U Seong"
+      "Enjin",
+      "Toshinori Yagi",
+      "Megumin",
+      "Shinei Nouzen",
+      "Edward Elric"
     ]
   },
   {
@@ -52,14 +52,15 @@
     "name": "Gilgamesh",
     "anime": "Fate",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b2514-hnE6LEdqm7Su.png",
-    "quote": "Si voy a avanzar, ser? dejando claro qui?n tiene el control.",
-    "hint": "Presencia dominante y confianza suficiente para desafiar a cualquiera.",
+    "quote": "Si todo puede salir mal, al menos será divertido.",
+    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
+    "arquetipo": "comedia_caos",
     "similares": [
-      "Satoru Gojou",
-      "Levi",
-      "Saitama",
-      "Makima",
-      "Jin-U Seong"
+      "Rudo",
+      "Tenya Iida",
+      "Kazuma Satou",
+      "Anju Emma",
+      "Roy Mustang"
     ]
   },
   {
@@ -67,15 +68,15 @@
     "name": "Kaoruko Waguri",
     "anime": "La nobleza de las Flores",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b268676-aQmqvqj0DNoJ.png",
-    "quote": "No quiero juzgar a nadie por su apariencia; quiero conocer su corazón.",
-    "hint": "Una estudiante elegante y firme que defiende la bondad por encima de las diferencias.",
+    "quote": "Lo que siento merece ser dicho, aunque me haga temblar.",
+    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
+    "arquetipo": "romance_drama",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Riyou Reaper",
+      "Shouto Todoroki",
+      "Aqua",
+      "Maomao",
+      "Alphonse Elric"
     ]
   },
   {
@@ -83,15 +84,15 @@
     "name": "Rintarou Tsumugi",
     "anime": "La nobleza de las Flores",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b268677-APMPGH67QqPr.jpg",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "La verdad permanece aunque todos intenten esconderla.",
+    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
+    "arquetipo": "misterio_serio",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Zanka Nijiku",
+      "Katsuki Bakugou",
+      "Darkness",
+      "Jinshi",
+      "Winry Rockbell"
     ]
   },
   {
@@ -99,15 +100,15 @@
     "name": "Subaru Hoshina",
     "anime": "La nobleza de las Flores",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b270095-Z5KpvacVXp1S.jpg",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "La mejor jugada es la que nadie ve venir.",
+    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
+    "arquetipo": "frio_calculador",
     "similares": [
+      "Sakura Matou",
       "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Izuku Midoriya",
+      "Vladilena Milizé",
+      "Rouran"
     ]
   },
   {
@@ -115,15 +116,15 @@
     "name": "Saku Natsusawa",
     "anime": "La nobleza de las Flores",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b272241-6NHTwQDIUXQk.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "El poder solo sirve si quien lo posee sabe imponerlo.",
+    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
+    "arquetipo": "poder_arrogante",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Rin Toosaka",
+      "Shouta Aizawa",
+      "Shouta Aizawa",
+      "Kurena Kukumila",
+      "Gyokuyou"
     ]
   },
   {
@@ -131,15 +132,15 @@
     "name": "Enjin",
     "anime": "Gachiakuta",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b266438-3Veykti1lXgg.png",
-    "quote": "Lo que otros tiran puede tener un valor que todavía no han sabido ver.",
-    "hint": "Un líder carismático que encuentra potencial en las personas y en los objetos olvidados.",
+    "quote": "Mientras alguien necesite ayuda, no voy a rendirme.",
+    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
+    "arquetipo": "heroe_determinado",
     "similares": [
+      "Artoria Pendragon",
+      "Toshinori Yagi",
       "Megumin",
-      "Kazuma Satou",
-      "Takopi",
-      "Momo Ayase",
-      "Saitama",
-      "Marin Kitagawa"
+      "Shinei Nouzen",
+      "Edward Elric"
     ]
   },
   {
@@ -147,15 +148,15 @@
     "name": "Rudo",
     "anime": "Gachiakuta",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b266433-8JWks5k2OPJn.png",
-    "quote": "Si todo va a salir mal, al menos hag?moslo de una forma inolvidable.",
-    "hint": "Energ?a impredecible, humor extra?o y talento para convertir todo en un desastre.",
+    "quote": "No era el plan, pero este desastre podría funcionar.",
+    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
+    "arquetipo": "comedia_caos",
     "similares": [
-      "Megumin",
+      "Gilgamesh",
+      "Tenya Iida",
       "Kazuma Satou",
-      "Takopi",
-      "Momo Ayase",
-      "Saitama",
-      "Marin Kitagawa"
+      "Anju Emma",
+      "Roy Mustang"
     ]
   },
   {
@@ -163,15 +164,15 @@
     "name": "Riyou Reaper",
     "anime": "Gachiakuta",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b275749-fglzDjaLZh1H.png",
-    "quote": "Si todo va a salir mal, al menos hag?moslo de una forma inolvidable.",
-    "hint": "Energ?a impredecible, humor extra?o y talento para convertir todo en un desastre.",
+    "quote": "A veces cuidar a alguien exige ser valiente.",
+    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
+    "arquetipo": "romance_drama",
     "similares": [
-      "Megumin",
-      "Kazuma Satou",
-      "Takopi",
-      "Momo Ayase",
-      "Saitama",
-      "Marin Kitagawa"
+      "Kaoruko Waguri",
+      "Shouto Todoroki",
+      "Aqua",
+      "Maomao",
+      "Alphonse Elric"
     ]
   },
   {
@@ -179,15 +180,15 @@
     "name": "Zanka Nijiku",
     "anime": "Gachiakuta",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b268742-PSWLnWDJH7HJ.png",
-    "quote": "Si todo va a salir mal, al menos hag?moslo de una forma inolvidable.",
-    "hint": "Energ?a impredecible, humor extra?o y talento para convertir todo en un desastre.",
+    "quote": "Cada detalle cuenta cuando el caso parece imposible.",
+    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
+    "arquetipo": "misterio_serio",
     "similares": [
-      "Megumin",
-      "Kazuma Satou",
-      "Takopi",
-      "Momo Ayase",
-      "Saitama",
-      "Marin Kitagawa"
+      "Rintarou Tsumugi",
+      "Katsuki Bakugou",
+      "Darkness",
+      "Jinshi",
+      "Winry Rockbell"
     ]
   },
   {
@@ -195,14 +196,15 @@
     "name": "Izuku Midoriya",
     "anime": "MHA Vigilantes",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89028-8w1I9o1ISHMg.png",
-    "quote": "Mi cuerpo se movió solo antes de que pudiera pensar.",
-    "hint": "Un héroe estudioso que analiza cada poder y siempre corre a proteger a los demás.",
+    "quote": "Observar en silencio también es una forma de ganar.",
+    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
+    "arquetipo": "frio_calculador",
     "similares": [
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Sakura Matou",
+      "Subaru Hoshina",
+      "Vladilena Milizé",
+      "Rouran",
+      "Tomoya Okazaki"
     ]
   },
   {
@@ -210,15 +212,15 @@
     "name": "Shouta Aizawa",
     "anime": "MHA Vigilantes",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89225-XBgvUhI9naVI.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "No necesito permiso para demostrar quién está por encima.",
+    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
+    "arquetipo": "poder_arrogante",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Rin Toosaka",
+      "Saku Natsusawa",
+      "Kurena Kukumila",
+      "Gyokuyou",
+      "Nagisa Furukawa"
     ]
   },
   {
@@ -226,15 +228,15 @@
     "name": "Toshinori Yagi",
     "anime": "MHA Vigilantes",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89224-K6KEuQAuYKzq.jpg",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "Seguiré luchando hasta que todos estén a salvo.",
+    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
+    "arquetipo": "heroe_determinado",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Artoria Pendragon",
+      "Enjin",
+      "Megumin",
+      "Shinei Nouzen",
+      "Edward Elric"
     ]
   },
   {
@@ -242,15 +244,15 @@
     "name": "Tenya Iida",
     "anime": "MHA Vigilantes",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89222-TL8MQM3wJgEB.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "La prudencia está bien; una explosión también.",
+    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
+    "arquetipo": "comedia_caos",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Gilgamesh",
+      "Rudo",
+      "Kazuma Satou",
+      "Anju Emma",
+      "Roy Mustang"
     ]
   },
   {
@@ -258,15 +260,15 @@
     "name": "Shouto Todoroki",
     "anime": "My Hero Academia",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89220-KNBwaVFAR8FD.png",
-    "quote": "Mi poder es mío. No tengo que vivir bajo la sombra de nadie.",
-    "hint": "Un estudiante de dos elementos que intenta reconciliarse con su familia y su pasado.",
+    "quote": "No quiero que un recuerdo importante se pierda en silencio.",
+    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
+    "arquetipo": "romance_drama",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Kaoruko Waguri",
+      "Riyou Reaper",
+      "Aqua",
+      "Maomao",
+      "Alphonse Elric"
     ]
   },
   {
@@ -274,15 +276,15 @@
     "name": "Katsuki Bakugou",
     "anime": "My Hero Academia",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b88892-bdOha3lNcaN6.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "No aceptaré una respuesta cómoda sin comprobarla.",
+    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
+    "arquetipo": "misterio_serio",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Rintarou Tsumugi",
+      "Zanka Nijiku",
+      "Darkness",
+      "Jinshi",
+      "Winry Rockbell"
     ]
   },
   {
@@ -290,14 +292,15 @@
     "name": "Izuku Midoriya",
     "anime": "My Hero Academia",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89028-8w1I9o1ISHMg.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "Las emociones no deben decidir una estrategia.",
+    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
+    "arquetipo": "frio_calculador",
     "similares": [
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Sakura Matou",
+      "Subaru Hoshina",
+      "Vladilena Milizé",
+      "Rouran",
+      "Tomoya Okazaki"
     ]
   },
   {
@@ -305,15 +308,15 @@
     "name": "Shouta Aizawa",
     "anime": "My Hero Academia",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89225-XBgvUhI9naVI.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "Que todos miren: esta batalla ya tiene dueño.",
+    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
+    "arquetipo": "poder_arrogante",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Rin Toosaka",
+      "Saku Natsusawa",
+      "Kurena Kukumila",
+      "Gyokuyou",
+      "Nagisa Furukawa"
     ]
   },
   {
@@ -321,14 +324,15 @@
     "name": "Megumin",
     "anime": "Konosuba",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89361-tq8PQQ4MmF0M.png",
-    "quote": "¡Más negro que la oscuridad, más oscuro que lo negro... Explosion!",
-    "hint": "Una maga carmesí que solo piensa en lanzar su hechizo definitivo una vez al día.",
+    "quote": "Una caída no puede decidir el final de una historia.",
+    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
+    "arquetipo": "heroe_determinado",
     "similares": [
-      "Kazuma Satou",
-      "Takopi",
-      "Momo Ayase",
-      "Saitama",
-      "Marin Kitagawa"
+      "Artoria Pendragon",
+      "Enjin",
+      "Toshinori Yagi",
+      "Shinei Nouzen",
+      "Edward Elric"
     ]
   },
   {
@@ -336,14 +340,15 @@
     "name": "Kazuma Satou",
     "anime": "Konosuba",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89364-7Th8Tv1XKJtt.png",
-    "quote": "Si todo va a salir mal, al menos hag?moslo de una forma inolvidable.",
-    "hint": "Energ?a impredecible, humor extra?o y talento para convertir todo en un desastre.",
+    "quote": "Prometo que esta vez nadie tendrá que arreglarlo todo.",
+    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
+    "arquetipo": "comedia_caos",
     "similares": [
-      "Megumin",
-      "Takopi",
-      "Momo Ayase",
-      "Saitama",
-      "Marin Kitagawa"
+      "Gilgamesh",
+      "Rudo",
+      "Tenya Iida",
+      "Anju Emma",
+      "Roy Mustang"
     ]
   },
   {
@@ -351,15 +356,15 @@
     "name": "Aqua",
     "anime": "Konosuba",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89362-ibkc0eoECaW1.png",
-    "quote": "Si todo va a salir mal, al menos hag?moslo de una forma inolvidable.",
-    "hint": "Energ?a impredecible, humor extra?o y talento para convertir todo en un desastre.",
+    "quote": "Si caminamos juntos, incluso el miedo pesa menos.",
+    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
+    "arquetipo": "romance_drama",
     "similares": [
-      "Megumin",
-      "Kazuma Satou",
-      "Takopi",
-      "Momo Ayase",
-      "Saitama",
-      "Marin Kitagawa"
+      "Kaoruko Waguri",
+      "Riyou Reaper",
+      "Shouto Todoroki",
+      "Maomao",
+      "Alphonse Elric"
     ]
   },
   {
@@ -367,15 +372,15 @@
     "name": "Darkness",
     "anime": "Konosuba",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89363-mm21Ll4NegUD.png",
-    "quote": "Si todo va a salir mal, al menos hag?moslo de una forma inolvidable.",
-    "hint": "Energ?a impredecible, humor extra?o y talento para convertir todo en un desastre.",
+    "quote": "El silencio también deja pistas.",
+    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
+    "arquetipo": "misterio_serio",
     "similares": [
-      "Megumin",
-      "Kazuma Satou",
-      "Takopi",
-      "Momo Ayase",
-      "Saitama",
-      "Marin Kitagawa"
+      "Rintarou Tsumugi",
+      "Zanka Nijiku",
+      "Katsuki Bakugou",
+      "Jinshi",
+      "Winry Rockbell"
     ]
   },
   {
@@ -383,15 +388,15 @@
     "name": "Vladilena Milizé",
     "anime": "86: Eighty-Six",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b141061-jqIhB9jmClQ3.png",
-    "quote": "No permitiré que los traten como números; todos tienen un nombre.",
-    "hint": "Una comandante idealista que lucha contra un sistema que deshumaniza a sus soldados.",
+    "quote": "Si conozco las reglas, puedo cambiar el tablero.",
+    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
+    "arquetipo": "frio_calculador",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Sakura Matou",
+      "Subaru Hoshina",
+      "Izuku Midoriya",
+      "Izuku Midoriya",
+      "Rouran"
     ]
   },
   {
@@ -399,15 +404,15 @@
     "name": "Kurena Kukumila",
     "anime": "86: Eighty-Six",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b174873-FNf08aPYTVXY.jpg",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "La victoria es lo único que merece mi atención.",
+    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
+    "arquetipo": "poder_arrogante",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Rin Toosaka",
+      "Saku Natsusawa",
+      "Shouta Aizawa",
+      "Shouta Aizawa",
+      "Gyokuyou"
     ]
   },
   {
@@ -415,15 +420,15 @@
     "name": "Shinei Nouzen",
     "anime": "86: Eighty-Six",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b141060-ZJFvHqBBSvhN.png",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "Mi fuerza tiene sentido cuando protege a otra persona.",
+    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
+    "arquetipo": "heroe_determinado",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Artoria Pendragon",
+      "Enjin",
+      "Toshinori Yagi",
+      "Megumin",
+      "Edward Elric"
     ]
   },
   {
@@ -431,15 +436,15 @@
     "name": "Anju Emma",
     "anime": "86: Eighty-Six",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b174875-PvSTadcuATtH.png",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "El caos siempre encuentra una manera de sorprenderme.",
+    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
+    "arquetipo": "comedia_caos",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Gilgamesh",
+      "Rudo",
+      "Tenya Iida",
+      "Kazuma Satou",
+      "Roy Mustang"
     ]
   },
   {
@@ -447,15 +452,15 @@
     "name": "Maomao",
     "anime": "La Boticaria",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b126824-MqsCncTO1qpv.png",
-    "quote": "¿Esto es veneno? Déjame probar solo un poquito.",
-    "hint": "Una joven curiosa que resuelve misterios del palacio y siente fascinación por las toxinas.",
+    "quote": "Hay personas que cambian nuestra vida sin proponérselo.",
+    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
+    "arquetipo": "romance_drama",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Kaoruko Waguri",
+      "Riyou Reaper",
+      "Shouto Todoroki",
+      "Aqua",
+      "Alphonse Elric"
     ]
   },
   {
@@ -463,15 +468,15 @@
     "name": "Jinshi",
     "anime": "La Boticaria",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b127278-0qCQciTkPOMS.jpg",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "La realidad suele ser más inquietante que cualquier rumor.",
+    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
+    "arquetipo": "misterio_serio",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Rintarou Tsumugi",
+      "Zanka Nijiku",
+      "Katsuki Bakugou",
+      "Darkness",
+      "Winry Rockbell"
     ]
   },
   {
@@ -479,15 +484,15 @@
     "name": "Rouran",
     "anime": "La Boticaria",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b244995-dv4lX99O8aCZ.jpg",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "No necesito mostrar mis intenciones para controlar el resultado.",
+    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
+    "arquetipo": "frio_calculador",
     "similares": [
+      "Sakura Matou",
+      "Subaru Hoshina",
       "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Izuku Midoriya",
+      "Vladilena Milizé"
     ]
   },
   {
@@ -495,15 +500,15 @@
     "name": "Gyokuyou",
     "anime": "La Boticaria",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b156767-6ncEJKdsEQ3O.jpg",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "No hay rival capaz de detenerme cuando decido avanzar.",
+    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
+    "arquetipo": "poder_arrogante",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Rin Toosaka",
+      "Saku Natsusawa",
+      "Shouta Aizawa",
+      "Shouta Aizawa",
+      "Kurena Kukumila"
     ]
   },
   {
@@ -511,14 +516,15 @@
     "name": "Edward Elric",
     "anime": "Fullmetal Alchemist Brotherhood",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b11-TA5Nuk7EDUZG.jpg",
-    "quote": "Para obtener algo, hay que sacrificar algo de igual valor.",
-    "hint": "Un alquimista de baja estatura que busca recuperar lo que perdió junto a su hermano.",
+    "quote": "Aunque tenga miedo, daré el siguiente paso.",
+    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
+    "arquetipo": "heroe_determinado",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Artoria Pendragon",
+      "Enjin",
+      "Toshinori Yagi",
+      "Megumin",
+      "Shinei Nouzen"
     ]
   },
   {
@@ -526,15 +532,15 @@
     "name": "Roy Mustang",
     "anime": "Fullmetal Alchemist Brotherhood",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b68-moBLY2WO2am3.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "Si todo puede salir mal, al menos será divertido.",
+    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
+    "arquetipo": "comedia_caos",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Gilgamesh",
+      "Rudo",
+      "Tenya Iida",
+      "Kazuma Satou",
+      "Anju Emma"
     ]
   },
   {
@@ -542,15 +548,15 @@
     "name": "Alphonse Elric",
     "anime": "Fullmetal Alchemist Brotherhood",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b12-tCKu8yK5kFL5.jpg",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "Lo que siento merece ser dicho, aunque me haga temblar.",
+    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
+    "arquetipo": "romance_drama",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Kaoruko Waguri",
+      "Riyou Reaper",
+      "Shouto Todoroki",
+      "Aqua",
+      "Maomao"
     ]
   },
   {
@@ -558,15 +564,15 @@
     "name": "Winry Rockbell",
     "anime": "Fullmetal Alchemist Brotherhood",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/63-xloedtYxiJ2E.jpg",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "La verdad permanece aunque todos intenten esconderla.",
+    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
+    "arquetipo": "misterio_serio",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Rintarou Tsumugi",
+      "Zanka Nijiku",
+      "Katsuki Bakugou",
+      "Darkness",
+      "Jinshi"
     ]
   },
   {
@@ -574,14 +580,15 @@
     "name": "Tomoya Okazaki",
     "anime": "Clannad",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b4606-61r9h3WUrkA9.png",
-    "quote": "La vida puede ser difícil, pero eso no significa que no tenga momentos hermosos.",
-    "hint": "Un estudiante desencantado que vuelve a encontrar esperanza gracias a sus vínculos.",
+    "quote": "La mejor jugada es la que nadie ve venir.",
+    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
+    "arquetipo": "frio_calculador",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima"
+      "Sakura Matou",
+      "Subaru Hoshina",
+      "Izuku Midoriya",
+      "Izuku Midoriya",
+      "Vladilena Milizé"
     ]
   },
   {
@@ -589,15 +596,15 @@
     "name": "Nagisa Furukawa",
     "anime": "Clannad",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b4604-YFJiWeuGSIYf.png",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "El poder solo sirve si quien lo posee sabe imponerlo.",
+    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
+    "arquetipo": "poder_arrogante",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Rin Toosaka",
+      "Saku Natsusawa",
+      "Shouta Aizawa",
+      "Shouta Aizawa",
+      "Kurena Kukumila"
     ]
   },
   {
@@ -605,15 +612,15 @@
     "name": "Tomoyo Sakagami",
     "anime": "Clannad",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b4603-pq4b7UGmmOyH.png",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "Mientras alguien necesite ayuda, no voy a rendirme.",
+    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
+    "arquetipo": "heroe_determinado",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Artoria Pendragon",
+      "Enjin",
+      "Toshinori Yagi",
+      "Megumin",
+      "Shinei Nouzen"
     ]
   },
   {
@@ -621,15 +628,15 @@
     "name": "Fuuko Ibuki",
     "anime": "Clannad",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b4601-ndvzx7vVREJU.jpg",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "No era el plan, pero este desastre podría funcionar.",
+    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
+    "arquetipo": "comedia_caos",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Gilgamesh",
+      "Rudo",
+      "Tenya Iida",
+      "Kazuma Satou",
+      "Anju Emma"
     ]
   },
   {
@@ -637,14 +644,15 @@
     "name": "Houtarou Oreki",
     "anime": "Hyouka",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b55131-ypodHQCyHbzD.png",
-    "quote": "Si no tengo que hacerlo, no lo haré; si tengo que hacerlo, lo haré rápido.",
-    "hint": "Un detective perezoso que resuelve cualquier misterio con una lógica brillante.",
+    "quote": "A veces cuidar a alguien exige ser valiente.",
+    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
+    "arquetipo": "romance_drama",
     "similares": [
-      "Kiyotaka Ayanokouji",
-      "Light Yagami",
-      "Johan Liebert",
-      "L Lawliet",
-      "Makima"
+      "Kaoruko Waguri",
+      "Riyou Reaper",
+      "Shouto Todoroki",
+      "Aqua",
+      "Maomao"
     ]
   },
   {
@@ -652,15 +660,15 @@
     "name": "Eru Chitanda",
     "anime": "Hyouka",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b55133-S7lRrP0gKXpX.png",
-    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
-    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "quote": "Cada detalle cuenta cuando el caso parece imposible.",
+    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
+    "arquetipo": "misterio_serio",
     "similares": [
-      "Kiyotaka Ayanokouji",
-      "Light Yagami",
-      "Johan Liebert",
-      "L Lawliet",
-      "Makima",
-      "Houtarou Oreki"
+      "Rintarou Tsumugi",
+      "Zanka Nijiku",
+      "Katsuki Bakugou",
+      "Darkness",
+      "Jinshi"
     ]
   },
   {
@@ -668,15 +676,15 @@
     "name": "Mayaka Ibara",
     "anime": "Hyouka",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b55137-PO5CLLnbTwyg.png",
-    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
-    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "quote": "Observar en silencio también es una forma de ganar.",
+    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
+    "arquetipo": "frio_calculador",
     "similares": [
-      "Kiyotaka Ayanokouji",
-      "Light Yagami",
-      "Johan Liebert",
-      "L Lawliet",
-      "Makima",
-      "Houtarou Oreki"
+      "Sakura Matou",
+      "Subaru Hoshina",
+      "Izuku Midoriya",
+      "Izuku Midoriya",
+      "Vladilena Milizé"
     ]
   },
   {
@@ -684,15 +692,15 @@
     "name": "Satoshi Fukube",
     "anime": "Hyouka",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b55135-rSgLOX86JRSO.png",
-    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
-    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "quote": "No necesito permiso para demostrar quién está por encima.",
+    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
+    "arquetipo": "poder_arrogante",
     "similares": [
-      "Kiyotaka Ayanokouji",
-      "Light Yagami",
-      "Johan Liebert",
-      "L Lawliet",
-      "Makima",
-      "Houtarou Oreki"
+      "Rin Toosaka",
+      "Saku Natsusawa",
+      "Shouta Aizawa",
+      "Shouta Aizawa",
+      "Kurena Kukumila"
     ]
   },
   {
@@ -700,15 +708,15 @@
     "name": "Adam",
     "anime": "Record Of Ragnarok",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b140637-jTJb40wOjsPs.png",
-    "quote": "Estoy aquí para proteger a mis hijos.",
-    "hint": "El primer hombre de la humanidad, dispuesto a enfrentarse a cualquier dios por sus descendientes.",
+    "quote": "Seguiré luchando hasta que todos estén a salvo.",
+    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
+    "arquetipo": "heroe_determinado",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Artoria Pendragon",
+      "Enjin",
+      "Toshinori Yagi",
+      "Megumin",
+      "Shinei Nouzen"
     ]
   },
   {
@@ -716,15 +724,15 @@
     "name": "Jack the Ripper",
     "anime": "Record Of Ragnarok",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b159840-MvF5LfHGiZdB.jpg",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "La prudencia está bien; una explosión también.",
+    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
+    "arquetipo": "comedia_caos",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Gilgamesh",
+      "Rudo",
+      "Tenya Iida",
+      "Kazuma Satou",
+      "Anju Emma"
     ]
   },
   {
@@ -732,15 +740,15 @@
     "name": "Brunhilde",
     "anime": "Record Of Ragnarok",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b140636-nuL1uHEuedtJ.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "No quiero que un recuerdo importante se pierda en silencio.",
+    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
+    "arquetipo": "romance_drama",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Kaoruko Waguri",
+      "Riyou Reaper",
+      "Shouto Todoroki",
+      "Aqua",
+      "Maomao"
     ]
   },
   {
@@ -748,15 +756,15 @@
     "name": "Kojirou Sasaki",
     "anime": "Record Of Ragnarok",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b140646-j8tTUNjhFYPQ.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "No aceptaré una respuesta cómoda sin comprobarla.",
+    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
+    "arquetipo": "misterio_serio",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Rintarou Tsumugi",
+      "Zanka Nijiku",
+      "Katsuki Bakugou",
+      "Darkness",
+      "Jinshi"
     ]
   },
   {
@@ -764,14 +772,15 @@
     "name": "Johan Liebert",
     "anime": "MONSTER",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b719-y984mDWyGf5n.jpg",
-    "quote": "El verdadero monstruo no necesita un rostro para existir.",
-    "hint": "Un hombre enigmático y peligrosamente carismático que representa el vacío moral.",
+    "quote": "Las emociones no deben decidir una estrategia.",
+    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
+    "arquetipo": "frio_calculador",
     "similares": [
-      "Kiyotaka Ayanokouji",
-      "Light Yagami",
-      "L Lawliet",
-      "Makima",
-      "Houtarou Oreki"
+      "Sakura Matou",
+      "Subaru Hoshina",
+      "Izuku Midoriya",
+      "Izuku Midoriya",
+      "Vladilena Milizé"
     ]
   },
   {
@@ -779,15 +788,15 @@
     "name": "Kenzou Tenma",
     "anime": "MONSTER",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b718-b6ZZVp822lw0.png",
-    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
-    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "quote": "Que todos miren: esta batalla ya tiene dueño.",
+    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
+    "arquetipo": "poder_arrogante",
     "similares": [
-      "Kiyotaka Ayanokouji",
-      "Light Yagami",
-      "Johan Liebert",
-      "L Lawliet",
-      "Makima",
-      "Houtarou Oreki"
+      "Rin Toosaka",
+      "Saku Natsusawa",
+      "Shouta Aizawa",
+      "Shouta Aizawa",
+      "Kurena Kukumila"
     ]
   },
   {
@@ -795,15 +804,15 @@
     "name": "Wolfgang Grimmer",
     "anime": "MONSTER",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b3096-qCXXA8G0J8rk.png",
-    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
-    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "quote": "Una caída no puede decidir el final de una historia.",
+    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
+    "arquetipo": "heroe_determinado",
     "similares": [
-      "Kiyotaka Ayanokouji",
-      "Light Yagami",
-      "Johan Liebert",
-      "L Lawliet",
-      "Makima",
-      "Houtarou Oreki"
+      "Artoria Pendragon",
+      "Enjin",
+      "Toshinori Yagi",
+      "Megumin",
+      "Shinei Nouzen"
     ]
   },
   {
@@ -811,15 +820,15 @@
     "name": "Heinrich Runge",
     "anime": "MONSTER",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b721-VSOxZHBedxtD.png",
-    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
-    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "quote": "Prometo que esta vez nadie tendrá que arreglarlo todo.",
+    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
+    "arquetipo": "comedia_caos",
     "similares": [
-      "Kiyotaka Ayanokouji",
-      "Light Yagami",
-      "Johan Liebert",
-      "L Lawliet",
-      "Makima",
-      "Houtarou Oreki"
+      "Gilgamesh",
+      "Rudo",
+      "Tenya Iida",
+      "Kazuma Satou",
+      "Anju Emma"
     ]
   },
   {
@@ -827,15 +836,15 @@
     "name": "Akame",
     "anime": "Akame Ga Kill",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b63351-0WmsDENpiscp.png",
-    "quote": "Si no hacemos nada, nada cambiará.",
-    "hint": "Una asesina silenciosa de mirada fría que pelea por acabar con la corrupción.",
+    "quote": "Si caminamos juntos, incluso el miedo pesa menos.",
+    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
+    "arquetipo": "romance_drama",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Kaoruko Waguri",
+      "Riyou Reaper",
+      "Shouto Todoroki",
+      "Aqua",
+      "Maomao"
     ]
   },
   {
@@ -843,15 +852,15 @@
     "name": "Esdeath",
     "anime": "Akame Ga Kill",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b65239-2S3t2vSyUew9.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "El silencio también deja pistas.",
+    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
+    "arquetipo": "misterio_serio",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Rintarou Tsumugi",
+      "Zanka Nijiku",
+      "Katsuki Bakugou",
+      "Darkness",
+      "Jinshi"
     ]
   },
   {
@@ -859,15 +868,15 @@
     "name": "Mine",
     "anime": "Akame Ga Kill",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b65229-hYOZtUlIpd5G.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "Si conozco las reglas, puedo cambiar el tablero.",
+    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
+    "arquetipo": "frio_calculador",
     "similares": [
+      "Sakura Matou",
+      "Subaru Hoshina",
       "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Izuku Midoriya",
+      "Vladilena Milizé"
     ]
   },
   {
@@ -875,15 +884,15 @@
     "name": "Leone",
     "anime": "Akame Ga Kill",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b65227-PWmfiEVJbCwQ.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "La victoria es lo único que merece mi atención.",
+    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
+    "arquetipo": "poder_arrogante",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Rin Toosaka",
+      "Saku Natsusawa",
+      "Shouta Aizawa",
+      "Shouta Aizawa",
+      "Kurena Kukumila"
     ]
   },
   {
@@ -891,15 +900,15 @@
     "name": "Hina Chouno",
     "anime": "Blue Box",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b218648-kXxXy8lPkeGV.png",
-    "quote": "Aunque duela, mis sentimientos también son algo que debo cuidar.",
-    "hint": "Una gimnasta expresiva que enfrenta el amor no correspondido sin dejar de sonreír.",
+    "quote": "Mi fuerza tiene sentido cuando protege a otra persona.",
+    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
+    "arquetipo": "heroe_determinado",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Artoria Pendragon",
+      "Enjin",
+      "Toshinori Yagi",
+      "Megumin",
+      "Shinei Nouzen"
     ]
   },
   {
@@ -907,15 +916,15 @@
     "name": "Chinatsu Kano",
     "anime": "Blue Box",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b191241-FaDEXRL1CgJr.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "El caos siempre encuentra una manera de sorprenderme.",
+    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
+    "arquetipo": "comedia_caos",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Gilgamesh",
+      "Rudo",
+      "Tenya Iida",
+      "Kazuma Satou",
+      "Anju Emma"
     ]
   },
   {
@@ -923,15 +932,15 @@
     "name": "Taiki Inomata",
     "anime": "Blue Box",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b191242-uQJUPMyknaTb.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "Hay personas que cambian nuestra vida sin proponérselo.",
+    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
+    "arquetipo": "romance_drama",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Kaoruko Waguri",
+      "Riyou Reaper",
+      "Shouto Todoroki",
+      "Aqua",
+      "Maomao"
     ]
   },
   {
@@ -939,15 +948,15 @@
     "name": "Kyou Kasahara",
     "anime": "Blue Box",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b218647-A2ngPlh7Yucn.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "La realidad suele ser más inquietante que cualquier rumor.",
+    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
+    "arquetipo": "misterio_serio",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Rintarou Tsumugi",
+      "Zanka Nijiku",
+      "Katsuki Bakugou",
+      "Darkness",
+      "Jinshi"
     ]
   },
   {
@@ -955,15 +964,15 @@
     "name": "Lucy",
     "anime": "Cyberpunk: Edgerunners",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b284157-cqYawN7XCNJx.jpg",
-    "quote": "No quiero estar en ningún lugar de este mundo; quiero estar contigo en la luna.",
-    "hint": "Una netrunner reservada que sueña con escapar de Night City.",
+    "quote": "No necesito mostrar mis intenciones para controlar el resultado.",
+    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
+    "arquetipo": "frio_calculador",
     "similares": [
-      "Kiyotaka Ayanokouji",
-      "Light Yagami",
-      "Johan Liebert",
-      "L Lawliet",
-      "Makima",
-      "Houtarou Oreki"
+      "Sakura Matou",
+      "Subaru Hoshina",
+      "Izuku Midoriya",
+      "Izuku Midoriya",
+      "Vladilena Milizé"
     ]
   },
   {
@@ -971,15 +980,15 @@
     "name": "David Martinez",
     "anime": "Cyberpunk: Edgerunners",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b284158-z1uGKC3IYVa1.png",
-    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
-    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "quote": "No hay rival capaz de detenerme cuando decido avanzar.",
+    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
+    "arquetipo": "poder_arrogante",
     "similares": [
-      "Kiyotaka Ayanokouji",
-      "Light Yagami",
-      "Johan Liebert",
-      "L Lawliet",
-      "Makima",
-      "Houtarou Oreki"
+      "Rin Toosaka",
+      "Saku Natsusawa",
+      "Shouta Aizawa",
+      "Shouta Aizawa",
+      "Kurena Kukumila"
     ]
   },
   {
@@ -987,15 +996,15 @@
     "name": "Rebecca",
     "anime": "Cyberpunk: Edgerunners",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b284163-tt8smoAXl24x.jpg",
-    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
-    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "quote": "Aunque tenga miedo, daré el siguiente paso.",
+    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
+    "arquetipo": "heroe_determinado",
     "similares": [
-      "Kiyotaka Ayanokouji",
-      "Light Yagami",
-      "Johan Liebert",
-      "L Lawliet",
-      "Makima",
-      "Houtarou Oreki"
+      "Artoria Pendragon",
+      "Enjin",
+      "Toshinori Yagi",
+      "Megumin",
+      "Shinei Nouzen"
     ]
   },
   {
@@ -1003,15 +1012,15 @@
     "name": "Maine",
     "anime": "Cyberpunk: Edgerunners",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b284159-RvuKShSpDOS5.png",
-    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
-    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "quote": "Si todo puede salir mal, al menos será divertido.",
+    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
+    "arquetipo": "comedia_caos",
     "similares": [
-      "Kiyotaka Ayanokouji",
-      "Light Yagami",
-      "Johan Liebert",
-      "L Lawliet",
-      "Makima",
-      "Houtarou Oreki"
+      "Gilgamesh",
+      "Rudo",
+      "Tenya Iida",
+      "Kazuma Satou",
+      "Anju Emma"
     ]
   },
   {
@@ -1019,15 +1028,15 @@
     "name": "Shiori Sakurazaka",
     "anime": "More Than a Married Couple",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b273105-BUCVawntAuJF.png",
-    "quote": "A veces, querer a alguien también significa atreverse a dar el primer paso.",
-    "hint": "Una chica tranquila y dulce que descubre el valor de expresar lo que siente.",
+    "quote": "Lo que siento merece ser dicho, aunque me haga temblar.",
+    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
+    "arquetipo": "romance_drama",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Kaoruko Waguri",
+      "Riyou Reaper",
+      "Shouto Todoroki",
+      "Aqua",
+      "Maomao"
     ]
   },
   {
@@ -1035,15 +1044,15 @@
     "name": "Akari Watanabe",
     "anime": "More Than a Married Couple",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b191672-MozVAnqyv9oZ.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "La verdad permanece aunque todos intenten esconderla.",
+    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
+    "arquetipo": "misterio_serio",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Rintarou Tsumugi",
+      "Zanka Nijiku",
+      "Katsuki Bakugou",
+      "Darkness",
+      "Jinshi"
     ]
   },
   {
@@ -1051,15 +1060,15 @@
     "name": "Jirou Yakuin",
     "anime": "More Than a Married Couple",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b191673-eD8IFBOdAFv5.jpg",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "La mejor jugada es la que nadie ve venir.",
+    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
+    "arquetipo": "frio_calculador",
     "similares": [
+      "Sakura Matou",
+      "Subaru Hoshina",
       "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Izuku Midoriya",
+      "Vladilena Milizé"
     ]
   },
   {
@@ -1067,15 +1076,15 @@
     "name": "Sadaharu Kamo",
     "anime": "More Than a Married Couple",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b273109-MLnliqfOwuAh.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "El poder solo sirve si quien lo posee sabe imponerlo.",
+    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
+    "arquetipo": "poder_arrogante",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Rin Toosaka",
+      "Saku Natsusawa",
+      "Shouta Aizawa",
+      "Shouta Aizawa",
+      "Kurena Kukumila"
     ]
   },
   {
@@ -1083,15 +1092,15 @@
     "name": "Levi",
     "anime": "Attack on Titan",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b45627-CR68RyZmddGG.png",
-    "quote": "Elige la decisión de la que te arrepientas menos.",
-    "hint": "El soldado más fuerte de la humanidad, exigente y obsesionado con la limpieza.",
+    "quote": "Mientras alguien necesite ayuda, no voy a rendirme.",
+    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
+    "arquetipo": "heroe_determinado",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Artoria Pendragon",
+      "Enjin",
+      "Toshinori Yagi",
+      "Megumin",
+      "Shinei Nouzen"
     ]
   },
   {
@@ -1099,14 +1108,15 @@
     "name": "Eren Yeager",
     "anime": "Attack on Titan",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b40882-dsj7IP943WFF.jpg",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "No era el plan, pero este desastre podría funcionar.",
+    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
+    "arquetipo": "comedia_caos",
     "similares": [
-      "Izuku Midoriya",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Gilgamesh",
+      "Rudo",
+      "Tenya Iida",
+      "Kazuma Satou",
+      "Anju Emma"
     ]
   },
   {
@@ -1114,15 +1124,15 @@
     "name": "Mikasa Ackerman",
     "anime": "Attack on Titan",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b40881-F3gr1PkreDvj.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "A veces cuidar a alguien exige ser valiente.",
+    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
+    "arquetipo": "romance_drama",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Kaoruko Waguri",
+      "Riyou Reaper",
+      "Shouto Todoroki",
+      "Aqua",
+      "Maomao"
     ]
   },
   {
@@ -1130,15 +1140,15 @@
     "name": "Armin Arlert",
     "anime": "Attack on Titan",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b46494-g7xYYuBtYPnO.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "Cada detalle cuenta cuando el caso parece imposible.",
+    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
+    "arquetipo": "misterio_serio",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Rintarou Tsumugi",
+      "Zanka Nijiku",
+      "Katsuki Bakugou",
+      "Darkness",
+      "Jinshi"
     ]
   },
   {
@@ -1146,15 +1156,15 @@
     "name": "Soushirou Hoshina",
     "anime": "Kaiju No. 8",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b205579-FRvVyrOIG8Yz.jpg",
-    "quote": "No necesito ser el más fuerte; necesito ser útil cuando llegue el momento.",
-    "hint": "Un vicecapitán de estilo veloz que disfruta enfrentarse a monstruos enormes.",
+    "quote": "Observar en silencio también es una forma de ganar.",
+    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
+    "arquetipo": "frio_calculador",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Sakura Matou",
+      "Subaru Hoshina",
+      "Izuku Midoriya",
+      "Izuku Midoriya",
+      "Vladilena Milizé"
     ]
   },
   {
@@ -1162,15 +1172,15 @@
     "name": "Mina Ashiro",
     "anime": "Kaiju No. 8",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b180693-i9RZuHTDwXov.png",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "No necesito permiso para demostrar quién está por encima.",
+    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
+    "arquetipo": "poder_arrogante",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Rin Toosaka",
+      "Saku Natsusawa",
+      "Shouta Aizawa",
+      "Shouta Aizawa",
+      "Kurena Kukumila"
     ]
   },
   {
@@ -1178,15 +1188,15 @@
     "name": "Kafka Hibino",
     "anime": "Kaiju No. 8",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b180692-rPGXuxhcKw5N.png",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "Seguiré luchando hasta que todos estén a salvo.",
+    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
+    "arquetipo": "heroe_determinado",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Artoria Pendragon",
+      "Enjin",
+      "Toshinori Yagi",
+      "Megumin",
+      "Shinei Nouzen"
     ]
   },
   {
@@ -1194,15 +1204,15 @@
     "name": "Reno Ichikawa",
     "anime": "Kaiju No. 8",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b180694-Q0Ocr4aqBu4k.png",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "La prudencia está bien; una explosión también.",
+    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
+    "arquetipo": "comedia_caos",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Gilgamesh",
+      "Rudo",
+      "Tenya Iida",
+      "Kazuma Satou",
+      "Anju Emma"
     ]
   },
   {
@@ -1210,15 +1220,15 @@
     "name": "Satoru Fujinuma",
     "anime": "Erased",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89275-xCGzh6jAGe2v.png",
-    "quote": "Si puedo cambiar el pasado, también puedo salvar a alguien.",
-    "hint": "Un joven que regresa en el tiempo para impedir una tragedia de su infancia.",
+    "quote": "No quiero que un recuerdo importante se pierda en silencio.",
+    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
+    "arquetipo": "romance_drama",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Kaoruko Waguri",
+      "Riyou Reaper",
+      "Shouto Todoroki",
+      "Aqua",
+      "Maomao"
     ]
   },
   {
@@ -1226,15 +1236,15 @@
     "name": "Kayo Hinazuki",
     "anime": "Erased",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/89276-LjlYvXfOnjHB.jpg",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "No aceptaré una respuesta cómoda sin comprobarla.",
+    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
+    "arquetipo": "misterio_serio",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Rintarou Tsumugi",
+      "Zanka Nijiku",
+      "Katsuki Bakugou",
+      "Darkness",
+      "Jinshi"
     ]
   },
   {
@@ -1242,15 +1252,15 @@
     "name": "Kenya Kobayashi",
     "anime": "Erased",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89357-E9erSMef5EJC.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "Las emociones no deben decidir una estrategia.",
+    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
+    "arquetipo": "frio_calculador",
     "similares": [
+      "Sakura Matou",
+      "Subaru Hoshina",
       "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Izuku Midoriya",
+      "Vladilena Milizé"
     ]
   },
   {
@@ -1258,15 +1268,15 @@
     "name": "Sachiko Fujinuma",
     "anime": "Erased",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/89326-zNVEqTuDt7kL.jpg",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "Que todos miren: esta batalla ya tiene dueño.",
+    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
+    "arquetipo": "poder_arrogante",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Rin Toosaka",
+      "Saku Natsusawa",
+      "Shouta Aizawa",
+      "Shouta Aizawa",
+      "Kurena Kukumila"
     ]
   },
   {
@@ -1274,15 +1284,15 @@
     "name": "Karane Inda",
     "anime": "Las 100 Novias",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b173760-Gj3fK5VpbpT3.png",
-    "quote": "¡No es que me gustes ni nada, tonto!",
-    "hint": "Una chica de carácter explosivo cuyo orgullo intenta ocultar un gran cariño.",
+    "quote": "Una caída no puede decidir el final de una historia.",
+    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
+    "arquetipo": "heroe_determinado",
     "similares": [
-      "Kiyotaka Ayanokouji",
-      "Light Yagami",
-      "Johan Liebert",
-      "L Lawliet",
-      "Makima",
-      "Houtarou Oreki"
+      "Artoria Pendragon",
+      "Enjin",
+      "Toshinori Yagi",
+      "Megumin",
+      "Shinei Nouzen"
     ]
   },
   {
@@ -1290,15 +1300,15 @@
     "name": "Shizuka Yoshimoto",
     "anime": "Las 100 Novias",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b173761-1FcQvX74KVW7.png",
-    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
-    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "quote": "Prometo que esta vez nadie tendrá que arreglarlo todo.",
+    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
+    "arquetipo": "comedia_caos",
     "similares": [
-      "Kiyotaka Ayanokouji",
-      "Light Yagami",
-      "Johan Liebert",
-      "L Lawliet",
-      "Makima",
-      "Houtarou Oreki"
+      "Gilgamesh",
+      "Rudo",
+      "Tenya Iida",
+      "Kazuma Satou",
+      "Anju Emma"
     ]
   },
   {
@@ -1306,15 +1316,15 @@
     "name": "Nano Eiai",
     "anime": "Las 100 Novias",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b173762-bmdMGoIMVz2E.png",
-    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
-    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "quote": "Si caminamos juntos, incluso el miedo pesa menos.",
+    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
+    "arquetipo": "romance_drama",
     "similares": [
-      "Kiyotaka Ayanokouji",
-      "Light Yagami",
-      "Johan Liebert",
-      "L Lawliet",
-      "Makima",
-      "Houtarou Oreki"
+      "Kaoruko Waguri",
+      "Riyou Reaper",
+      "Shouto Todoroki",
+      "Aqua",
+      "Maomao"
     ]
   },
   {
@@ -1322,15 +1332,15 @@
     "name": "Hakari Hanazono",
     "anime": "Las 100 Novias",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b173759-Bu2KIzM1JELG.png",
-    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
-    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "quote": "El silencio también deja pistas.",
+    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
+    "arquetipo": "misterio_serio",
     "similares": [
-      "Kiyotaka Ayanokouji",
-      "Light Yagami",
-      "Johan Liebert",
-      "L Lawliet",
-      "Makima",
-      "Houtarou Oreki"
+      "Rintarou Tsumugi",
+      "Zanka Nijiku",
+      "Katsuki Bakugou",
+      "Darkness",
+      "Jinshi"
     ]
   },
   {
@@ -1338,15 +1348,15 @@
     "name": "Emilia",
     "anime": "Re: ZERO",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b88572-IzTwXEHSobRs.jpg",
-    "quote": "Aunque el mundo me rechace, seguiré creyendo en lo que considero correcto.",
-    "hint": "Una medio elfa de cabello plateado que busca convertirse en gobernante.",
+    "quote": "Si conozco las reglas, puedo cambiar el tablero.",
+    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
+    "arquetipo": "frio_calculador",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Sakura Matou",
+      "Subaru Hoshina",
+      "Izuku Midoriya",
+      "Izuku Midoriya",
+      "Vladilena Milizé"
     ]
   },
   {
@@ -1354,15 +1364,15 @@
     "name": "Rem",
     "anime": "Re: ZERO",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b88575-Ayu8UPDA8NS6.png",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "La victoria es lo único que merece mi atención.",
+    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
+    "arquetipo": "poder_arrogante",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Rin Toosaka",
+      "Saku Natsusawa",
+      "Shouta Aizawa",
+      "Shouta Aizawa",
+      "Kurena Kukumila"
     ]
   },
   {
@@ -1370,15 +1380,15 @@
     "name": "Subaru Natsuki",
     "anime": "Re: ZERO",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b88573-F8yMTK9GhnTA.png",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "Mi fuerza tiene sentido cuando protege a otra persona.",
+    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
+    "arquetipo": "heroe_determinado",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Artoria Pendragon",
+      "Enjin",
+      "Toshinori Yagi",
+      "Megumin",
+      "Shinei Nouzen"
     ]
   },
   {
@@ -1386,15 +1396,15 @@
     "name": "Beatrice",
     "anime": "Re: ZERO",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b90181-wRPm0OEaucmw.png",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "El caos siempre encuentra una manera de sorprenderme.",
+    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
+    "arquetipo": "comedia_caos",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Gilgamesh",
+      "Rudo",
+      "Tenya Iida",
+      "Kazuma Satou",
+      "Anju Emma"
     ]
   },
   {
@@ -1402,14 +1412,15 @@
     "name": "Takopi",
     "anime": "Takopis Original Sin",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b266372-zUgh0xxukbW8.png",
-    "quote": "¡Quiero que todos vuelvan a sonreír!",
-    "hint": "Una criatura extraterrestre inocente que intenta arreglar los problemas humanos.",
+    "quote": "Hay personas que cambian nuestra vida sin proponérselo.",
+    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
+    "arquetipo": "romance_drama",
     "similares": [
-      "Megumin",
-      "Kazuma Satou",
-      "Momo Ayase",
-      "Saitama",
-      "Marin Kitagawa"
+      "Kaoruko Waguri",
+      "Riyou Reaper",
+      "Shouto Todoroki",
+      "Aqua",
+      "Maomao"
     ]
   },
   {
@@ -1417,15 +1428,15 @@
     "name": "Shizuka Kuze",
     "anime": "Takopis Original Sin",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b266369-vhLyGsVBIlAT.jpg",
-    "quote": "Si todo va a salir mal, al menos hag?moslo de una forma inolvidable.",
-    "hint": "Energ?a impredecible, humor extra?o y talento para convertir todo en un desastre.",
+    "quote": "La realidad suele ser más inquietante que cualquier rumor.",
+    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
+    "arquetipo": "misterio_serio",
     "similares": [
-      "Megumin",
-      "Kazuma Satou",
-      "Takopi",
-      "Momo Ayase",
-      "Saitama",
-      "Marin Kitagawa"
+      "Rintarou Tsumugi",
+      "Zanka Nijiku",
+      "Katsuki Bakugou",
+      "Darkness",
+      "Jinshi"
     ]
   },
   {
@@ -1433,15 +1444,15 @@
     "name": "Marina Kirarazaka",
     "anime": "Takopis Original Sin",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b266370-OClTuCBxS13v.jpg",
-    "quote": "Si todo va a salir mal, al menos hag?moslo de una forma inolvidable.",
-    "hint": "Energ?a impredecible, humor extra?o y talento para convertir todo en un desastre.",
+    "quote": "No necesito mostrar mis intenciones para controlar el resultado.",
+    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
+    "arquetipo": "frio_calculador",
     "similares": [
-      "Megumin",
-      "Kazuma Satou",
-      "Takopi",
-      "Momo Ayase",
-      "Saitama",
-      "Marin Kitagawa"
+      "Sakura Matou",
+      "Subaru Hoshina",
+      "Izuku Midoriya",
+      "Izuku Midoriya",
+      "Vladilena Milizé"
     ]
   },
   {
@@ -1449,15 +1460,15 @@
     "name": "Naoki Azuma",
     "anime": "Takopis Original Sin",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b266371-8ytjDeW2vHba.jpg",
-    "quote": "Si todo va a salir mal, al menos hag?moslo de una forma inolvidable.",
-    "hint": "Energ?a impredecible, humor extra?o y talento para convertir todo en un desastre.",
+    "quote": "No hay rival capaz de detenerme cuando decido avanzar.",
+    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
+    "arquetipo": "poder_arrogante",
     "similares": [
-      "Megumin",
-      "Kazuma Satou",
-      "Takopi",
-      "Momo Ayase",
-      "Saitama",
-      "Marin Kitagawa"
+      "Rin Toosaka",
+      "Saku Natsusawa",
+      "Shouta Aizawa",
+      "Shouta Aizawa",
+      "Kurena Kukumila"
     ]
   },
   {
@@ -1465,14 +1476,15 @@
     "name": "Saitama",
     "anime": "One Punch Man",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b73935-ON5d0mAcrItd.jpg",
-    "quote": "¡Cien flexiones, cien abdominales, cien sentadillas y diez kilómetros cada día!",
-    "hint": "Un héroe calvo que derrota a cualquiera de un golpe y busca una buena pelea.",
+    "quote": "Aunque tenga miedo, daré el siguiente paso.",
+    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
+    "arquetipo": "heroe_determinado",
     "similares": [
-      "Gilgamesh",
-      "Satoru Gojou",
-      "Levi",
-      "Makima",
-      "Jin-U Seong"
+      "Artoria Pendragon",
+      "Enjin",
+      "Toshinori Yagi",
+      "Megumin",
+      "Shinei Nouzen"
     ]
   },
   {
@@ -1480,15 +1492,15 @@
     "name": "Tatsumaki",
     "anime": "One Punch Man",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b81929-WPVp2LQoWgkc.png",
-    "quote": "Si voy a avanzar, ser? dejando claro qui?n tiene el control.",
-    "hint": "Presencia dominante y confianza suficiente para desafiar a cualquiera.",
+    "quote": "Si todo puede salir mal, al menos será divertido.",
+    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
+    "arquetipo": "comedia_caos",
     "similares": [
       "Gilgamesh",
-      "Satoru Gojou",
-      "Levi",
-      "Saitama",
-      "Makima",
-      "Jin-U Seong"
+      "Rudo",
+      "Tenya Iida",
+      "Kazuma Satou",
+      "Anju Emma"
     ]
   },
   {
@@ -1496,15 +1508,15 @@
     "name": "Genos",
     "anime": "One Punch Man",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b73979-tVi9maPID881.jpg",
-    "quote": "Si voy a avanzar, ser? dejando claro qui?n tiene el control.",
-    "hint": "Presencia dominante y confianza suficiente para desafiar a cualquiera.",
+    "quote": "Lo que siento merece ser dicho, aunque me haga temblar.",
+    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
+    "arquetipo": "romance_drama",
     "similares": [
-      "Gilgamesh",
-      "Satoru Gojou",
-      "Levi",
-      "Saitama",
-      "Makima",
-      "Jin-U Seong"
+      "Kaoruko Waguri",
+      "Riyou Reaper",
+      "Shouto Todoroki",
+      "Aqua",
+      "Maomao"
     ]
   },
   {
@@ -1512,15 +1524,15 @@
     "name": "Garou",
     "anime": "One Punch Man",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89277-xBGb4B5YISXg.png",
-    "quote": "Si voy a avanzar, ser? dejando claro qui?n tiene el control.",
-    "hint": "Presencia dominante y confianza suficiente para desafiar a cualquiera.",
+    "quote": "La verdad permanece aunque todos intenten esconderla.",
+    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
+    "arquetipo": "misterio_serio",
     "similares": [
-      "Gilgamesh",
-      "Satoru Gojou",
-      "Levi",
-      "Saitama",
-      "Makima",
-      "Jin-U Seong"
+      "Rintarou Tsumugi",
+      "Zanka Nijiku",
+      "Katsuki Bakugou",
+      "Darkness",
+      "Jinshi"
     ]
   },
   {
@@ -1528,15 +1540,15 @@
     "name": "Ichigo",
     "anime": "Darling in the Franxx",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b124382-bSBkjtYjJQtr.png",
-    "quote": "Ser fuerte también significa proteger a quienes no pueden hacerlo solos.",
-    "hint": "La responsable líder del escuadrón que intenta mantener unidos a sus compañeros.",
+    "quote": "La mejor jugada es la que nadie ve venir.",
+    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
+    "arquetipo": "frio_calculador",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Sakura Matou",
+      "Subaru Hoshina",
+      "Izuku Midoriya",
+      "Izuku Midoriya",
+      "Vladilena Milizé"
     ]
   },
   {
@@ -1544,15 +1556,15 @@
     "name": "Zero Two",
     "anime": "Darling in the Franxx",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b124381-2gAVq76HPfL2.png",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "El poder solo sirve si quien lo posee sabe imponerlo.",
+    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
+    "arquetipo": "poder_arrogante",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Rin Toosaka",
+      "Saku Natsusawa",
+      "Shouta Aizawa",
+      "Shouta Aizawa",
+      "Kurena Kukumila"
     ]
   },
   {
@@ -1560,15 +1572,15 @@
     "name": "Hiro",
     "anime": "Darling in the Franxx",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b124380-ct1wJHIl9BY1.jpg",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "Mientras alguien necesite ayuda, no voy a rendirme.",
+    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
+    "arquetipo": "heroe_determinado",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Artoria Pendragon",
+      "Enjin",
+      "Toshinori Yagi",
+      "Megumin",
+      "Shinei Nouzen"
     ]
   },
   {
@@ -1576,15 +1588,15 @@
     "name": "Kokoro",
     "anime": "Darling in the Franxx",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b124386-vc248g43ap3m.jpg",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "No era el plan, pero este desastre podría funcionar.",
+    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
+    "arquetipo": "comedia_caos",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Gilgamesh",
+      "Rudo",
+      "Tenya Iida",
+      "Kazuma Satou",
+      "Anju Emma"
     ]
   },
   {
@@ -1592,14 +1604,15 @@
     "name": "L Lawliet",
     "anime": "Death Note",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b71-1W4panC53vfs.png",
-    "quote": "La justicia siempre prevalecerá, porque quien gane se convierte en la justicia.",
-    "hint": "Un detective excéntrico que se sienta en cuclillas y adora los dulces.",
+    "quote": "A veces cuidar a alguien exige ser valiente.",
+    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
+    "arquetipo": "romance_drama",
     "similares": [
-      "Kiyotaka Ayanokouji",
-      "Light Yagami",
-      "Johan Liebert",
-      "Makima",
-      "Houtarou Oreki"
+      "Kaoruko Waguri",
+      "Riyou Reaper",
+      "Shouto Todoroki",
+      "Aqua",
+      "Maomao"
     ]
   },
   {
@@ -1607,14 +1620,15 @@
     "name": "Light Yagami",
     "anime": "Death Note",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b80-26EhwSsSqQ50.png",
-    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
-    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "quote": "Cada detalle cuenta cuando el caso parece imposible.",
+    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
+    "arquetipo": "misterio_serio",
     "similares": [
-      "Kiyotaka Ayanokouji",
-      "Johan Liebert",
-      "L Lawliet",
-      "Makima",
-      "Houtarou Oreki"
+      "Rintarou Tsumugi",
+      "Zanka Nijiku",
+      "Katsuki Bakugou",
+      "Darkness",
+      "Jinshi"
     ]
   },
   {
@@ -1622,15 +1636,15 @@
     "name": "Ryuk",
     "anime": "Death Note",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b75-IkEpzO21LgFy.jpg",
-    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
-    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "quote": "Observar en silencio también es una forma de ganar.",
+    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
+    "arquetipo": "frio_calculador",
     "similares": [
-      "Kiyotaka Ayanokouji",
-      "Light Yagami",
-      "Johan Liebert",
-      "L Lawliet",
-      "Makima",
-      "Houtarou Oreki"
+      "Sakura Matou",
+      "Subaru Hoshina",
+      "Izuku Midoriya",
+      "Izuku Midoriya",
+      "Vladilena Milizé"
     ]
   },
   {
@@ -1638,15 +1652,15 @@
     "name": "Misa Amane",
     "anime": "Death Note",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b835-CiZa8y2z2gCz.png",
-    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
-    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "quote": "No necesito permiso para demostrar quién está por encima.",
+    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
+    "arquetipo": "poder_arrogante",
     "similares": [
-      "Kiyotaka Ayanokouji",
-      "Light Yagami",
-      "Johan Liebert",
-      "L Lawliet",
-      "Makima",
-      "Houtarou Oreki"
+      "Rin Toosaka",
+      "Saku Natsusawa",
+      "Shouta Aizawa",
+      "Shouta Aizawa",
+      "Kurena Kukumila"
     ]
   },
   {
@@ -1654,15 +1668,15 @@
     "name": "Haruka Sakura",
     "anime": "Wind Breaker",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b230204-cNRNjAj1FP4j.png",
-    "quote": "No necesito caerle bien a nadie; solo quiero demostrar lo que valgo.",
-    "hint": "Un peleador solitario que aprende que proteger a su barrio también es pertenecer.",
+    "quote": "Seguiré luchando hasta que todos estén a salvo.",
+    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
+    "arquetipo": "heroe_determinado",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Artoria Pendragon",
+      "Enjin",
+      "Toshinori Yagi",
+      "Megumin",
+      "Shinei Nouzen"
     ]
   },
   {
@@ -1670,15 +1684,15 @@
     "name": "Hayato Suou",
     "anime": "Wind Breaker",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b255629-dnDEPOiRH5Wo.jpg",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "La prudencia está bien; una explosión también.",
+    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
+    "arquetipo": "comedia_caos",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Gilgamesh",
+      "Rudo",
+      "Tenya Iida",
+      "Kazuma Satou",
+      "Anju Emma"
     ]
   },
   {
@@ -1686,15 +1700,15 @@
     "name": "Hajime Umemiya",
     "anime": "Wind Breaker",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b255630-lz7qcvEvmj3y.jpg",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "No quiero que un recuerdo importante se pierda en silencio.",
+    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
+    "arquetipo": "romance_drama",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Kaoruko Waguri",
+      "Riyou Reaper",
+      "Shouto Todoroki",
+      "Aqua",
+      "Maomao"
     ]
   },
   {
@@ -1702,15 +1716,15 @@
     "name": "Jou Togame",
     "anime": "Wind Breaker",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b332991-Bqp9MwdolhBu.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "No aceptaré una respuesta cómoda sin comprobarla.",
+    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
+    "arquetipo": "misterio_serio",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Rintarou Tsumugi",
+      "Zanka Nijiku",
+      "Katsuki Bakugou",
+      "Darkness",
+      "Jinshi"
     ]
   },
   {
@@ -1718,15 +1732,15 @@
     "name": "Itsuki Nakano",
     "anime": "Las Quintillizas",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b126375-dEe9IyQ9By09.png",
-    "quote": "Aunque discutamos, seguimos siendo hermanas.",
-    "hint": "La quinta hermana, estudiosa y responsable, que siempre está pensando en comer.",
+    "quote": "Las emociones no deben decidir una estrategia.",
+    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
+    "arquetipo": "frio_calculador",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Sakura Matou",
+      "Subaru Hoshina",
+      "Izuku Midoriya",
+      "Izuku Midoriya",
+      "Vladilena Milizé"
     ]
   },
   {
@@ -1734,15 +1748,15 @@
     "name": "Miku Nakano",
     "anime": "Las Quintillizas",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b126373-CWeyXb822uDN.png",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "Que todos miren: esta batalla ya tiene dueño.",
+    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
+    "arquetipo": "poder_arrogante",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Rin Toosaka",
+      "Saku Natsusawa",
+      "Shouta Aizawa",
+      "Shouta Aizawa",
+      "Kurena Kukumila"
     ]
   },
   {
@@ -1750,15 +1764,15 @@
     "name": "Nino Nakano",
     "anime": "Las Quintillizas",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b126372-DtorHRgQaYUJ.png",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "Una caída no puede decidir el final de una historia.",
+    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
+    "arquetipo": "heroe_determinado",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Artoria Pendragon",
+      "Enjin",
+      "Toshinori Yagi",
+      "Megumin",
+      "Shinei Nouzen"
     ]
   },
   {
@@ -1766,15 +1780,15 @@
     "name": "Yotsuba Nakano",
     "anime": "Las Quintillizas",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b126374-Aal36iSQ5nKz.png",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "Prometo que esta vez nadie tendrá que arreglarlo todo.",
+    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
+    "arquetipo": "comedia_caos",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Gilgamesh",
+      "Rudo",
+      "Tenya Iida",
+      "Kazuma Satou",
+      "Anju Emma"
     ]
   },
   {
@@ -1782,15 +1796,15 @@
     "name": "Meguru Bachira",
     "anime": "Blue Lock",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b162213-4czykzdxmWG6.png",
-    "quote": "Mi monstruo siempre me dice que siga jugando.",
-    "hint": "Un delantero impredecible que juega guiado por su imaginación y su instinto.",
+    "quote": "Si caminamos juntos, incluso el miedo pesa menos.",
+    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
+    "arquetipo": "romance_drama",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Kaoruko Waguri",
+      "Riyou Reaper",
+      "Shouto Todoroki",
+      "Aqua",
+      "Maomao"
     ]
   },
   {
@@ -1798,15 +1812,15 @@
     "name": "Seishirou Nagi",
     "anime": "Blue Lock",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b162969-WGnGyVQrFi0X.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "El silencio también deja pistas.",
+    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
+    "arquetipo": "misterio_serio",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Rintarou Tsumugi",
+      "Zanka Nijiku",
+      "Katsuki Bakugou",
+      "Darkness",
+      "Jinshi"
     ]
   },
   {
@@ -1814,15 +1828,15 @@
     "name": "Yoichi Isagi",
     "anime": "Blue Lock",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b140856-wVzKSyvU7R5B.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "Si conozco las reglas, puedo cambiar el tablero.",
+    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
+    "arquetipo": "frio_calculador",
     "similares": [
+      "Sakura Matou",
+      "Subaru Hoshina",
       "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Izuku Midoriya",
+      "Vladilena Milizé"
     ]
   },
   {
@@ -1830,15 +1844,15 @@
     "name": "Hyouma Chigiri",
     "anime": "Blue Lock",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b167444-JTHkkJAX4E3q.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "La victoria es lo único que merece mi atención.",
+    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
+    "arquetipo": "poder_arrogante",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Rin Toosaka",
+      "Saku Natsusawa",
+      "Shouta Aizawa",
+      "Shouta Aizawa",
+      "Kurena Kukumila"
     ]
   },
   {
@@ -1846,15 +1860,15 @@
     "name": "Frieren",
     "anime": "Frieren",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b176754-PCnpqIOkjhFk.png",
-    "quote": "Solo fueron diez años juntos, pero para mí cambiaron mil años de soledad.",
-    "hint": "Una maga elfa longeva que aprende demasiado tarde cuánto significan los recuerdos.",
+    "quote": "Mi fuerza tiene sentido cuando protege a otra persona.",
+    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
+    "arquetipo": "heroe_determinado",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Artoria Pendragon",
+      "Enjin",
+      "Toshinori Yagi",
+      "Megumin",
+      "Shinei Nouzen"
     ]
   },
   {
@@ -1862,15 +1876,15 @@
     "name": "Fern",
     "anime": "Frieren",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b183965-uGFohBjlFoTp.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "El caos siempre encuentra una manera de sorprenderme.",
+    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
+    "arquetipo": "comedia_caos",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Gilgamesh",
+      "Rudo",
+      "Tenya Iida",
+      "Kazuma Satou",
+      "Anju Emma"
     ]
   },
   {
@@ -1878,15 +1892,15 @@
     "name": "Stark",
     "anime": "Frieren",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b184313-CQl6GSt4RSny.jpg",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "Hay personas que cambian nuestra vida sin proponérselo.",
+    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
+    "arquetipo": "romance_drama",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Kaoruko Waguri",
+      "Riyou Reaper",
+      "Shouto Todoroki",
+      "Aqua",
+      "Maomao"
     ]
   },
   {
@@ -1894,15 +1908,15 @@
     "name": "Himmel",
     "anime": "Frieren",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b184311-wQFySqYXEqf1.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "La realidad suele ser más inquietante que cualquier rumor.",
+    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
+    "arquetipo": "misterio_serio",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Rintarou Tsumugi",
+      "Zanka Nijiku",
+      "Katsuki Bakugou",
+      "Darkness",
+      "Jinshi"
     ]
   },
   {
@@ -1910,14 +1924,15 @@
     "name": "Kiyotaka Ayanokouji",
     "anime": "Classroom of the Elite",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b123212-ewZgUQr9vvEM.png",
-    "quote": "Todas las personas no son más que herramientas.",
-    "hint": "Un estudiante inexpresivo que oculta una capacidad extraordinaria para manipular el tablero.",
+    "quote": "No necesito mostrar mis intenciones para controlar el resultado.",
+    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
+    "arquetipo": "frio_calculador",
     "similares": [
-      "Light Yagami",
-      "Johan Liebert",
-      "L Lawliet",
-      "Makima",
-      "Houtarou Oreki"
+      "Sakura Matou",
+      "Subaru Hoshina",
+      "Izuku Midoriya",
+      "Izuku Midoriya",
+      "Vladilena Milizé"
     ]
   },
   {
@@ -1925,15 +1940,15 @@
     "name": "Suzune Horikita",
     "anime": "Classroom of the Elite",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b123213-jUfrGBXfW7BL.png",
-    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
-    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "quote": "No hay rival capaz de detenerme cuando decido avanzar.",
+    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
+    "arquetipo": "poder_arrogante",
     "similares": [
-      "Kiyotaka Ayanokouji",
-      "Light Yagami",
-      "Johan Liebert",
-      "L Lawliet",
-      "Makima",
-      "Houtarou Oreki"
+      "Rin Toosaka",
+      "Saku Natsusawa",
+      "Shouta Aizawa",
+      "Shouta Aizawa",
+      "Kurena Kukumila"
     ]
   },
   {
@@ -1941,15 +1956,15 @@
     "name": "Kei Karuizawa",
     "anime": "Classroom of the Elite",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b141122-6Zk52eU3VK3O.png",
-    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
-    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "quote": "Aunque tenga miedo, daré el siguiente paso.",
+    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
+    "arquetipo": "heroe_determinado",
     "similares": [
-      "Kiyotaka Ayanokouji",
-      "Light Yagami",
-      "Johan Liebert",
-      "L Lawliet",
-      "Makima",
-      "Houtarou Oreki"
+      "Artoria Pendragon",
+      "Enjin",
+      "Toshinori Yagi",
+      "Megumin",
+      "Shinei Nouzen"
     ]
   },
   {
@@ -1957,15 +1972,15 @@
     "name": "Honami Ichinose",
     "anime": "Classroom of the Elite",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b123216-N9tQZf2XIKu6.png",
-    "quote": "No necesito mostrar todas mis cartas para ganar la partida.",
-    "hint": "Una mente estrat?gica que observa antes de mover una sola pieza.",
+    "quote": "Si todo puede salir mal, al menos será divertido.",
+    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
+    "arquetipo": "comedia_caos",
     "similares": [
-      "Kiyotaka Ayanokouji",
-      "Light Yagami",
-      "Johan Liebert",
-      "L Lawliet",
-      "Makima",
-      "Houtarou Oreki"
+      "Gilgamesh",
+      "Rudo",
+      "Tenya Iida",
+      "Kazuma Satou",
+      "Anju Emma"
     ]
   },
   {
@@ -1973,15 +1988,15 @@
     "name": "Yuzu Aihara",
     "anime": "Citrus",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b83367-qOJp0tfOZf7r.jpg",
-    "quote": "No voy a fingir que no siento nada solo para encajar.",
-    "hint": "Una chica alegre y rebelde que descubre sentimientos inesperados en su nueva escuela.",
+    "quote": "Lo que siento merece ser dicho, aunque me haga temblar.",
+    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
+    "arquetipo": "romance_drama",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Kaoruko Waguri",
+      "Riyou Reaper",
+      "Shouto Todoroki",
+      "Aqua",
+      "Maomao"
     ]
   },
   {
@@ -1989,15 +2004,15 @@
     "name": "Mei Aihara",
     "anime": "Citrus",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b83209-gv2ABy7LBr5x.jpg",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "La verdad permanece aunque todos intenten esconderla.",
+    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
+    "arquetipo": "misterio_serio",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Rintarou Tsumugi",
+      "Zanka Nijiku",
+      "Katsuki Bakugou",
+      "Darkness",
+      "Jinshi"
     ]
   },
   {
@@ -2005,15 +2020,15 @@
     "name": "Harumi Taniguchi",
     "anime": "Citrus",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b83387-UImdNRsseICO.jpg",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "La mejor jugada es la que nadie ve venir.",
+    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
+    "arquetipo": "frio_calculador",
     "similares": [
+      "Sakura Matou",
+      "Subaru Hoshina",
       "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Izuku Midoriya",
+      "Vladilena Milizé"
     ]
   },
   {
@@ -2021,15 +2036,15 @@
     "name": "Matsuri Mizusawa",
     "anime": "Citrus",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b88667-1uLbk7yHhnz6.jpg",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "El poder solo sirve si quien lo posee sabe imponerlo.",
+    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
+    "arquetipo": "poder_arrogante",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Rin Toosaka",
+      "Saku Natsusawa",
+      "Shouta Aizawa",
+      "Shouta Aizawa",
+      "Kurena Kukumila"
     ]
   },
   {
@@ -2037,15 +2052,15 @@
     "name": "Makima",
     "anime": "Chainsaw Man",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b137080-UHcynYNjb5ZU.png",
-    "quote": "Si te conviertes en mi perro, te daré de comer y cuidaré de ti.",
-    "hint": "Una figura amable y controladora que siempre parece estar varios pasos por delante.",
+    "quote": "Mientras alguien necesite ayuda, no voy a rendirme.",
+    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
+    "arquetipo": "heroe_determinado",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Artoria Pendragon",
+      "Enjin",
+      "Toshinori Yagi",
+      "Megumin",
+      "Shinei Nouzen"
     ]
   },
   {
@@ -2053,15 +2068,15 @@
     "name": "Denji",
     "anime": "Chainsaw Man",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b130102-FO1VHNnEnLlB.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "No era el plan, pero este desastre podría funcionar.",
+    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
+    "arquetipo": "comedia_caos",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Gilgamesh",
+      "Rudo",
+      "Tenya Iida",
+      "Kazuma Satou",
+      "Anju Emma"
     ]
   },
   {
@@ -2069,15 +2084,15 @@
     "name": "Power",
     "anime": "Chainsaw Man",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "A veces cuidar a alguien exige ser valiente.",
+    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
+    "arquetipo": "romance_drama",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Kaoruko Waguri",
+      "Riyou Reaper",
+      "Shouto Todoroki",
+      "Aqua",
+      "Maomao"
     ]
   },
   {
@@ -2085,15 +2100,15 @@
     "name": "Aki Hayakawa",
     "anime": "Chainsaw Man",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b137081-TSrUR3mUJL6r.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "Cada detalle cuenta cuando el caso parece imposible.",
+    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
+    "arquetipo": "misterio_serio",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Rintarou Tsumugi",
+      "Zanka Nijiku",
+      "Katsuki Bakugou",
+      "Darkness",
+      "Jinshi"
     ]
   },
   {
@@ -2101,15 +2116,15 @@
     "name": "Vi",
     "anime": "ARCANE",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b90169-4wr1Zehnsac8.png",
-    "quote": "No importa cuánto me golpeen; siempre voy a levantarme.",
-    "hint": "Una luchadora de Zaun con guanteletes enormes y un fuerte instinto protector.",
+    "quote": "Observar en silencio también es una forma de ganar.",
+    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
+    "arquetipo": "frio_calculador",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Sakura Matou",
+      "Subaru Hoshina",
+      "Izuku Midoriya",
+      "Izuku Midoriya",
+      "Vladilena Milizé"
     ]
   },
   {
@@ -2117,15 +2132,15 @@
     "name": "Jinx",
     "anime": "ARCANE",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b318488-nDSqz6AlFCT9.png",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "No necesito permiso para demostrar quién está por encima.",
+    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
+    "arquetipo": "poder_arrogante",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Rin Toosaka",
+      "Saku Natsusawa",
+      "Shouta Aizawa",
+      "Shouta Aizawa",
+      "Kurena Kukumila"
     ]
   },
   {
@@ -2133,15 +2148,15 @@
     "name": "Manjirou Sano",
     "anime": "Tokyo Revengers",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b145341-CuPldCLZMvvf.png",
-    "quote": "Si protejo a mis amigos, no me importa lo que tenga que enfrentar.",
-    "hint": "El líder carismático de una pandilla, temido por su fuerza y marcado por la pérdida.",
+    "quote": "Seguiré luchando hasta que todos estén a salvo.",
+    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
+    "arquetipo": "heroe_determinado",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Artoria Pendragon",
+      "Enjin",
+      "Toshinori Yagi",
+      "Megumin",
+      "Shinei Nouzen"
     ]
   },
   {
@@ -2149,15 +2164,15 @@
     "name": "Chifuyu Matsuno",
     "anime": "Tokyo Revengers",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b145344-q4BqRljEBYNc.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "La prudencia está bien; una explosión también.",
+    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
+    "arquetipo": "comedia_caos",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Gilgamesh",
+      "Rudo",
+      "Tenya Iida",
+      "Kazuma Satou",
+      "Anju Emma"
     ]
   },
   {
@@ -2165,15 +2180,15 @@
     "name": "Ken Ryuuguji",
     "anime": "Tokyo Revengers",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b145345-zyirrSsKIDCb.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "No quiero que un recuerdo importante se pierda en silencio.",
+    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
+    "arquetipo": "romance_drama",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Kaoruko Waguri",
+      "Riyou Reaper",
+      "Shouto Todoroki",
+      "Aqua",
+      "Maomao"
     ]
   },
   {
@@ -2181,15 +2196,15 @@
     "name": "Keisuke Baji",
     "anime": "Tokyo Revengers",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b145343-vRrkdWEUXwYM.jpg",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "No aceptaré una respuesta cómoda sin comprobarla.",
+    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
+    "arquetipo": "misterio_serio",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Rintarou Tsumugi",
+      "Zanka Nijiku",
+      "Katsuki Bakugou",
+      "Darkness",
+      "Jinshi"
     ]
   },
   {
@@ -2197,14 +2212,15 @@
     "name": "Momo Ayase",
     "anime": "Dan Da Dan",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b222594-24Jn7qlI5spH.png",
-    "quote": "¡No voy a dejar que ningún fantasma ni alienígena se salga con la suya!",
-    "hint": "Una estudiante de voluntad fuerte que combina poderes psíquicos con mucho carácter.",
+    "quote": "Las emociones no deben decidir una estrategia.",
+    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
+    "arquetipo": "frio_calculador",
     "similares": [
-      "Megumin",
-      "Kazuma Satou",
-      "Takopi",
-      "Saitama",
-      "Marin Kitagawa"
+      "Sakura Matou",
+      "Subaru Hoshina",
+      "Izuku Midoriya",
+      "Izuku Midoriya",
+      "Vladilena Milizé"
     ]
   },
   {
@@ -2212,15 +2228,15 @@
     "name": "Aira Shiratori",
     "anime": "Dan Da Dan",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b245466-rd5I5mchZ3bv.png",
-    "quote": "Si todo va a salir mal, al menos hag?moslo de una forma inolvidable.",
-    "hint": "Energ?a impredecible, humor extra?o y talento para convertir todo en un desastre.",
+    "quote": "Que todos miren: esta batalla ya tiene dueño.",
+    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
+    "arquetipo": "poder_arrogante",
     "similares": [
-      "Megumin",
-      "Kazuma Satou",
-      "Takopi",
-      "Momo Ayase",
-      "Saitama",
-      "Marin Kitagawa"
+      "Rin Toosaka",
+      "Saku Natsusawa",
+      "Shouta Aizawa",
+      "Shouta Aizawa",
+      "Kurena Kukumila"
     ]
   },
   {
@@ -2228,15 +2244,15 @@
     "name": "Ken Takakura",
     "anime": "Dan Da Dan",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b222593-qBqUvpodooAI.png",
-    "quote": "Si todo va a salir mal, al menos hag?moslo de una forma inolvidable.",
-    "hint": "Energ?a impredecible, humor extra?o y talento para convertir todo en un desastre.",
+    "quote": "Una caída no puede decidir el final de una historia.",
+    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
+    "arquetipo": "heroe_determinado",
     "similares": [
+      "Artoria Pendragon",
+      "Enjin",
+      "Toshinori Yagi",
       "Megumin",
-      "Kazuma Satou",
-      "Takopi",
-      "Momo Ayase",
-      "Saitama",
-      "Marin Kitagawa"
+      "Shinei Nouzen"
     ]
   },
   {
@@ -2244,15 +2260,15 @@
     "name": "Seiko Ayase",
     "anime": "Dan Da Dan",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b234824-i3s64ueaBqGq.png",
-    "quote": "Si todo va a salir mal, al menos hag?moslo de una forma inolvidable.",
-    "hint": "Energ?a impredecible, humor extra?o y talento para convertir todo en un desastre.",
+    "quote": "Prometo que esta vez nadie tendrá que arreglarlo todo.",
+    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
+    "arquetipo": "comedia_caos",
     "similares": [
-      "Megumin",
+      "Gilgamesh",
+      "Rudo",
+      "Tenya Iida",
       "Kazuma Satou",
-      "Takopi",
-      "Momo Ayase",
-      "Saitama",
-      "Marin Kitagawa"
+      "Anju Emma"
     ]
   },
   {
@@ -2260,14 +2276,15 @@
     "name": "Yuki Itose",
     "anime": "A Sign of Affection",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b179809-pxG89n30MGwl.jpg",
-    "quote": "Quiero conocer el mundo, aunque tenga que hacerlo de una forma diferente.",
-    "hint": "Una universitaria sorda que se comunica con ternura y está descubriendo el amor.",
+    "quote": "Si caminamos juntos, incluso el miedo pesa menos.",
+    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
+    "arquetipo": "romance_drama",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Kaoruko Waguri",
+      "Riyou Reaper",
+      "Shouto Todoroki",
+      "Aqua",
+      "Maomao"
     ]
   },
   {
@@ -2275,15 +2292,15 @@
     "name": "Itsuomi Nagi",
     "anime": "A Sign of Affection",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b179810-E34imq24Z2Gw.jpg",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "El silencio también deja pistas.",
+    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
+    "arquetipo": "misterio_serio",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Rintarou Tsumugi",
+      "Zanka Nijiku",
+      "Katsuki Bakugou",
+      "Darkness",
+      "Jinshi"
     ]
   },
   {
@@ -2291,15 +2308,15 @@
     "name": "Oushi Ashioki",
     "anime": "A Sign of Affection",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b206489-6Ewj3mocooVc.png",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "Si conozco las reglas, puedo cambiar el tablero.",
+    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
+    "arquetipo": "frio_calculador",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Sakura Matou",
+      "Subaru Hoshina",
+      "Izuku Midoriya",
+      "Izuku Midoriya",
+      "Vladilena Milizé"
     ]
   },
   {
@@ -2307,15 +2324,15 @@
     "name": "Shin Iryuu",
     "anime": "A Sign of Affection",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b246023-JY3YgmQALjHM.png",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "La victoria es lo único que merece mi atención.",
+    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
+    "arquetipo": "poder_arrogante",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Rin Toosaka",
+      "Saku Natsusawa",
+      "Shouta Aizawa",
+      "Shouta Aizawa",
+      "Kurena Kukumila"
     ]
   },
   {
@@ -2323,14 +2340,15 @@
     "name": "Tanjirou Kamado",
     "anime": "Demon Slayer",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b126071-BTNEc1nRIv68.png",
-    "quote": "No importa cuántas veces caiga; seguiré avanzando.",
-    "hint": "Un espadachín de gran olfato que busca salvar a su hermana y mantiene un corazón compasivo.",
+    "quote": "Mi fuerza tiene sentido cuando protege a otra persona.",
+    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
+    "arquetipo": "heroe_determinado",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Artoria Pendragon",
+      "Enjin",
+      "Toshinori Yagi",
+      "Megumin",
+      "Shinei Nouzen"
     ]
   },
   {
@@ -2338,15 +2356,15 @@
     "name": "Nezuko Kamado",
     "anime": "Demon Slayer",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b127518-NRlq1CQ1v1ro.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "El caos siempre encuentra una manera de sorprenderme.",
+    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
+    "arquetipo": "comedia_caos",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Gilgamesh",
+      "Rudo",
+      "Tenya Iida",
+      "Kazuma Satou",
+      "Anju Emma"
     ]
   },
   {
@@ -2354,15 +2372,15 @@
     "name": "Inosuke Hashibira",
     "anime": "Demon Slayer",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/n129130-SJC0Kn1DU39E.jpg",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "Hay personas que cambian nuestra vida sin proponérselo.",
+    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
+    "arquetipo": "romance_drama",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Kaoruko Waguri",
+      "Riyou Reaper",
+      "Shouto Todoroki",
+      "Aqua",
+      "Maomao"
     ]
   },
   {
@@ -2370,15 +2388,15 @@
     "name": "Zenitsu Agatsuma",
     "anime": "Demon Slayer",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b129131-FZrQ7lSlxmEr.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "La realidad suele ser más inquietante que cualquier rumor.",
+    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
+    "arquetipo": "misterio_serio",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Rintarou Tsumugi",
+      "Zanka Nijiku",
+      "Katsuki Bakugou",
+      "Darkness",
+      "Jinshi"
     ]
   },
   {
@@ -2386,14 +2404,15 @@
     "name": "Jin-U Seong",
     "anime": "Solo Leveling",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b129928-BCEjVaP0AQSw.png",
-    "quote": "A partir de ahora, yo subiré de nivel solo.",
-    "hint": "El cazador más débil que recibe un sistema capaz de convertirlo en una fuerza imparable.",
+    "quote": "No necesito mostrar mis intenciones para controlar el resultado.",
+    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
+    "arquetipo": "frio_calculador",
     "similares": [
-      "Gilgamesh",
-      "Satoru Gojou",
-      "Levi",
-      "Saitama",
-      "Makima"
+      "Sakura Matou",
+      "Subaru Hoshina",
+      "Izuku Midoriya",
+      "Izuku Midoriya",
+      "Vladilena Milizé"
     ]
   },
   {
@@ -2401,15 +2420,15 @@
     "name": "Hae-In Cha",
     "anime": "Solo Leveling",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b138789-AhE8m0LWjE7E.png",
-    "quote": "Si voy a avanzar, ser? dejando claro qui?n tiene el control.",
-    "hint": "Presencia dominante y confianza suficiente para desafiar a cualquiera.",
+    "quote": "No hay rival capaz de detenerme cuando decido avanzar.",
+    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
+    "arquetipo": "poder_arrogante",
     "similares": [
-      "Gilgamesh",
-      "Satoru Gojou",
-      "Levi",
-      "Saitama",
-      "Makima",
-      "Jin-U Seong"
+      "Rin Toosaka",
+      "Saku Natsusawa",
+      "Shouta Aizawa",
+      "Shouta Aizawa",
+      "Kurena Kukumila"
     ]
   },
   {
@@ -2417,15 +2436,15 @@
     "name": "Igris",
     "anime": "Solo Leveling",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b145722-qSJ71S6vpeeM.png",
-    "quote": "Si voy a avanzar, ser? dejando claro qui?n tiene el control.",
-    "hint": "Presencia dominante y confianza suficiente para desafiar a cualquiera.",
+    "quote": "Aunque tenga miedo, daré el siguiente paso.",
+    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
+    "arquetipo": "heroe_determinado",
     "similares": [
-      "Gilgamesh",
-      "Satoru Gojou",
-      "Levi",
-      "Saitama",
-      "Makima",
-      "Jin-U Seong"
+      "Artoria Pendragon",
+      "Enjin",
+      "Toshinori Yagi",
+      "Megumin",
+      "Shinei Nouzen"
     ]
   },
   {
@@ -2433,15 +2452,15 @@
     "name": "Ju-Hui Lee",
     "anime": "Solo Leveling",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b136074-pLyumEnxjL7P.png",
-    "quote": "Si voy a avanzar, ser? dejando claro qui?n tiene el control.",
-    "hint": "Presencia dominante y confianza suficiente para desafiar a cualquiera.",
+    "quote": "Si todo puede salir mal, al menos será divertido.",
+    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
+    "arquetipo": "comedia_caos",
     "similares": [
       "Gilgamesh",
-      "Satoru Gojou",
-      "Levi",
-      "Saitama",
-      "Makima",
-      "Jin-U Seong"
+      "Rudo",
+      "Tenya Iida",
+      "Kazuma Satou",
+      "Anju Emma"
     ]
   },
   {
@@ -2449,14 +2468,15 @@
     "name": "Marin Kitagawa",
     "anime": "My Dress up Darling",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b133676-kV2czE3C8Qls.png",
-    "quote": "Si te gusta algo, no deberías avergonzarte de ello.",
-    "hint": "Una estudiante popular apasionada por el cosplay que celebra sus aficiones sin miedo.",
+    "quote": "Lo que siento merece ser dicho, aunque me haga temblar.",
+    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
+    "arquetipo": "romance_drama",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Kaoruko Waguri",
+      "Riyou Reaper",
+      "Shouto Todoroki",
+      "Aqua",
+      "Maomao"
     ]
   },
   {
@@ -2464,15 +2484,15 @@
     "name": "Wakana Gojou",
     "anime": "My Dress up Darling",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b133678-IitCgjDxQGgu.png",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "La verdad permanece aunque todos intenten esconderla.",
+    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
+    "arquetipo": "misterio_serio",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Rintarou Tsumugi",
+      "Zanka Nijiku",
+      "Katsuki Bakugou",
+      "Darkness",
+      "Jinshi"
     ]
   },
   {
@@ -2480,15 +2500,15 @@
     "name": "Sajuna Inui",
     "anime": "My Dress up Darling",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b133677-PqshvUeVFB7u.jpg",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "La mejor jugada es la que nadie ve venir.",
+    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
+    "arquetipo": "frio_calculador",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Sakura Matou",
+      "Subaru Hoshina",
+      "Izuku Midoriya",
+      "Izuku Midoriya",
+      "Vladilena Milizé"
     ]
   },
   {
@@ -2496,15 +2516,15 @@
     "name": "Shinju Inui",
     "anime": "My Dress up Darling",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b207937-ytYjcNtNX77K.png",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "El poder solo sirve si quien lo posee sabe imponerlo.",
+    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
+    "arquetipo": "poder_arrogante",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Rin Toosaka",
+      "Saku Natsusawa",
+      "Shouta Aizawa",
+      "Shouta Aizawa",
+      "Kurena Kukumila"
     ]
   },
   {
@@ -2512,14 +2532,15 @@
     "name": "Satoru Gojou",
     "anime": "Jujutsu Kaisen",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b127691-9zqh1xpIubn7.png",
-    "quote": "En el cielo y en la tierra, yo soy el único honrado.",
-    "hint": "Un profesor de ojos cubiertos que domina los Seis Ojos y el Infinito.",
+    "quote": "Mientras alguien necesite ayuda, no voy a rendirme.",
+    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
+    "arquetipo": "heroe_determinado",
     "similares": [
-      "Gilgamesh",
-      "Levi",
-      "Saitama",
-      "Makima",
-      "Jin-U Seong"
+      "Artoria Pendragon",
+      "Enjin",
+      "Toshinori Yagi",
+      "Megumin",
+      "Shinei Nouzen"
     ]
   },
   {
@@ -2527,15 +2548,15 @@
     "name": "Yuuji Itadori",
     "anime": "Jujutsu Kaisen",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b127212-FVm2tD0erQ5B.png",
-    "quote": "Si voy a avanzar, ser? dejando claro qui?n tiene el control.",
-    "hint": "Presencia dominante y confianza suficiente para desafiar a cualquiera.",
+    "quote": "No era el plan, pero este desastre podría funcionar.",
+    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
+    "arquetipo": "comedia_caos",
     "similares": [
       "Gilgamesh",
-      "Satoru Gojou",
-      "Levi",
-      "Saitama",
-      "Makima",
-      "Jin-U Seong"
+      "Rudo",
+      "Tenya Iida",
+      "Kazuma Satou",
+      "Anju Emma"
     ]
   },
   {
@@ -2543,15 +2564,15 @@
     "name": "Megumi Fushiguro",
     "anime": "Jujutsu Kaisen",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b126635-L0y3I92JSUkN.png",
-    "quote": "Si voy a avanzar, ser? dejando claro qui?n tiene el control.",
-    "hint": "Presencia dominante y confianza suficiente para desafiar a cualquiera.",
+    "quote": "A veces cuidar a alguien exige ser valiente.",
+    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
+    "arquetipo": "romance_drama",
     "similares": [
-      "Gilgamesh",
-      "Satoru Gojou",
-      "Levi",
-      "Saitama",
-      "Makima",
-      "Jin-U Seong"
+      "Kaoruko Waguri",
+      "Riyou Reaper",
+      "Shouto Todoroki",
+      "Aqua",
+      "Maomao"
     ]
   },
   {
@@ -2559,15 +2580,15 @@
     "name": "Kento Nanami",
     "anime": "Jujutsu Kaisen",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b133704-8wLTGjc234q2.png",
-    "quote": "Si voy a avanzar, ser? dejando claro qui?n tiene el control.",
-    "hint": "Presencia dominante y confianza suficiente para desafiar a cualquiera.",
+    "quote": "Cada detalle cuenta cuando el caso parece imposible.",
+    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
+    "arquetipo": "misterio_serio",
     "similares": [
-      "Gilgamesh",
-      "Satoru Gojou",
-      "Levi",
-      "Saitama",
-      "Makima",
-      "Jin-U Seong"
+      "Rintarou Tsumugi",
+      "Zanka Nijiku",
+      "Katsuki Bakugou",
+      "Darkness",
+      "Jinshi"
     ]
   },
   {
@@ -2575,14 +2596,15 @@
     "name": "Violet Evergarden",
     "anime": "Violet Evergarden",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b90169-4wr1Zehnsac8.png",
-    "quote": "Quiero saber qué significa te quiero.",
-    "hint": "Una exsoldado que aprende a expresar emociones escribiendo cartas para otras personas.",
+    "quote": "Observar en silencio también es una forma de ganar.",
+    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
+    "arquetipo": "frio_calculador",
     "similares": [
-      "Kaori Miyazono",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Sakura Matou",
+      "Subaru Hoshina",
+      "Izuku Midoriya",
+      "Izuku Midoriya",
+      "Vladilena Milizé"
     ]
   },
   {
@@ -2590,15 +2612,15 @@
     "name": "Gilbert Bougainvillea",
     "anime": "Violet Evergarden",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b124790-QR7zyemTK0zq.png",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "No necesito permiso para demostrar quién está por encima.",
+    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
+    "arquetipo": "poder_arrogante",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Rin Toosaka",
+      "Saku Natsusawa",
+      "Shouta Aizawa",
+      "Shouta Aizawa",
+      "Kurena Kukumila"
     ]
   },
   {
@@ -2606,15 +2628,15 @@
     "name": "Benedict Blue",
     "anime": "Violet Evergarden",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b124788-upZ5vtGwndzt.jpg",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "Seguiré luchando hasta que todos estén a salvo.",
+    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
+    "arquetipo": "heroe_determinado",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Artoria Pendragon",
+      "Enjin",
+      "Toshinori Yagi",
+      "Megumin",
+      "Shinei Nouzen"
     ]
   },
   {
@@ -2622,15 +2644,15 @@
     "name": "Cattleya Baudelaire",
     "anime": "Violet Evergarden",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b124787-1HuZGawvoejp.jpg",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "La prudencia está bien; una explosión también.",
+    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
+    "arquetipo": "comedia_caos",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Gilgamesh",
+      "Rudo",
+      "Tenya Iida",
+      "Kazuma Satou",
+      "Anju Emma"
     ]
   },
   {
@@ -2638,15 +2660,15 @@
     "name": "Nao Tomori",
     "anime": "Charlotte",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/88951-bRm610RrrXp9.jpg",
-    "quote": "Aunque nadie me vea, seguiré haciendo lo que creo correcto.",
-    "hint": "Una presidenta estudiantil directa que puede volverse invisible para una persona.",
+    "quote": "No quiero que un recuerdo importante se pierda en silencio.",
+    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
+    "arquetipo": "romance_drama",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Kaoruko Waguri",
+      "Riyou Reaper",
+      "Shouto Todoroki",
+      "Aqua",
+      "Maomao"
     ]
   },
   {
@@ -2654,15 +2676,15 @@
     "name": "Kanade Tachibana",
     "anime": "Charlotte",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b22369-zC7OgGbfO7b6.jpg",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "No aceptaré una respuesta cómoda sin comprobarla.",
+    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
+    "arquetipo": "misterio_serio",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Rintarou Tsumugi",
+      "Zanka Nijiku",
+      "Katsuki Bakugou",
+      "Darkness",
+      "Jinshi"
     ]
   },
   {
@@ -2670,15 +2692,15 @@
     "name": "Yuu Otosaka",
     "anime": "Charlotte",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b88950-0ER2ke5pswxq.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "Las emociones no deben decidir una estrategia.",
+    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
+    "arquetipo": "frio_calculador",
     "similares": [
+      "Sakura Matou",
+      "Subaru Hoshina",
       "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Izuku Midoriya",
+      "Vladilena Milizé"
     ]
   },
   {
@@ -2686,15 +2708,15 @@
     "name": "Ayumi Otosaka",
     "anime": "Charlotte",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/88955-iKYbTaBsmIF0.jpg",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "Que todos miren: esta batalla ya tiene dueño.",
+    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
+    "arquetipo": "poder_arrogante",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Rin Toosaka",
+      "Saku Natsusawa",
+      "Shouta Aizawa",
+      "Shouta Aizawa",
+      "Kurena Kukumila"
     ]
   },
   {
@@ -2702,14 +2724,15 @@
     "name": "Mai Sakurajima",
     "anime": "Bunny Girl Senpai",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b127222-Jh5hhP7vZ7s1.png",
-    "quote": "Incluso si el mundo entero me olvida, me basta con que tú aún puedas verme.",
-    "hint": "Una actriz famosa que sufre un fenómeno sobrenatural y viste un traje de conejita.",
+    "quote": "Una caída no puede decidir el final de una historia.",
+    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
+    "arquetipo": "heroe_determinado",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Tomoya Okazaki"
+      "Artoria Pendragon",
+      "Enjin",
+      "Toshinori Yagi",
+      "Megumin",
+      "Shinei Nouzen"
     ]
   },
   {
@@ -2717,15 +2740,15 @@
     "name": "Sakuta Azusagawa",
     "anime": "Bunny Girl Senpai",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/n127221-Wxg4xFtW4kaJ.png",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "Prometo que esta vez nadie tendrá que arreglarlo todo.",
+    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
+    "arquetipo": "comedia_caos",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Gilgamesh",
+      "Rudo",
+      "Tenya Iida",
+      "Kazuma Satou",
+      "Anju Emma"
     ]
   },
   {
@@ -2733,15 +2756,15 @@
     "name": "Rio Futaba",
     "anime": "Bunny Girl Senpai",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b127633-FcCwWK5sQRhK.png",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "Si caminamos juntos, incluso el miedo pesa menos.",
+    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
+    "arquetipo": "romance_drama",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Kaoruko Waguri",
+      "Riyou Reaper",
+      "Shouto Todoroki",
+      "Aqua",
+      "Maomao"
     ]
   },
   {
@@ -2749,15 +2772,15 @@
     "name": "Kaede Azusagawa",
     "anime": "Bunny Girl Senpai",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b127613-LBtFkMJfUWpg.png",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "El silencio también deja pistas.",
+    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
+    "arquetipo": "misterio_serio",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Rintarou Tsumugi",
+      "Zanka Nijiku",
+      "Katsuki Bakugou",
+      "Darkness",
+      "Jinshi"
     ]
   },
   {
@@ -2765,15 +2788,15 @@
     "name": "Mio Kofune",
     "anime": "Summer Time Rendering",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b155706-guouOSwrSqso.jpg",
-    "quote": "Aunque el futuro se repita, intentaré cambiarlo las veces que haga falta.",
-    "hint": "Una chica de la isla que queda atrapada en un misterio de sombras y bucles temporales.",
+    "quote": "Si conozco las reglas, puedo cambiar el tablero.",
+    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
+    "arquetipo": "frio_calculador",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Sakura Matou",
+      "Subaru Hoshina",
+      "Izuku Midoriya",
+      "Izuku Midoriya",
+      "Vladilena Milizé"
     ]
   },
   {
@@ -2781,15 +2804,15 @@
     "name": "Shinpei Ajiro",
     "anime": "Summer Time Rendering",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b155703-1CNh5yTk8xWO.jpg",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "La victoria es lo único que merece mi atención.",
+    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
+    "arquetipo": "poder_arrogante",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Rin Toosaka",
+      "Saku Natsusawa",
+      "Shouta Aizawa",
+      "Shouta Aizawa",
+      "Kurena Kukumila"
     ]
   },
   {
@@ -2797,15 +2820,15 @@
     "name": "Hizuru Minakata",
     "anime": "Summer Time Rendering",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b155711-VwaqEhjhI0FL.png",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "Mi fuerza tiene sentido cuando protege a otra persona.",
+    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
+    "arquetipo": "heroe_determinado",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Artoria Pendragon",
+      "Enjin",
+      "Toshinori Yagi",
+      "Megumin",
+      "Shinei Nouzen"
     ]
   },
   {
@@ -2813,15 +2836,15 @@
     "name": "Ushio Kofune",
     "anime": "Summer Time Rendering",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b155712-zMvjVpfc4WQN.png",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "El caos siempre encuentra una manera de sorprenderme.",
+    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
+    "arquetipo": "comedia_caos",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Gilgamesh",
+      "Rudo",
+      "Tenya Iida",
+      "Kazuma Satou",
+      "Anju Emma"
     ]
   },
   {
@@ -2829,14 +2852,15 @@
     "name": "Shouyou Hinata",
     "anime": "Haikyuu!",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b64769-WoWlCMLLgJ14.png",
-    "quote": "El que no puede saltar más alto todavía puede seguir saltando.",
-    "hint": "Un rematador bajito y explosivo que sueña con convertirse en un gran jugador de voleibol.",
+    "quote": "Hay personas que cambian nuestra vida sin proponérselo.",
+    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
+    "arquetipo": "romance_drama",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki"
+      "Kaoruko Waguri",
+      "Riyou Reaper",
+      "Shouto Todoroki",
+      "Aqua",
+      "Maomao"
     ]
   },
   {
@@ -2844,15 +2868,15 @@
     "name": "Tobio Kageyama",
     "anime": "Haikyuu!",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b64771-BuCVs7B8bBdh.png",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "La realidad suele ser más inquietante que cualquier rumor.",
+    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
+    "arquetipo": "misterio_serio",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Rintarou Tsumugi",
+      "Zanka Nijiku",
+      "Katsuki Bakugou",
+      "Darkness",
+      "Jinshi"
     ]
   },
   {
@@ -2860,15 +2884,15 @@
     "name": "Yuu Nishinoya",
     "anime": "Haikyuu!",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b67327-zQb1dlC7joPb.jpg",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "No necesito mostrar mis intenciones para controlar el resultado.",
+    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
+    "arquetipo": "frio_calculador",
     "similares": [
+      "Sakura Matou",
+      "Subaru Hoshina",
       "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Izuku Midoriya",
+      "Vladilena Milizé"
     ]
   },
   {
@@ -2876,15 +2900,15 @@
     "name": "Kenma Kozume",
     "anime": "Haikyuu!",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b71267-q44J2MXMinXD.jpg",
-    "quote": "Mientras alguien necesite ayuda, todav?a tengo una raz?n para seguir luchando.",
-    "hint": "Determinaci?n intensa y un impulso casi inevitable de proteger a los dem?s.",
+    "quote": "No hay rival capaz de detenerme cuando decido avanzar.",
+    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
+    "arquetipo": "poder_arrogante",
     "similares": [
-      "Izuku Midoriya",
-      "Eren Yeager",
-      "Tanjirou Kamado",
-      "Edward Elric",
-      "Subaru Natsuki",
-      "Shouyou Hinata"
+      "Rin Toosaka",
+      "Saku Natsusawa",
+      "Shouta Aizawa",
+      "Shouta Aizawa",
+      "Kurena Kukumila"
     ]
   },
   {
@@ -2892,14 +2916,15 @@
     "name": "Kaori Miyazono",
     "anime": "Your Lie in April",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b69411-lxM0FRvWHqlv.png",
-    "quote": "¿Llegó mi música hasta tu corazón?",
-    "hint": "Una violinista de espíritu libre que transforma la vida de un pianista.",
+    "quote": "Aunque tenga miedo, daré el siguiente paso.",
+    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
+    "arquetipo": "heroe_determinado",
     "similares": [
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Artoria Pendragon",
+      "Enjin",
+      "Toshinori Yagi",
+      "Megumin",
+      "Shinei Nouzen"
     ]
   },
   {
@@ -2907,15 +2932,15 @@
     "name": "Kousei Arima",
     "anime": "Your Lie in April",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b69407-eyIvpsFPeARS.png",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "Si todo puede salir mal, al menos será divertido.",
+    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
+    "arquetipo": "comedia_caos",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Gilgamesh",
+      "Rudo",
+      "Tenya Iida",
+      "Kazuma Satou",
+      "Anju Emma"
     ]
   },
   {
@@ -2923,15 +2948,15 @@
     "name": "Ryouta Watari",
     "anime": "Your Lie in April",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/69405-IpsjziJkHrHj.png",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "Lo que siento merece ser dicho, aunque me haga temblar.",
+    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
+    "arquetipo": "romance_drama",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Kaoruko Waguri",
+      "Riyou Reaper",
+      "Shouto Todoroki",
+      "Aqua",
+      "Maomao"
     ]
   },
   {
@@ -2939,15 +2964,15 @@
     "name": "Emi Igawa",
     "anime": "Your Lie in April",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b85841-728eVWAvzifr.png",
-    "quote": "Lo que siento puede dar miedo, pero tambi?n merece ser dicho.",
-    "hint": "Sensibilidad genuina y una forma valiente de cuidar los v?nculos.",
+    "quote": "La verdad permanece aunque todos intenten esconderla.",
+    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
+    "arquetipo": "misterio_serio",
     "similares": [
-      "Kaori Miyazono",
-      "Violet Evergarden",
-      "Marin Kitagawa",
-      "Yuki Itose",
-      "Mai Sakurajima",
-      "Tomoya Okazaki"
+      "Rintarou Tsumugi",
+      "Zanka Nijiku",
+      "Katsuki Bakugou",
+      "Darkness",
+      "Jinshi"
     ]
   }
 ]
