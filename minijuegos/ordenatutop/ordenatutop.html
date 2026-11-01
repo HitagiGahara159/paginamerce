@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html lang="es" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#210b17">
+  <title>Merce Gallardo · Ordena tu Top Anime</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Quicksand:wght@500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&family=Bungee&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Quicksand"', '"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            arcade: ['"Bungee"', 'cursive']
+          },
+          colors: {
+            merce: {
+              950: '#140510',
+              900: '#210b17',
+              850: '#2d0e21',
+              800: '#3d142d',
+              700: '#5a1d42',
+              600: '#792459',
+              pink: '#f472b6',
+              hotpink: '#ec4899',
+              deep: '#db2777',
+              soft: '#fbcfe8',
+              muted: '#ebbcd5',
+              light: '#fff5fa'
+            },
+            cyber: {
+              950: '#140510',
+              900: '#210b17',
+              850: '#2d0e21',
+              800: '#3d142d',
+              700: '#5a1d42',
+              pink: '#f472b6',
+              amber: '#fbbf24',
+              emerald: '#10b981'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      --bg: #210b17;
+      --text: #fff5fa;
+    }
+
+    html {
+      -webkit-tap-highlight-color: transparent;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    button, a, [role="button"], label {
+      touch-action: manipulation;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    body {
+      background-color: var(--bg);
+      background-image: url('./FONDOJUEGO.png'), url('../FONDOJUEGO.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      position: relative;
+      color: var(--text);
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(circle at 18% 20%, rgba(244, 114, 182, 0.20), transparent 50%),
+        radial-gradient(circle at 82% 25%, rgba(251, 113, 133, 0.16), transparent 52%),
+        radial-gradient(circle at 50% 85%, rgba(219, 39, 119, 0.22), transparent 60%),
+        linear-gradient(180deg, rgba(33, 11, 23, 0.92) 0%, rgba(20, 5, 16, 0.97) 100%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    body > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Modo transparente limpio para OBS */
+    body.obs-mode::before {
+      background: rgba(20, 5, 16, 0.78);
+    }
+    body.obs-mode header,
+    body.obs-mode #hostRoomPanel,
+    body.obs-mode #roomTopActions {
+      display: none !important;
+    }
+
+    @keyframes cardPop {
+      0% { opacity: 0; transform: scale(0.9) translateY(8px); }
+      100% { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    .card-pop {
+      animation: cardPop 0.3s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .slot-btn-available {
+      border-style: dashed;
+      transition: all 0.15s ease;
+    }
+    .slot-btn-available:hover {
+      border-color: #f472b6;
+      background-color: rgba(244, 114, 182, 0.14);
+      transform: translateX(2px);
+    }
+
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #140510;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #5a1d42;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #f472b6;
+    }
+  </style>
+</head>
+<body class="text-slate-100 min-h-screen flex flex-col font-sans select-none antialiased">
+
+  <!-- HEADER SUPERIOR ESTILO MERCE GALLARDO -->
+  <header class="border-b border-cyber-800 bg-cyber-900/95 backdrop-blur sticky top-0 z-40 px-3 sm:px-6 py-3">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-rose-500 via-pink-500 to-fuchsia-600 p-0.5 shadow-lg shadow-pink-900/40">
+          <div class="w-full h-full bg-cyber-950 rounded-[10px] flex items-center justify-center text-lg">🌸</div>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <h1 class="text-lg sm:text-xl font-extrabold tracking-[0.05em] bg-gradient-to-r from-white via-pink-100 to-pink-300 bg-clip-text text-transparent font-display">
+              MERCE GALLARDO
+            </h1>
+            <span class="text-[10px] uppercase tracking-[0.12em] font-bold px-2 py-0.5 rounded bg-pink-500/20 text-pink-300 border border-pink-400/30">
+              ORDENA TU TOP
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <button id="btnSoundToggle" class="p-2 rounded-xl bg-cyber-850 hover:bg-cyber-800 border border-cyber-700/60 text-pink-200 hover:text-white transition" title="Alternar Sonido">
+          <svg id="soundIconOn" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072M18.364 5.636a9 9 0 010 12.728M11 5L6 9H2v6h4l5 4V5z"/></svg>
+          <svg id="soundIconOff" class="w-4 h-4 hidden text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"/></svg>
+        </button>
+        <a id="btnBackMenu" href="../index.html#minijuegos" class="px-3 py-2 rounded-xl border border-pink-500/40 bg-pink-500/10 text-pink-200 hover:bg-pink-500/20 hover:text-white font-bold text-xs transition active:scale-95 flex items-center gap-1.5">
+          <span>←</span> <span>MINIJUEGOS</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="flex-1 max-w-7xl w-full mx-auto p-4 sm:p-6">
+
+    <!-- ======================================================================
+         VISTA 1: LOBBY PRINCIPAL (INICIO / SELECCIÓN DE MODO Y FILTROS)
+         ====================================================================== -->
+    <section id="lobbyView" class="space-y-6">
+      <!-- Encabezado y explicación -->
+      <div class="bg-cyber-900/90 border border-cyber-700/80 rounded-3xl p-5 sm:p-6 shadow-2xl shadow-pink-950/40 flex flex-col md:flex-row md:items-center justify-between gap-5">
+        <div class="max-w-3xl">
+          <h2 class="text-2xl sm:text-3xl font-black text-white font-display tracking-wide mb-2">Ordena tu top</h2>
+          <p class="text-xs sm:text-sm text-pink-100/80 leading-relaxed">
+            Tienes <strong class="text-pink-400">10 puestos</strong>, del top 1 al top 10. Los personajes salen de a uno y cada uno va a un puesto que <strong class="text-amber-300">ya no se puede cambiar</strong>. Como no sabes quién viene después, arma tu ranking según tus personajes favoritos.
+          </p>
+        </div>
+
+        <!-- Perfil rápido (Avatar + Nickname) -->
+        <div class="bg-cyber-950/90 border border-cyber-800 rounded-2xl p-3.5 shrink-0 flex items-center gap-3 min-w-[250px]">
+          <button id="selectedAvatarButton" type="button" class="w-12 h-12 shrink-0 rounded-xl overflow-hidden border-2 border-pink-400 bg-cyber-900 shadow-md shadow-pink-950/50 hover:scale-105 transition" title="Cambiar avatar">
+            <img id="selectedAvatarPreview" src="./avatares/avatar.jpg" alt="Avatar" class="w-full h-full object-cover" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='../avatares/avatar.jpg';}">
+          </button>
+          <div class="flex-1 min-w-0">
+            <label for="inputNick" class="block text-[10px] font-bold uppercase tracking-wider text-pink-300/80 mb-1">Juegas como (Tu Nick)</label>
+            <input id="inputNick" type="text" maxlength="15" placeholder="Ej: Hitagi" class="w-full px-3 py-1.5 bg-cyber-900 border border-cyber-700 rounded-lg text-white text-sm font-bold focus:border-pink-400 focus:outline-none">
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel: Animes que entran -->
+      <div class="bg-cyber-900/90 border border-cyber-700/80 rounded-3xl p-5 sm:p-6 shadow-xl shadow-pink-950/30">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+          <span class="text-xs font-extrabold uppercase tracking-wider text-pink-300">Animes que entran en la piscina</span>
+          <span id="lobbyPoolBadge" class="text-[11px] font-extrabold px-2.5 py-0.5 rounded-full bg-pink-500/20 text-pink-300 border border-pink-400/30">0 personajes entran</span>
+        </div>
+
+        <div id="lobbyAnimeCheckboxes" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2.5 mb-4">
+          <!-- Checkboxes generados dinámicamente -->
+        </div>
+
+        <div class="flex flex-wrap items-center gap-2.5 pt-2 border-t border-cyber-800">
+          <button type="button" onclick="toggleAllAnimes('lobby', true)" class="px-3.5 py-1.5 rounded-xl bg-pink-500/20 hover:bg-pink-500/30 border border-pink-400/40 text-pink-200 text-xs font-extrabold transition active:scale-95">
+            MARCAR TODOS
+          </button>
+          <button type="button" onclick="toggleAllAnimes('lobby', false)" class="px-3.5 py-1.5 rounded-xl bg-cyber-950 hover:bg-cyber-800 border border-cyber-700 text-pink-200/70 hover:text-white text-xs font-bold transition active:scale-95">
+            DESMARCAR TODOS
+          </button>
+        </div>
+      </div>
+
+      <!-- Dos Columnas: Jugar Solo vs Sala para 2 o más -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+        <!-- COLUMNA IZQUIERDA: JUGAR SOLO -->
+        <div class="bg-cyber-900/90 border border-cyber-700/80 rounded-3xl p-5 sm:p-6 shadow-xl shadow-pink-950/30 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center gap-2">
+              <span class="text-lg">🎮</span>
+              <h3 class="text-lg font-black uppercase tracking-wider text-white font-display">Jugar Solo</h3>
+            </div>
+
+            <div>
+              <label for="soloSortMode" class="block text-[11px] font-bold uppercase tracking-wider text-pink-200/70 mb-1.5">Ordenar por</label>
+              <select id="soloSortMode" class="w-full px-3.5 py-2.5 bg-cyber-950 border border-cyber-700 rounded-xl text-white text-sm font-bold focus:border-pink-400 focus:outline-none">
+                <option value="gusto">Quién me gusta más</option>
+              </select>
+            </div>
+
+            <div class="pt-2 border-t border-cyber-800/80">
+              <p class="text-[11px] font-bold uppercase tracking-wider text-pink-300 mb-3">▾ Filtros: Acota qué personajes pueden salir (Opcional)</p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div>
+                  <label for="soloSpecificAnime" class="block text-[10px] font-bold uppercase tracking-wider text-pink-200/60 mb-1">Anime específico</label>
+                  <select id="soloSpecificAnime" onchange="updatePoolCountUI('lobby')" class="w-full px-3 py-2 bg-cyber-950 border border-cyber-700 rounded-xl text-white text-xs font-bold focus:border-pink-400 focus:outline-none">
+                    <option value="all">Cualquiera de los marcados</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-cyber-800 flex flex-wrap items-center justify-between gap-3">
+            <div class="flex items-center gap-2">
+              <span id="soloCountPill" class="px-2.5 py-1 rounded-full bg-amber-400 text-slate-950 font-black text-xs">60 PERSONAJES ENTRAN</span>
+              <span class="text-xs text-pink-200/70">Salen 10 al azar.</span>
+            </div>
+            <button type="button" onclick="iniciarModoSolitario()" class="px-6 py-3 rounded-xl bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-400 hover:from-amber-300 hover:to-yellow-300 text-slate-950 font-black text-sm tracking-wide shadow-lg shadow-amber-950/40 transition active:scale-95">
+              EMPEZAR
+            </button>
+          </div>
+        </div>
+
+        <!-- COLUMNA DERECHA: SALA PARA 2 O MÁS (MULTIJUGADOR) -->
+        <div class="bg-cyber-900/90 border border-cyber-700/80 rounded-3xl p-5 sm:p-6 shadow-xl shadow-pink-950/30 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center gap-2">
+              <span class="text-lg">👑</span>
+              <h3 class="text-lg font-black uppercase tracking-wider text-white font-display">Sala para 2 o más</h3>
+            </div>
+
+            <p class="text-xs sm:text-sm text-pink-100/80 leading-relaxed">
+              Todos ven el mismo personaje a la vez y el siguiente sale cuando todos colocaron el suyo. El modo y los filtros se eligen dentro de la sala.
+            </p>
+
+            <div class="pt-1">
+              <button type="button" onclick="crearSalaMultijugador()" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-gradient-to-r from-pink-500 via-rose-500 to-fuchsia-600 hover:from-pink-400 hover:to-rose-500 text-white font-extrabold text-sm tracking-wide shadow-lg shadow-pink-950/60 transition active:scale-95">
+                ✨ CREAR SALA
+              </button>
+            </div>
+
+            <div class="pt-4 border-t border-cyber-800 space-y-2.5">
+              <label for="inputRoomCode" class="block text-[11px] font-bold uppercase tracking-wider text-pink-200/70">Código de una sala</label>
+              <input id="inputRoomCode" type="text" maxlength="6" placeholder="EJ: BDJH" class="w-full px-4 py-2.5 bg-cyber-950 border border-cyber-700 rounded-xl text-white font-mono font-bold tracking-widest uppercase focus:border-pink-400 focus:outline-none text-sm">
+              <div class="flex flex-wrap items-center gap-2.5 pt-1">
+                <button type="button" onclick="unirseSalaMultijugador(false)" class="px-5 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-xs tracking-wide transition active:scale-95">
+                  UNIRME A JUGAR
+                </button>
+                <button type="button" onclick="unirseSalaMultijugador(true)" class="px-4 py-2.5 rounded-xl bg-cyber-950 hover:bg-cyber-800 border border-cyber-700 text-pink-200 hover:text-white font-bold text-xs transition active:scale-95">
+                  👁️ SOLO MIRAR
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <p class="text-[11px] text-pink-200/50 mt-6 pt-3 border-t border-cyber-800/60">
+            Sincronización en tiempo real con Supabase · Compatible con OBS Studio.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         VISTA 2: SALA DE JUEGO / PARTIDA EN CURSO (SOLO Y MULTIJUGADOR)
+         ====================================================================== -->
+    <section id="roomView" class="hidden space-y-5">
+
+      <!-- Barra superior de la sala (Código, Links, Estado) -->
+      <div class="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-cyber-800">
+        <div class="flex flex-wrap items-center gap-2 sm:gap-3">
+          <div id="roomCodeBadgeWrap" class="flex items-center gap-2 bg-cyber-900 border border-cyber-700 px-3 py-1.5 rounded-xl">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-pink-200/70">SALA</span>
+            <span id="lblRoomCode" class="text-xl font-black font-mono text-amber-300 tracking-widest">SOLO</span>
+          </div>
+
+          <div id="roomTopActions" class="flex flex-wrap items-center gap-2">
+            <button type="button" onclick="copiarLinkSala(false)" class="px-3 py-1.5 rounded-xl bg-cyber-900 hover:bg-cyber-800 border border-cyber-700 text-pink-200 hover:text-white text-[11px] font-bold transition active:scale-95">
+              📋 COPIAR LINK DE LA SALA
+            </button>
+            <button type="button" onclick="copiarLinkSala(true)" class="px-3 py-1.5 rounded-xl bg-cyber-900 hover:bg-cyber-800 border border-cyber-700 text-pink-200 hover:text-white text-[11px] font-bold transition active:scale-95">
+              🎥 COPIAR LINK PARA OBS
+            </button>
+          </div>
+
+          <span id="lblRoomSummary" class="text-xs sm:text-sm font-bold text-pink-100">
+            1 jugador · Por gusto
+          </span>
+        </div>
+
+        <button type="button" onclick="salirDeSala()" class="px-3.5 py-1.5 rounded-xl border border-rose-500/40 bg-rose-500/10 text-rose-300 hover:bg-rose-500/20 font-bold text-xs transition active:scale-95">
+          SALIR DE LA SALA
+        </button>
+      </div>
+
+      <!-- Banner de Estado del Turno -->
+      <div class="bg-cyber-900/95 border border-cyber-700 rounded-2xl px-4 py-3.5 shadow-lg shadow-pink-950/30 flex flex-wrap items-center justify-between gap-3">
+        <div>
+          <h3 id="turnStatusTitle" class="text-base sm:text-lg font-extrabold text-white">Elige el modo abajo y reparte</h3>
+          <p id="turnStatusSubtitle" class="text-xs text-pink-200/75 mt-0.5">Esperando inicio de la partida...</p>
+        </div>
+      </div>
+
+      <!-- ZONA CENTRAL DE TABLEROS + CARTA DEL PERSONAJE ACTUAL -->
+      <div class="flex flex-col lg:flex-row items-start justify-center gap-5 overflow-x-auto pb-2">
+
+        <!-- Tablero del Jugador Local (Izquierda) -->
+        <div id="localBoardContainer" class="w-full lg:w-[290px] shrink-0">
+          <!-- Renderizado por JS -->
+        </div>
+
+        <!-- Carta Central del Personaje Actual -->
+        <div class="w-full lg:w-[290px] shrink-0 flex flex-col items-center">
+          <span id="centerCardHeader" class="text-xs font-extrabold uppercase tracking-[0.18em] text-pink-200/80 mb-2">
+            ESPERANDO
+          </span>
+
+          
+          <div id="centerCharacterCard" class="w-full bg-cyber-900/95 border-2 border-amber-300/70 rounded-3xl p-4 shadow-2xl shadow-pink-950/70 flex flex-col items-center justify-center min-h-[395px] text-center relative overflow-hidden">
+            <!-- Estado inicial antes de repartir -->
+            <div id="centerEmptyState" class="py-12 px-4 flex flex-col items-center">
+              <div class="text-6xl font-black text-amber-300 mb-3 font-arcade">?</div>
+              <p class="text-base font-extrabold text-white">Todavía no salió nadie</p>
+              <p class="text-xs text-pink-200/60 mt-1">El anfitrión debe presionar Empezar abajo para sacar el primer personaje.</p>
+            </div>
+
+            <!-- Estado con personaje activo -->
+            <div id="centerActiveState" class="hidden w-full flex-col items-center card-pop">
+              <div class="w-48 h-64 sm:w-52 sm:h-68 rounded-2xl overflow-hidden border-2 border-cyber-700 bg-cyber-950 shadow-xl relative mb-3">
+                <img id="activeCharImg" src="" alt="" class="w-full h-full object-cover">
+                <span id="activeCharAnimeBadge" class="absolute bottom-2 left-2 right-2 px-2 py-0.5 rounded-lg bg-cyber-950/90 border border-pink-500/30 text-[10px] font-bold text-pink-200 truncate">
+                  Anime
+                </span>
+              </div>
+              <h4 id="activeCharName" class="text-lg font-black text-white tracking-wide leading-tight">Nombre</h4>
+              <p id="activeCharHint" class="text-xs text-pink-300/80 mt-1"></p>
+            </div>
+          </div>
+
+          <!-- 10 Puntos de Progreso debajo de la carta -->
+          <div id="progressDots" class="flex items-center justify-center gap-1.5 mt-3">
+            <!-- 10 barritas generadas por JS -->
+          </div>
+        </div>
+
+        <!-- Tableros de los demás jugadores en la sala (Derecha) -->
+        <div id="otherBoardsContainer" class="w-full lg:w-auto flex flex-wrap lg:flex-nowrap items-start gap-4">
+          <!-- Renderizado en tiempo real por JS -->
+        </div>
+
+      </div>
+
+      <!-- PANEL DEL ANFITRIÓN (ABAJO, IGUAL A LAS CAPTURAS) -->
+      <div id="hostRoomPanel" class="bg-cyber-900/90 border border-cyber-700 rounded-3xl p-5 sm:p-6 shadow-xl max-w-3xl">
+        <div class="flex items-center justify-between gap-2 mb-3">
+          <h4 class="text-sm font-black uppercase tracking-wider text-amber-300 font-display">Anfitrión</h4>
+          <span id="hostPanelSubtitle" class="text-[11px] text-pink-200/70">Configura la ronda para todos</span>
+        </div>
+
+        <!-- Controles cuando la sala está esperando o terminó -->
+        <div id="hostConfigControls" class="space-y-4">
+          <div>
+            <label for="roomSortMode" class="block text-[11px] font-bold uppercase tracking-wider text-pink-200/70 mb-1">Ordenar por</label>
+            <select id="roomSortMode" class="w-full px-3.5 py-2.5 bg-cyber-950 border border-cyber-700 rounded-xl text-white text-sm font-bold focus:border-pink-400 focus:outline-none">
+              <option value="gusto">Quién me gusta más</option>
+            </select>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 border-t border-cyber-800">
+            <div>
+              <label for="roomSpecificAnime" class="block text-[10px] font-bold uppercase tracking-wider text-pink-200/60 mb-1">Anime específico</label>
+              <select id="roomSpecificAnime" onchange="updatePoolCountUI('room')" class="w-full px-3 py-2 bg-cyber-950 border border-cyber-700 rounded-xl text-white text-xs font-bold focus:border-pink-400 focus:outline-none">
+                <option value="all">Cualquiera de los marcados</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-pink-200/60">Animes que entran</span>
+              <div class="flex gap-2">
+                <button type="button" onclick="toggleAllAnimes('room', true)" class="text-[10px] font-bold text-pink-300 hover:underline">Marcar todos</button>
+                <span class="text-pink-200/30">·</span>
+                <button type="button" onclick="toggleAllAnimes('room', false)" class="text-[10px] font-bold text-pink-200/60 hover:underline">Ninguno</button>
+              </div>
+            </div>
+            <div id="roomAnimeCheckboxes" class="grid grid-cols-2 sm:grid-cols-3 gap-2 max-h-44 overflow-y-auto p-2 rounded-xl bg-cyber-950/60 border border-cyber-800">
+              <!-- Checkboxes en sala -->
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-between gap-3 pt-2">
+            <div class="flex items-center gap-2">
+              <span id="roomCountPill" class="px-2.5 py-1 rounded-full bg-amber-400 text-slate-950 font-black text-xs">60 PERSONAJES ENTRAN</span>
+              <span class="text-xs text-pink-200/70">Salen 10 al azar.</span>
+            </div>
+            <button type="button" onclick="hostRepartirNuevaRonda()" class="px-6 py-2.5 rounded-xl bg-gradient-to-r from-amber-400 to-yellow-400 hover:from-amber-300 hover:to-yellow-300 text-slate-950 font-black text-xs sm:text-sm tracking-wide shadow-lg transition active:scale-95">
+              EMPEZAR / REPARTIR
+            </button>
+          </div>
+        </div>
+
+        <!-- Controles cuando la ronda está EN JUEGO -->
+        <div id="hostPlayingControls" class="hidden space-y-3">
+          <p class="text-xs text-pink-100/80">
+            Ronda en juego. Si alguien tarda o no responde, puedes sacar el siguiente personaje sin esperarlo.
+          </p>
+          <div class="flex flex-wrap items-center gap-2.5">
+            <button type="button" onclick="hostForzarSiguientePersonaje()" class="px-4 py-2.5 rounded-xl bg-cyber-950 hover:bg-cyber-800 border border-pink-400/50 text-pink-200 hover:text-white font-extrabold text-xs transition active:scale-95">
+              ⏭️ SIGUIENTE SIN ESPERAR
+            </button>
+            <button type="button" onclick="hostVolverAConfigurar()" class="px-4 py-2.5 rounded-xl bg-rose-500/10 hover:bg-rose-500/20 border border-rose-500/40 text-rose-300 font-bold text-xs transition active:scale-95">
+              🔄 REINICIAR Y CAMBIAR MODO
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- MODAL: SELECTOR DE 31 AVATARES OFICIALES -->
+  <div id="avatarPickerModal" class="fixed inset-0 bg-cyber-950/85 backdrop-blur-sm z-[60] hidden items-center justify-center p-4" role="dialog" aria-modal="true">
+    <div class="bg-cyber-900 border-2 border-cyber-700 rounded-2xl p-4 sm:p-5 shadow-2xl shadow-pink-950/60 w-full max-w-md max-h-[min(34rem,calc(100vh-2rem))] overflow-hidden flex flex-col">
+      <div class="flex items-start justify-between gap-3 mb-4 shrink-0">
+        <div>
+          <h2 class="text-base font-black text-white font-display">Elige tu avatar</h2>
+          <p class="text-[11px] text-pink-200/70 mt-1">31 avatares oficiales disponibles.</p>
+        </div>
+        <button id="closeAvatarPicker" type="button" class="shrink-0 p-2 rounded-lg bg-cyber-800 hover:bg-cyber-700 text-pink-200 hover:text-white transition">✕</button>
+      </div>
+      <div class="grid grid-cols-5 sm:grid-cols-6 gap-2 overflow-y-auto pr-1 flex-1 max-h-[22rem]" id="avatarPicker"></div>
+    </div>
+  </div>
+
+  <!-- TOAST DE NOTIFICACIONES -->
+  <div id="toast" class="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 bg-cyber-850 border border-pink-500/40 text-white text-xs px-4 py-2.5 rounded-full shadow-2xl transition-all duration-300 opacity-0 pointer-events-none flex items-center gap-2">
+    <span id="toastIcon">🌸</span>
+    <span id="toastMessage">Mensaje</span>
+  </div>
+
+  <!-- ==========================================================================
+       BASE DE DATOS DE PERSONAJES, AUDIO Y LÓGICA DEL JUEGO
+       ========================================================================== -->
+  <script>
+    /* ==========================================================================
+       1. CATÁLOGO DE ANIMES Y PERSONAJES (CON DATOS REALES Y FOTOS)
+       ========================================================================== */
+    const ANIME_LIST = [
+      { id: 'Fate', name: 'Fate' },
+      { id: 'La nobleza de las Flores', name: 'La nobleza de las Flores' },
+      { id: 'Gachiakuta', name: 'Gachiakuta' },
+      { id: 'MHA Vigilantes', name: 'MHA Vigilantes' },
+      { id: 'My Hero Academia', name: 'My Hero Academia' },
+      { id: 'Konosuba', name: 'Konosuba' },
+      { id: '86: Eighty-Six', name: '86: Eighty-Six' },
+      { id: 'La Boticaria', name: 'La Boticaria' },
+      { id: 'Fullmetal Alchemist Brotherhood', name: 'Fullmetal Alchemist Brotherhood' },
+      { id: 'Clannad', name: 'Clannad' },
+      { id: 'Hyouka', name: 'Hyouka' },
+      { id: 'Record Of Ragnarok', name: 'Record Of Ragnarok' },
+      { id: 'MONSTER', name: 'MONSTER' },
+      { id: 'Akame Ga Kill', name: 'Akame Ga Kill' },
+      { id: 'Blue Box', name: 'Blue Box' },
+      { id: 'Cyberpunk: Edgerunners', name: 'Cyberpunk: Edgerunners' },
+      { id: 'More Than a Married Couple', name: 'More Than a Married Couple' },
+      { id: 'Attack on Titan', name: 'Attack on Titan' },
+      { id: 'Kaiju No. 8', name: 'Kaiju No. 8' },
+      { id: 'Erased', name: 'Erased' },
+      { id: 'Las 100 Novias', name: 'Las 100 Novias' },
+      { id: 'Re: ZERO', name: 'Re: ZERO' },
+      { id: 'Takopis Original Sin', name: 'Takopis Original Sin' },
+      { id: 'One Punch Man', name: 'One Punch Man' },
+      { id: 'Darling in the Franxx', name: 'Darling in the Franxx' },
+      { id: 'Death Note', name: 'Death Note' },
+      { id: 'Wind Breaker', name: 'Wind Breaker' },
+      { id: 'Las Quintillizas', name: 'Las Quintillizas' },
+      { id: 'Blue Lock', name: 'Blue Lock' },
+      { id: 'Frieren', name: 'Frieren' },
+      { id: 'Classroom of the Elite', name: 'Classroom of the Elite' },
+      { id: 'Citrus', name: 'Citrus' },
+      { id: 'Chainsaw Man', name: 'Chainsaw Man' },
+      { id: 'ARCANE', name: 'ARCANE' },
+      { id: 'Tokyo Revengers', name: 'Tokyo Revengers' },
+      { id: 'Dan Da Dan', name: 'Dan Da Dan' },
+      { id: 'A Sign of Affection', name: 'A Sign of Affection' },
+      { id: 'Demon Slayer', name: 'Demon Slayer' },
+      { id: 'Solo Leveling', name: 'Solo Leveling' },
+      { id: 'My Dress up Darling', name: 'My Dress up Darling' },
+      { id: 'Jujutsu Kaisen', name: 'Jujutsu Kaisen' },
+      { id: 'Violet Evergarden', name: 'Violet Evergarden' },
+      { id: 'Charlotte', name: 'Charlotte' },
+      { id: 'Bunny Girl Senpai', name: 'Bunny Girl Senpai' },
+      { id: 'Summer Time Rendering', name: 'Summer Time Rendering' },
+      { id: 'Haikyuu!', name: 'Haikyuu!' },
+      { id: 'Your Lie in April', name: 'Your Lie in April' }
+    ];
+
+    let CHARACTER_POOL = [];
+
+    window.personajesCargados = fetch('./personajes.json').then(async response => {
+      if (!response.ok) throw new Error('No se pudo cargar personajes.json');
+      const characters = await response.json();
+      if (!Array.isArray(characters) || characters.some(character =>
+        Object.keys(character).sort().join(',') !== 'anime,id,img,name')) {
+        throw new Error('personajes.json contiene un formato no válido');
+      }
+      const registeredAnimes = new Set(ANIME_LIST.map(anime => anime.id));
+      const loadedAnimes = new Set(characters.map(character => character.anime));
+      const missingAnimes = ANIME_LIST
+        .map(anime => anime.id)
+        .filter(animeId => !loadedAnimes.has(animeId));
+      const characterIds = characters.map(character => character.id);
+      if (missingAnimes.length > 0) {
+        throw new Error(`personajes.json no contiene personajes para: ${missingAnimes.join(', ')}`);
+      }
+      if (characterIds.length !== new Set(characterIds).size) {
+        throw new Error('personajes.json contiene IDs de personajes repetidos');
+      }
+      if (characters.some(character => !registeredAnimes.has(character.anime))) {
+        throw new Error('personajes.json contiene un anime que no está registrado en ANIME_LIST');
+      }
+      CHARACTER_POOL = characters;
+      return characters;
+    });
+
+    // Generador SVG elegante de respaldo si alguna imagen externa no carga
+    function crearPosterSVG(char) {
+      const initials = (char.name || 'AN').split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
+      const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="320" height="440" viewBox="0 0 320 440">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#3d142d"/>
+            <stop offset="50%" stop-color="#792459"/>
+            <stop offset="100%" stop-color="#140510"/>
+          </linearGradient>
+        </defs>
+        <rect width="320" height="440" fill="url(#g)"/>
+        <circle cx="160" cy="175" r="68" fill="rgba(244,114,182,0.18)" stroke="#f472b6" stroke-width="3"/>
+        <text x="160" y="195" text-anchor="middle" fill="#fff5fa" font-family="sans-serif" font-weight="900" font-size="48">${initials}</text>
+        <text x="160" y="305" text-anchor="middle" fill="#fbcfe8" font-family="sans-serif" font-weight="800" font-size="20">${char.name}</text>
+        <text x="160" y="335" text-anchor="middle" fill="#f472b6" font-family="sans-serif" font-weight="700" font-size="14">${char.anime}</text>
+      </svg>`;
+      return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+    }
+
+    /* ==========================================================================
+       2. EFECTOS DE SONIDO SINTETIZADOS (WEB AUDIO API)
+       ========================================================================== */
+    class AudioController {
+      constructor() {
+        this.ctx = null;
+        this.enabled = true;
+      }
+      init() {
+        if (!this.ctx) {
+          const AudioCtx = window.AudioContext || window.webkitAudioContext;
+          if (AudioCtx) this.ctx = new AudioCtx();
+        }
+        if (this.ctx && this.ctx.state === 'suspended') this.ctx.resume();
+      }
+      playPlace() {
+        if (!this.enabled) return;
+        this.init();
+        if (!this.ctx) return;
+        try {
+          const osc = this.ctx.createOscillator();
+          const gain = this.ctx.createGain();
+          osc.type = 'triangle';
+          osc.frequency.setValueAtTime(520, this.ctx.currentTime);
+          osc.frequency.exponentialRampToValueAtTime(780, this.ctx.currentTime + 0.09);
+          gain.gain.setValueAtTime(0.08, this.ctx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + 0.09);
+          osc.connect(gain);
+          gain.connect(this.ctx.destination);
+          osc.start();
+          osc.stop(this.ctx.currentTime + 0.09);
+        } catch(e) {}
+      }
+      playReveal() {
+        if (!this.enabled) return;
+        this.init();
+        if (!this.ctx) return;
+        try {
+          const osc = this.ctx.createOscillator();
+          const gain = this.ctx.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(340, this.ctx.currentTime);
+          osc.frequency.exponentialRampToValueAtTime(640, this.ctx.currentTime + 0.14);
+          gain.gain.setValueAtTime(0.06, this.ctx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + 0.14);
+          osc.connect(gain);
+          gain.connect(this.ctx.destination);
+          osc.start();
+          osc.stop(this.ctx.currentTime + 0.14);
+        } catch(e) {}
+      }
+      playFinish() {
+        if (!this.enabled) return;
+        this.init();
+        if (!this.ctx) return;
+        try {
+          [523.25, 659.25, 783.99, 1046.50].forEach((freq, i) => {
+            const osc = this.ctx.createOscillator();
+            const gain = this.ctx.createGain();
+            osc.type = 'sine';
+            const t = this.ctx.currentTime + i * 0.09;
+            osc.frequency.setValueAtTime(freq, t);
+            gain.gain.setValueAtTime(0.1, t);
+            gain.gain.exponentialRampToValueAtTime(0.001, t + 0.25);
+            osc.connect(gain);
+            gain.connect(this.ctx.destination);
+            osc.start(t);
+            osc.stop(t + 0.25);
+          });
+        } catch(e) {}
+      }
+    }
+    const audio = new AudioController();
+
+    /* ==========================================================================
+       3. AVATARES Y PERFIL DEL JUGADOR
+       ========================================================================== */
+    const playerIdKey = 'merce-sopa-player-id';
+    const playerId = localStorage.getItem(playerIdKey) || (typeof crypto !== 'undefined' && crypto.randomUUID ? crypto.randomUUID() : 'p_' + Math.random().toString(36).slice(2, 10));
+    localStorage.setItem(playerIdKey, playerId);
+
+    const AVATAR_BASE_PATH = './avatares/';
+    const AVATAR_FILES = [
+      'avatar.jpg',
+      ...Array.from({ length: 30 }, (_, index) => `avatar${index + 1}.jpg`)
+    ];
+    let selectedAvatar = localStorage.getItem('merce-sopa-avatar') || AVATAR_FILES[0];
+
+    function renderAvatarPicker() {
+      const picker = document.getElementById('avatarPicker');
+      const preview = document.getElementById('selectedAvatarPreview');
+      if (!picker || !preview) return;
+
+      if (!AVATAR_FILES.includes(selectedAvatar)) selectedAvatar = AVATAR_FILES[0];
+      preview.src = `${AVATAR_BASE_PATH}${selectedAvatar}`;
+      preview.dataset.file = selectedAvatar;
+
+      picker.innerHTML = AVATAR_FILES.map(file => `
+        <button type="button" data-avatar="${file}" class="avatar-option aspect-square rounded-xl overflow-hidden border-2 ${file === selectedAvatar ? 'border-pink-400 ring-2 ring-pink-400/50 scale-105' : 'border-cyber-700/80'} bg-cyber-950 transition hover:border-pink-300">
+          <img src="${AVATAR_BASE_PATH}${file}" data-file="${file}" alt="${file}" class="w-full h-full object-cover" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='../avatares/'+this.dataset.file;}">
+        </button>
+      `).join('');
+
+      picker.querySelectorAll('.avatar-option').forEach(btn => {
+        btn.addEventListener('click', () => {
+          selectedAvatar = btn.dataset.avatar;
+          localStorage.setItem('merce-sopa-avatar', selectedAvatar);
+          renderAvatarPicker();
+          document.getElementById('avatarPickerModal').classList.add('hidden');
+          document.getElementById('avatarPickerModal').classList.remove('flex');
+          window.sincronizarAvatarEnSala?.(selectedAvatar);
+        });
+      });
+    }
+
+    function showToast(msg, icon = '🌸') {
+      const toast = document.getElementById('toast');
+      document.getElementById('toastMessage').innerText = msg;
+      document.getElementById('toastIcon').innerText = icon;
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      toast.classList.add('opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('opacity-100');
+        toast.classList.add('opacity-0', 'pointer-events-none');
+      }, 2400);
+    }
+
+    /* ==========================================================================
+       4. FILTROS DE ANIMES Y CONSTRUCCIÓN DE LA PISCINA
+       ========================================================================== */
+    function renderAnimeFilters(scope = 'lobby', selectedIds = ANIME_LIST.map(a => a.id)) {
+      const container = document.getElementById(scope === 'lobby' ? 'lobbyAnimeCheckboxes' : 'roomAnimeCheckboxes');
+      const selectEl = document.getElementById(scope === 'lobby' ? 'soloSpecificAnime' : 'roomSpecificAnime');
+      if (!container) return;
+
+      container.innerHTML = ANIME_LIST.map(anime => {
+        const count = CHARACTER_POOL.filter(c => c.anime === anime.id).length;
+        const checked = selectedIds.includes(anime.id) ? 'checked' : '';
+        return `
+          <label class="flex items-center gap-2 px-2.5 py-1.5 rounded-xl bg-cyber-950/70 border border-cyber-800 hover:border-pink-500/40 cursor-pointer text-xs">
+            <input type="checkbox" data-scope="${scope}" value="${anime.id}" ${checked} onchange="updatePoolCountUI('${scope}')" class="accent-amber-400 w-4 h-4 rounded cursor-pointer">
+            <span class="truncate font-bold text-slate-200">${anime.name}</span>
+            <span class="text-[10px] text-pink-300/60 ml-auto">(${count})</span>
+          </label>
+        `;
+      }).join('');
+
+      if (selectEl && selectEl.options.length <= 1) {
+        ANIME_LIST.forEach(anime => {
+          const opt = document.createElement('option');
+          opt.value = anime.id;
+          opt.textContent = anime.name;
+          selectEl.appendChild(opt);
+        });
+      }
+      updatePoolCountUI(scope);
+    }
+
+    function getSelectedAnimesFromDOM(scope = 'lobby') {
+      const checkboxes = document.querySelectorAll(`input[type="checkbox"][data-scope="${scope}"]:checked`);
+      return Array.from(checkboxes).map(cb => cb.value);
+    }
+
+    function toggleAllAnimes(scope, checkState) {
+      document.querySelectorAll(`input[type="checkbox"][data-scope="${scope}"]`).forEach(cb => {
+        cb.checked = checkState;
+      });
+      updatePoolCountUI(scope);
+    }
+
+    function obtenerPersonajesFiltrados(scope = 'lobby') {
+      const checkedAnimes = getSelectedAnimesFromDOM(scope);
+      const specificAnime = document.getElementById(scope === 'lobby' ? 'soloSpecificAnime' : 'roomSpecificAnime')?.value || 'all';
+
+      return CHARACTER_POOL.filter(c => {
+        if (!checkedAnimes.includes(c.anime)) return false;
+        if (specificAnime !== 'all' && c.anime !== specificAnime) return false;
+        return true;
+      });
+    }
+
+    function updatePoolCountUI(scope = 'lobby') {
+      const pool = obtenerPersonajesFiltrados(scope);
+      if (scope === 'lobby') {
+        const badge = document.getElementById('lobbyPoolBadge');
+        const pill = document.getElementById('soloCountPill');
+        if (badge) badge.innerText = `${pool.length} personajes entran`;
+        if (pill) pill.innerText = `${pool.length} PERSONAJES ENTRAN`;
+      } else {
+        const pill = document.getElementById('roomCountPill');
+        if (pill) pill.innerText = `${pool.length} PERSONAJES ENTRAN`;
+      }
+    }
+
+    /* ==========================================================================
+       5. LÓGICA DE PARTIDA Y RENDERIZADO DE TABLEROS TOP 1..10
+       ========================================================================== */
+    const SORT_MODE_LABELS = {
+      gusto: 'Por gusto'
+    };
+
+    function obtenerEtiquetaDatoPersonaje(char) {
+      return char.anime;
+    }
+
+    function construirHTMLTableroJugador({ player, isLocal, canPlaceHere }) {
+      const slots = Array.isArray(player.slots) && player.slots.length === 10
+        ? player.slots
+        : Array(10).fill(null);
+      const placedCount = slots.filter(Boolean).length;
+      const borderClass = isLocal ? 'border-amber-300/80 shadow-amber-950/20' : 'border-cyber-700';
+
+      const rowsHTML = slots.map((charId, idx) => {
+        const rankNumber = idx + 1;
+        const char = charId ? CHARACTER_POOL.find(c => c.id === charId) : null;
+
+        if (char) {
+          const fallbackSrc = crearPosterSVG(char);
+          const subLabel = obtenerEtiquetaDatoPersonaje(char);
+          return `
+            <div class="flex items-center gap-2.5 h-10 px-2.5 rounded-xl bg-cyber-950 border border-pink-500/40">
+              <span class="w-6 text-center font-black font-arcade text-amber-300 text-sm">${rankNumber}</span>
+              <img src="${char.img}" alt="${char.name}" class="w-7 h-7 rounded-lg object-cover border border-pink-400/40 shrink-0" onerror="this.onerror=null;this.src='${fallbackSrc}';">
+              <div class="min-w-0 flex-1 leading-tight">
+                <p class="text-xs font-extrabold text-white truncate">${char.name}</p>
+                <p class="text-[9px] text-pink-200/70 truncate">${subLabel}</p>
+              </div>
+            </div>
+          `;
+        }
+
+        if (isLocal && canPlaceHere) {
+          return `
+            <button type="button" onclick="colocarPersonajeEnPuesto(${idx})" class="slot-btn-available w-full flex items-center gap-2.5 h-10 px-2.5 rounded-xl bg-cyber-950/60 border border-cyber-700 text-left group">
+              <span class="w-6 text-center font-black font-arcade text-amber-300 text-sm">${rankNumber}</span>
+              <span class="flex-1 text-center text-[11px] font-extrabold uppercase tracking-wider text-amber-300/85 group-hover:text-pink-300">
+                COLOCAR AQUÍ
+              </span>
+            </button>
+          `;
+        }
+
+        return `
+          <div class="flex items-center gap-2.5 h-10 px-2.5 rounded-xl bg-cyber-950/40 border border-cyber-800/80">
+            <span class="w-6 text-center font-black font-arcade text-amber-300/75 text-sm">${rankNumber}</span>
+            <span class="flex-1"></span>
+          </div>
+        `;
+      }).join('');
+
+      return `
+        <div class="bg-cyber-900/95 border-2 ${borderClass} rounded-2xl p-3.5 shadow-xl w-full lg:w-[275px]">
+          <div class="flex items-center justify-between gap-2 pb-2.5 mb-2.5 border-b border-cyber-800">
+            <div class="flex items-center gap-2 min-w-0">
+              <img src="${AVATAR_BASE_PATH}${player.avatar || AVATAR_FILES[0]}" data-file="${player.avatar || AVATAR_FILES[0]}" alt="" class="w-6 h-6 rounded-lg object-cover border border-pink-400/40 shrink-0" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='../avatares/'+this.dataset.file;}">
+              <span class="font-extrabold text-sm text-white truncate">
+                ${player.nick || 'Jugador'} ${isLocal ? '<span class="text-pink-300">(tú)</span>' : ''}
+              </span>
+            </div>
+            <span class="px-2 py-0.5 rounded-full bg-cyber-950 border border-cyber-700 text-[11px] font-bold text-pink-200 shrink-0">
+              ${placedCount} / 10
+            </span>
+          </div>
+          <div class="space-y-1.5">
+            ${rowsHTML}
+          </div>
+        </div>
+      `;
+    }
+
+    function renderizarPuntosProgreso(currentIndex, total = 10, state = 'waiting') {
+      const container = document.getElementById('progressDots');
+      if (!container) return;
+      container.innerHTML = Array.from({ length: total }, (_, idx) => {
+        let colorClass = 'bg-cyber-800 border-cyber-700';
+        if (state === 'finished' || idx < currentIndex) {
+          colorClass = 'bg-pink-500 border-pink-400';
+        } else if (state === 'playing' && idx === currentIndex) {
+          colorClass = 'bg-amber-300 border-amber-200 scale-110';
+        }
+        return `<span class="w-4 h-1.5 rounded-full border transition-all ${colorClass}"></span>`;
+      }).join('');
+    }
+  </script>
+
+  <!-- ==========================================================================
+       6. CONTROLADOR SOLO + MULTIJUGADOR EN TIEMPO REAL CON SUPABASE
+       ========================================================================== -->
+  <script type="module">
+    import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
+
+    // Carga flexible de supabase-config.js (funciona tanto en /minijuegos/ como en subcarpeta)
+    let SUPABASE_URL = '';
+    let SUPABASE_ANON_KEY = '';
+    try {
+      const mod = await import('./supabase-config.js');
+      SUPABASE_URL = mod.SUPABASE_URL;
+      SUPABASE_ANON_KEY = mod.SUPABASE_ANON_KEY;
+    } catch (e) {
+      try {
+        const modParent = await import('../supabase-config.js');
+        SUPABASE_URL = modParent.SUPABASE_URL;
+        SUPABASE_ANON_KEY = modParent.SUPABASE_ANON_KEY;
+      } catch (err) {
+        console.warn('No se encontró supabase-config.js en ./ ni en ../');
+      }
+    }
+
+    const supabase = SUPABASE_URL && SUPABASE_ANON_KEY
+      ? createClient(SUPABASE_URL, SUPABASE_ANON_KEY, { realtime: { params: { eventsPerSecond: 10 } } })
+      : null;
+
+    // Usamos la misma tabla salas_sopa para que funcione sin crear tablas nuevas
+    const TABLE_NAME = 'salas_sopa';
+
+    let realtimeChannel = null;
+    let syncInterval = null;
+    let esMultijugador = false;
+    let codigoSala = '';
+    let esHost = false;
+    let esEspectador = false;
+    let hostConfigInicializada = false;
+    let lastRevealedCharId = null;
+
+    // Estado unificado de la sala (funciona igual en Solo y en Multijugador)
+    let gameState = {
+      state: 'waiting', // 'waiting' | 'playing' | 'finished'
+      sortMode: 'gusto',
+      specificAnime: 'all',
+      selectedAnimes: ANIME_LIST.map(a => a.id),
+      deck: [],         // 10 IDs de personajes en orden
+      currentIndex: 0,  // 0 a 9
+      players: {}
+    };
+
+    const generarCodigoSala = () => Math.random().toString(36).slice(2, 6).toUpperCase();
+    const normalizarCodigo = (v) => (v || '').trim().toUpperCase().replace(/[^A-Z0-9]/g, '');
+
+    function obtenerMiNick() {
+      const val = document.getElementById('inputNick')?.value.trim();
+      if (val) localStorage.setItem('merce-top-nick', val);
+      return val || localStorage.getItem('merce-top-nick') || 'Hitagi';
+    }
+
+    function elegir10PersonajesAlAzar(scope) {
+      const pool = obtenerPersonajesFiltrados(scope);
+      if (pool.length < 10) {
+        showToast(`Necesitas al menos 10 personajes en el filtro (actual: ${pool.length}).`, '⚠️');
+        return null;
+      }
+      const barajado = [...pool].sort(() => Math.random() - 0.5);
+      return barajado.slice(0, 10).map(c => c.id);
+    }
+
+    /* ==========================================================================
+       RENDERIZADO COMPLETO DE LA SALA (PANTALLA DE JUEGO)
+       ========================================================================== */
+    function actualizarVistaSala() {
+      document.getElementById('lobbyView').classList.add('hidden');
+      document.getElementById('roomView').classList.remove('hidden');
+
+      document.getElementById('lblRoomCode').innerText = esMultijugador ? codigoSala : 'SOLO';
+      document.getElementById('roomTopActions').classList.toggle('hidden', !esMultijugador);
+
+      const activePlayers = Object.entries(gameState.players)
+        .filter(([key, p]) => key !== '__meta' && p && p.connected !== false && !p.spectator);
+
+      const modeLabel = SORT_MODE_LABELS.gusto;
+      document.getElementById('lblRoomSummary').innerText =
+        `${activePlayers.length} ${activePlayers.length === 1 ? 'jugador' : 'jugadores'} · ${modeLabel}`;
+
+      const currentCharId = gameState.state === 'playing' ? gameState.deck[gameState.currentIndex] : null;
+      const currentChar = currentCharId ? CHARACTER_POOL.find(c => c.id === currentCharId) : null;
+
+      // Encabezado de estado del turno y quiénes faltan colocar
+      const titleEl = document.getElementById('turnStatusTitle');
+      const subtitleEl = document.getElementById('turnStatusSubtitle');
+
+      if (gameState.state === 'waiting') {
+        titleEl.innerText = 'Elige el modo abajo y reparte';
+        subtitleEl.innerText = activePlayers.map(([, p]) => p.nick).join(', ') || 'Esperando jugadores...';
+      } else if (gameState.state === 'playing' && currentChar) {
+        titleEl.innerText = `Personaje ${gameState.currentIndex + 1} de 10: colóquenlo en su top`;
+        const faltan = activePlayers
+          .filter(([, p]) => (p.placedTurn ?? -1) < gameState.currentIndex)
+          .map(([, p]) => p.nick);
+        subtitleEl.innerText = faltan.length > 0
+          ? `Falta: ${faltan.join(', ')}`
+          : '¡Todos colocaron! Pasando al siguiente...';
+      } else if (gameState.state === 'finished') {
+        titleEl.innerText = '¡Top 10 completado!';
+        subtitleEl.innerText = 'Comparen cómo quedaron sus listas finales.';
+      }
+
+      // Carta central del personaje
+      const centerHeader = document.getElementById('centerCardHeader');
+      const emptyState = document.getElementById('centerEmptyState');
+      const activeState = document.getElementById('centerActiveState');
+
+      if (gameState.state === 'playing' && currentChar) {
+        centerHeader.innerText = `PERSONAJE ${gameState.currentIndex + 1} DE 10`;
+        emptyState.classList.add('hidden');
+        activeState.classList.remove('hidden');
+        activeState.classList.add('flex');
+
+        const imgEl = document.getElementById('activeCharImg');
+        const fallback = crearPosterSVG(currentChar);
+        imgEl.onerror = () => { imgEl.onerror = null; imgEl.src = fallback; };
+        imgEl.src = currentChar.img;
+
+        document.getElementById('activeCharName').innerText = currentChar.name;
+        document.getElementById('activeCharAnimeBadge').innerText = currentChar.anime;
+        document.getElementById('activeCharHint').innerText =
+          '¿En qué puesto de tu Top lo pones?';
+
+        if (lastRevealedCharId !== currentChar.id) {
+          lastRevealedCharId = currentChar.id;
+          audio.playReveal();
+        }
+      } else {
+        centerHeader.innerText = gameState.state === 'finished' ? 'PARTIDA FINALIZADA' : 'ESPERANDO';
+        emptyState.classList.remove('hidden');
+        activeState.classList.add('hidden');
+        activeState.classList.remove('flex');
+      }
+
+      renderizarPuntosProgreso(gameState.currentIndex, 10, gameState.state);
+
+      // Tablero local (a la izquierda) y tableros de otros jugadores (a la derecha)
+      const localContainer = document.getElementById('localBoardContainer');
+      const othersContainer = document.getElementById('otherBoardsContainer');
+      const myPlayer = gameState.players[playerId];
+
+      if (myPlayer && !myPlayer.spectator) {
+        localContainer.classList.remove('hidden');
+        const canPlace = gameState.state === 'playing' && (myPlayer.placedTurn ?? -1) < gameState.currentIndex;
+        localContainer.innerHTML = construirHTMLTableroJugador({
+          player: myPlayer,
+          isLocal: true,
+          canPlaceHere: canPlace,
+        });
+      } else {
+        localContainer.classList.add('hidden');
+      }
+
+      const otherEntries = activePlayers.filter(([id]) => id !== playerId);
+      othersContainer.innerHTML = otherEntries.map(([, p]) =>
+        construirHTMLTableroJugador({
+          player: p,
+          isLocal: false,
+          canPlaceHere: false,
+        })
+      ).join('');
+
+      // Panel del Anfitrión abajo
+      const hostPanel = document.getElementById('hostRoomPanel');
+      const canControlRoom = !esMultijugador || esHost;
+      hostPanel.classList.toggle('hidden', !canControlRoom);
+
+      if (canControlRoom) {
+        const isPlaying = gameState.state === 'playing';
+        document.getElementById('hostConfigControls').classList.toggle('hidden', isPlaying);
+        document.getElementById('hostPlayingControls').classList.toggle('hidden', !isPlaying);
+
+        if (!hostConfigInicializada) {
+          document.getElementById('roomSortMode').value = gameState.sortMode || 'gusto';
+          renderAnimeFilters('room', gameState.selectedAnimes);
+          hostConfigInicializada = true;
+        }
+      }
+    }
+
+    /* ==========================================================================
+       COLOCAR PERSONAJE EN UN PUESTO (1 A 10)
+       ========================================================================== */
+    window.colocarPersonajeEnPuesto = async (slotIndex) => {
+      if (gameState.state !== 'playing') return;
+      const myPlayer = gameState.players[playerId];
+      if (!myPlayer || myPlayer.spectator) return;
+      if ((myPlayer.placedTurn ?? -1) >= gameState.currentIndex) return;
+      if (myPlayer.slots[slotIndex] !== null) return;
+
+      const currentCharId = gameState.deck[gameState.currentIndex];
+      if (!currentCharId) return;
+
+      myPlayer.slots[slotIndex] = currentCharId;
+      myPlayer.placedTurn = gameState.currentIndex;
+      audio.playPlace();
+
+      if (!esMultijugador) {
+        avanzarTurnoSiTodosColocaron();
+        actualizarVistaSala();
+        return;
+      }
+
+      await guardarEstadoEnSupabase(true);
+    };
+
+    function avanzarTurnoSiTodosColocaron(forzar = false) {
+      const activePlayers = Object.entries(gameState.players)
+        .filter(([key, p]) => key !== '__meta' && p && p.connected !== false && !p.spectator);
+
+      if (activePlayers.length === 0) return false;
+
+      if (forzar) {
+        const currentCharId = gameState.deck[gameState.currentIndex];
+        activePlayers.forEach(([, p]) => {
+          if ((p.placedTurn ?? -1) < gameState.currentIndex) {
+            const emptyIdx = p.slots.findIndex(s => s === null);
+            if (emptyIdx !== -1) p.slots[emptyIdx] = currentCharId;
+            p.placedTurn = gameState.currentIndex;
+          }
+        });
+      }
+
+      const todosListos = activePlayers.every(([, p]) => (p.placedTurn ?? -1) >= gameState.currentIndex);
+      if (!todosListos) return false;
+
+      if (gameState.currentIndex + 1 >= 10) {
+        gameState.state = 'finished';
+        audio.playFinish();
+      } else {
+        gameState.currentIndex += 1;
+      }
+      return true;
+    }
+
+    /* ==========================================================================
+       MODO SOLITARIO
+       ========================================================================== */
+    window.iniciarModoSolitario = () => {
+      const deck = elegir10PersonajesAlAzar('lobby');
+      if (!deck) return;
+
+      esMultijugador = false;
+      esHost = true;
+      esEspectador = false;
+      codigoSala = 'SOLO';
+      hostConfigInicializada = false;
+
+      const sortMode = document.getElementById('soloSortMode').value;
+      const specificAnime = document.getElementById('soloSpecificAnime').value || 'all';
+      const selectedAnimes = getSelectedAnimesFromDOM('lobby');
+
+      gameState = {
+        state: 'playing',
+        sortMode,
+        specificAnime,
+        selectedAnimes,
+        deck,
+        currentIndex: 0,
+        players: {
+          [playerId]: {
+            nick: obtenerMiNick(),
+            avatar: selectedAvatar,
+            isHost: true,
+            connected: true,
+            spectator: false,
+            slots: Array(10).fill(null),
+            placedTurn: -1
+          }
+        }
+      };
+
+      actualizarVistaSala();
+    };
+
+    /* ==========================================================================
+       SINCRONIZACIÓN MULTIJUGADOR CON SUPABASE
+       ========================================================================== */
+    function empaquetarParaSupabase() {
+      const playersPayload = {
+        ...gameState.players,
+        __meta: {
+          gameType: 'ordenatutop',
+          sortMode: gameState.sortMode,
+          specificAnime: gameState.specificAnime,
+          selectedAnimes: gameState.selectedAnimes,
+          deck: gameState.deck,
+          currentIndex: gameState.currentIndex
+        }
+      };
+      return {
+        state: gameState.state,
+        players: playersPayload
+      };
+    }
+
+    function desempaquetarDesdeSupabase(row) {
+      if (!row) return;
+      const rawPlayers = { ...(row.players || {}) };
+      const meta = rawPlayers.__meta || {};
+      delete rawPlayers.__meta;
+
+      gameState = {
+        state: row.state || 'waiting',
+        sortMode: meta.sortMode || 'gusto',
+        specificAnime: meta.specificAnime || 'all',
+        selectedAnimes: Array.isArray(meta.selectedAnimes) ? meta.selectedAnimes : ANIME_LIST.map(a => a.id),
+        deck: Array.isArray(meta.deck) ? meta.deck : [],
+        currentIndex: Number(meta.currentIndex) || 0,
+        players: rawPlayers
+      };
+
+      esHost = (row.host_id === playerId) || Boolean(rawPlayers[playerId]?.isHost);
+      actualizarVistaSala();
+    }
+
+    async function guardarEstadoEnSupabase(verificarAvance = false) {
+      if (!supabase || !codigoSala) return;
+
+      // Leemos primero la fila más reciente para no pisar la jugada de otro jugador
+      const { data: rows } = await supabase.from(TABLE_NAME).select('*').eq('codigo', codigoSala);
+      const latest = rows && rows.length > 0 ? rows[0] : null;
+
+      if (latest && latest.players) {
+        const latestPlayers = { ...latest.players };
+        delete latestPlayers.__meta;
+        if (gameState.players[playerId]) {
+          latestPlayers[playerId] = gameState.players[playerId];
+        }
+        gameState.players = latestPlayers;
+      }
+
+      if (verificarAvance) {
+        avanzarTurnoSiTodosColocaron(false);
+      }
+
+      const updates = empaquetarParaSupabase();
+      await supabase.from(TABLE_NAME).update(updates).eq('codigo', codigoSala);
+
+      realtimeChannel?.send({
+        type: 'broadcast',
+        event: 'top_state',
+        payload: { codigo: codigoSala, host_id: latest?.host_id, ...updates }
+      });
+
+      actualizarVistaSala();
+    }
+
+    async function escucharSalaSupabase(roomId) {
+      if (!supabase) return;
+      if (realtimeChannel) {
+        supabase.removeChannel(realtimeChannel);
+        realtimeChannel = null;
+      }
+      clearInterval(syncInterval);
+
+      const { data: rows, error } = await supabase.from(TABLE_NAME).select('*').eq('codigo', roomId);
+      const initialRow = rows && rows.length > 0 ? rows[0] : null;
+      if (error || !initialRow) {
+        alert('La sala no existe o ya caducó.');
+        return false;
+      }
+
+      desempaquetarDesdeSupabase(initialRow);
+
+      realtimeChannel = supabase.channel(`sala_top_${roomId}`)
+        .on(
+          'postgres_changes',
+          { event: '*', schema: 'public', table: TABLE_NAME, filter: `codigo=eq.${roomId}` },
+          (payload) => { if (payload.new) desempaquetarDesdeSupabase(payload.new); }
+        )
+        .on('broadcast', { event: 'top_state' }, (msg) => {
+          if (msg.payload) desempaquetarDesdeSupabase(msg.payload);
+        })
+        .subscribe();
+
+      // Respaldo suave sin .single() para evitar errores 406 en consola
+      syncInterval = setInterval(async () => {
+        if (!esMultijugador || !codigoSala) return;
+        const { data: pollRows } = await supabase.from(TABLE_NAME).select('*').eq('codigo', roomId);
+        if (pollRows && pollRows.length > 0) desempaquetarDesdeSupabase(pollRows[0]);
+      }, 2500);
+
+      return true;
+    }
+
+    window.crearSalaMultijugador = async () => {
+      if (!supabase) return alert('Verifica que supabase-config.js esté disponible.');
+      try {
+        esMultijugador = true;
+        esHost = true;
+        esEspectador = false;
+        hostConfigInicializada = false;
+        codigoSala = generarCodigoSala();
+
+        const selectedAnimes = getSelectedAnimesFromDOM('lobby');
+        gameState = {
+          state: 'waiting',
+          sortMode: document.getElementById('soloSortMode').value || 'gusto',
+          specificAnime: 'all',
+          selectedAnimes: selectedAnimes.length ? selectedAnimes : ANIME_LIST.map(a => a.id),
+          deck: [],
+          currentIndex: 0,
+          players: {
+            [playerId]: {
+              nick: obtenerMiNick(),
+              avatar: selectedAvatar,
+              isHost: true,
+              connected: true,
+              spectator: false,
+              slots: Array(10).fill(null),
+              placedTurn: -1
+            }
+          }
+        };
+
+        const packed = empaquetarParaSupabase();
+        const newRoomPayload = {
+          codigo: codigoSala,
+          host_id: playerId,
+          seed: Math.floor(Math.random() * 1000000),
+          time_limit: 600,
+          word_count: 10,
+          max_jugadores: 8,
+          category_id: 'all',
+          state: packed.state,
+          players: packed.players
+        };
+
+        const { error } = await supabase.from(TABLE_NAME).insert([newRoomPayload]);
+        if (error) throw error;
+
+        await escucharSalaSupabase(codigoSala);
+        showToast(`Sala creada: ${codigoSala}`, '👑');
+      } catch (err) {
+        console.error('Error al crear sala:', err);
+        alert('No se pudo crear la sala en Supabase.');
+      }
+    };
+
+    window.unirseSalaMultijugador = async (modoSoloMirar = false) => {
+      if (!supabase) return alert('Verifica que supabase-config.js esté disponible.');
+      const code = normalizarCodigo(document.getElementById('inputRoomCode').value);
+      if (!code) return alert('Ingresa el código de la sala.');
+
+      try {
+        const { data: rows, error } = await supabase.from(TABLE_NAME).select('*').eq('codigo', code);
+        const latest = rows && rows.length > 0 ? rows[0] : null;
+        if (error || !latest) return alert('La sala no existe o ya caducó.');
+
+        esMultijugador = true;
+        esEspectador = Boolean(modoSoloMirar);
+        codigoSala = code;
+        hostConfigInicializada = false;
+
+        const players = { ...(latest.players || {}) };
+        if (!modoSoloMirar) {
+          const prevPlayer = players[playerId];
+          players[playerId] = {
+            nick: obtenerMiNick(),
+            avatar: selectedAvatar,
+            isHost: latest.host_id === playerId,
+            connected: true,
+            spectator: false,
+            slots: prevPlayer?.slots?.length === 10 ? prevPlayer.slots : Array(10).fill(null),
+            placedTurn: prevPlayer?.placedTurn ?? -1
+          };
+          await supabase.from(TABLE_NAME).update({ players }).eq('codigo', codigoSala);
+        }
+
+        await escucharSalaSupabase(codigoSala);
+        showToast(modoSoloMirar ? `Mirando sala ${codigoSala}` : `Te uniste a ${codigoSala}`, '🌸');
+      } catch (err) {
+        console.error('Error al unirse:', err);
+        alert('No se pudo unir a la sala.');
+      }
+    };
+
+    /* ==========================================================================
+       CONTROLES DEL ANFITRIÓN (REPARTIR, FORZAR SIGUIENTE, REINICIAR)
+       ========================================================================== */
+    window.hostRepartirNuevaRonda = async () => {
+      const deck = elegir10PersonajesAlAzar('room');
+      if (!deck) return;
+
+      gameState.sortMode = document.getElementById('roomSortMode').value || 'gusto';
+      gameState.specificAnime = document.getElementById('roomSpecificAnime').value || 'all';
+      gameState.selectedAnimes = getSelectedAnimesFromDOM('room');
+      gameState.deck = deck;
+      gameState.currentIndex = 0;
+      gameState.state = 'playing';
+
+      Object.keys(gameState.players).forEach(id => {
+        if (id !== '__meta' && gameState.players[id]) {
+          gameState.players[id].slots = Array(10).fill(null);
+          gameState.players[id].placedTurn = -1;
+        }
+      });
+
+      if (!esMultijugador) {
+        actualizarVistaSala();
+        return;
+      }
+
+      const updates = empaquetarParaSupabase();
+      await supabase.from(TABLE_NAME).update(updates).eq('codigo', codigoSala);
+      realtimeChannel?.send({ type: 'broadcast', event: 'top_state', payload: { codigo: codigoSala, ...updates } });
+      actualizarVistaSala();
+    };
+
+    window.hostForzarSiguientePersonaje = async () => {
+      if (gameState.state !== 'playing') return;
+      avanzarTurnoSiTodosColocaron(true);
+
+      if (!esMultijugador) {
+        actualizarVistaSala();
+        return;
+      }
+
+      const updates = empaquetarParaSupabase();
+      await supabase.from(TABLE_NAME).update(updates).eq('codigo', codigoSala);
+      realtimeChannel?.send({ type: 'broadcast', event: 'top_state', payload: { codigo: codigoSala, ...updates } });
+      actualizarVistaSala();
+    };
+
+    window.hostVolverAConfigurar = async () => {
+      gameState.state = 'waiting';
+      gameState.currentIndex = 0;
+      if (!esMultijugador) {
+        actualizarVistaSala();
+        return;
+      }
+      const updates = empaquetarParaSupabase();
+      await supabase.from(TABLE_NAME).update(updates).eq('codigo', codigoSala);
+      realtimeChannel?.send({ type: 'broadcast', event: 'top_state', payload: { codigo: codigoSala, ...updates } });
+      actualizarVistaSala();
+    };
+
+    window.sincronizarAvatarEnSala = async (nuevoAvatar) => {
+      if (!esMultijugador || !codigoSala || !gameState.players[playerId]) return;
+      gameState.players[playerId].avatar = nuevoAvatar;
+      await guardarEstadoEnSupabase(false);
+    };
+
+    window.copiarLinkSala = async (paraOBS = false) => {
+      const base = `${window.location.origin}${window.location.pathname}?room=${codigoSala}`;
+      const finalUrl = paraOBS ? `${base}&obs=1` : base;
+      try {
+        await navigator.clipboard.writeText(finalUrl);
+        showToast(paraOBS ? '¡Link para OBS copiado!' : '¡Link de invitación copiado!', '📋');
+      } catch (e) {
+        prompt('Copia este enlace:', finalUrl);
+      }
+    };
+
+    window.salirDeSala = async () => {
+      if (esMultijugador && codigoSala && supabase && gameState.players[playerId]) {
+        try {
+          gameState.players[playerId].connected = false;
+          const updates = empaquetarParaSupabase();
+          await supabase.from(TABLE_NAME).update(updates).eq('codigo', codigoSala);
+        } catch(e) {}
+      }
+      if (realtimeChannel && supabase) {
+        supabase.removeChannel(realtimeChannel);
+        realtimeChannel = null;
+      }
+      clearInterval(syncInterval);
+      esMultijugador = false;
+      codigoSala = '';
+      hostConfigInicializada = false;
+
+      document.getElementById('roomView').classList.add('hidden');
+      document.getElementById('lobbyView').classList.remove('hidden');
+    };
+
+    /* ==========================================================================
+       INICIALIZACIÓN AL CARGAR LA PÁGINA
+       ========================================================================== */
+    async function initializePage() {
+      await window.personajesCargados;
+      renderAvatarPicker();
+      renderAnimeFilters('lobby');
+      renderAnimeFilters('room');
+
+      const savedNick = localStorage.getItem('merce-top-nick');
+      if (savedNick) document.getElementById('inputNick').value = savedNick;
+
+      document.getElementById('selectedAvatarButton').addEventListener('click', () => {
+        const modal = document.getElementById('avatarPickerModal');
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      });
+      document.getElementById('closeAvatarPicker').addEventListener('click', () => {
+        const modal = document.getElementById('avatarPickerModal');
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      });
+
+      document.getElementById('btnSoundToggle').addEventListener('click', () => {
+        audio.enabled = !audio.enabled;
+        document.getElementById('soundIconOn').classList.toggle('hidden', !audio.enabled);
+        document.getElementById('soundIconOff').classList.toggle('hidden', audio.enabled);
+        showToast(audio.enabled ? 'Sonido activado' : 'Sonido silenciado', audio.enabled ? '🔊' : '🔇');
+      });
+
+      // Auto-detección de link de invitación (?room=XXXX) o link de OBS (?room=XXXX&obs=1)
+      const params = new URLSearchParams(window.location.search);
+      const roomParam = normalizarCodigo(params.get('room') || '');
+      const isObs = params.get('obs') === '1';
+
+      if (isObs) {
+        document.body.classList.add('obs-mode');
+      }
+      if (roomParam) {
+        document.getElementById('inputRoomCode').value = roomParam;
+        if (isObs) {
+          window.unirseSalaMultijugador(true);
+        }
+      }
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initializePage, { once: true });
+    } else {
+      initializePage();
+    }
+  </script>
+</body>
+</html>
