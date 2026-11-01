@@ -511,6 +511,89 @@
       display: none !important;
     }
 
+    .room-waiting {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 320px;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .room-waiting-main {
+      text-align: center;
+      padding: 34px 24px;
+    }
+
+    .room-waiting-main h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    .room-waiting-main p {
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .room-code-large {
+      display: inline-block;
+      margin: 20px 0 16px;
+      padding: 10px 24px;
+      border: 1px solid var(--accent-yellow);
+      border-radius: 16px;
+      color: var(--accent-yellow);
+      font-size: clamp(2.4rem, 8vw, 4.5rem);
+      font-weight: 800;
+      letter-spacing: 0.18em;
+      line-height: 1;
+    }
+
+    .room-invite-btn {
+      background: var(--accent-yellow);
+      color: #1a0912;
+      border: 0;
+      border-radius: 12px;
+      padding: 12px 18px;
+      font: 800 0.82rem inherit;
+      cursor: pointer;
+    }
+
+    .room-invite-status {
+      min-height: 20px;
+      margin-top: 12px;
+      color: var(--success);
+      font-size: 0.78rem;
+    }
+
+    .waiting-players {
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .waiting-player {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 11px;
+      background: var(--bg-card-inner);
+      border: 1px solid var(--border-subtle);
+      border-radius: 13px;
+      text-align: left;
+    }
+
+    .waiting-player img {
+      width: 42px;
+      height: 42px;
+      border-radius: 11px;
+      object-fit: cover;
+    }
+
+    @media (max-width: 860px) {
+      .room-waiting {
+        grid-template-columns: 1fr;
+      }
+    }
+
     .game-topbar-info {
       display: flex;
       align-items: center;
@@ -918,7 +1001,29 @@
         </div>
       </div>
 
-      <div class="game-layout">
+      <div id="roomWaitingView" class="room-waiting hidden">
+        <div class="card room-waiting-main">
+          <h2>Esperando jugadores</h2>
+          <p>Comparte este código para que tus amigos se unan a la sala.</p>
+          <div id="roomCodeLarge" class="room-code-large">----</div>
+          <div>
+            <button id="copyInviteBtn" class="room-invite-btn">📋 Copiar Link de Invitación</button>
+          </div>
+          <div id="inviteStatus" class="room-invite-status" aria-live="polite"></div>
+          <div id="hostWaitingActions" class="hidden" style="margin-top:18px;">
+            <button id="hostStartWaitingBtn" class="btn-yellow">▶ INICIAR PARTIDA</button>
+          </div>
+        </div>
+        <div class="card">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+            <span class="pool-title">JUGADORES (<span id="waitingPlayerCount">0</span>/8)</span>
+            <span style="font-size:0.72rem; color:var(--text-muted);">En vivo</span>
+          </div>
+          <div id="waitingPlayersList" class="waiting-players"></div>
+        </div>
+      </div>
+
+      <div id="roomPlayView" class="game-layout hidden">
         <!-- Escenario Central de la Frase -->
         <div class="card quote-stage">
           <div class="timer-bar-wrap">
@@ -1260,6 +1365,12 @@
       document.getElementById("hostStartRoomBtn").classList.add("hidden");
       document.getElementById("lobbyView").classList.add("hidden");
       document.getElementById("gameView").classList.remove("hidden");
+      document.getElementById("roomWaitingView").classList.add("hidden");
+      document.getElementById("roomPlayView").classList.remove("hidden");
+      document.getElementById("roundCounterText").classList.remove("hidden");
+      document.getElementById("timerText").classList.remove("hidden");
+      document.getElementById("roundCounterText").classList.remove("hidden");
+      document.getElementById("timerText").classList.remove("hidden");
 
       renderPlayersBoard();
       loadRound(0);
@@ -1498,6 +1609,23 @@
         `;
         list.appendChild(row);
       });
+      renderRoomWaiting();
+    }
+
+    function renderRoomWaiting() {
+      const list = document.getElementById("waitingPlayersList");
+      if (!list) return;
+      const players = Object.values(roomPlayers);
+      document.getElementById("waitingPlayerCount").textContent = players.length;
+      list.innerHTML = players.map((player) => `
+        <div class="waiting-player">
+          <img src="${player.avatar}" alt="${player.nick}" />
+          <div>
+            <div style="font-weight:700;">${player.nick}${player.id === myPlayerId ? " (tú)" : ""}</div>
+            <div style="font-size:0.72rem; color:var(--text-muted);">${player.id === myPlayerId && isHost ? "Anfitrión" : "Listo para jugar"}</div>
+          </div>
+        </div>
+      `).join("");
     }
 
     /**************************************************************
@@ -1537,14 +1665,62 @@
       }
 
       document.getElementById("roomCodeBadge").textContent = `SALA: ${roomCode}`;
-      document.getElementById("hostStartRoomBtn").classList.toggle("hidden", !isHost);
+      document.getElementById("roomCodeLarge").textContent = roomCode;
+      document.getElementById("hostWaitingActions").classList.toggle("hidden", !isHost);
+      document.getElementById("hostStartRoomBtn").classList.add("hidden");
+      document.getElementById("roundCounterText").classList.add("hidden");
+      document.getElementById("timerText").classList.add("hidden");
       document.getElementById("lobbyView").classList.add("hidden");
       document.getElementById("gameView").classList.remove("hidden");
+      document.getElementById("roomWaitingView").classList.remove("hidden");
+      document.getElementById("roomPlayView").classList.add("hidden");
       document.getElementById("quoteDisplay").textContent = "Esperando a que el anfitrión inicie la partida...";
       document.getElementById("multipleChoiceContainer").innerHTML = "";
 
       renderPlayersBoard();
       setupRealtimeRoom(roomCode);
+    }
+
+    function getInviteUrl() {
+      return `${window.location.origin}${window.location.pathname}?sala=${encodeURIComponent(roomCode)}`;
+    }
+
+    async function copyInviteLink() {
+      if (!roomCode) return;
+      const status = document.getElementById("inviteStatus");
+      const url = getInviteUrl();
+      try {
+        await navigator.clipboard.writeText(url);
+        status.textContent = "Link copiado. Ya puedes enviarlo a tu chat.";
+      } catch (error) {
+        console.error("No se pudo copiar el enlace de invitación.", error);
+        status.textContent = "No se pudo copiar automáticamente. Selecciona y copia el enlace.";
+        window.prompt("Copia este enlace de invitación:", url);
+      }
+    }
+
+    function startMultiplayerMatch() {
+      if (!isHost || !isMultiplayer) return;
+      const pool = getFilteredQuotes();
+      const totalRounds = parseInt(document.getElementById("soloRounds").value, 10) || 10;
+      activeQuestions = chooseQuestions(pool, totalRounds);
+      recentDistractors = [];
+      currentMode = document.getElementById("soloGameMode").value;
+      document.getElementById("hostStartRoomBtn").classList.add("hidden");
+      document.getElementById("hostWaitingActions").classList.add("hidden");
+      document.getElementById("roomWaitingView").classList.add("hidden");
+      document.getElementById("roomPlayView").classList.remove("hidden");
+      document.getElementById("roundCounterText").classList.remove("hidden");
+      document.getElementById("timerText").classList.remove("hidden");
+
+      if (roomChannel) {
+        roomChannel.send({
+          type: "broadcast",
+          event: "start_match",
+          payload: { questions: activeQuestions, mode: currentMode }
+        });
+      }
+      loadRound(0);
     }
 
     function setupRealtimeRoom(code) {
@@ -1560,6 +1736,15 @@
             delete roomPlayers[key];
             renderPlayersBoard();
           }
+        });
+        channel.on("presence", { event: "sync" }, () => {
+          const presenceState = channel.presenceState();
+          Object.entries(presenceState).forEach(([key, entries]) => {
+            if (key !== myPlayerId && entries[0]) {
+              roomPlayers[key] = entries[0];
+            }
+          });
+          renderPlayersBoard();
         });
         channel.subscribe(async (status) => {
           if (status !== "SUBSCRIBED") return;
@@ -1621,6 +1806,8 @@
         activeQuestions = msg.payload.questions;
         currentMode = msg.payload.mode;
         recentDistractors = [];
+        document.getElementById("roomWaitingView").classList.add("hidden");
+        document.getElementById("roomPlayView").classList.remove("hidden");
         const playedIds = getPlayedQuoteIds();
         activeQuestions.forEach((question) => playedIds.add(question.id));
         savePlayedQuoteIds(playedIds);
@@ -1648,6 +1835,11 @@
         roomChannel = null;
       }
       isMultiplayer = false;
+      roomCode = null;
+      document.getElementById("roomWaitingView").classList.add("hidden");
+      document.getElementById("roomPlayView").classList.add("hidden");
+      document.getElementById("roundCounterText").classList.remove("hidden");
+      document.getElementById("timerText").classList.remove("hidden");
       document.getElementById("gameView").classList.add("hidden");
       document.getElementById("lobbyView").classList.remove("hidden");
     }
@@ -1721,23 +1913,9 @@
         openMultiplayerRoom(code, false, true);
       });
 
-      document.getElementById("hostStartRoomBtn").addEventListener("click", () => {
-        const pool = getFilteredQuotes();
-        const totalRounds = parseInt(document.getElementById("soloRounds").value, 10) || 10;
-        activeQuestions = chooseQuestions(pool, totalRounds);
-        recentDistractors = [];
-        currentMode = document.getElementById("soloGameMode").value;
-        document.getElementById("hostStartRoomBtn").classList.add("hidden");
-
-        if (roomChannel) {
-          roomChannel.send({
-            type: "broadcast",
-            event: "start_match",
-            payload: { questions: activeQuestions, mode: currentMode }
-          });
-        }
-        loadRound(0);
-      });
+      document.getElementById("hostStartRoomBtn").addEventListener("click", startMultiplayerMatch);
+      document.getElementById("hostStartWaitingBtn").addEventListener("click", startMultiplayerMatch);
+      document.getElementById("copyInviteBtn").addEventListener("click", copyInviteLink);
 
       document.getElementById("leaveGameBtn").addEventListener("click", leaveCurrentRoom);
 
@@ -1755,6 +1933,19 @@
         isMuted = !isMuted;
         e.currentTarget.textContent = isMuted ? "🔇" : "🔊";
       });
+
+      const params = new URLSearchParams(window.location.search);
+      const sala = (params.get("sala") || "").trim().toUpperCase().replace(/[^A-Z0-9]/g, "");
+      if (sala) {
+        document.getElementById("roomCodeInput").value = sala;
+        let attempts = 0;
+        const waitForContent = setInterval(() => {
+          attempts += 1;
+          if (!quotesPool.length && attempts < 160) return;
+          clearInterval(waitForContent);
+          if (quotesPool.length) openMultiplayerRoom(sala, false, false);
+        }, 50);
+      }
     });
   </script>
 </body>
