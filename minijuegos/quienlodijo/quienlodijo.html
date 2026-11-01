@@ -1170,6 +1170,7 @@
     let charactersById = new Map();
     let charactersByName = new Map();
     let recentDistractors = [];
+    let currentRoundOptions = null;
 
     // Las frases son la fuente de contenido y personajes.json aporta las imágenes.
     async function loadExternalPersonajesJson() {
@@ -1368,6 +1369,7 @@
       currentQuestionIndex = 0;
       currentScore = 0;
       recentDistractors = [];
+      currentRoundOptions = null;
 
       roomPlayers = {
         [myPlayerId]: {
@@ -1394,7 +1396,7 @@
       loadRound(0);
     }
 
-    async function loadRound(index) {
+    async function loadRound(index, syncedOptions = null) {
       clearInterval(timerInterval);
       if (index >= activeQuestions.length) {
         showFinalResults();
@@ -1427,7 +1429,8 @@
       } else {
         expertBox.classList.add("hidden");
         multiBox.classList.remove("hidden");
-        renderMultipleChoices(currentQ);
+        currentRoundOptions = syncedOptions || createMultipleChoiceOptions(currentQ);
+        renderMultipleChoices(currentRoundOptions);
       }
 
       // Iniciar temporizador de 15 segundos
@@ -1450,10 +1453,7 @@
       document.getElementById("timerBarFill").style.width = `${pct}%`;
     }
 
-    function renderMultipleChoices(correctChar) {
-      const container = document.getElementById("multipleChoiceContainer");
-      container.innerHTML = "";
-
+    function createMultipleChoiceOptions(correctChar) {
       const canonicalCorrect = charactersById.get(correctChar.id)
         || charactersByName.get(correctChar.name.toLowerCase());
       if (!canonicalCorrect) {
@@ -1510,6 +1510,12 @@
         .filter((option) => option.name !== canonicalCorrect.name)
         .map((option) => option.name);
       recentDistractors = [...recentDistractors, ...distractorNames].slice(-9);
+      return options;
+    }
+
+    function renderMultipleChoices(options) {
+      const container = document.getElementById("multipleChoiceContainer");
+      container.innerHTML = "";
 
       options.forEach(opt => {
         const btn = document.createElement("button");
@@ -1534,7 +1540,7 @@
 
       const currentQ = activeQuestions[currentQuestionIndex];
       const isCorrect = guessedName.trim().toLowerCase() === currentQ.name.toLowerCase();
-      const pointsEarned = isCorrect ? Math.max(50, timerSeconds * 10) : 0;
+      const pointsEarned = isCorrect ? 10 : 0;
 
       if (isCorrect) {
         currentScore += pointsEarned;
@@ -1583,11 +1589,17 @@
       setTimeout(() => {
         if (!isMultiplayer || isHost) {
           if (isMultiplayer && roomChannel) {
+            const nextIndex = currentQuestionIndex + 1;
+            const nextOptions = nextIndex < activeQuestions.length && currentMode === "multiple"
+              ? createMultipleChoiceOptions(activeQuestions[nextIndex])
+              : null;
             roomChannel.send({
               type: "broadcast",
               event: "next_round",
-              payload: { index: currentQuestionIndex + 1 }
+              payload: { index: nextIndex, options: nextOptions }
             });
+            loadRound(nextIndex, nextOptions);
+            return;
           }
           loadRound(currentQuestionIndex + 1);
         }
@@ -1723,6 +1735,7 @@
       const totalRounds = parseInt(document.getElementById("soloRounds").value, 10) || 10;
       activeQuestions = chooseQuestions(pool, totalRounds);
       recentDistractors = [];
+      currentRoundOptions = null;
       currentMode = document.getElementById("soloGameMode").value;
       document.getElementById("hostStartRoomBtn").classList.add("hidden");
       document.getElementById("hostWaitingActions").classList.add("hidden");
@@ -1731,14 +1744,17 @@
       document.getElementById("roundCounterText").classList.remove("hidden");
       document.getElementById("timerText").classList.remove("hidden");
 
+      const firstOptions = currentMode === "multiple"
+        ? createMultipleChoiceOptions(activeQuestions[0])
+        : null;
       if (roomChannel) {
         roomChannel.send({
           type: "broadcast",
           event: "start_match",
-          payload: { questions: activeQuestions, mode: currentMode }
+          payload: { questions: activeQuestions, mode: currentMode, options: firstOptions }
         });
       }
-      loadRound(0);
+      loadRound(0, firstOptions);
     }
 
     function setupRealtimeRoom(code) {
@@ -1827,12 +1843,13 @@
         activeQuestions = msg.payload.questions;
         currentMode = msg.payload.mode;
         recentDistractors = [];
+        currentRoundOptions = msg.payload.options || null;
         document.getElementById("roomWaitingView").classList.add("hidden");
         document.getElementById("roomPlayView").classList.remove("hidden");
         const playedIds = getPlayedQuoteIds();
         activeQuestions.forEach((question) => playedIds.add(question.id));
         savePlayedQuoteIds(playedIds);
-        loadRound(0);
+        loadRound(0, currentRoundOptions);
       } else if (msg.event === "player_score") {
         if (roomPlayers[msg.payload.id]) {
           roomPlayers[msg.payload.id].score = msg.payload.score;
@@ -1840,7 +1857,7 @@
           renderPlayersBoard();
         }
       } else if (msg.event === "next_round") {
-        loadRound(msg.payload.index);
+        loadRound(msg.payload.index, msg.payload.options || null);
       }
     }
 
