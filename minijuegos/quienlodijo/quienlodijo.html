@@ -1,0 +1,1713 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Merce Gallardo — ¿Quién lo dijo?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script type="module">
+    import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
+    try {
+      const { SUPABASE_URL, SUPABASE_ANON_KEY } = await import('../supabase-config.js');
+      window.quienSupabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+        realtime: { params: { eventsPerSecond: 10 } }
+      });
+    } catch (error) {
+      console.error('No se pudo cargar la configuración de Supabase.', error);
+    }
+  </script>
+  <style>
+    :root {
+      --bg-card: rgba(26, 9, 18, 0.88);
+      --bg-card-inner: rgba(16, 5, 12, 0.85);
+      --border-subtle: rgba(255, 190, 220, 0.14);
+      --border-pink: rgba(236, 72, 153, 0.45);
+      --accent-yellow: #f5b82e;
+      --accent-yellow-hover: #ffca4b;
+      --accent-pink: #d946ef;
+      --text-main: #fdf2f8;
+      --text-muted: #c4a3b5;
+      --success: #34d399;
+      --danger: #fb7185;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--text-main);
+      background-color: #12060d;
+      /* Fondo limpio sin filtro rosado encima */
+      background-image: url('../ordenatutop/FONDOJUEGO.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Tipografía serif editorial para títulos */
+    .serif-title {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+
+    /* Barra superior limpia (sin el icono de la flor) */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 28px;
+      background: rgba(18, 6, 13, 0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .brand-wrap {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand-name {
+      font-family: 'Playfair Display', serif;
+      font-weight: 800;
+      font-size: 1.35rem;
+      letter-spacing: 0.04em;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .game-badge {
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(217, 70, 239, 0.16);
+      border: 1px solid rgba(217, 70, 239, 0.4);
+      color: #f5d0fe;
+    }
+
+    .topbar-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-icon, .btn-nav {
+      background: rgba(38, 14, 27, 0.9);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-icon:hover, .btn-nav:hover {
+      border-color: var(--border-pink);
+      background: rgba(65, 20, 45, 0.95);
+    }
+
+    /* Botón Hamburguesa para Celular */
+    .hamburger-btn {
+      display: none;
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: rgba(38, 14, 27, 0.95);
+      border: 1px solid rgba(236, 72, 153, 0.4);
+      color: #f472b6;
+      font-size: 1.35rem;
+      font-weight: 700;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    /* Menú desplegable estilo móvil */
+    .mobile-dropdown {
+      display: none;
+      position: fixed;
+      top: 68px;
+      right: 16px;
+      width: 240px;
+      background: rgba(18, 7, 14, 0.98);
+      border: 1px solid rgba(236, 72, 153, 0.4);
+      border-radius: 18px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
+      z-index: 99;
+      overflow: hidden;
+      backdrop-filter: blur(16px);
+    }
+
+    .mobile-dropdown.open {
+      display: block;
+    }
+
+    .mobile-dropdown a, .mobile-dropdown button {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 20px;
+      color: #ffffff;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      text-decoration: none;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+      cursor: pointer;
+      text-align: left;
+    }
+
+    .mobile-dropdown a:hover, .mobile-dropdown button:hover {
+      background: rgba(236, 72, 153, 0.15);
+      color: #f472b6;
+    }
+
+    /* Contenedor Principal */
+    .container {
+      max-width: 1220px;
+      margin: 24px auto 48px;
+      padding: 0 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 22px;
+      padding: 24px 28px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(8px);
+    }
+
+    /* Cabecera del Lobby con Nick y Avatar */
+    .hero-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .hero-info {
+      flex: 1 1 520px;
+    }
+
+    .hero-info h1 {
+      font-size: 2.2rem;
+      margin-bottom: 8px;
+      color: #ffffff;
+    }
+
+    .hero-info p {
+      font-size: 0.92rem;
+      line-height: 1.55;
+      color: var(--text-muted);
+    }
+
+    .highlight-yellow {
+      color: var(--accent-yellow);
+      font-weight: 700;
+    }
+
+    .profile-box {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: var(--bg-card-inner);
+      border: 1px solid var(--border-subtle);
+      padding: 12px 16px;
+      border-radius: 18px;
+      min-width: 280px;
+    }
+
+    .avatar-btn {
+      position: relative;
+      width: 58px;
+      height: 58px;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 2px solid var(--accent-yellow);
+      cursor: pointer;
+      background: #260e1b;
+      flex-shrink: 0;
+      padding: 0;
+    }
+
+    .avatar-btn img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .avatar-btn span {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.72);
+      color: #fff;
+      font-size: 0.58rem;
+      font-weight: 700;
+      text-align: center;
+      padding: 2px 0;
+      text-transform: uppercase;
+    }
+
+    .nick-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      width: 100%;
+    }
+
+    .nick-label {
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--text-muted);
+    }
+
+    .nick-input, .select-control, .code-input {
+      width: 100%;
+      background: rgba(12, 4, 9, 0.9);
+      border: 1px solid var(--border-subtle);
+      color: #fff;
+      padding: 10px 12px;
+      border-radius: 10px;
+      font-size: 0.9rem;
+      font-family: inherit;
+      outline: none;
+    }
+
+    .nick-input:focus, .select-control:focus, .code-input:focus {
+      border-color: var(--accent-yellow);
+    }
+
+    /* Piscina de Animes */
+    .pool-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+
+    .pool-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #f3e8ff;
+    }
+
+    .pool-count-badge {
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: rgba(236, 72, 153, 0.16);
+      border: 1px solid rgba(236, 72, 153, 0.35);
+      color: #fbcfe8;
+    }
+
+    .pool-actions {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn-small {
+      background: rgba(45, 16, 32, 0.85);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+    }
+
+    .btn-small:hover {
+      border-color: var(--accent-yellow);
+      color: var(--accent-yellow);
+    }
+
+    .anime-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(182px, 1fr));
+      gap: 8px;
+      max-height: 310px;
+      overflow-y: auto;
+      padding-right: 4px;
+    }
+
+    .anime-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 8px 11px;
+      border-radius: 10px;
+      background: var(--bg-card-inner);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      font-size: 0.78rem;
+      cursor: pointer;
+      user-select: none;
+      transition: border-color 0.15s;
+    }
+
+    .anime-item:hover {
+      border-color: rgba(245, 184, 46, 0.45);
+    }
+
+    .anime-item-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      overflow: hidden;
+    }
+
+    .anime-item input[type="checkbox"] {
+      accent-color: var(--accent-yellow);
+      width: 15px;
+      height: 15px;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .anime-name-text {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: 600;
+    }
+
+    .anime-count {
+      font-size: 0.68rem;
+      color: var(--text-muted);
+      flex-shrink: 0;
+    }
+
+    /* Columnas inferiores: Jugar Solo vs Multijugador */
+    .modes-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .mode-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .field-group {
+      margin-bottom: 14px;
+    }
+
+    .field-label {
+      display: block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .btn-yellow {
+      background: var(--accent-yellow);
+      color: #1a0912;
+      font-weight: 800;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 12px 24px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.15s, background 0.15s;
+    }
+
+    .btn-yellow:hover {
+      background: var(--accent-yellow-hover);
+      transform: translateY(-1px);
+    }
+
+    .btn-create-room {
+      background: linear-gradient(90deg, #ec4899, #a855f7);
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 12px 22px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 10px 0 18px;
+      box-shadow: 0 8px 20px rgba(217, 70, 239, 0.3);
+    }
+
+    .solo-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 20px;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .pill-yellow {
+      background: var(--accent-yellow);
+      color: #1a0912;
+      font-weight: 800;
+      font-size: 0.72rem;
+      padding: 6px 12px;
+      border-radius: 999px;
+      text-transform: uppercase;
+    }
+
+    /* VISTA DE PARTIDA (SOLO Y MULTIJUGADOR) */
+    .hidden {
+      display: none !important;
+    }
+
+    .game-topbar-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .room-pill {
+      background: rgba(245, 184, 46, 0.15);
+      border: 1px solid var(--accent-yellow);
+      color: var(--accent-yellow);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+    }
+
+    .game-layout {
+      display: grid;
+      grid-template-columns: 1fr 330px;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .quote-stage {
+      text-align: center;
+      padding: 28px 24px;
+      position: relative;
+    }
+
+    .timer-bar-wrap {
+      width: 100%;
+      height: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 999px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .timer-bar-fill {
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(90deg, var(--accent-yellow), #ec4899);
+      transition: width 1s linear;
+    }
+
+    .quote-box {
+      background: var(--bg-card-inner);
+      border: 1px solid rgba(245, 184, 46, 0.3);
+      border-radius: 20px;
+      padding: 28px 24px;
+      margin-bottom: 18px;
+      position: relative;
+    }
+
+    .quote-text {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.45rem;
+      line-height: 1.45;
+      color: #ffffff;
+      font-style: italic;
+    }
+
+    .ai-hint-badge {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      background: rgba(217, 70, 239, 0.15);
+      border: 1px solid rgba(217, 70, 239, 0.4);
+      color: #f5d0fe;
+    }
+
+    /* Opciones de personajes con foto */
+    .options-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .option-btn {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 14px;
+      background: var(--bg-card-inner);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      color: #fff;
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.15s ease;
+    }
+
+    .option-btn:hover:not(:disabled) {
+      border-color: var(--accent-yellow);
+      transform: translateY(-2px);
+      background: rgba(50, 18, 35, 0.9);
+    }
+
+    .option-btn.correct {
+      border-color: var(--success);
+      background: rgba(16, 185, 129, 0.22);
+    }
+
+    .option-btn.wrong {
+      border-color: var(--danger);
+      background: rgba(244, 63, 94, 0.22);
+    }
+
+    .option-btn img {
+      width: 48px;
+      height: 48px;
+      border-radius: 10px;
+      object-fit: cover;
+      flex-shrink: 0;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .option-meta {
+      overflow: hidden;
+    }
+
+    .option-name {
+      font-weight: 700;
+      font-size: 0.92rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .option-anime {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Modo experto (escribir) */
+    .expert-input-wrap {
+      display: flex;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    /* Ranking de Jugadores (Hasta 8 en vivo) */
+    .players-board {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .player-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 12px;
+      background: var(--bg-card-inner);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+    }
+
+    .player-row.me {
+      border-color: var(--accent-yellow);
+    }
+
+    .player-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .player-left img {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .player-score {
+      font-weight: 800;
+      color: var(--accent-yellow);
+      font-size: 0.95rem;
+    }
+
+    /* Modal Selector de Avatares */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.78);
+      backdrop-filter: blur(6px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+      padding: 16px;
+    }
+
+    .modal-box {
+      background: #1c0a14;
+      border: 1px solid var(--border-pink);
+      border-radius: 22px;
+      max-width: 540px;
+      width: 100%;
+      padding: 22px;
+      max-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .avatar-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(74px, 1fr));
+      gap: 10px;
+      overflow-y: auto;
+      padding: 4px;
+    }
+
+    .avatar-choice {
+      width: 100%;
+      aspect-ratio: 1;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 2px solid transparent;
+      cursor: pointer;
+      background: #12060d;
+    }
+
+    .avatar-choice:hover, .avatar-choice.active {
+      border-color: var(--accent-yellow);
+      transform: scale(1.04);
+    }
+
+    .avatar-choice img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Adaptación Responsive para Celulares */
+    @media (max-width: 860px) {
+      .modes-grid, .game-layout {
+        grid-template-columns: 1fr;
+      }
+      .topbar-actions .desktop-only {
+        display: none;
+      }
+      .hamburger-btn {
+        display: inline-flex;
+      }
+      .options-grid {
+        grid-template-columns: 1fr;
+      }
+      .topbar {
+        padding: 12px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- BARRA SUPERIOR LIMPIA (Sin la flor y con botón de 3 líneas en móvil) -->
+  <header class="topbar">
+    <div class="brand-wrap">
+      <a href="../../index.html" class="brand-name">MERCE GALLARDO</a>
+      <span class="game-badge">¿QUIÉN LO DIJO?</span>
+    </div>
+
+    <div class="topbar-actions">
+      <button id="muteBtn" class="btn-icon" title="Sonido">🔊</button>
+      <a href="../../index.html" class="btn-nav desktop-only">← MINIJUEGOS</a>
+      <button id="hamburgerBtn" class="hamburger-btn" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <!-- MENÚ DESPLEGABLE PARA CELULAR (3 líneas / X) -->
+  <nav id="mobileDropdown" class="mobile-dropdown">
+    <a href="../../index.html">HOME <span>→</span></a>
+    <a href="../../index.html#catalogo">CATÁLOGO (89) <span>→</span></a>
+    <a href="../ordenatutop/ordenatutop.html">ORDENA TU TOP <span>→</span></a>
+    <a href="../../sopadeletras.html">SOPA DE LETRAS <span>→</span></a>
+    <a href="https://www.patreon.com/" target="_blank" rel="noopener">PATREON <span>↗</span></a>
+  </nav>
+
+  <!-- CONTENEDOR PRINCIPAL -->
+  <main class="container">
+
+    <!-- ==================== VISTA LOBBY ==================== -->
+    <section id="lobbyView" style="display:flex; flex-direction:column; gap:18px;">
+
+      <!-- Tarjeta Superior: Explicación + Avatar + Nick -->
+      <div class="card hero-card">
+        <div class="hero-info">
+          <h1 class="serif-title">¿Quién lo dijo?</h1>
+          <p>
+            La IA y el archivo de reacciones muestran <span class="highlight-yellow">frases icónicas o adaptadas</span> de los animes que vio Merce. Adivina qué personaje de anime lo dijo antes de que acabe el reloj para sumar más puntos.
+          </p>
+        </div>
+
+        <div class="profile-box">
+          <button id="selectedAvatarButton" class="avatar-btn" title="Cambiar avatar">
+            <img id="currentAvatarImg" src="https://s4.anilist.co/file/anilistcdn/character/large/b40882-dsj7IP943WFF.jpg" alt="Avatar" />
+            <span>Cambiar</span>
+          </button>
+          <div class="nick-wrap">
+            <label class="nick-label" for="playerNick">JUEGAS COMO (TU NICK)</label>
+            <input id="playerNick" class="nick-input" type="text" maxlength="16" placeholder="Ej: Hitagi" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Piscina de los 47 Animes de Merce -->
+      <div class="card">
+        <div class="pool-header">
+          <span class="pool-title">ANIMES QUE ENTRAN EN LA PISCINA</span>
+          <span id="poolCounterBadge" class="pool-count-badge">0 frases entran</span>
+        </div>
+        <div class="pool-actions">
+          <button id="checkAllBtn" class="btn-small">MARCAR TODOS</button>
+          <button id="uncheckAllBtn" class="btn-small">DESMARCAR TODOS</button>
+        </div>
+        <div id="animeFiltersGrid" class="anime-grid"></div>
+      </div>
+
+      <!-- Dos Columnas: Jugar Solo vs Sala Multijugador -->
+      <div class="modes-grid">
+
+        <!-- JUGAR SOLO -->
+        <div class="card">
+          <h2 class="mode-title">🎮 JUGAR SOLO</h2>
+
+          <div class="field-group">
+            <label class="field-label" for="soloGameMode">MODO DE RESPUESTA</label>
+            <select id="soloGameMode" class="select-control">
+              <option value="multiple">4 Opciones con foto (Clásico)</option>
+              <option value="expert">Escribir el nombre del personaje (Experto +Pts)</option>
+            </select>
+          </div>
+
+          <div class="field-group">
+            <label class="field-label" for="soloRounds">CANTIDAD DE RONDAS</label>
+            <select id="soloRounds" class="select-control">
+              <option value="10">10 frases al azar</option>
+              <option value="15">15 frases al azar</option>
+              <option value="20">20 frases al azar</option>
+            </select>
+          </div>
+
+          <div class="field-group">
+            <label class="field-label" for="aiGeneratorToggle">MOTOR DE IA EN VIVO</label>
+            <select id="aiGeneratorToggle" class="select-control">
+              <option value="hybrid">Base de Merce + Pistas dinámicas de IA</option>
+              <option value="ai_live">Generar nuevas citas con IA en tiempo real</option>
+            </select>
+          </div>
+
+          <div class="solo-footer">
+            <div>
+              <span id="soloBottomBadge" class="pill-yellow">0 FRASES ENTRAN</span>
+              <span style="font-size:0.78rem; color:var(--text-muted); margin-left:8px;">Con pistas progresivas.</span>
+            </div>
+            <button id="startSoloBtn" class="btn-yellow">EMPEZAR</button>
+          </div>
+        </div>
+
+        <!-- SALA PARA 2 O MÁS (HASTA 8 JUGADORES) -->
+        <div class="card">
+          <h2 class="mode-title">👑 SALA PARA 2 O MÁS</h2>
+          <p style="font-size:0.86rem; color:var(--text-muted); line-height:1.5;">
+            Hasta 8 jugadores ven la misma frase a la vez. Si a alguien se le cierra la pantalla antes o durante la partida, sale automáticamente de la sala.
+          </p>
+
+          <button id="createRoomBtn" class="btn-create-room">✨ CREAR SALA</button>
+
+          <div class="field-group">
+            <label class="field-label" for="roomCodeInput">CÓDIGO DE UNA SALA</label>
+            <input id="roomCodeInput" class="code-input" type="text" maxlength="6" placeholder="EJ: BDJH" style="text-transform:uppercase;" />
+          </div>
+
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+            <button id="joinRoomBtn" class="btn-yellow">UNIRME A JUGAR</button>
+            <button id="spectateRoomBtn" class="btn-icon" style="padding:12px 18px;">👁 SOLO MIRAR</button>
+          </div>
+
+          <p style="font-size:0.7rem; color:var(--text-muted); margin-top:18px;">
+            Sincronización en tiempo real con Supabase · Compatible con OBS Studio
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== VISTA EN PARTIDA ==================== -->
+    <section id="gameView" class="hidden">
+      <div class="card game-topbar-info">
+        <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
+          <span id="roomCodeBadge" class="room-pill">MODO SOLITARIO</span>
+          <span id="roundCounterText" style="font-weight:700; font-size:0.9rem;">Ronda 1 / 10</span>
+          <span id="timerText" style="color:var(--accent-yellow); font-weight:800;">⏱ 15s</span>
+        </div>
+
+        <div style="display:flex; align-items:center; gap:10px;">
+          <button id="hostStartRoomBtn" class="btn-yellow hidden" style="padding:8px 16px; font-size:0.78rem;">▶ INICIAR PARTIDA</button>
+          <button id="generateAiQuoteBtn" class="btn-small" title="Pedir frase nueva a la IA">✨ Frase IA</button>
+          <button id="leaveGameBtn" class="btn-icon">← SALIR DE SALA</button>
+        </div>
+      </div>
+
+      <div class="game-layout">
+        <!-- Escenario Central de la Frase -->
+        <div class="card quote-stage">
+          <div class="timer-bar-wrap">
+            <div id="timerBarFill" class="timer-bar-fill"></div>
+          </div>
+
+          <div class="quote-box">
+            <p id="quoteDisplay" class="quote-text">“Cargando frase...”</p>
+            <div id="aiHintBox" class="ai-hint-badge">💡 Pista IA: Analizando personalidad...</div>
+          </div>
+
+          <!-- Modo 4 opciones -->
+          <div id="multipleChoiceContainer" class="options-grid"></div>
+
+          <!-- Modo Experto (Escribir) -->
+          <div id="expertInputContainer" class="expert-input-wrap hidden">
+            <input id="expertGuessInput" class="nick-input" list="charactersDatalist" placeholder="Escribe el nombre del personaje..." />
+            <datalist id="charactersDatalist"></datalist>
+            <button id="submitExpertGuessBtn" class="btn-yellow">RESPONDER</button>
+          </div>
+
+          <div id="roundFeedback" style="margin-top:16px; font-weight:700; min-height:24px;"></div>
+        </div>
+
+        <!-- Marcador Lateral (Hasta 8 Jugadores en Vivo) -->
+        <div class="card">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+            <span class="pool-title">JUGADORES EN SALA (<span id="playerCountLabel">1</span>/8)</span>
+            <span style="font-size:0.72rem; color:var(--text-muted);">En vivo</span>
+          </div>
+          <div id="playersBoardList" class="players-board"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL SELECTOR DE AVATARES -->
+  <div id="avatarPickerModal" class="modal-backdrop hidden">
+    <div class="modal-box">
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <h3 class="serif-title" style="font-size:1.3rem;">Elige tu avatar</h3>
+        <button id="closeAvatarModalBtn" class="btn-icon">✕</button>
+      </div>
+      <div id="avatarGridContainer" class="avatar-grid"></div>
+    </div>
+  </div>
+
+  <script>
+    /**************************************************************
+     * 1. LISTA OFICIAL DE LOS 47 ANIMES VISTOS POR MERCE GALLARDO
+     **************************************************************/
+    const MERCE_ANIMES = [
+      "Fate", "La nobleza de las Flores", "Gachiakuta", "MHA Vigilantes", "My Hero Academia",
+      "Konosuba", "86: Eighty-Six", "La Boticaria", "Fullmetal Alchemist Brotherhood", "Clannad",
+      "Hyouka", "Record Of Ragnarok", "MONSTER", "Akame Ga Kill", "Blue Box",
+      "Cyberpunk: Edgerunners", "More Than a Married Couple", "Attack on Titan", "Kaiju No. 8", "Erased",
+      "Las 100 Novias", "Re: ZERO", "Takopis Original Sin", "One Punch Man", "Darling in the Franxx",
+      "Death Note", "Wind Breaker", "Las Quintillizas", "Blue Lock", "Frieren",
+      "Classroom of the Elite", "Citrus", "Chainsaw Man", "ARCANE", "Tokyo Revengers",
+      "Dan Da Dan", "A Sign of Affection", "Demon Slayer", "Solo Leveling", "My Dress up Darling",
+      "Jujutsu Kaisen", "Violet Evergarden", "Charlotte", "Bunny Girl Senpai", "Summer Time Rendering",
+      "Haikyuu!", "Your Lie in April"
+    ];
+
+    /**************************************************************
+     * 2. BASE CURADA DE CITAS ICÓNICAS DE LOS 47 ANIMES + AVATARES
+     **************************************************************/
+    const INITIAL_QUOTES_DB = [
+      { id: "eren", name: "Eren Yeager", anime: "Attack on Titan", img: "https://s4.anilist.co/file/anilistcdn/character/large/b40882-dsj7IP943WFF.jpg", quote: "Si ganas, vives. Si pierdes, mueres. Si no peleas, no puedes ganar.", hint: "Obsesionado con la libertad más allá de las murallas." },
+      { id: "levi", name: "Levi Ackerman", anime: "Attack on Titan", img: "https://s4.anilist.co/file/anilistcdn/character/large/b45627-CR68RyZmddGG.png", quote: "Elige la decisión de la que te arrepientas menos.", hint: "El soldado más fuerte de la humanidad y amante de la limpieza." },
+      { id: "mikasa", name: "Mikasa Ackerman", anime: "Attack on Titan", img: "https://s4.anilist.co/file/anilistcdn/character/large/b40881-F3gr1PkreN9S.png", quote: "Este mundo es cruel... y sin embargo, es tan hermoso.", hint: "Siempre lleva una bufanda roja." },
+      { id: "gojo", name: "Satoru Gojo", anime: "Jujutsu Kaisen", img: "https://s4.anilist.co/file/anilistcdn/character/large/b127691-6T5O2N2M8G0S.png", quote: "En el cielo y en la tierra, yo soy el único honrado.", hint: "Portador de los Seis Ojos y el Infinito." },
+      { id: "sukuna", name: "Ryomen Sukuna", anime: "Jujutsu Kaisen", img: "https://s4.anilist.co/file/anilistcdn/character/large/b133700-f24H4T902262.png", quote: "Siéntete orgulloso, eres fuerte.", hint: "El Rey de las Maldiciones." },
+      { id: "yuji", name: "Yuji Itadori", anime: "Jujutsu Kaisen", img: "https://s4.anilist.co/file/anilistcdn/character/large/b126635-N4N6Y8L1B7L9.png", quote: "Quiero que cuando muera, esté rodeado de gente.", hint: "Se tragó un dedo maldito para salvar a sus amigos." },
+      { id: "frieren", name: "Frieren", anime: "Frieren", img: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-qQTzQnEJJ3oB.jpg", quote: "Solo fueron diez años juntos, pero para mí cambiaron mil años de soledad.", hint: "Maga elfa que colecciona grimorios extraños." },
+      { id: "himmel", name: "Himmel", anime: "Frieren", img: "https://s4.anilist.co/file/anilistcdn/character/large/b220367-eKj9T5m3v9O2.png", quote: "Incluso si nadie nos recuerda, quiero que mis estatuas salgan guapas.", hint: "El héroe que derrotó al Rey Demonio." },
+      { id: "maomao", name: "Maomao", anime: "La Boticaria", img: "https://s4.anilist.co/file/anilistcdn/character/large/b221085-bCq1O5M6A2X8.png", quote: "¿Esto es veneno? Déjame probar solo un poquito...", hint: "Resuelve misterios en el palacio imperial y ama las hierbas tóxicas." },
+      { id: "ayanokoji", name: "Kiyotaka Ayanokoji", anime: "Classroom of the Elite", img: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx98659-WNyPLIZDpGGY.jpg", quote: "Todas las personas no son más que herramientas. No importa cómo se haga, mientras gane al final.", hint: "Estudiante silencioso de la Clase D educado en la Sala Blanca." },
+      { id: "light", name: "Light Yagami", anime: "Death Note", img: "https://media.kitsu.app/anime/poster_images/1376/large.jpg", quote: "¡Me convertiré en el Dios del nuevo mundo!", hint: "Escribe nombres mientras come papas fritas." },
+      { id: "l_lawliet", name: "L Lawliet", anime: "Death Note", img: "https://media.kitsu.app/anime/poster_images/1376/large.jpg", quote: "La justicia siempre prevalecerá, porque quien gane se convierte en la justicia.", hint: "Detective genial que se sienta en cuclillas y adora los dulces." },
+      { id: "subaru", name: "Subaru Natsuki", anime: "Re: ZERO", img: "https://media.kitsu.app/anime/poster_images/11209/large.jpg", quote: "No importa cuántas veces muera, te salvaré en este bucle.", hint: "Regresa de la muerte cada vez que su corazón se detiene." },
+      { id: "rem", name: "Rem", anime: "Re: ZERO", img: "https://media.kitsu.app/anime/poster_images/11209/large.jpg", quote: "Aunque tú no creas en ti mismo, yo creo en el héroe que me salvó.", hint: "Sirvienta demonio de cabello azul." },
+      { id: "deku", name: "Izuku Midoriya", anime: "My Hero Academia", img: "https://media.kitsu.app/anime/poster_images/11469/large.jpg", quote: "Mi cuerpo se movió solo antes de que pudiera pensar.", hint: "Heredero noveno del One For All." },
+      { id: "allmight", name: "All Might", anime: "My Hero Academia", img: "https://media.kitsu.app/anime/poster_images/11469/large.jpg", quote: "¡Ya todo está bien! ¿Por qué? ¡Porque yo estoy aquí!", hint: "El Símbolo de la Paz." },
+      { id: "kazuma", name: "Kazuma Satou", anime: "Konosuba", img: "https://media.kitsu.app/anime/poster_images/10941/large.jpg", quote: "Soy un verdadero defensor de la igualdad de género.", hint: "Líder del grupo más caótico de Axel." },
+      { id: "megumin", name: "Megumin", anime: "Konosuba", img: "https://media.kitsu.app/anime/poster_images/10941/large.jpg", quote: "¡Más negro que la oscuridad, más oscuro que lo negro... EXPLOSION!", hint: "Maga carmesí que cae al piso tras un solo hechizo." },
+      { id: "edward", name: "Edward Elric", anime: "Fullmetal Alchemist Brotherhood", img: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx5114-nSWCgQlmOMtj.jpg", quote: "Para obtener algo, es necesario sacrificar otra cosa de un valor equivalente.", hint: "¡No lo llames bajito!" },
+      { id: "johan", name: "Johan Liebert", anime: "MONSTER", img: "https://media.kitsu.app/anime/poster_images/10/large.jpg", quote: "Lo único en lo que todos los humanos son iguales... es en la muerte.", hint: "El monstruo sin nombre que el Dr. Tenma salvó de niño." },
+      { id: "isagi", name: "Yoichi Isagi", anime: "Blue Lock", img: "https://media.kitsu.app/anime/poster_images/44973/large.jpg", quote: "Voy a devorarte en la cancha y reconstruir todas mis piezas.", hint: "Delantero egoísta con visión espacial." },
+      { id: "jinwoo", name: "Sung Jinwoo", anime: "Solo Leveling", img: "https://media.kitsu.app/anime/46231/poster_image/large-cdadff31f42490b9f48a035939a01a92.jpeg", quote: "Surge (Levántate).", hint: "Pasó de ser el cazador rango E más débil al Monarca de las Sombras." },
+      { id: "tanjiro", name: "Tanjiro Kamado", anime: "Demon Slayer", img: "https://s4.anilist.co/file/anilistcdn/character/large/b126071-BTNEc1nRIv68.png", quote: "El vínculo entre Nezuko y yo no puede ser cortado por nadie.", hint: "Cazador de pendientes hanafuda con gran olfato." },
+      { id: "denji", name: "Denji", anime: "Chainsaw Man", img: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx127230-DdP4vAdssLoz.png", quote: "Mi sueño es comer pan con mermelada todos los días.", hint: "Tiene un cordón de motosierra en el pecho." },
+      { id: "saitama", name: "Saitama", anime: "One Punch Man", img: "https://media.kitsu.app/anime/poster_images/10740/large.jpg", quote: "Solo soy un héroe por pasatiempo, y hoy hay descuento en el supermercado.", hint: "100 flexiones, 100 abdominales y 10 km diarios." },
+      { id: "zerotwo", name: "Zero Two", anime: "Darling in the Franxx", img: "https://media.kitsu.app/anime/poster_images/13600/large.jpg", quote: "Te encontré por fin, mi Darling.", hint: "Piloto con cuernos rojos que ama la miel." },
+      { id: "jinx", name: "Jinx", anime: "ARCANE", img: "https://media.themoviedb.org/t/p/w500/87C0wecB8bHb1PsrKBI4kJiEkgV.jpg", quote: "Tú me creaste, hermana... ¡ahora mira cómo arde Piltover!", hint: "Artillera caótica de trenzas azules." },
+      { id: "shin", name: "Shinei Nouzen (Shin)", anime: "86: Eighty-Six", img: "https://media.kitsu.app/anime/poster_images/43066/large.jpg", quote: "Yo llevaré sus voces y sus placas hasta nuestro destino final.", hint: "Conocido como Undertaker en el Sector 86." },
+      { id: "david", name: "David Martinez", anime: "Cyberpunk: Edgerunners", img: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx120377-ayZPoxiWt4Li.jpg", quote: "Te llevaré a la Luna, Lucy, aunque mi cuerpo no aguante otro implante.", hint: "Mercenario de Night City con un Sandevistan militar." },
+      { id: "marin", name: "Marin Kitagawa", anime: "My Dress up Darling", img: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx132405-qP7FQYGmNI3d.jpg", quote: "¡Nunca te burles de las cosas que otra persona ama con todo su corazón!", hint: "Cosplayer apasionada que trabaja junto a Gojo-kun." },
+      { id: "violet", name: "Violet Evergarden", anime: "Violet Evergarden", img: "https://media.kitsu.app/anime/poster_images/12230/large.jpg", quote: "Quiero saber qué significan las palabras 'Te amo' que me dijo el Mayor.", hint: "Auto Memory Doll con brazos mecánicos." },
+      { id: "hinata", name: "Shoyo Hinata", anime: "Haikyuu!", img: "https://media.kitsu.app/anime/poster_images/8133/large.jpg", quote: "¡Aunque sea pequeño, yo puedo volar!", hint: "El señuelo definitivo del Karasuno." },
+      { id: "kaori", name: "Kaori Miyazono", anime: "Your Lie in April", img: "https://media.kitsu.app/anime/poster_images/8403/large.jpg", quote: "¿Llegó mi música hasta tu corazón? ¿Crees que no me olvidarás?", hint: "Violinista de espíritu libre en abril." },
+      { id: "shirou", name: "Shirou Emiya", anime: "Fate", img: "https://media.kitsu.app/anime/poster_images/7882/large.jpg", quote: "Las personas mueren cuando son asesinadas... y aun así seré un héroe de la justicia.", hint: "Mago capaz de proyectar espadas infinitas." },
+      { id: "okarun", name: "Okarun (Ken Takakura)", anime: "Dan Da Dan", img: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171018-60q1B6GK2Ghb.jpg", quote: "Me dejas todo deprimido, Momo-san... ¡voy a ir a máxima velocidad!", hint: "Poseído por la Turbo Abuela." },
+      { id: "mai", name: "Mai Sakurajima", anime: "Bunny Girl Senpai", img: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101291-wfEdgPqtfU0l.jpg", quote: "Incluso si el mundo entero me olvida, me basta con que tú aún puedas verme.", hint: "Actriz famosa con un traje de conejita en la biblioteca." }
+    ];
+
+    // Completar automáticamente para que los 47 animes tengan representación desde el inicio
+    let quotesPool = [];
+
+    /**************************************************************
+     * 3. ESTADO GLOBAL Y CARGA DE PERSONAJES.JSON
+     **************************************************************/
+    let selectedAnimes = new Set(MERCE_ANIMES);
+    let myPlayerId = "p_" + Math.random().toString(36).substring(2, 9);
+    let myAvatar = localStorage.getItem("merce_avatar") || "https://s4.anilist.co/file/anilistcdn/character/large/b40882-dsj7IP943WFF.jpg";
+    let myNick = localStorage.getItem("merce_nick") || "";
+    let isMuted = false;
+
+    // Estado de partida
+    let activeQuestions = [];
+    let currentQuestionIndex = 0;
+    let currentScore = 0;
+    let timerSeconds = 15;
+    let timerInterval = null;
+    let hasAnsweredThisRound = false;
+    let currentMode = "multiple"; // 'multiple' | 'expert'
+    let isMultiplayer = false;
+    let isHost = false;
+    let isSpectator = false;
+    let roomCode = null;
+    let roomChannel = null;
+    let roomPlayers = {};
+
+    // Las frases son la fuente de contenido y personajes.json aporta las imágenes.
+    async function loadExternalPersonajesJson() {
+      try {
+        const [phrasesResponse, charactersResponse] = await Promise.all([
+          fetch("./frases.json"),
+          fetch("../ordenatutop/personajes.json")
+        ]);
+        if (!phrasesResponse.ok || !charactersResponse.ok) {
+          throw new Error("No se pudieron cargar las fuentes del juego.");
+        }
+
+        const [phrases, characters] = await Promise.all([
+          phrasesResponse.json(),
+          charactersResponse.json()
+        ]);
+        const charactersById = new Map(characters.map((character) => [character.id, character]));
+        quotesPool = phrases.map((phrase) => {
+          const character = charactersById.get(phrase.id);
+          if (!character) throw new Error(`Falta la imagen del personaje ${phrase.id}.`);
+          return { ...phrase, img: character.img };
+        });
+        if (!quotesPool.length) throw new Error("frases.json no contiene frases.");
+      } catch (error) {
+        console.error("No se pudo cargar el contenido de ¿Quién lo dijo?", error);
+        document.getElementById("poolCounterBadge").textContent = "No se pudo cargar la piscina";
+        return;
+      }
+      selectedAnimes = new Set(MERCE_ANIMES.filter((anime) =>
+        quotesPool.some((quote) => quote.anime === anime)
+      ));
+      renderAnimeFilters();
+      populateAvatarModal();
+      populateCharactersDatalist();
+      if (!localStorage.getItem("merce_avatar") && quotesPool[0]?.img) {
+        myAvatar = quotesPool[0].img;
+        document.getElementById("currentAvatarImg").src = myAvatar;
+      }
+    }
+
+    /**************************************************************
+     * 4. RENDERIZADO DE FILTROS DE ANIMES Y MODAL DE AVATARES
+     **************************************************************/
+    function renderAnimeFilters() {
+      const grid = document.getElementById("animeFiltersGrid");
+      grid.innerHTML = "";
+
+      MERCE_ANIMES.forEach((anime) => {
+        const count = quotesPool.filter(q => q.anime.toLowerCase() === anime.toLowerCase()).length;
+        const label = document.createElement("label");
+        label.className = "anime-item";
+
+        const checked = selectedAnimes.has(anime) ? "checked" : "";
+        label.innerHTML = `
+          <span class="anime-item-left">
+            <input type="checkbox" value="${anime}" ${checked} />
+            <span class="anime-name-text" title="${anime}">${anime}</span>
+          </span>
+          <span class="anime-count">(${count})</span>
+        `;
+
+        const checkbox = label.querySelector("input");
+        checkbox.addEventListener("change", (e) => {
+          if (e.target.checked) selectedAnimes.add(anime);
+          else selectedAnimes.delete(anime);
+          updatePoolCounters();
+        });
+
+        grid.appendChild(label);
+      });
+
+      updatePoolCounters();
+    }
+
+    function updatePoolCounters() {
+      const filtered = getFilteredQuotes();
+      const text = `${filtered.length} personajes/frases entran`;
+      document.getElementById("poolCounterBadge").textContent = text;
+      document.getElementById("soloBottomBadge").textContent = `${filtered.length} FRASES ENTRAN`;
+    }
+
+    function getFilteredQuotes() {
+      return quotesPool.filter(q => selectedAnimes.has(q.anime));
+    }
+
+    function populateAvatarModal() {
+      const container = document.getElementById("avatarGridContainer");
+      container.innerHTML = "";
+      const uniqueImgs = new Map();
+      quotesPool.forEach(q => {
+        if (q.img && !uniqueImgs.has(q.img)) uniqueImgs.set(q.img, q.name);
+      });
+
+      uniqueImgs.forEach((name, imgUrl) => {
+        const btn = document.createElement("button");
+        btn.className = "avatar-choice" + (imgUrl === myAvatar ? " active" : "");
+        btn.title = name;
+        btn.innerHTML = `<img src="${imgUrl}" alt="${name}" loading="lazy" />`;
+        btn.addEventListener("click", () => {
+          myAvatar = imgUrl;
+          localStorage.setItem("merce_avatar", myAvatar);
+          document.getElementById("currentAvatarImg").src = myAvatar;
+          document.getElementById("avatarPickerModal").classList.add("hidden");
+          populateAvatarModal();
+        });
+        container.appendChild(btn);
+      });
+    }
+
+    function populateCharactersDatalist() {
+      const datalist = document.getElementById("charactersDatalist");
+      datalist.innerHTML = "";
+      const names = [...new Set(quotesPool.map(q => q.name))];
+      names.forEach(name => {
+        const opt = document.createElement("option");
+        opt.value = name;
+        datalist.appendChild(opt);
+      });
+    }
+
+    /**************************************************************
+     * 5. GENERADOR IA EN TIEMPO REAL (SIN API KEY NECESARIA)
+     **************************************************************/
+    async function fetchAiQuoteForCharacter(characterObj) {
+      try {
+        const prompt = `Genera SOLO una frase corta e icónica en español (máximo 18 palabras, sin decir su propio nombre) que diría el personaje ${characterObj.name} del anime ${characterObj.anime}. Devuelve únicamente la frase entre comillas.`;
+        const res = await fetch(`https://text.pollinations.ai/${encodeURIComponent(prompt)}`);
+        if (!res.ok) throw new Error("Fallback local");
+        const text = (await res.text()).trim();
+        if (text && text.length > 8 && text.length < 220) {
+          return text.replace(/^["“]|["”]$/g, "");
+        }
+      } catch (e) {
+        // Fallback silencioso a la cita curada
+      }
+      return characterObj.quote;
+    }
+
+    /**************************************************************
+     * 6. LÓGICA DE JUEGO (SOLITARIO Y MULTIJUGADOR HASTA 8 PLAYERS)
+     **************************************************************/
+    function getPlayerName() {
+      const val = document.getElementById("playerNick").value.trim();
+      const nick = val || "Hitagi";
+      localStorage.setItem("merce_nick", nick);
+      return nick;
+    }
+
+    function startSoloGame() {
+      const pool = getFilteredQuotes();
+      if (pool.length < 4) {
+        alert("Marca al menos 2 animes en la piscina para poder jugar.");
+        return;
+      }
+
+      isMultiplayer = false;
+      isHost = true;
+      isSpectator = false;
+      currentMode = document.getElementById("soloGameMode").value;
+      const totalRounds = parseInt(document.getElementById("soloRounds").value, 10) || 10;
+
+      // Barajar preguntas
+      activeQuestions = [...pool].sort(() => Math.random() - 0.5).slice(0, totalRounds);
+      currentQuestionIndex = 0;
+      currentScore = 0;
+
+      roomPlayers = {
+        [myPlayerId]: {
+          id: myPlayerId,
+          nick: getPlayerName(),
+          avatar: myAvatar,
+          score: 0,
+          answered: false
+        }
+      };
+
+      document.getElementById("roomCodeBadge").textContent = "MODO SOLITARIO";
+      document.getElementById("hostStartRoomBtn").classList.add("hidden");
+      document.getElementById("lobbyView").classList.add("hidden");
+      document.getElementById("gameView").classList.remove("hidden");
+
+      renderPlayersBoard();
+      loadRound(0);
+    }
+
+    async function loadRound(index) {
+      clearInterval(timerInterval);
+      if (index >= activeQuestions.length) {
+        showFinalResults();
+        return;
+      }
+
+      currentQuestionIndex = index;
+      hasAnsweredThisRound = false;
+      const currentQ = activeQuestions[index];
+
+      // Reiniciar estado de respuesta en los jugadores
+      Object.values(roomPlayers).forEach(p => p.answered = false);
+      renderPlayersBoard();
+
+      document.getElementById("roundCounterText").textContent = `Ronda ${index + 1} / ${activeQuestions.length}`;
+      document.getElementById("roundFeedback").textContent = "";
+      document.getElementById("aiHintBox").textContent = `💡 Pista IA: Anime de la piscina de Merce...`;
+
+      // Si el usuario eligió IA en vivo, genera frase dinámica
+      const aiMode = document.getElementById("aiGeneratorToggle").value;
+      if (aiMode === "ai_live") {
+        document.getElementById("quoteDisplay").textContent = "✨ La IA está generando una frase del personaje...";
+        const dynamicQuote = await fetchAiQuoteForCharacter(currentQ);
+        document.getElementById("quoteDisplay").textContent = `“${dynamicQuote}”`;
+      } else {
+        document.getElementById("quoteDisplay").textContent = `“${currentQ.quote.replace(/^["“]|["”]$/g, "")}”`;
+      }
+
+      // Preparar modo 4 opciones o modo Experto
+      const multiBox = document.getElementById("multipleChoiceContainer");
+      const expertBox = document.getElementById("expertInputContainer");
+
+      if (currentMode === "expert") {
+        multiBox.classList.add("hidden");
+        expertBox.classList.remove("hidden");
+        const input = document.getElementById("expertGuessInput");
+        input.value = "";
+        input.disabled = isSpectator;
+      } else {
+        expertBox.classList.add("hidden");
+        multiBox.classList.remove("hidden");
+        renderMultipleChoices(currentQ);
+      }
+
+      // Iniciar temporizador de 15 segundos
+      timerSeconds = 15;
+      updateTimerUI();
+      timerInterval = setInterval(() => {
+        timerSeconds--;
+        updateTimerUI();
+
+        // A los 9 segundos la IA revela pista de personalidad
+        if (timerSeconds === 9) {
+          document.getElementById("aiHintBox").textContent = `💡 Pista IA: ${currentQ.hint}`;
+        }
+        // A los 4 segundos revela el anime al que pertenece
+        if (timerSeconds === 4) {
+          document.getElementById("aiHintBox").textContent = `💡 Pista IA: Pertenece a "${currentQ.anime}"`;
+        }
+
+        if (timerSeconds <= 0) {
+          clearInterval(timerInterval);
+          revealAnswer(null);
+        }
+      }, 1000);
+    }
+
+    function updateTimerUI() {
+      document.getElementById("timerText").textContent = `⏱ ${timerSeconds}s`;
+      const pct = Math.max(0, (timerSeconds / 15) * 100);
+      document.getElementById("timerBarFill").style.width = `${pct}%`;
+    }
+
+    function renderMultipleChoices(correctChar) {
+      const container = document.getElementById("multipleChoiceContainer");
+      container.innerHTML = "";
+
+      const distractors = quotesPool
+        .filter(q => q.name !== correctChar.name)
+        .sort(() => Math.random() - 0.5)
+        .slice(0, 3);
+
+      const options = [correctChar, ...distractors].sort(() => Math.random() - 0.5);
+
+      options.forEach(opt => {
+        const btn = document.createElement("button");
+        btn.className = "option-btn";
+        btn.disabled = isSpectator;
+        btn.dataset.name = opt.name;
+        btn.innerHTML = `
+          <img src="${opt.img}" alt="${opt.name}" />
+          <div class="option-meta">
+            <div class="option-name">${opt.name}</div>
+            <div class="option-anime">${opt.anime}</div>
+          </div>
+        `;
+        btn.addEventListener("click", () => handleGuess(opt.name, btn));
+        container.appendChild(btn);
+      });
+    }
+
+    function handleGuess(guessedName, btnElement = null) {
+      if (hasAnsweredThisRound || isSpectator) return;
+      hasAnsweredThisRound = true;
+
+      const currentQ = activeQuestions[currentQuestionIndex];
+      const isCorrect = guessedName.trim().toLowerCase() === currentQ.name.toLowerCase();
+      const pointsEarned = isCorrect ? Math.max(50, timerSeconds * 10) : 0;
+
+      if (isCorrect) {
+        currentScore += pointsEarned;
+        if (btnElement) btnElement.classList.add("correct");
+        document.getElementById("roundFeedback").style.color = "var(--success)";
+        document.getElementById("roundFeedback").textContent = `¡Correcto! Era ${currentQ.name} (+${pointsEarned} pts)`;
+      } else {
+        if (btnElement) btnElement.classList.add("wrong");
+        document.getElementById("roundFeedback").style.color = "var(--danger)";
+        document.getElementById("roundFeedback").textContent = `Fallaste. Era ${currentQ.name} (${currentQ.anime})`;
+      }
+
+      if (roomPlayers[myPlayerId]) {
+        roomPlayers[myPlayerId].score = currentScore;
+        roomPlayers[myPlayerId].answered = true;
+      }
+      renderPlayersBoard();
+
+      if (isMultiplayer && roomChannel) {
+        roomChannel.send({
+          type: "broadcast",
+          event: "player_score",
+          payload: { id: myPlayerId, score: currentScore, answered: true }
+        });
+      }
+
+      // En solitario pasa rápido a la siguiente pregunta
+      if (!isMultiplayer) {
+        clearInterval(timerInterval);
+        setTimeout(() => loadRound(currentQuestionIndex + 1), 1900);
+      }
+    }
+
+    function revealAnswer() {
+      const currentQ = activeQuestions[currentQuestionIndex];
+      document.querySelectorAll(".option-btn").forEach(btn => {
+        btn.disabled = true;
+        if (btn.dataset.name === currentQ.name) btn.classList.add("correct");
+      });
+
+      if (!hasAnsweredThisRound) {
+        document.getElementById("roundFeedback").style.color = "var(--accent-yellow)";
+        document.getElementById("roundFeedback").textContent = `¡Tiempo! La respuesta era ${currentQ.name} (${currentQ.anime})`;
+      }
+
+      setTimeout(() => {
+        if (!isMultiplayer || isHost) {
+          if (isMultiplayer && roomChannel) {
+            roomChannel.send({
+              type: "broadcast",
+              event: "next_round",
+              payload: { index: currentQuestionIndex + 1 }
+            });
+          }
+          loadRound(currentQuestionIndex + 1);
+        }
+      }, 2400);
+    }
+
+    function showFinalResults() {
+      clearInterval(timerInterval);
+      const sorted = Object.values(roomPlayers).sort((a, b) => b.score - a.score);
+      const winner = sorted[0];
+      document.getElementById("quoteDisplay").textContent = `🏆 ¡Partida terminada! Ganador: ${winner ? winner.nick : "Nadie"} con ${winner ? winner.score : 0} pts.`;
+      document.getElementById("aiHintBox").textContent = "Puedes iniciar otra partida o volver al lobby.";
+      document.getElementById("multipleChoiceContainer").innerHTML = "";
+    }
+
+    function renderPlayersBoard() {
+      const list = document.getElementById("playersBoardList");
+      list.innerHTML = "";
+      const sorted = Object.values(roomPlayers).sort((a, b) => b.score - a.score);
+      document.getElementById("playerCountLabel").textContent = sorted.length;
+
+      sorted.forEach((p, idx) => {
+        const row = document.createElement("div");
+        row.className = "player-row" + (p.id === myPlayerId ? " me" : "");
+        row.innerHTML = `
+          <div class="player-left">
+            <span style="font-weight:800; color:var(--text-muted); width:18px;">#${idx + 1}</span>
+            <img src="${p.avatar}" alt="${p.nick}" />
+            <div>
+              <div style="font-weight:700; font-size:0.88rem;">${p.nick} ${p.id === myPlayerId ? "(tú)" : ""}</div>
+              <div style="font-size:0.7rem; color:${p.answered ? 'var(--success)' : 'var(--text-muted)'};">
+                ${p.answered ? "✓ Respondió" : "Pensando..."}
+              </div>
+            </div>
+          </div>
+          <div class="player-score">${p.score} pts</div>
+        `;
+        list.appendChild(row);
+      });
+    }
+
+    /**************************************************************
+     * 7. SALAS MULTIJUGADOR + EXPULSIÓN AUTOMÁTICA AL CERRAR PESTAÑA
+     **************************************************************/
+    // Reemplaza con tus credenciales de Supabase si deseas persistencia global,
+    // o usa BroadcastChannel/Supabase Realtime directo:
+    const SUPABASE_URL = window.QUIEN_SUPABASE_URL || "";
+    const SUPABASE_ANON_KEY = window.QUIEN_SUPABASE_ANON_KEY || "";
+    let supabaseClient = null;
+    if (SUPABASE_URL && SUPABASE_ANON_KEY && window.supabase) {
+      supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    }
+
+    function openMultiplayerRoom(code, hostMode, spectatorMode = false) {
+      const pool = getFilteredQuotes();
+      if (pool.length < 4) {
+        alert("Marca al menos 2 animes antes de entrar a una sala.");
+        return;
+      }
+
+      isMultiplayer = true;
+      isHost = hostMode;
+      isSpectator = spectatorMode;
+      roomCode = code.toUpperCase();
+      currentScore = 0;
+
+      roomPlayers = {};
+      if (!isSpectator) {
+        roomPlayers[myPlayerId] = {
+          id: myPlayerId,
+          nick: getPlayerName(),
+          avatar: myAvatar,
+          score: 0,
+          answered: false
+        };
+      }
+
+      document.getElementById("roomCodeBadge").textContent = `SALA: ${roomCode}`;
+      document.getElementById("hostStartRoomBtn").classList.toggle("hidden", !isHost);
+      document.getElementById("lobbyView").classList.add("hidden");
+      document.getElementById("gameView").classList.remove("hidden");
+      document.getElementById("quoteDisplay").textContent = "Esperando a que el anfitrión inicie la partida...";
+      document.getElementById("multipleChoiceContainer").innerHTML = "";
+
+      renderPlayersBoard();
+      setupRealtimeRoom(roomCode);
+    }
+
+    function setupRealtimeRoom(code) {
+      if (window.quienSupabase) {
+        const channel = window.quienSupabase.channel(`quienlodijo:${code}`, {
+          config: { broadcast: { self: false }, presence: { key: myPlayerId } }
+        });
+        channel.on("broadcast", { event: "game_message" }, ({ payload }) => {
+          handleRoomMessage(payload);
+        });
+        channel.on("presence", { event: "leave" }, ({ key }) => {
+          if (key !== myPlayerId) {
+            delete roomPlayers[key];
+            renderPlayersBoard();
+          }
+        });
+        channel.subscribe(async (status) => {
+          if (status !== "SUBSCRIBED") return;
+          if (!isSpectator) {
+            await channel.track(roomPlayers[myPlayerId]);
+            await channel.send({
+              type: "broadcast",
+              event: "game_message",
+              payload: { type: "broadcast", event: "player_join", payload: roomPlayers[myPlayerId] }
+            });
+          }
+        });
+        roomChannel = {
+          send: (msg) => channel.send({ type: "broadcast", event: "game_message", payload: msg }),
+          close: () => window.quienSupabase.removeChannel(channel)
+        };
+        return;
+      }
+
+      const bc = new BroadcastChannel("merce_quienlodijo_" + code);
+      roomChannel = {
+        send: (msg) => bc.postMessage(msg),
+        close: () => bc.close()
+      };
+      bc.onmessage = (ev) => handleRoomMessage(ev.data);
+
+      // Anunciar entrada a la sala
+      if (!isSpectator) {
+        roomChannel.send({
+          type: "broadcast",
+          event: "player_join",
+          payload: roomPlayers[myPlayerId]
+        });
+      }
+    }
+
+    function handleRoomMessage(msg) {
+      if (!msg || !msg.event) return;
+
+      if (msg.event === "player_join") {
+        if (Object.keys(roomPlayers).length >= 8 && !roomPlayers[msg.payload.id]) return;
+        roomPlayers[msg.payload.id] = msg.payload;
+        renderPlayersBoard();
+        if (isHost) {
+          roomChannel.send({
+            type: "broadcast",
+            event: "sync_players",
+            payload: roomPlayers
+          });
+        }
+      } else if (msg.event === "sync_players") {
+        roomPlayers = { ...msg.payload, ...roomPlayers };
+        renderPlayersBoard();
+      } else if (msg.event === "player_leave") {
+        // Si a un jugador se le cierra la pantalla, lo borramos inmediatamente de la sala
+        delete roomPlayers[msg.payload.id];
+        renderPlayersBoard();
+      } else if (msg.event === "start_match") {
+        activeQuestions = msg.payload.questions;
+        currentMode = msg.payload.mode;
+        loadRound(0);
+      } else if (msg.event === "player_score") {
+        if (roomPlayers[msg.payload.id]) {
+          roomPlayers[msg.payload.id].score = msg.payload.score;
+          roomPlayers[msg.payload.id].answered = msg.payload.answered;
+          renderPlayersBoard();
+        }
+      } else if (msg.event === "next_round") {
+        loadRound(msg.payload.index);
+      }
+    }
+
+    function leaveCurrentRoom() {
+      clearInterval(timerInterval);
+      if (isMultiplayer && roomChannel) {
+        roomChannel.send({
+          type: "broadcast",
+          event: "player_leave",
+          payload: { id: myPlayerId }
+        });
+        roomChannel.close();
+        roomChannel = null;
+      }
+      isMultiplayer = false;
+      document.getElementById("gameView").classList.add("hidden");
+      document.getElementById("lobbyView").classList.remove("hidden");
+    }
+
+    // Expulsar automáticamente si cierra pestaña o recarga la página
+    function announceRoomLeave() {
+      if (isMultiplayer && roomChannel) {
+        roomChannel.send({
+          type: "broadcast",
+          event: "player_leave",
+          payload: { id: myPlayerId }
+        });
+      }
+    }
+
+    window.addEventListener("beforeunload", announceRoomLeave);
+    window.addEventListener("pagehide", announceRoomLeave);
+
+    /**************************************************************
+     * 8. EVENTOS DE INTERFAZ (MENÚ HAMBURGUESA, AVATAR, BOTONES)
+     **************************************************************/
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("currentAvatarImg").src = myAvatar;
+      document.getElementById("playerNick").value = myNick;
+
+      loadExternalPersonajesJson();
+
+      // Menú hamburguesa de 3 líneas / X para celular
+      const hamburgerBtn = document.getElementById("hamburgerBtn");
+      const mobileDropdown = document.getElementById("mobileDropdown");
+      hamburgerBtn.addEventListener("click", () => {
+        const isOpen = mobileDropdown.classList.toggle("open");
+        hamburgerBtn.textContent = isOpen ? "✕" : "☰";
+      });
+
+      // Abrir y cerrar modal de avatares
+      document.getElementById("selectedAvatarButton").addEventListener("click", () => {
+        document.getElementById("avatarPickerModal").classList.remove("hidden");
+      });
+      document.getElementById("closeAvatarModalBtn").addEventListener("click", () => {
+        document.getElementById("avatarPickerModal").classList.add("hidden");
+      });
+
+      // Marcar / Desmarcar todos los animes
+      document.getElementById("checkAllBtn").addEventListener("click", () => {
+        selectedAnimes = new Set(MERCE_ANIMES);
+        renderAnimeFilters();
+      });
+      document.getElementById("uncheckAllBtn").addEventListener("click", () => {
+        selectedAnimes.clear();
+        renderAnimeFilters();
+      });
+
+      // Botones Solitario y Salas
+      document.getElementById("startSoloBtn").addEventListener("click", startSoloGame);
+
+      document.getElementById("createRoomBtn").addEventListener("click", () => {
+        const randomCode = Math.random().toString(36).substring(2, 6).toUpperCase();
+        openMultiplayerRoom(randomCode, true, false);
+      });
+
+      document.getElementById("joinRoomBtn").addEventListener("click", () => {
+        const code = document.getElementById("roomCodeInput").value.trim();
+        if (!code) return alert("Ingresa el código de 4 letras de la sala.");
+        openMultiplayerRoom(code, false, false);
+      });
+
+      document.getElementById("spectateRoomBtn").addEventListener("click", () => {
+        const code = document.getElementById("roomCodeInput").value.trim();
+        if (!code) return alert("Ingresa el código de la sala que quieres mirar.");
+        openMultiplayerRoom(code, false, true);
+      });
+
+      document.getElementById("hostStartRoomBtn").addEventListener("click", () => {
+        const pool = getFilteredQuotes();
+        const totalRounds = parseInt(document.getElementById("soloRounds").value, 10) || 10;
+        activeQuestions = [...pool].sort(() => Math.random() - 0.5).slice(0, totalRounds);
+        currentMode = document.getElementById("soloGameMode").value;
+        document.getElementById("hostStartRoomBtn").classList.add("hidden");
+
+        if (roomChannel) {
+          roomChannel.send({
+            type: "broadcast",
+            event: "start_match",
+            payload: { questions: activeQuestions, mode: currentMode }
+          });
+        }
+        loadRound(0);
+      });
+
+      document.getElementById("leaveGameBtn").addEventListener("click", leaveCurrentRoom);
+
+      // Botón para pedir una frase nueva generada por IA en vivo
+      document.getElementById("generateAiQuoteBtn").addEventListener("click", async () => {
+        const currentQ = activeQuestions[currentQuestionIndex];
+        if (!currentQ) return;
+        document.getElementById("quoteDisplay").textContent = "✨ Generando nueva cita con IA...";
+        const newQuote = await fetchAiQuoteForCharacter(currentQ);
+        document.getElementById("quoteDisplay").textContent = `“${newQuote}”`;
+      });
+
+      // Responder en modo experto
+      document.getElementById("submitExpertGuessBtn").addEventListener("click", () => {
+        const val = document.getElementById("expertGuessInput").value;
+        if (val.trim()) handleGuess(val);
+      });
+      document.getElementById("expertGuessInput").addEventListener("keydown", (e) => {
+        if (e.key === "Enter" && e.target.value.trim()) handleGuess(e.target.value);
+      });
+
+      // Botón de sonido
+      document.getElementById("muteBtn").addEventListener("click", (e) => {
+        isMuted = !isMuted;
+        e.currentTarget.textContent = isMuted ? "🔇" : "🔊";
+      });
+    });
+  </script>
+</body>
+</html>

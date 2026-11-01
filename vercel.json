@@ -8,6 +8,10 @@
     {
       "source": "/minijuegos/ordenatutop",
       "destination": "/minijuegos/ordenatutop.html"
+    },
+    {
+      "source": "/minijuegos/quienlodijo",
+      "destination": "/minijuegos/quienlodijo/quienlodijo.html"
     }
   ]
 }

@@ -1,0 +1,331 @@
+[
+  {
+    "id": "Fate-500",
+    "name": "Sakura Matou",
+    "anime": "Fate",
+    "quote": "No necesito que me salves; solo quiero que no me abandones.",
+    "hint": "Una joven amable que carga con un destino oscuro y una gran fortaleza interior."
+  },
+  {
+    "id": "La nobleza de las Flores-268676",
+    "name": "Kaoruko Waguri",
+    "anime": "La nobleza de las Flores",
+    "quote": "No quiero juzgar a nadie por su apariencia; quiero conocer su corazón.",
+    "hint": "Una estudiante elegante y firme que defiende la bondad por encima de las diferencias."
+  },
+  {
+    "id": "Gachiakuta-266438",
+    "name": "Enjin",
+    "anime": "Gachiakuta",
+    "quote": "Lo que otros tiran puede tener un valor que todavía no han sabido ver.",
+    "hint": "Un líder carismático que encuentra potencial en las personas y en los objetos olvidados."
+  },
+  {
+    "id": "MHA Vigilantes-89028",
+    "name": "Izuku Midoriya",
+    "anime": "MHA Vigilantes",
+    "quote": "Mi cuerpo se movió solo antes de que pudiera pensar.",
+    "hint": "Un héroe estudioso que analiza cada poder y siempre corre a proteger a los demás."
+  },
+  {
+    "id": "My Hero Academia-89220",
+    "name": "Shouto Todoroki",
+    "anime": "My Hero Academia",
+    "quote": "Mi poder es mío. No tengo que vivir bajo la sombra de nadie.",
+    "hint": "Un estudiante de dos elementos que intenta reconciliarse con su familia y su pasado."
+  },
+  {
+    "id": "Konosuba-89361",
+    "name": "Megumin",
+    "anime": "Konosuba",
+    "quote": "¡Más negro que la oscuridad, más oscuro que lo negro... Explosion!",
+    "hint": "Una maga carmesí que solo piensa en lanzar su hechizo definitivo una vez al día."
+  },
+  {
+    "id": "86: Eighty-Six-141061",
+    "name": "Vladilena Milizé",
+    "anime": "86: Eighty-Six",
+    "quote": "No permitiré que los traten como números; todos tienen un nombre.",
+    "hint": "Una comandante idealista que lucha contra un sistema que deshumaniza a sus soldados."
+  },
+  {
+    "id": "La Boticaria-126824",
+    "name": "Maomao",
+    "anime": "La Boticaria",
+    "quote": "¿Esto es veneno? Déjame probar solo un poquito.",
+    "hint": "Una joven curiosa que resuelve misterios del palacio y siente fascinación por las toxinas."
+  },
+  {
+    "id": "Fullmetal Alchemist Brotherhood-11",
+    "name": "Edward Elric",
+    "anime": "Fullmetal Alchemist Brotherhood",
+    "quote": "Para obtener algo, hay que sacrificar algo de igual valor.",
+    "hint": "Un alquimista de baja estatura que busca recuperar lo que perdió junto a su hermano."
+  },
+  {
+    "id": "Clannad-4606",
+    "name": "Tomoya Okazaki",
+    "anime": "Clannad",
+    "quote": "La vida puede ser difícil, pero eso no significa que no tenga momentos hermosos.",
+    "hint": "Un estudiante desencantado que vuelve a encontrar esperanza gracias a sus vínculos."
+  },
+  {
+    "id": "Hyouka-55131",
+    "name": "Houtarou Oreki",
+    "anime": "Hyouka",
+    "quote": "Si no tengo que hacerlo, no lo haré; si tengo que hacerlo, lo haré rápido.",
+    "hint": "Un detective perezoso que resuelve cualquier misterio con una lógica brillante."
+  },
+  {
+    "id": "Record Of Ragnarok-140637",
+    "name": "Adam",
+    "anime": "Record Of Ragnarok",
+    "quote": "Estoy aquí para proteger a mis hijos.",
+    "hint": "El primer hombre de la humanidad, dispuesto a enfrentarse a cualquier dios por sus descendientes."
+  },
+  {
+    "id": "MONSTER-719",
+    "name": "Johan Liebert",
+    "anime": "MONSTER",
+    "quote": "El verdadero monstruo no necesita un rostro para existir.",
+    "hint": "Un hombre enigmático y peligrosamente carismático que representa el vacío moral."
+  },
+  {
+    "id": "Akame Ga Kill-63351",
+    "name": "Akame",
+    "anime": "Akame Ga Kill",
+    "quote": "Si no hacemos nada, nada cambiará.",
+    "hint": "Una asesina silenciosa de mirada fría que pelea por acabar con la corrupción."
+  },
+  {
+    "id": "Blue Box-218648",
+    "name": "Hina Chouno",
+    "anime": "Blue Box",
+    "quote": "Aunque duela, mis sentimientos también son algo que debo cuidar.",
+    "hint": "Una gimnasta expresiva que enfrenta el amor no correspondido sin dejar de sonreír."
+  },
+  {
+    "id": "Cyberpunk: Edgerunners-284157",
+    "name": "Lucy",
+    "anime": "Cyberpunk: Edgerunners",
+    "quote": "No quiero estar en ningún lugar de este mundo; quiero estar contigo en la luna.",
+    "hint": "Una netrunner reservada que sueña con escapar de Night City."
+  },
+  {
+    "id": "More Than a Married Couple-273105",
+    "name": "Shiori Sakurazaka",
+    "anime": "More Than a Married Couple",
+    "quote": "A veces, querer a alguien también significa atreverse a dar el primer paso.",
+    "hint": "Una chica tranquila y dulce que descubre el valor de expresar lo que siente."
+  },
+  {
+    "id": "Attack on Titan-45627",
+    "name": "Levi",
+    "anime": "Attack on Titan",
+    "quote": "Elige la decisión de la que te arrepientas menos.",
+    "hint": "El soldado más fuerte de la humanidad, exigente y obsesionado con la limpieza."
+  },
+  {
+    "id": "Kaiju No. 8-205579",
+    "name": "Soushirou Hoshina",
+    "anime": "Kaiju No. 8",
+    "quote": "No necesito ser el más fuerte; necesito ser útil cuando llegue el momento.",
+    "hint": "Un vicecapitán de estilo veloz que disfruta enfrentarse a monstruos enormes."
+  },
+  {
+    "id": "Erased-89275",
+    "name": "Satoru Fujinuma",
+    "anime": "Erased",
+    "quote": "Si puedo cambiar el pasado, también puedo salvar a alguien.",
+    "hint": "Un joven que regresa en el tiempo para impedir una tragedia de su infancia."
+  },
+  {
+    "id": "Las 100 Novias-173760",
+    "name": "Karane Inda",
+    "anime": "Las 100 Novias",
+    "quote": "¡No es que me gustes ni nada, tonto!",
+    "hint": "Una chica de carácter explosivo cuyo orgullo intenta ocultar un gran cariño."
+  },
+  {
+    "id": "Re: ZERO-88572",
+    "name": "Emilia",
+    "anime": "Re: ZERO",
+    "quote": "Aunque el mundo me rechace, seguiré creyendo en lo que considero correcto.",
+    "hint": "Una medio elfa de cabello plateado que busca convertirse en gobernante."
+  },
+  {
+    "id": "Takopis Original Sin-266372",
+    "name": "Takopi",
+    "anime": "Takopis Original Sin",
+    "quote": "¡Quiero que todos vuelvan a sonreír!",
+    "hint": "Una criatura extraterrestre inocente que intenta arreglar los problemas humanos."
+  },
+  {
+    "id": "One Punch Man-73935",
+    "name": "Saitama",
+    "anime": "One Punch Man",
+    "quote": "¡Cien flexiones, cien abdominales, cien sentadillas y diez kilómetros cada día!",
+    "hint": "Un héroe calvo que derrota a cualquiera de un golpe y busca una buena pelea."
+  },
+  {
+    "id": "Darling in the Franxx-124382",
+    "name": "Ichigo",
+    "anime": "Darling in the Franxx",
+    "quote": "Ser fuerte también significa proteger a quienes no pueden hacerlo solos.",
+    "hint": "La responsable líder del escuadrón que intenta mantener unidos a sus compañeros."
+  },
+  {
+    "id": "Death Note-71",
+    "name": "L Lawliet",
+    "anime": "Death Note",
+    "quote": "La justicia siempre prevalecerá, porque quien gane se convierte en la justicia.",
+    "hint": "Un detective excéntrico que se sienta en cuclillas y adora los dulces."
+  },
+  {
+    "id": "Wind Breaker-230204",
+    "name": "Haruka Sakura",
+    "anime": "Wind Breaker",
+    "quote": "No necesito caerle bien a nadie; solo quiero demostrar lo que valgo.",
+    "hint": "Un peleador solitario que aprende que proteger a su barrio también es pertenecer."
+  },
+  {
+    "id": "Las Quintillizas-126375",
+    "name": "Itsuki Nakano",
+    "anime": "Las Quintillizas",
+    "quote": "Aunque discutamos, seguimos siendo hermanas.",
+    "hint": "La quinta hermana, estudiosa y responsable, que siempre está pensando en comer."
+  },
+  {
+    "id": "Blue Lock-162213",
+    "name": "Meguru Bachira",
+    "anime": "Blue Lock",
+    "quote": "Mi monstruo siempre me dice que siga jugando.",
+    "hint": "Un delantero impredecible que juega guiado por su imaginación y su instinto."
+  },
+  {
+    "id": "Frieren-176754",
+    "name": "Frieren",
+    "anime": "Frieren",
+    "quote": "Solo fueron diez años juntos, pero para mí cambiaron mil años de soledad.",
+    "hint": "Una maga elfa longeva que aprende demasiado tarde cuánto significan los recuerdos."
+  },
+  {
+    "id": "Classroom of the Elite-123212",
+    "name": "Kiyotaka Ayanokouji",
+    "anime": "Classroom of the Elite",
+    "quote": "Todas las personas no son más que herramientas.",
+    "hint": "Un estudiante inexpresivo que oculta una capacidad extraordinaria para manipular el tablero."
+  },
+  {
+    "id": "Citrus-83367",
+    "name": "Yuzu Aihara",
+    "anime": "Citrus",
+    "quote": "No voy a fingir que no siento nada solo para encajar.",
+    "hint": "Una chica alegre y rebelde que descubre sentimientos inesperados en su nueva escuela."
+  },
+  {
+    "id": "Chainsaw Man-137080",
+    "name": "Makima",
+    "anime": "Chainsaw Man",
+    "quote": "Si te conviertes en mi perro, te daré de comer y cuidaré de ti.",
+    "hint": "Una figura amable y controladora que siempre parece estar varios pasos por delante."
+  },
+  {
+    "id": "ARCANE-67",
+    "name": "Vi",
+    "anime": "ARCANE",
+    "quote": "No importa cuánto me golpeen; siempre voy a levantarme.",
+    "hint": "Una luchadora de Zaun con guanteletes enormes y un fuerte instinto protector."
+  },
+  {
+    "id": "Tokyo Revengers-145341",
+    "name": "Manjirou Sano",
+    "anime": "Tokyo Revengers",
+    "quote": "Si protejo a mis amigos, no me importa lo que tenga que enfrentar.",
+    "hint": "El líder carismático de una pandilla, temido por su fuerza y marcado por la pérdida."
+  },
+  {
+    "id": "Dan Da Dan-222594",
+    "name": "Momo Ayase",
+    "anime": "Dan Da Dan",
+    "quote": "¡No voy a dejar que ningún fantasma ni alienígena se salga con la suya!",
+    "hint": "Una estudiante de voluntad fuerte que combina poderes psíquicos con mucho carácter."
+  },
+  {
+    "id": "A Sign of Affection-179809",
+    "name": "Yuki Itose",
+    "anime": "A Sign of Affection",
+    "quote": "Quiero conocer el mundo, aunque tenga que hacerlo de una forma diferente.",
+    "hint": "Una universitaria sorda que se comunica con ternura y está descubriendo el amor."
+  },
+  {
+    "id": "Demon Slayer-126071",
+    "name": "Tanjirou Kamado",
+    "anime": "Demon Slayer",
+    "quote": "No importa cuántas veces caiga; seguiré avanzando.",
+    "hint": "Un espadachín de gran olfato que busca salvar a su hermana y mantiene un corazón compasivo."
+  },
+  {
+    "id": "Solo Leveling-129928",
+    "name": "Jin-U Seong",
+    "anime": "Solo Leveling",
+    "quote": "A partir de ahora, yo subiré de nivel solo.",
+    "hint": "El cazador más débil que recibe un sistema capaz de convertirlo en una fuerza imparable."
+  },
+  {
+    "id": "My Dress up Darling-133676",
+    "name": "Marin Kitagawa",
+    "anime": "My Dress up Darling",
+    "quote": "Si te gusta algo, no deberías avergonzarte de ello.",
+    "hint": "Una estudiante popular apasionada por el cosplay que celebra sus aficiones sin miedo."
+  },
+  {
+    "id": "Jujutsu Kaisen-127691",
+    "name": "Satoru Gojou",
+    "anime": "Jujutsu Kaisen",
+    "quote": "En el cielo y en la tierra, yo soy el único honrado.",
+    "hint": "Un profesor de ojos cubiertos que domina los Seis Ojos y el Infinito."
+  },
+  {
+    "id": "Violet Evergarden-90169",
+    "name": "Violet Evergarden",
+    "anime": "Violet Evergarden",
+    "quote": "Quiero saber qué significa te quiero.",
+    "hint": "Una exsoldado que aprende a expresar emociones escribiendo cartas para otras personas."
+  },
+  {
+    "id": "Charlotte-88951",
+    "name": "Nao Tomori",
+    "anime": "Charlotte",
+    "quote": "Aunque nadie me vea, seguiré haciendo lo que creo correcto.",
+    "hint": "Una presidenta estudiantil directa que puede volverse invisible para una persona."
+  },
+  {
+    "id": "Bunny Girl Senpai-127222",
+    "name": "Mai Sakurajima",
+    "anime": "Bunny Girl Senpai",
+    "quote": "Incluso si el mundo entero me olvida, me basta con que tú aún puedas verme.",
+    "hint": "Una actriz famosa que sufre un fenómeno sobrenatural y viste un traje de conejita."
+  },
+  {
+    "id": "Summer Time Rendering-155706",
+    "name": "Mio Kofune",
+    "anime": "Summer Time Rendering",
+    "quote": "Aunque el futuro se repita, intentaré cambiarlo las veces que haga falta.",
+    "hint": "Una chica de la isla que queda atrapada en un misterio de sombras y bucles temporales."
+  },
+  {
+    "id": "Haikyuu!-64769",
+    "name": "Shouyou Hinata",
+    "anime": "Haikyuu!",
+    "quote": "El que no puede saltar más alto todavía puede seguir saltando.",
+    "hint": "Un rematador bajito y explosivo que sueña con convertirse en un gran jugador de voleibol."
+  },
+  {
+    "id": "Your Lie in April-69411",
+    "name": "Kaori Miyazono",
+    "anime": "Your Lie in April",
+    "quote": "¿Llegó mi música hasta tu corazón?",
+    "hint": "Una violinista de espíritu libre que transforma la vida de un pianista."
+  }
+]
