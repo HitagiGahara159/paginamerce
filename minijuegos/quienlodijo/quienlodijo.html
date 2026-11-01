@@ -1739,11 +1739,14 @@
         });
         channel.on("presence", { event: "sync" }, () => {
           const presenceState = channel.presenceState();
+          const presentPlayers = {};
           Object.entries(presenceState).forEach(([key, entries]) => {
-            if (key !== myPlayerId && entries[0]) {
-              roomPlayers[key] = entries[0];
-            }
+            if (entries[0]) presentPlayers[key] = entries[0];
           });
+          if (!isSpectator && roomPlayers[myPlayerId]) {
+            presentPlayers[myPlayerId] = roomPlayers[myPlayerId];
+          }
+          roomPlayers = presentPlayers;
           renderPlayersBoard();
         });
         channel.subscribe(async (status) => {
@@ -1796,7 +1799,7 @@
           });
         }
       } else if (msg.event === "sync_players") {
-        roomPlayers = { ...msg.payload, ...roomPlayers };
+        roomPlayers = { ...msg.payload };
         renderPlayersBoard();
       } else if (msg.event === "player_leave") {
         // Si a un jugador se le cierra la pantalla, lo borramos inmediatamente de la sala
@@ -1852,6 +1855,8 @@
           event: "player_leave",
           payload: { id: myPlayerId }
         });
+        roomChannel.close();
+        roomChannel = null;
       }
     }
 
@@ -1938,13 +1943,6 @@
       const sala = (params.get("sala") || "").trim().toUpperCase().replace(/[^A-Z0-9]/g, "");
       if (sala) {
         document.getElementById("roomCodeInput").value = sala;
-        let attempts = 0;
-        const waitForContent = setInterval(() => {
-          attempts += 1;
-          if (!quotesPool.length && attempts < 160) return;
-          clearInterval(waitForContent);
-          if (quotesPool.length) openMultiplayerRoom(sala, false, false);
-        }, 50);
       }
     });
   </script>
