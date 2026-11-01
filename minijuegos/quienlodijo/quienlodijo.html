@@ -660,7 +660,7 @@
       font-style: italic;
     }
 
-    .ai-hint-badge {
+    .hint-badge {
       display: inline-block;
       margin-top: 14px;
       padding: 6px 14px;
@@ -907,7 +907,7 @@
         <div class="hero-info">
           <h1 class="serif-title">¿Quién lo dijo?</h1>
           <p>
-            El archivo de reacciones muestra <span class="highlight-yellow">frases icónicas o adaptadas</span> de los animes que vio Merce. Adivina qué personaje de anime lo dijo antes de que acabe el reloj para sumar más puntos.
+            El archivo de reacciones muestra <span class="highlight-yellow">citas canónicas y memorables</span> de los animes que vio Merce. Adivina qué personaje de anime lo dijo antes de que acabe el reloj para sumar más puntos.
           </p>
         </div>
 
@@ -1042,7 +1042,7 @@
 
           <div class="quote-box">
             <p id="quoteDisplay" class="quote-text">“Cargando frase...”</p>
-            <div id="aiHintBox" class="ai-hint-badge">💡 Pista: Cargando...</div>
+            <div id="hintBox" class="hint-badge">💡 Pista: Cargando...</div>
           </div>
 
           <!-- Modo 4 opciones -->
@@ -1100,7 +1100,7 @@
     ];
 
     /**************************************************************
-     * 2. BASE CURADA DE CITAS ICÓNICAS DE LOS 47 ANIMES + AVATARES
+     * 2. LEGADO SIN USO: las citas jugables viven únicamente en frases.json
      **************************************************************/
     const INITIAL_QUOTES_DB = [
       { id: "eren", name: "Eren Yeager", anime: "Attack on Titan", img: "https://s4.anilist.co/file/anilistcdn/character/large/b40882-dsj7IP943WFF.jpg", quote: "Si ganas, vives. Si pierdes, mueres. Si no peleas, no puedes ganar.", hint: "Obsesionado con la libertad más allá de las murallas." },
@@ -1413,7 +1413,7 @@
 
       document.getElementById("roundCounterText").textContent = `Ronda ${index + 1} / ${activeQuestions.length}`;
       document.getElementById("roundFeedback").textContent = "";
-      document.getElementById("aiHintBox").textContent = `💡 Pista: ${currentQ.hint}`;
+      document.getElementById("hintBox").textContent = `💡 Pista: ${currentQ.hint}`;
       document.getElementById("quoteDisplay").textContent = `“${currentQ.quote.replace(/^["“]|["”]$/g, "")}”`;
 
       // Preparar modo 4 opciones o modo Experto
@@ -1461,48 +1461,39 @@
       }
 
       const optionByName = new Map([[canonicalCorrect.name, canonicalCorrect]]);
-      const similarOptions = (correctChar.similares || [])
-        .map((name) => charactersByName.get(name.toLowerCase()))
-        .filter((character) =>
+      const usedAnimes = new Set([canonicalCorrect.anime]);
+      const activeQuotes = getFilteredQuotes();
+      const quoteByName = new Map(activeQuotes.map((quote) => [quote.name, quote]));
+      const similarNames = new Set((correctChar.similares || []).map((name) => name.toLowerCase()));
+      const candidates = activeQuotes
+        .map((quote) => ({
+          character: charactersById.get(quote.id),
+          quote
+        }))
+        .filter(({ character, quote }) =>
           character
           && character.name !== canonicalCorrect.name
+          && character.anime !== canonicalCorrect.anime
           && !recentDistractors.includes(character.name)
+          && quoteByName.has(character.name)
         )
-        .sort(() => Math.random() - 0.5);
+        .sort((a, b) => {
+          const aSimilar = similarNames.has(a.character.name.toLowerCase()) ? 0 : 1;
+          const bSimilar = similarNames.has(b.character.name.toLowerCase()) ? 0 : 1;
+          const aArchetype = a.quote.arquetipo === correctChar.arquetipo ? 0 : 1;
+          const bArchetype = b.quote.arquetipo === correctChar.arquetipo ? 0 : 1;
+          return aSimilar - bSimilar || aArchetype - bArchetype || Math.random() - 0.5;
+        });
 
-      similarOptions.forEach((character) => {
-        if (optionByName.size < 4) {
+      candidates.forEach(({ character }) => {
+        if (optionByName.size < 4 && !usedAnimes.has(character.anime)) {
           optionByName.set(character.name, character);
+          usedAnimes.add(character.anime);
         }
       });
 
-      const activePool = getFilteredQuotes();
-      const fallbackOptions = [
-        ...activePool.map((quote) => charactersById.get(quote.id)).filter((character) =>
-          character
-          && character.anime === canonicalCorrect.anime
-          && !optionByName.has(character.name)
-          && !recentDistractors.includes(character.name)
-        ),
-        ...activePool.map((quote) => charactersById.get(quote.id)).filter((character) =>
-          character
-          && !optionByName.has(character.name)
-          && !recentDistractors.includes(character.name)
-        )
-      ];
-      fallbackOptions.sort(() => Math.random() - 0.5).forEach((character) => {
-        if (optionByName.size < 4) {
-          optionByName.set(character.name, character);
-        }
-      });
       if (optionByName.size < 4) {
-        activePool
-          .map((quote) => charactersById.get(quote.id))
-          .filter((character) => character && !optionByName.has(character.name))
-          .sort(() => Math.random() - 0.5)
-          .forEach((character) => {
-            if (optionByName.size < 4) optionByName.set(character.name, character);
-          });
+        throw new Error(`No hay tres distractores de animes distintos para ${canonicalCorrect.name}.`);
       }
 
       const options = [...optionByName.values()].sort(() => Math.random() - 0.5);
@@ -1611,7 +1602,7 @@
       const sorted = Object.values(roomPlayers).sort((a, b) => b.score - a.score);
       const winner = sorted[0];
       document.getElementById("quoteDisplay").textContent = `🏆 ¡Partida terminada! Ganador: ${winner ? winner.nick : "Nadie"} con ${winner ? winner.score : 0} pts.`;
-      document.getElementById("aiHintBox").textContent = "Puedes iniciar otra partida o volver al lobby.";
+      document.getElementById("hintBox").textContent = "Puedes iniciar otra partida o volver al lobby.";
       document.getElementById("multipleChoiceContainer").innerHTML = "";
     }
 

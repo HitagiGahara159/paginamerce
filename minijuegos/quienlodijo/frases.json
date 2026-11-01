@@ -1,2978 +1,3062 @@
 [
   {
-    "id": "Fate-500",
-    "name": "Sakura Matou",
-    "anime": "Fate",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b500-NQrLbnBr1sDv.png",
-    "quote": "No necesito mostrar mis intenciones para controlar el resultado.",
-    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
-    "arquetipo": "frio_calculador",
-    "similares": [
-      "Subaru Hoshina",
-      "Izuku Midoriya",
-      "Izuku Midoriya",
-      "Vladilena Milizé",
-      "Rouran"
-    ]
-  },
-  {
-    "id": "Fate-498",
-    "name": "Rin Toosaka",
-    "anime": "Fate",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b498-lwawtSpLyATL.png",
-    "quote": "No hay rival capaz de detenerme cuando decido avanzar.",
-    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
-    "arquetipo": "poder_arrogante",
-    "similares": [
-      "Saku Natsusawa",
-      "Shouta Aizawa",
-      "Shouta Aizawa",
-      "Kurena Kukumila",
-      "Gyokuyou"
-    ]
-  },
-  {
     "id": "Fate-497",
+    "qid": 1,
     "name": "Artoria Pendragon",
     "anime": "Fate",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b497-Yg5pNmC8kxzs.png",
-    "quote": "Aunque tenga miedo, daré el siguiente paso.",
-    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
-    "arquetipo": "heroe_determinado",
+    "quote": "Yo te pregunto: ¿eres tú mi Master?",
+    "hint": "Frase iconica asociada al tono de Artoria Pendragon.",
+    "tipo": "iconica",
     "similares": [
-      "Enjin",
-      "Toshinori Yagi",
-      "Megumin",
-      "Shinei Nouzen",
-      "Edward Elric"
+      "Akame",
+      "Suzune Horikita",
+      "Mikasa Ackerman",
+      "Brunhilde",
+      "Vladilena Milizé"
+    ]
+  },
+  {
+    "id": "Fate-2087",
+    "qid": 2,
+    "name": "Archer",
+    "anime": "Fate",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b2087-l5WP4W4vmfJJ.png",
+    "quote": "Soy el hueso de mi espada.",
+    "hint": "Frase iconica asociada al tono de Archer.",
+    "tipo": "iconica",
+    "similares": [
+      "Levi",
+      "Shirou Emiya",
+      "Genos",
+      "Megumi Fushiguro",
+      "Kiyotaka Ayanokouji"
+    ]
+  },
+  {
+    "id": "Fate-496",
+    "qid": 3,
+    "name": "Shirou Emiya",
+    "anime": "Fate",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b496-GI0waavDjyk3.png",
+    "quote": "Quiero ser un héroe de la justicia.",
+    "hint": "Frase iconica asociada al tono de Shirou Emiya.",
+    "tipo": "iconica",
+    "similares": [
+      "Izuku Midoriya",
+      "Kouichi Haimawari",
+      "Tanjirou Kamado",
+      "Yuuji Itadori",
+      "Tatsumi"
     ]
   },
   {
     "id": "Fate-2514",
+    "qid": 4,
     "name": "Gilgamesh",
     "anime": "Fate",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b2514-hnE6LEdqm7Su.png",
-    "quote": "Si todo puede salir mal, al menos será divertido.",
-    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
-    "arquetipo": "comedia_caos",
+    "quote": "Yo soy el rey de los héroes.",
+    "hint": "Frase representativa asociada al tono de Gilgamesh.",
+    "tipo": "representativa",
     "similares": [
-      "Rudo",
-      "Tenya Iida",
-      "Kazuma Satou",
-      "Anju Emma",
-      "Roy Mustang"
-    ]
-  },
-  {
-    "id": "La nobleza de las Flores-268676",
-    "name": "Kaoruko Waguri",
-    "anime": "La nobleza de las Flores",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b268676-aQmqvqj0DNoJ.png",
-    "quote": "Lo que siento merece ser dicho, aunque me haga temblar.",
-    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
-    "arquetipo": "romance_drama",
-    "similares": [
-      "Riyou Reaper",
-      "Shouto Todoroki",
-      "Aqua",
-      "Maomao",
-      "Alphonse Elric"
-    ]
-  },
-  {
-    "id": "La nobleza de las Flores-268677",
-    "name": "Rintarou Tsumugi",
-    "anime": "La nobleza de las Flores",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b268677-APMPGH67QqPr.jpg",
-    "quote": "La verdad permanece aunque todos intenten esconderla.",
-    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
-    "arquetipo": "misterio_serio",
-    "similares": [
-      "Zanka Nijiku",
-      "Katsuki Bakugou",
-      "Darkness",
-      "Jinshi",
-      "Winry Rockbell"
-    ]
-  },
-  {
-    "id": "La nobleza de las Flores-270095",
-    "name": "Subaru Hoshina",
-    "anime": "La nobleza de las Flores",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b270095-Z5KpvacVXp1S.jpg",
-    "quote": "La mejor jugada es la que nadie ve venir.",
-    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
-    "arquetipo": "frio_calculador",
-    "similares": [
-      "Sakura Matou",
-      "Izuku Midoriya",
-      "Izuku Midoriya",
-      "Vladilena Milizé",
-      "Rouran"
-    ]
-  },
-  {
-    "id": "La nobleza de las Flores-272241",
-    "name": "Saku Natsusawa",
-    "anime": "La nobleza de las Flores",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b272241-6NHTwQDIUXQk.png",
-    "quote": "El poder solo sirve si quien lo posee sabe imponerlo.",
-    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
-    "arquetipo": "poder_arrogante",
-    "similares": [
-      "Rin Toosaka",
-      "Shouta Aizawa",
-      "Shouta Aizawa",
-      "Kurena Kukumila",
-      "Gyokuyou"
-    ]
-  },
-  {
-    "id": "Gachiakuta-266438",
-    "name": "Enjin",
-    "anime": "Gachiakuta",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b266438-3Veykti1lXgg.png",
-    "quote": "Mientras alguien necesite ayuda, no voy a rendirme.",
-    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
-    "arquetipo": "heroe_determinado",
-    "similares": [
-      "Artoria Pendragon",
-      "Toshinori Yagi",
-      "Megumin",
-      "Shinei Nouzen",
-      "Edward Elric"
+      "Sukuna",
+      "Satoru Gojou",
+      "Shouei Barou",
+      "Tobio Kageyama",
+      "Light Yagami"
     ]
   },
   {
     "id": "Gachiakuta-266433",
+    "qid": 5,
     "name": "Rudo",
     "anime": "Gachiakuta",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b266433-8JWks5k2OPJn.png",
-    "quote": "No era el plan, pero este desastre podría funcionar.",
-    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
-    "arquetipo": "comedia_caos",
+    "quote": "No soy basura, soy una persona.",
+    "hint": "Frase representativa asociada al tono de Rudo.",
+    "tipo": "representativa",
     "similares": [
-      "Gilgamesh",
-      "Tenya Iida",
-      "Kazuma Satou",
-      "Anju Emma",
-      "Roy Mustang"
+      "Eren Yeager",
+      "Denji",
+      "Tatsumi",
+      "Yuu Otosaka",
+      "Takemichi Hanagaki"
     ]
   },
   {
-    "id": "Gachiakuta-275749",
-    "name": "Riyou Reaper",
+    "id": "Gachiakuta-266433",
+    "qid": 6,
+    "name": "Rudo",
     "anime": "Gachiakuta",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b275749-fglzDjaLZh1H.png",
-    "quote": "A veces cuidar a alguien exige ser valiente.",
-    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
-    "arquetipo": "romance_drama",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b266433-8JWks5k2OPJn.png",
+    "quote": "Voy a volver a la superficie, cueste lo que cueste.",
+    "hint": "Frase representativa asociada al tono de Rudo.",
+    "tipo": "representativa",
     "similares": [
-      "Kaoruko Waguri",
-      "Shouto Todoroki",
-      "Aqua",
-      "Maomao",
-      "Alphonse Elric"
-    ]
-  },
-  {
-    "id": "Gachiakuta-268742",
-    "name": "Zanka Nijiku",
-    "anime": "Gachiakuta",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b268742-PSWLnWDJH7HJ.png",
-    "quote": "Cada detalle cuenta cuando el caso parece imposible.",
-    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
-    "arquetipo": "misterio_serio",
-    "similares": [
-      "Rintarou Tsumugi",
-      "Katsuki Bakugou",
-      "Darkness",
-      "Jinshi",
-      "Winry Rockbell"
-    ]
-  },
-  {
-    "id": "MHA Vigilantes-89028",
-    "name": "Izuku Midoriya",
-    "anime": "MHA Vigilantes",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89028-8w1I9o1ISHMg.png",
-    "quote": "Observar en silencio también es una forma de ganar.",
-    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
-    "arquetipo": "frio_calculador",
-    "similares": [
-      "Sakura Matou",
-      "Subaru Hoshina",
-      "Vladilena Milizé",
-      "Rouran",
-      "Tomoya Okazaki"
-    ]
-  },
-  {
-    "id": "MHA Vigilantes-89225",
-    "name": "Shouta Aizawa",
-    "anime": "MHA Vigilantes",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89225-XBgvUhI9naVI.png",
-    "quote": "No necesito permiso para demostrar quién está por encima.",
-    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
-    "arquetipo": "poder_arrogante",
-    "similares": [
-      "Rin Toosaka",
-      "Saku Natsusawa",
-      "Kurena Kukumila",
-      "Gyokuyou",
-      "Nagisa Furukawa"
-    ]
-  },
-  {
-    "id": "MHA Vigilantes-89224",
-    "name": "Toshinori Yagi",
-    "anime": "MHA Vigilantes",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89224-K6KEuQAuYKzq.jpg",
-    "quote": "Seguiré luchando hasta que todos estén a salvo.",
-    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
-    "arquetipo": "heroe_determinado",
-    "similares": [
-      "Artoria Pendragon",
-      "Enjin",
-      "Megumin",
+      "Eren Yeager",
+      "Tatsumi",
       "Shinei Nouzen",
-      "Edward Elric"
+      "Kafka Hibino",
+      "Tanjirou Kamado"
     ]
   },
   {
-    "id": "MHA Vigilantes-89222",
-    "name": "Tenya Iida",
+    "id": "Gachiakuta-266438",
+    "qid": 7,
+    "name": "Enjin",
+    "anime": "Gachiakuta",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b266438-3Veykti1lXgg.png",
+    "quote": "Aquí abajo todos somos desechos, pero seguimos vivos.",
+    "hint": "Frase representativa asociada al tono de Enjin.",
+    "tipo": "representativa",
+    "similares": [
+      "Shinei Nouzen",
+      "Levi",
+      "David Martinez",
+      "Soushirou Hoshina",
+      "Aki Hayakawa"
+    ]
+  },
+  {
+    "id": "MHA Vigilantes-126087",
+    "qid": 8,
+    "name": "Kouichi Haimawari",
     "anime": "MHA Vigilantes",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89222-TL8MQM3wJgEB.png",
-    "quote": "La prudencia está bien; una explosión también.",
-    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
-    "arquetipo": "comedia_caos",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b126087-Etax9gdag1rl.png",
+    "quote": "Un héroe sin licencia sigue siendo un héroe.",
+    "hint": "Frase representativa asociada al tono de Kouichi Haimawari.",
+    "tipo": "representativa",
     "similares": [
-      "Gilgamesh",
-      "Rudo",
-      "Kazuma Satou",
-      "Anju Emma",
-      "Roy Mustang"
+      "Izuku Midoriya",
+      "Saitama",
+      "Shirou Emiya",
+      "Kafka Hibino",
+      "Takemichi Hanagaki"
     ]
   },
   {
-    "id": "My Hero Academia-89220",
-    "name": "Shouto Todoroki",
-    "anime": "My Hero Academia",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89220-KNBwaVFAR8FD.png",
-    "quote": "No quiero que un recuerdo importante se pierda en silencio.",
-    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
-    "arquetipo": "romance_drama",
+    "id": "MHA Vigilantes-129631",
+    "qid": 9,
+    "name": "Oguro Iwao",
+    "anime": "MHA Vigilantes",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b129631-APkVweHdDYFU.png",
+    "quote": "La justicia no necesita permiso.",
+    "hint": "Frase representativa asociada al tono de Oguro Iwao.",
+    "tipo": "representativa",
     "similares": [
-      "Kaoruko Waguri",
-      "Riyou Reaper",
-      "Aqua",
-      "Maomao",
-      "Alphonse Elric"
+      "Light Yagami",
+      "Shirou Emiya",
+      "Aki Hayakawa",
+      "Megumi Fushiguro",
+      "Levi"
     ]
   },
   {
-    "id": "My Hero Academia-88892",
-    "name": "Katsuki Bakugou",
-    "anime": "My Hero Academia",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b88892-bdOha3lNcaN6.png",
-    "quote": "No aceptaré una respuesta cómoda sin comprobarla.",
-    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
-    "arquetipo": "misterio_serio",
+    "id": "MHA Vigilantes-129632",
+    "qid": 10,
+    "name": "Kazuho Haneyama",
+    "anime": "MHA Vigilantes",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b129632-09ZIYXWAOdY5.png",
+    "quote": "¡Se acabó el miedo, ahora yo me encargo!",
+    "hint": "Frase representativa asociada al tono de Kazuho Haneyama.",
+    "tipo": "representativa",
     "similares": [
-      "Rintarou Tsumugi",
-      "Zanka Nijiku",
-      "Darkness",
-      "Jinshi",
-      "Winry Rockbell"
+      "Momo Ayase",
+      "Yotsuba Nakano",
+      "Aira Shiratori",
+      "Chinatsu Kano",
+      "Vi"
+    ]
+  },
+  {
+    "id": "My Hero Academia-89224",
+    "qid": 11,
+    "name": "Toshinori Yagi",
+    "anime": "My Hero Academia",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89224-K6KEuQAuYKzq.jpg",
+    "quote": "Oye, villano, ¿alguna vez has oído estas palabras",
+    "hint": "Frase iconica asociada al tono de Toshinori Yagi.",
+    "tipo": "iconica",
+    "similares": [
+      "Izuku Midoriya",
+      "Kyoujurou Rengoku",
+      "Hajime Umemiya",
+      "Bang",
+      "Erwin Smith"
+    ]
+  },
+  {
+    "id": "My Hero Academia-89224",
+    "qid": 12,
+    "name": "Toshinori Yagi",
+    "anime": "My Hero Academia",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89224-K6KEuQAuYKzq.jpg",
+    "quote": "¡No temas, ya estoy aquí!",
+    "hint": "Frase iconica asociada al tono de Toshinori Yagi.",
+    "tipo": "iconica",
+    "similares": [
+      "Kyoujurou Rengoku",
+      "Hajime Umemiya",
+      "Saitama",
+      "Bang",
+      "Himmel"
     ]
   },
   {
     "id": "My Hero Academia-89028",
+    "qid": 13,
     "name": "Izuku Midoriya",
     "anime": "My Hero Academia",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89028-8w1I9o1ISHMg.png",
-    "quote": "Las emociones no deben decidir una estrategia.",
-    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
-    "arquetipo": "frio_calculador",
+    "quote": "Si no puedo salvar a una niña pequeña que está frente a mí... ¡¿Cómo podré convertirme en un héroe que salve a todos?!!.",
+    "hint": "Frase iconica asociada al tono de Izuku Midoriya.",
+    "tipo": "iconica",
     "similares": [
-      "Sakura Matou",
-      "Subaru Hoshina",
-      "Vladilena Milizé",
-      "Rouran",
-      "Tomoya Okazaki"
+      "Kouichi Haimawari",
+      "Shirou Emiya",
+      "Takemichi Hanagaki",
+      "Kafka Hibino",
+      "Tanjirou Kamado"
     ]
   },
   {
-    "id": "My Hero Academia-89225",
-    "name": "Shouta Aizawa",
+    "id": "My Hero Academia-88892",
+    "qid": 14,
+    "name": "Katsuki Bakugou",
     "anime": "My Hero Academia",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89225-XBgvUhI9naVI.png",
-    "quote": "Que todos miren: esta batalla ya tiene dueño.",
-    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
-    "arquetipo": "poder_arrogante",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b88892-bdOha3lNcaN6.png",
+    "quote": "No ganaré si no lo supero todo! ¡No me conformaré con nada menos que el primer lugar absoluto!",
+    "hint": "Frase iconica asociada al tono de Katsuki Bakugou.",
+    "tipo": "iconica",
     "similares": [
-      "Rin Toosaka",
-      "Saku Natsusawa",
-      "Kurena Kukumila",
-      "Gyokuyou",
-      "Nagisa Furukawa"
+      "Shouei Barou",
+      "Yoichi Isagi",
+      "Tobio Kageyama",
+      "Inosuke Hashibira",
+      "Eren Yeager"
     ]
   },
   {
     "id": "Konosuba-89361",
+    "qid": 15,
     "name": "Megumin",
     "anime": "Konosuba",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89361-tq8PQQ4MmF0M.png",
-    "quote": "Una caída no puede decidir el final de una historia.",
-    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
-    "arquetipo": "heroe_determinado",
+    "quote": "¡Mi ojo izquierdo parpadea con un poder oscuro que ningún humano común podría comprender!",
+    "hint": "Frase iconica asociada al tono de Megumin.",
+    "tipo": "iconica",
     "similares": [
-      "Artoria Pendragon",
-      "Enjin",
-      "Toshinori Yagi",
-      "Shinei Nouzen",
-      "Edward Elric"
-    ]
-  },
-  {
-    "id": "Konosuba-89364",
-    "name": "Kazuma Satou",
-    "anime": "Konosuba",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89364-7Th8Tv1XKJtt.png",
-    "quote": "Prometo que esta vez nadie tendrá que arreglarlo todo.",
-    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
-    "arquetipo": "comedia_caos",
-    "similares": [
-      "Gilgamesh",
-      "Rudo",
-      "Tenya Iida",
-      "Anju Emma",
-      "Roy Mustang"
+      "Jinx",
+      "Power",
+      "Aqua",
+      "Itsuki Nakano",
+      "Zero Two"
     ]
   },
   {
     "id": "Konosuba-89362",
+    "qid": 16,
     "name": "Aqua",
     "anime": "Konosuba",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89362-ibkc0eoECaW1.png",
-    "quote": "Si caminamos juntos, incluso el miedo pesa menos.",
-    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
-    "arquetipo": "romance_drama",
+    "quote": "¡Soy una diosa de verdad, así que adórame!",
+    "hint": "Frase iconica asociada al tono de Aqua.",
+    "tipo": "iconica",
     "similares": [
-      "Kaoruko Waguri",
-      "Riyou Reaper",
-      "Shouto Todoroki",
-      "Maomao",
-      "Alphonse Elric"
+      "Power",
+      "Beatrice",
+      "Esdeath",
+      "Mine",
+      "Zero Two"
+    ]
+  },
+  {
+    "id": "Konosuba-89364",
+    "qid": 17,
+    "name": "Kazuma Satou",
+    "anime": "Konosuba",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89364-7Th8Tv1XKJtt.png",
+    "quote": "¿Por qué todas las chicas hermosas que conozco son tan increíblemente decepcionantes?",
+    "hint": "Frase iconica asociada al tono de Kazuma Satou.",
+    "tipo": "iconica",
+    "similares": [
+      "Denji",
+      "Zenitsu Agatsuma",
+      "Ken Takakura",
+      "Rentarou Aijou",
+      "Thor"
     ]
   },
   {
     "id": "Konosuba-89363",
+    "qid": 18,
     "name": "Darkness",
     "anime": "Konosuba",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89363-mm21Ll4NegUD.png",
-    "quote": "El silencio también deja pistas.",
-    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
-    "arquetipo": "misterio_serio",
+    "quote": "¡Golpéame con todo lo que tengas!",
+    "hint": "Frase representativa asociada al tono de Darkness.",
+    "tipo": "representativa",
     "similares": [
-      "Rintarou Tsumugi",
-      "Zanka Nijiku",
-      "Katsuki Bakugou",
-      "Jinshi",
-      "Winry Rockbell"
-    ]
-  },
-  {
-    "id": "86: Eighty-Six-141061",
-    "name": "Vladilena Milizé",
-    "anime": "86: Eighty-Six",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b141061-jqIhB9jmClQ3.png",
-    "quote": "Si conozco las reglas, puedo cambiar el tablero.",
-    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
-    "arquetipo": "frio_calculador",
-    "similares": [
-      "Sakura Matou",
-      "Subaru Hoshina",
-      "Izuku Midoriya",
-      "Izuku Midoriya",
-      "Rouran"
-    ]
-  },
-  {
-    "id": "86: Eighty-Six-174873",
-    "name": "Kurena Kukumila",
-    "anime": "86: Eighty-Six",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b174873-FNf08aPYTVXY.jpg",
-    "quote": "La victoria es lo único que merece mi atención.",
-    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
-    "arquetipo": "poder_arrogante",
-    "similares": [
-      "Rin Toosaka",
-      "Saku Natsusawa",
-      "Shouta Aizawa",
-      "Shouta Aizawa",
-      "Gyokuyou"
+      "Power",
+      "Aqua",
+      "Esdeath",
+      "Rebecca",
+      "Megumin"
     ]
   },
   {
     "id": "86: Eighty-Six-141060",
+    "qid": 19,
     "name": "Shinei Nouzen",
     "anime": "86: Eighty-Six",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b141060-ZJFvHqBBSvhN.png",
-    "quote": "Mi fuerza tiene sentido cuando protege a otra persona.",
-    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
-    "arquetipo": "heroe_determinado",
+    "quote": "Ya que voy a morir de todos modos, prefiero morir en el campo de batalla. Hasta entonces, llevaré a los que murieron antes que yo a su destino final",
+    "hint": "Frase representativa asociada al tono de Shinei Nouzen.",
+    "tipo": "representativa",
     "similares": [
-      "Artoria Pendragon",
-      "Enjin",
-      "Toshinori Yagi",
-      "Megumin",
-      "Edward Elric"
+      "Eren Yeager",
+      "Levi",
+      "Aki Hayakawa",
+      "Kafka Hibino",
+      "Erwin Smith"
     ]
   },
   {
-    "id": "86: Eighty-Six-174875",
-    "name": "Anju Emma",
+    "id": "86: Eighty-Six-141061",
+    "qid": 20,
+    "name": "Vladilena Milizé",
     "anime": "86: Eighty-Six",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b174875-PvSTadcuATtH.png",
-    "quote": "El caos siempre encuentra una manera de sorprenderme.",
-    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
-    "arquetipo": "comedia_caos",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b141061-jqIhB9jmClQ3.png",
+    "quote": "Nunca los dejaré solos en el campo de batalla.",
+    "hint": "Frase representativa asociada al tono de Vladilena Milizé.",
+    "tipo": "representativa",
     "similares": [
-      "Gilgamesh",
-      "Rudo",
-      "Tenya Iida",
-      "Kazuma Satou",
-      "Roy Mustang"
+      "Mikasa Ackerman",
+      "Mina Ashiro",
+      "Brunhilde",
+      "Vi",
+      "Hae-In Cha"
+    ]
+  },
+  {
+    "id": "86: Eighty-Six-141061",
+    "qid": 21,
+    "name": "Vladilena Milizé",
+    "anime": "86: Eighty-Six",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b141061-jqIhB9jmClQ3.png",
+    "quote": "Aunque el mundo nos niegue, también somos personas.",
+    "hint": "Frase representativa asociada al tono de Vladilena Milizé.",
+    "tipo": "representativa",
+    "similares": [
+      "Brunhilde",
+      "Emilia",
+      "Mikasa Ackerman",
+      "Violet Evergarden",
+      "Mina Ashiro"
+    ]
+  },
+  {
+    "id": "86: Eighty-Six-141060",
+    "qid": 22,
+    "name": "Shinei Nouzen",
+    "anime": "86: Eighty-Six",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b141060-ZJFvHqBBSvhN.png",
+    "quote": "Mientras recuerdes mi nombre, no habré muerto del todo.",
+    "hint": "Frase representativa asociada al tono de Shinei Nouzen.",
+    "tipo": "representativa",
+    "similares": [
+      "Levi",
+      "Himmel",
+      "Gilbert Bougainvillea",
+      "Satoru Fujinuma",
+      "Erwin Smith"
     ]
   },
   {
     "id": "La Boticaria-126824",
+    "qid": 23,
     "name": "Maomao",
     "anime": "La Boticaria",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b126824-MqsCncTO1qpv.png",
-    "quote": "Hay personas que cambian nuestra vida sin proponérselo.",
-    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
-    "arquetipo": "romance_drama",
+    "quote": "Mi curiosidad por los venenos es incurable.",
+    "hint": "Frase representativa asociada al tono de Maomao.",
+    "tipo": "representativa",
     "similares": [
-      "Kaoruko Waguri",
-      "Riyou Reaper",
-      "Shouto Todoroki",
-      "Aqua",
-      "Alphonse Elric"
+      "Eru Chitanda",
+      "Rio Futaba",
+      "Frieren",
+      "Makima",
+      "Mio Kofune"
     ]
   },
   {
     "id": "La Boticaria-127278",
+    "qid": 24,
     "name": "Jinshi",
     "anime": "La Boticaria",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b127278-0qCQciTkPOMS.jpg",
-    "quote": "La realidad suele ser más inquietante que cualquier rumor.",
-    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
-    "arquetipo": "misterio_serio",
+    "quote": "Quédate a mi lado; no pienso dejarte ir.",
+    "hint": "Frase representativa asociada al tono de Jinshi.",
+    "tipo": "representativa",
     "similares": [
-      "Rintarou Tsumugi",
-      "Zanka Nijiku",
-      "Katsuki Bakugou",
-      "Darkness",
-      "Winry Rockbell"
+      "Tomoya Okazaki",
+      "Hiro",
+      "Sakuta Azusagawa",
+      "Itsuomi Nagi",
+      "Jirou Yakuin"
     ]
   },
   {
-    "id": "La Boticaria-244995",
-    "name": "Rouran",
+    "id": "La Boticaria-126824",
+    "qid": 25,
+    "name": "Maomao",
     "anime": "La Boticaria",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b244995-dv4lX99O8aCZ.jpg",
-    "quote": "No necesito mostrar mis intenciones para controlar el resultado.",
-    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
-    "arquetipo": "frio_calculador",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b126824-MqsCncTO1qpv.png",
+    "quote": "Un veneno bien usado también es una medicina.",
+    "hint": "Frase representativa asociada al tono de Maomao.",
+    "tipo": "representativa",
     "similares": [
-      "Sakura Matou",
-      "Subaru Hoshina",
-      "Izuku Midoriya",
-      "Izuku Midoriya",
-      "Vladilena Milizé"
+      "Rio Futaba",
+      "Frieren",
+      "Fern",
+      "Makima",
+      "Mio Kofune"
     ]
   },
   {
-    "id": "La Boticaria-156767",
-    "name": "Gyokuyou",
+    "id": "La Boticaria-244317",
+    "qid": 26,
+    "name": "Gaoshun",
     "anime": "La Boticaria",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b156767-6ncEJKdsEQ3O.jpg",
-    "quote": "No hay rival capaz de detenerme cuando decido avanzar.",
-    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
-    "arquetipo": "poder_arrogante",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b244317-zm6LeJmLN9kZ.png",
+    "quote": "Cada persona del palacio esconde un secreto.",
+    "hint": "Frase representativa asociada al tono de Gaoshun.",
+    "tipo": "representativa",
     "similares": [
-      "Rin Toosaka",
-      "Saku Natsusawa",
-      "Shouta Aizawa",
-      "Shouta Aizawa",
-      "Kurena Kukumila"
+      "Heinrich Runge",
+      "Satoshi Fukube",
+      "Benedict Blue",
+      "Roy Mustang",
+      "Kiyotaka Ayanokouji"
     ]
   },
   {
     "id": "Fullmetal Alchemist Brotherhood-11",
+    "qid": 27,
     "name": "Edward Elric",
     "anime": "Fullmetal Alchemist Brotherhood",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b11-TA5Nuk7EDUZG.jpg",
-    "quote": "Aunque tenga miedo, daré el siguiente paso.",
-    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
-    "arquetipo": "heroe_determinado",
+    "quote": "Para obtener algo, hay que dar algo de igual valor.",
+    "hint": "Frase iconica asociada al tono de Edward Elric.",
+    "tipo": "iconica",
     "similares": [
-      "Artoria Pendragon",
-      "Enjin",
-      "Toshinori Yagi",
-      "Megumin",
-      "Shinei Nouzen"
-    ]
-  },
-  {
-    "id": "Fullmetal Alchemist Brotherhood-68",
-    "name": "Roy Mustang",
-    "anime": "Fullmetal Alchemist Brotherhood",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b68-moBLY2WO2am3.png",
-    "quote": "Si todo puede salir mal, al menos será divertido.",
-    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
-    "arquetipo": "comedia_caos",
-    "similares": [
-      "Gilgamesh",
-      "Rudo",
-      "Tenya Iida",
-      "Kazuma Satou",
-      "Anju Emma"
+      "Roy Mustang",
+      "Alphonse Elric",
+      "Light Yagami",
+      "Kenzou Tenma",
+      "Kiyotaka Ayanokouji"
     ]
   },
   {
     "id": "Fullmetal Alchemist Brotherhood-12",
+    "qid": 28,
     "name": "Alphonse Elric",
     "anime": "Fullmetal Alchemist Brotherhood",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b12-tCKu8yK5kFL5.jpg",
-    "quote": "Lo que siento merece ser dicho, aunque me haga temblar.",
-    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
-    "arquetipo": "romance_drama",
+    "quote": "Hermano, no te preocupes, yo estoy aquí contigo.",
+    "hint": "Frase representativa asociada al tono de Alphonse Elric.",
+    "tipo": "representativa",
     "similares": [
-      "Kaoruko Waguri",
-      "Riyou Reaper",
-      "Shouto Todoroki",
-      "Aqua",
-      "Maomao"
+      "Tanjirou Kamado",
+      "Stark",
+      "Shinpei Ajiro",
+      "Kousei Arima",
+      "Akihiko Nirei"
     ]
   },
   {
-    "id": "Fullmetal Alchemist Brotherhood-63",
-    "name": "Winry Rockbell",
+    "id": "Fullmetal Alchemist Brotherhood-68",
+    "qid": 29,
+    "name": "Roy Mustang",
     "anime": "Fullmetal Alchemist Brotherhood",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/63-xloedtYxiJ2E.jpg",
-    "quote": "La verdad permanece aunque todos intenten esconderla.",
-    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
-    "arquetipo": "misterio_serio",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b68-moBLY2WO2am3.png",
+    "quote": "Si llego a ser Führer, cambiaré este país.",
+    "hint": "Frase representativa asociada al tono de Roy Mustang.",
+    "tipo": "representativa",
     "similares": [
-      "Rintarou Tsumugi",
-      "Zanka Nijiku",
-      "Katsuki Bakugou",
-      "Darkness",
-      "Jinshi"
+      "Tatsumi",
+      "Erwin Smith",
+      "Light Yagami",
+      "Eren Yeager",
+      "Manjirou Sano"
+    ]
+  },
+  {
+    "id": "Fullmetal Alchemist Brotherhood-11",
+    "qid": 30,
+    "name": "Edward Elric",
+    "anime": "Fullmetal Alchemist Brotherhood",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b11-TA5Nuk7EDUZG.jpg",
+    "quote": "Los humanos no podemos crear vida, solo imitarla.",
+    "hint": "Frase representativa asociada al tono de Edward Elric.",
+    "tipo": "representativa",
+    "similares": [
+      "Light Yagami",
+      "Roy Mustang",
+      "Alphonse Elric",
+      "L Lawliet",
+      "Kenzou Tenma"
     ]
   },
   {
     "id": "Clannad-4606",
+    "qid": 31,
     "name": "Tomoya Okazaki",
     "anime": "Clannad",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b4606-61r9h3WUrkA9.png",
-    "quote": "La mejor jugada es la que nadie ve venir.",
-    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
-    "arquetipo": "frio_calculador",
+    "quote": "Esta ciudad... antes la odiaba.",
+    "hint": "Frase iconica asociada al tono de Tomoya Okazaki.",
+    "tipo": "iconica",
     "similares": [
-      "Sakura Matou",
-      "Subaru Hoshina",
-      "Izuku Midoriya",
-      "Izuku Midoriya",
-      "Vladilena Milizé"
+      "Kousei Arima",
+      "Houtarou Oreki",
+      "Takemichi Hanagaki",
+      "Sakuta Azusagawa",
+      "Satoru Fujinuma"
     ]
   },
   {
     "id": "Clannad-4604",
+    "qid": 32,
     "name": "Nagisa Furukawa",
     "anime": "Clannad",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b4604-YFJiWeuGSIYf.png",
-    "quote": "El poder solo sirve si quien lo posee sabe imponerlo.",
-    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
-    "arquetipo": "poder_arrogante",
+    "quote": "Voy a volver a abrir el club de teatro.",
+    "hint": "Frase iconica asociada al tono de Nagisa Furukawa.",
+    "tipo": "iconica",
     "similares": [
-      "Rin Toosaka",
-      "Saku Natsusawa",
-      "Shouta Aizawa",
-      "Shouta Aizawa",
-      "Kurena Kukumila"
-    ]
-  },
-  {
-    "id": "Clannad-4603",
-    "name": "Tomoyo Sakagami",
-    "anime": "Clannad",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b4603-pq4b7UGmmOyH.png",
-    "quote": "Mientras alguien necesite ayuda, no voy a rendirme.",
-    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
-    "arquetipo": "heroe_determinado",
-    "similares": [
-      "Artoria Pendragon",
-      "Enjin",
-      "Toshinori Yagi",
-      "Megumin",
-      "Shinei Nouzen"
+      "Chinatsu Kano",
+      "Eru Chitanda",
+      "Hina Chouno",
+      "Yotsuba Nakano",
+      "Mina Ashiro"
     ]
   },
   {
     "id": "Clannad-4601",
+    "qid": 33,
     "name": "Fuuko Ibuki",
     "anime": "Clannad",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b4601-ndvzx7vVREJU.jpg",
-    "quote": "No era el plan, pero este desastre podría funcionar.",
-    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
-    "arquetipo": "comedia_caos",
+    "quote": "¡Las estrellas de mar son lindísimas!",
+    "hint": "Frase iconica asociada al tono de Fuuko Ibuki.",
+    "tipo": "iconica",
     "similares": [
-      "Gilgamesh",
-      "Rudo",
-      "Tenya Iida",
-      "Kazuma Satou",
-      "Anju Emma"
+      "Eru Chitanda",
+      "Yotsuba Nakano",
+      "Marin Kitagawa",
+      "Nagisa Furukawa",
+      "Zero Two"
+    ]
+  },
+  {
+    "id": "Clannad-4605",
+    "qid": 34,
+    "name": "Kyou Fujibayashi",
+    "anime": "Clannad",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b4605-a0D3NeVbCz1m.jpg",
+    "quote": "Yo estoy bien, tú preocúpate de ti mismo.",
+    "hint": "Frase representativa asociada al tono de Kyou Fujibayashi.",
+    "tipo": "representativa",
+    "similares": [
+      "Mine",
+      "Suzune Horikita",
+      "Mei Aihara",
+      "Mikasa Ackerman",
+      "Mai Sakurajima"
     ]
   },
   {
     "id": "Hyouka-55131",
+    "qid": 35,
     "name": "Houtarou Oreki",
     "anime": "Hyouka",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b55131-ypodHQCyHbzD.png",
-    "quote": "A veces cuidar a alguien exige ser valiente.",
-    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
-    "arquetipo": "romance_drama",
+    "quote": "Si no es necesario, no lo hago. Si es necesario, lo hago rápido.",
+    "hint": "Frase iconica asociada al tono de Houtarou Oreki.",
+    "tipo": "iconica",
     "similares": [
-      "Kaoruko Waguri",
-      "Riyou Reaper",
-      "Shouto Todoroki",
-      "Aqua",
-      "Maomao"
+      "Kiyotaka Ayanokouji",
+      "Kei Tsukishima",
+      "Saitama",
+      "Sakuta Azusagawa",
+      "Megumi Fushiguro"
     ]
   },
   {
     "id": "Hyouka-55133",
+    "qid": 36,
     "name": "Eru Chitanda",
     "anime": "Hyouka",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b55133-S7lRrP0gKXpX.png",
-    "quote": "Cada detalle cuenta cuando el caso parece imposible.",
-    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
-    "arquetipo": "misterio_serio",
+    "quote": "Si nunca puedes enfadarte con nada, probablemente significa que tampoco tienes nada que te guste.",
+    "hint": "Frase iconica asociada al tono de Eru Chitanda.",
+    "tipo": "iconica",
     "similares": [
-      "Rintarou Tsumugi",
-      "Zanka Nijiku",
-      "Katsuki Bakugou",
-      "Darkness",
-      "Jinshi"
-    ]
-  },
-  {
-    "id": "Hyouka-55137",
-    "name": "Mayaka Ibara",
-    "anime": "Hyouka",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b55137-PO5CLLnbTwyg.png",
-    "quote": "Observar en silencio también es una forma de ganar.",
-    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
-    "arquetipo": "frio_calculador",
-    "similares": [
-      "Sakura Matou",
-      "Subaru Hoshina",
-      "Izuku Midoriya",
-      "Izuku Midoriya",
-      "Vladilena Milizé"
+      "Maomao",
+      "Rio Futaba",
+      "Yotsuba Nakano",
+      "Marin Kitagawa",
+      "Nagisa Furukawa"
     ]
   },
   {
     "id": "Hyouka-55135",
+    "qid": 37,
     "name": "Satoshi Fukube",
     "anime": "Hyouka",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b55135-rSgLOX86JRSO.png",
-    "quote": "No necesito permiso para demostrar quién está por encima.",
-    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
-    "arquetipo": "poder_arrogante",
+    "quote": "Yo soy una base de datos, y las bases de datos no ganan.",
+    "hint": "Frase iconica asociada al tono de Satoshi Fukube.",
+    "tipo": "iconica",
     "similares": [
-      "Rin Toosaka",
-      "Saku Natsusawa",
-      "Shouta Aizawa",
-      "Shouta Aizawa",
-      "Kurena Kukumila"
+      "Akihiko Nirei",
+      "Kei Tsukishima",
+      "Heinrich Runge",
+      "Hayato Suou",
+      "Gaoshun"
     ]
   },
   {
-    "id": "Record Of Ragnarok-140637",
-    "name": "Adam",
-    "anime": "Record Of Ragnarok",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b140637-jTJb40wOjsPs.png",
-    "quote": "Seguiré luchando hasta que todos estén a salvo.",
-    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
-    "arquetipo": "heroe_determinado",
+    "id": "Hyouka-55137",
+    "qid": 38,
+    "name": "Mayaka Ibara",
+    "anime": "Hyouka",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b55137-PO5CLLnbTwyg.png",
+    "quote": "Me gustaría dejar de ser tan comparada con los demás.",
+    "hint": "Frase representativa asociada al tono de Mayaka Ibara.",
+    "tipo": "representativa",
     "similares": [
-      "Artoria Pendragon",
-      "Enjin",
-      "Toshinori Yagi",
-      "Megumin",
-      "Shinei Nouzen"
+      "Hina Chouno",
+      "Chinatsu Kano",
+      "Miku Nakano",
+      "Ichigo",
+      "Yuki Itose"
     ]
   },
   {
-    "id": "Record Of Ragnarok-159840",
-    "name": "Jack the Ripper",
+    "id": "Record Of Ragnarok-140645",
+    "qid": 39,
+    "name": "Bu Lü",
     "anime": "Record Of Ragnarok",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b159840-MvF5LfHGiZdB.jpg",
-    "quote": "La prudencia está bien; una explosión también.",
-    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
-    "arquetipo": "comedia_caos",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b140645-8VBxjc5X3Nzn.png",
+    "quote": "Me da igual lo que digan los dioses, yo pelearé.",
+    "hint": "Frase representativa asociada al tono de Bu Lü.",
+    "tipo": "representativa",
     "similares": [
-      "Gilgamesh",
-      "Rudo",
-      "Tenya Iida",
-      "Kazuma Satou",
-      "Anju Emma"
+      "Thor",
+      "Sukuna",
+      "Eren Yeager",
+      "Levi",
+      "Inosuke Hashibira"
     ]
   },
   {
     "id": "Record Of Ragnarok-140636",
+    "qid": 40,
     "name": "Brunhilde",
     "anime": "Record Of Ragnarok",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b140636-nuL1uHEuedtJ.png",
-    "quote": "No quiero que un recuerdo importante se pierda en silencio.",
-    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
-    "arquetipo": "romance_drama",
+    "quote": "¡Los humanos merecen otra oportunidad!",
+    "hint": "Frase representativa asociada al tono de Brunhilde.",
+    "tipo": "representativa",
     "similares": [
-      "Kaoruko Waguri",
-      "Riyou Reaper",
-      "Shouto Todoroki",
-      "Aqua",
-      "Maomao"
+      "Vladilena Milizé",
+      "Emilia",
+      "Violet Evergarden",
+      "Mikasa Ackerman",
+      "Hae-In Cha"
     ]
   },
   {
-    "id": "Record Of Ragnarok-140646",
-    "name": "Kojirou Sasaki",
+    "id": "Record Of Ragnarok-140638",
+    "qid": 41,
+    "name": "Thor",
     "anime": "Record Of Ragnarok",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b140646-j8tTUNjhFYPQ.png",
-    "quote": "No aceptaré una respuesta cómoda sin comprobarla.",
-    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
-    "arquetipo": "misterio_serio",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b140638-OymphqBKzuDp.png",
+    "quote": "Humano... no te mueras ahora",
+    "hint": "Frase representativa asociada al tono de Thor.",
+    "tipo": "representativa",
     "similares": [
-      "Rintarou Tsumugi",
-      "Zanka Nijiku",
-      "Katsuki Bakugou",
-      "Darkness",
-      "Jinshi"
+      "Bu Lü",
+      "Satoru Gojou",
+      "Inosuke Hashibira",
+      "Meguru Bachira",
+      "Sukuna"
     ]
   },
   {
-    "id": "MONSTER-719",
-    "name": "Johan Liebert",
-    "anime": "MONSTER",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b719-y984mDWyGf5n.jpg",
-    "quote": "Las emociones no deben decidir una estrategia.",
-    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
-    "arquetipo": "frio_calculador",
+    "id": "Record Of Ragnarok-140637",
+    "qid": 42,
+    "name": "Adam",
+    "anime": "Record Of Ragnarok",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b140637-jTJb40wOjsPs.png",
+    "quote": "Está bien... no llores.",
+    "hint": "Frase representativa asociada al tono de Adam.",
+    "tipo": "representativa",
     "similares": [
-      "Sakura Matou",
-      "Subaru Hoshina",
-      "Izuku Midoriya",
-      "Izuku Midoriya",
-      "Vladilena Milizé"
+      "Kyoujurou Rengoku",
+      "Levi",
+      "Roy Mustang",
+      "Erwin Smith",
+      "Hajime Umemiya"
     ]
   },
   {
     "id": "MONSTER-718",
+    "qid": 43,
     "name": "Kenzou Tenma",
     "anime": "MONSTER",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b718-b6ZZVp822lw0.png",
-    "quote": "Que todos miren: esta batalla ya tiene dueño.",
-    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
-    "arquetipo": "poder_arrogante",
+    "quote": "Todas las vidas son iguales.",
+    "hint": "Frase iconica asociada al tono de Kenzou Tenma.",
+    "tipo": "iconica",
     "similares": [
-      "Rin Toosaka",
-      "Saku Natsusawa",
-      "Shouta Aizawa",
-      "Shouta Aizawa",
-      "Kurena Kukumila"
+      "Tanjirou Kamado",
+      "Himmel",
+      "Alphonse Elric",
+      "Gilbert Bougainvillea",
+      "Izuku Midoriya"
     ]
   },
   {
-    "id": "MONSTER-3096",
-    "name": "Wolfgang Grimmer",
+    "id": "MONSTER-719",
+    "qid": 44,
+    "name": "Johan Liebert",
     "anime": "MONSTER",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b3096-qCXXA8G0J8rk.png",
-    "quote": "Una caída no puede decidir el final de una historia.",
-    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
-    "arquetipo": "heroe_determinado",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b719-y984mDWyGf5n.jpg",
+    "quote": "Nacer no tiene nada de especial. Nada. La mayor parte del universo es solo muerte, nada más.",
+    "hint": "Frase iconica asociada al tono de Johan Liebert.",
+    "tipo": "iconica",
     "similares": [
-      "Artoria Pendragon",
-      "Enjin",
-      "Toshinori Yagi",
-      "Megumin",
-      "Shinei Nouzen"
+      "Kiyotaka Ayanokouji",
+      "Light Yagami",
+      "Sukuna",
+      "Ryuk",
+      "L Lawliet"
     ]
   },
   {
     "id": "MONSTER-721",
+    "qid": 45,
     "name": "Heinrich Runge",
     "anime": "MONSTER",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b721-VSOxZHBedxtD.png",
-    "quote": "Prometo que esta vez nadie tendrá que arreglarlo todo.",
-    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
-    "arquetipo": "comedia_caos",
+    "quote": "He memorizado cada caso, cada pista, cada palabra. Mi mente no comete errores de almacenamiento.",
+    "hint": "Frase representativa asociada al tono de Heinrich Runge.",
+    "tipo": "representativa",
     "similares": [
-      "Gilgamesh",
-      "Rudo",
-      "Tenya Iida",
-      "Kazuma Satou",
-      "Anju Emma"
+      "Gaoshun",
+      "L Lawliet",
+      "Roy Mustang",
+      "Satoshi Fukube",
+      "Benedict Blue"
+    ]
+  },
+  {
+    "id": "MONSTER-720",
+    "qid": 46,
+    "name": "Anna Liebert",
+    "anime": "MONSTER",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b720-VFo5SzZsVfzl.png",
+    "quote": "Si no puedes perdonar, lo que llevas dentro se volverá cada vez más grande",
+    "hint": "Frase representativa asociada al tono de Anna Liebert.",
+    "tipo": "representativa",
+    "similares": [
+      "Mikasa Ackerman",
+      "Shizuka Kuze",
+      "Kyou Fujibayashi",
+      "Vi",
+      "Marina Kirarazaka"
+    ]
+  },
+  {
+    "id": "Akame Ga Kill-64749",
+    "qid": 47,
+    "name": "Tatsumi",
+    "anime": "Akame Ga Kill",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/64749-a2ZdRWW1D5TR.jpg",
+    "quote": "Voy a cambiar este país podrido.",
+    "hint": "Frase iconica asociada al tono de Tatsumi.",
+    "tipo": "iconica",
+    "similares": [
+      "Eren Yeager",
+      "Roy Mustang",
+      "Light Yagami",
+      "Erwin Smith",
+      "Shinei Nouzen"
     ]
   },
   {
     "id": "Akame Ga Kill-63351",
+    "qid": 48,
     "name": "Akame",
     "anime": "Akame Ga Kill",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b63351-0WmsDENpiscp.png",
-    "quote": "Si caminamos juntos, incluso el miedo pesa menos.",
-    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
-    "arquetipo": "romance_drama",
+    "quote": "Como sobrevivientes, tenemos una responsabilidad con los caídos. Debemos cargar con sus deseos y seguir adelante... sin importar lo doloroso que sea.",
+    "hint": "Frase iconica asociada al tono de Akame.",
+    "tipo": "iconica",
     "similares": [
-      "Kaoruko Waguri",
-      "Riyou Reaper",
-      "Shouto Todoroki",
-      "Aqua",
-      "Maomao"
+      "Mikasa Ackerman",
+      "Suzune Horikita",
+      "Lucy",
+      "Makima",
+      "Artoria Pendragon"
     ]
   },
   {
     "id": "Akame Ga Kill-65239",
+    "qid": 49,
     "name": "Esdeath",
     "anime": "Akame Ga Kill",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b65239-2S3t2vSyUew9.png",
-    "quote": "El silencio también deja pistas.",
-    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
-    "arquetipo": "misterio_serio",
+    "quote": "El amor es una cacería, y yo siempre atrapo a mi presa.",
+    "hint": "Frase iconica asociada al tono de Esdeath.",
+    "tipo": "iconica",
     "similares": [
-      "Rintarou Tsumugi",
-      "Zanka Nijiku",
-      "Katsuki Bakugou",
-      "Darkness",
-      "Jinshi"
+      "Makima",
+      "Zero Two",
+      "Hakari Hanazono",
+      "Arisu Sakayanagi",
+      "Power"
     ]
   },
   {
     "id": "Akame Ga Kill-65229",
+    "qid": 50,
     "name": "Mine",
     "anime": "Akame Ga Kill",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b65229-hYOZtUlIpd5G.png",
-    "quote": "Si conozco las reglas, puedo cambiar el tablero.",
-    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
-    "arquetipo": "frio_calculador",
+    "quote": "¡No me subestimes, soy un genio!",
+    "hint": "Frase representativa asociada al tono de Mine.",
+    "tipo": "representativa",
     "similares": [
-      "Sakura Matou",
-      "Subaru Hoshina",
-      "Izuku Midoriya",
-      "Izuku Midoriya",
-      "Vladilena Milizé"
-    ]
-  },
-  {
-    "id": "Akame Ga Kill-65227",
-    "name": "Leone",
-    "anime": "Akame Ga Kill",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b65227-PWmfiEVJbCwQ.png",
-    "quote": "La victoria es lo único que merece mi atención.",
-    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
-    "arquetipo": "poder_arrogante",
-    "similares": [
-      "Rin Toosaka",
-      "Saku Natsusawa",
-      "Shouta Aizawa",
-      "Shouta Aizawa",
-      "Kurena Kukumila"
-    ]
-  },
-  {
-    "id": "Blue Box-218648",
-    "name": "Hina Chouno",
-    "anime": "Blue Box",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b218648-kXxXy8lPkeGV.png",
-    "quote": "Mi fuerza tiene sentido cuando protege a otra persona.",
-    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
-    "arquetipo": "heroe_determinado",
-    "similares": [
-      "Artoria Pendragon",
-      "Enjin",
-      "Toshinori Yagi",
       "Megumin",
-      "Shinei Nouzen"
-    ]
-  },
-  {
-    "id": "Blue Box-191241",
-    "name": "Chinatsu Kano",
-    "anime": "Blue Box",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b191241-FaDEXRL1CgJr.png",
-    "quote": "El caos siempre encuentra una manera de sorprenderme.",
-    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
-    "arquetipo": "comedia_caos",
-    "similares": [
-      "Gilgamesh",
-      "Rudo",
-      "Tenya Iida",
-      "Kazuma Satou",
-      "Anju Emma"
+      "Power",
+      "Zero Two",
+      "Jinx",
+      "Mei Aihara"
     ]
   },
   {
     "id": "Blue Box-191242",
+    "qid": 51,
     "name": "Taiki Inomata",
     "anime": "Blue Box",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b191242-uQJUPMyknaTb.png",
-    "quote": "Hay personas que cambian nuestra vida sin proponérselo.",
-    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
-    "arquetipo": "romance_drama",
+    "quote": "Tú eres quien me enseñó que esforzarse al máximo es, en realidad, algo genial.",
+    "hint": "Frase representativa asociada al tono de Taiki Inomata.",
+    "tipo": "representativa",
     "similares": [
-      "Kaoruko Waguri",
-      "Riyou Reaper",
-      "Shouto Todoroki",
-      "Aqua",
-      "Maomao"
+      "Jirou Yakuin",
+      "Kousei Arima",
+      "Wakana Gojou",
+      "Hiro",
+      "Akihiko Nirei"
     ]
   },
   {
-    "id": "Blue Box-218647",
-    "name": "Kyou Kasahara",
+    "id": "Blue Box-191241",
+    "qid": 52,
+    "name": "Chinatsu Kano",
     "anime": "Blue Box",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b218647-A2ngPlh7Yucn.png",
-    "quote": "La realidad suele ser más inquietante que cualquier rumor.",
-    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
-    "arquetipo": "misterio_serio",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b191241-FaDEXRL1CgJr.png",
+    "quote": "No quiero ser solo una estudiante de un año superior... Quiero ser alguien a quien mires como a una chica.",
+    "hint": "Frase representativa asociada al tono de Chinatsu Kano.",
+    "tipo": "representativa",
     "similares": [
-      "Rintarou Tsumugi",
-      "Zanka Nijiku",
-      "Katsuki Bakugou",
-      "Darkness",
-      "Jinshi"
+      "Hina Chouno",
+      "Nagisa Furukawa",
+      "Yotsuba Nakano",
+      "Mina Ashiro",
+      "Marin Kitagawa"
     ]
   },
   {
-    "id": "Cyberpunk: Edgerunners-284157",
-    "name": "Lucy",
-    "anime": "Cyberpunk: Edgerunners",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b284157-cqYawN7XCNJx.jpg",
-    "quote": "No necesito mostrar mis intenciones para controlar el resultado.",
-    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
-    "arquetipo": "frio_calculador",
+    "id": "Blue Box-191242",
+    "qid": 53,
+    "name": "Taiki Inomata",
+    "anime": "Blue Box",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b191242-uQJUPMyknaTb.png",
+    "quote": "Si me dejo llevar por cada pequeña cosa, no podré avanzar. Tengo que concentrarme en lo que puedo hacer justo ahora.",
+    "hint": "Frase representativa asociada al tono de Taiki Inomata.",
+    "tipo": "representativa",
     "similares": [
-      "Sakura Matou",
-      "Subaru Hoshina",
+      "Shouyou Hinata",
+      "Yoichi Isagi",
       "Izuku Midoriya",
-      "Izuku Midoriya",
-      "Vladilena Milizé"
+      "Kafka Hibino",
+      "Tanjirou Kamado"
+    ]
+  },
+  {
+    "id": "Blue Box-218648",
+    "qid": 54,
+    "name": "Hina Chouno",
+    "anime": "Blue Box",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b218648-kXxXy8lPkeGV.png",
+    "quote": "¡No te atrevas a menospreciar tu propio esfuerzo! Te he visto entrenar más duro que nadie, así que tienes que creer en ti tanto como yo creo en ti.",
+    "hint": "Frase representativa asociada al tono de Hina Chouno.",
+    "tipo": "representativa",
+    "similares": [
+      "Chinatsu Kano",
+      "Mina Ashiro",
+      "Miku Nakano",
+      "Hae-In Cha",
+      "Ichigo"
     ]
   },
   {
     "id": "Cyberpunk: Edgerunners-284158",
+    "qid": 55,
     "name": "David Martinez",
     "anime": "Cyberpunk: Edgerunners",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b284158-z1uGKC3IYVa1.png",
-    "quote": "No hay rival capaz de detenerme cuando decido avanzar.",
-    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
-    "arquetipo": "poder_arrogante",
+    "quote": "No valgo la pena. Aparte de ti, no me queda nada. Pero tú aún tienes un sueño por el que quedarte... Necesito que lo lleves a cabo. Ese es mi sueño.",
+    "hint": "Frase iconica asociada al tono de David Martinez.",
+    "tipo": "iconica",
     "similares": [
-      "Rin Toosaka",
-      "Saku Natsusawa",
-      "Shouta Aizawa",
-      "Shouta Aizawa",
-      "Kurena Kukumila"
+      "Denji",
+      "Tatsumi",
+      "Yoichi Isagi",
+      "Takemichi Hanagaki",
+      "Yuu Otosaka"
+    ]
+  },
+  {
+    "id": "Cyberpunk: Edgerunners-284157",
+    "qid": 56,
+    "name": "Lucy",
+    "anime": "Cyberpunk: Edgerunners",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b284157-cqYawN7XCNJx.jpg",
+    "quote": "No queria que lo hicieras, no queria que murieras",
+    "hint": "Frase iconica asociada al tono de Lucy.",
+    "tipo": "iconica",
+    "similares": [
+      "Zero Two",
+      "Violet Evergarden",
+      "Rem",
+      "Kaori Miyazono",
+      "Mai Sakurajima"
     ]
   },
   {
     "id": "Cyberpunk: Edgerunners-284163",
+    "qid": 57,
     "name": "Rebecca",
     "anime": "Cyberpunk: Edgerunners",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b284163-tt8smoAXl24x.jpg",
-    "quote": "Aunque tenga miedo, daré el siguiente paso.",
-    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
-    "arquetipo": "heroe_determinado",
+    "quote": "¡Es tu chico de los recados! ¡Págalo tú mismo, tacaño!",
+    "hint": "Frase iconica asociada al tono de Rebecca.",
+    "tipo": "iconica",
     "similares": [
-      "Artoria Pendragon",
-      "Enjin",
-      "Toshinori Yagi",
-      "Megumin",
-      "Shinei Nouzen"
+      "Power",
+      "Jinx",
+      "Mine",
+      "Zero Two",
+      "Aqua"
     ]
   },
   {
-    "id": "Cyberpunk: Edgerunners-284159",
-    "name": "Maine",
+    "id": "Cyberpunk: Edgerunners-284158",
+    "qid": 58,
+    "name": "David Martinez",
     "anime": "Cyberpunk: Edgerunners",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b284159-RvuKShSpDOS5.png",
-    "quote": "Si todo puede salir mal, al menos será divertido.",
-    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
-    "arquetipo": "comedia_caos",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b284158-z1uGKC3IYVa1.png",
+    "quote": "No voy a morir como un perro en esta ciudad.",
+    "hint": "Frase representativa asociada al tono de David Martinez.",
+    "tipo": "representativa",
     "similares": [
-      "Gilgamesh",
+      "Denji",
+      "Tatsumi",
+      "Eren Yeager",
       "Rudo",
-      "Tenya Iida",
-      "Kazuma Satou",
-      "Anju Emma"
-    ]
-  },
-  {
-    "id": "More Than a Married Couple-273105",
-    "name": "Shiori Sakurazaka",
-    "anime": "More Than a Married Couple",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b273105-BUCVawntAuJF.png",
-    "quote": "Lo que siento merece ser dicho, aunque me haga temblar.",
-    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
-    "arquetipo": "romance_drama",
-    "similares": [
-      "Kaoruko Waguri",
-      "Riyou Reaper",
-      "Shouto Todoroki",
-      "Aqua",
-      "Maomao"
-    ]
-  },
-  {
-    "id": "More Than a Married Couple-191672",
-    "name": "Akari Watanabe",
-    "anime": "More Than a Married Couple",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b191672-MozVAnqyv9oZ.png",
-    "quote": "La verdad permanece aunque todos intenten esconderla.",
-    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
-    "arquetipo": "misterio_serio",
-    "similares": [
-      "Rintarou Tsumugi",
-      "Zanka Nijiku",
-      "Katsuki Bakugou",
-      "Darkness",
-      "Jinshi"
+      "Takemichi Hanagaki"
     ]
   },
   {
     "id": "More Than a Married Couple-191673",
+    "qid": 59,
     "name": "Jirou Yakuin",
     "anime": "More Than a Married Couple",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b191673-eD8IFBOdAFv5.jpg",
-    "quote": "La mejor jugada es la que nadie ve venir.",
-    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
-    "arquetipo": "frio_calculador",
+    "quote": "Seré tu pareja de prácticas hasta que aprendas.",
+    "hint": "Frase representativa asociada al tono de Jirou Yakuin.",
+    "tipo": "representativa",
     "similares": [
-      "Sakura Matou",
-      "Subaru Hoshina",
-      "Izuku Midoriya",
-      "Izuku Midoriya",
-      "Vladilena Milizé"
+      "Hiro",
+      "Wakana Gojou",
+      "Taiki Inomata",
+      "Fuutarou Uesugi",
+      "Rentarou Aijou"
     ]
   },
   {
-    "id": "More Than a Married Couple-273109",
-    "name": "Sadaharu Kamo",
+    "id": "More Than a Married Couple-191672",
+    "qid": 60,
+    "name": "Akari Watanabe",
     "anime": "More Than a Married Couple",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b273109-MLnliqfOwuAh.png",
-    "quote": "El poder solo sirve si quien lo posee sabe imponerlo.",
-    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
-    "arquetipo": "poder_arrogante",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b191672-MozVAnqyv9oZ.png",
+    "quote": "Aprenderé a ser una esposa perfecta.",
+    "hint": "Frase representativa asociada al tono de Akari Watanabe.",
+    "tipo": "representativa",
     "similares": [
-      "Rin Toosaka",
-      "Saku Natsusawa",
-      "Shouta Aizawa",
-      "Shouta Aizawa",
-      "Kurena Kukumila"
+      "Rem",
+      "Miku Nakano",
+      "Karane Inda",
+      "Violet Evergarden",
+      "Yotsuba Nakano"
     ]
   },
   {
-    "id": "Attack on Titan-45627",
-    "name": "Levi",
-    "anime": "Attack on Titan",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b45627-CR68RyZmddGG.png",
-    "quote": "Mientras alguien necesite ayuda, no voy a rendirme.",
-    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
-    "arquetipo": "heroe_determinado",
+    "id": "More Than a Married Couple-191672",
+    "qid": 61,
+    "name": "Akari Watanabe",
+    "anime": "More Than a Married Couple",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b191672-MozVAnqyv9oZ.png",
+    "quote": "¿Eso... fue un beso de práctica?",
+    "hint": "Frase representativa asociada al tono de Akari Watanabe.",
+    "tipo": "representativa",
     "similares": [
-      "Artoria Pendragon",
-      "Enjin",
-      "Toshinori Yagi",
-      "Megumin",
-      "Shinei Nouzen"
+      "Miku Nakano",
+      "Karane Inda",
+      "Nano Eiai",
+      "Yuzu Aihara",
+      "Hina Chouno"
     ]
   },
   {
     "id": "Attack on Titan-40882",
+    "qid": 62,
     "name": "Eren Yeager",
     "anime": "Attack on Titan",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b40882-dsj7IP943WFF.jpg",
-    "quote": "No era el plan, pero este desastre podría funcionar.",
-    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
-    "arquetipo": "comedia_caos",
+    "quote": "Si no luchas, no puedes ganar.",
+    "hint": "Frase iconica asociada al tono de Eren Yeager.",
+    "tipo": "iconica",
     "similares": [
-      "Gilgamesh",
-      "Rudo",
-      "Tenya Iida",
-      "Kazuma Satou",
-      "Anju Emma"
+      "Levi",
+      "Tatsumi",
+      "Katsuki Bakugou",
+      "Izuku Midoriya",
+      "Yoichi Isagi"
     ]
   },
   {
     "id": "Attack on Titan-40881",
+    "qid": 63,
     "name": "Mikasa Ackerman",
     "anime": "Attack on Titan",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b40881-F3gr1PkreDvj.png",
-    "quote": "A veces cuidar a alguien exige ser valiente.",
-    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
-    "arquetipo": "romance_drama",
+    "quote": "Este mundo es cruel, pero también muy hermoso.",
+    "hint": "Frase iconica asociada al tono de Mikasa Ackerman.",
+    "tipo": "iconica",
     "similares": [
-      "Kaoruko Waguri",
-      "Riyou Reaper",
-      "Shouto Todoroki",
-      "Aqua",
-      "Maomao"
-    ]
-  },
-  {
-    "id": "Attack on Titan-46494",
-    "name": "Armin Arlert",
-    "anime": "Attack on Titan",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b46494-g7xYYuBtYPnO.png",
-    "quote": "Cada detalle cuenta cuando el caso parece imposible.",
-    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
-    "arquetipo": "misterio_serio",
-    "similares": [
-      "Rintarou Tsumugi",
-      "Zanka Nijiku",
-      "Katsuki Bakugou",
-      "Darkness",
-      "Jinshi"
-    ]
-  },
-  {
-    "id": "Kaiju No. 8-205579",
-    "name": "Soushirou Hoshina",
-    "anime": "Kaiju No. 8",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b205579-FRvVyrOIG8Yz.jpg",
-    "quote": "Observar en silencio también es una forma de ganar.",
-    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
-    "arquetipo": "frio_calculador",
-    "similares": [
-      "Sakura Matou",
-      "Subaru Hoshina",
-      "Izuku Midoriya",
-      "Izuku Midoriya",
+      "Akame",
+      "Emilia",
+      "Violet Evergarden",
+      "Suzune Horikita",
       "Vladilena Milizé"
     ]
   },
   {
-    "id": "Kaiju No. 8-180693",
-    "name": "Mina Ashiro",
-    "anime": "Kaiju No. 8",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b180693-i9RZuHTDwXov.png",
-    "quote": "No necesito permiso para demostrar quién está por encima.",
-    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
-    "arquetipo": "poder_arrogante",
+    "id": "Attack on Titan-46496",
+    "qid": 64,
+    "name": "Erwin Smith",
+    "anime": "Attack on Titan",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b46496-Mu86MENd5wNB.png",
+    "quote": "¡Dediquen sus corazones!",
+    "hint": "Frase iconica asociada al tono de Erwin Smith.",
+    "tipo": "iconica",
     "similares": [
-      "Rin Toosaka",
-      "Saku Natsusawa",
-      "Shouta Aizawa",
-      "Shouta Aizawa",
-      "Kurena Kukumila"
+      "Toshinori Yagi",
+      "Roy Mustang",
+      "Kyoujurou Rengoku",
+      "Hajime Umemiya",
+      "Himmel"
+    ]
+  },
+  {
+    "id": "Attack on Titan-45627",
+    "qid": 65,
+    "name": "Levi",
+    "anime": "Attack on Titan",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b45627-CR68RyZmddGG.png",
+    "quote": "No te arrepientas de tu elección.",
+    "hint": "Frase iconica asociada al tono de Levi.",
+    "tipo": "iconica",
+    "similares": [
+      "Erwin Smith",
+      "Archer",
+      "Kiyotaka Ayanokouji",
+      "Megumi Fushiguro",
+      "Soushirou Hoshina"
     ]
   },
   {
     "id": "Kaiju No. 8-180692",
+    "qid": 66,
     "name": "Kafka Hibino",
     "anime": "Kaiju No. 8",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b180692-rPGXuxhcKw5N.png",
-    "quote": "Seguiré luchando hasta que todos estén a salvo.",
-    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
-    "arquetipo": "heroe_determinado",
+    "quote": "Aceptaré cualquier castigo o ejecución después... ¡Pero ahora mismo, mi único deber es salvar a mis compañeros!",
+    "hint": "Frase iconica asociada al tono de Kafka Hibino.",
+    "tipo": "iconica",
     "similares": [
-      "Artoria Pendragon",
-      "Enjin",
-      "Toshinori Yagi",
-      "Megumin",
-      "Shinei Nouzen"
+      "Kenzou Tenma",
+      "Soushirou Hoshina",
+      "Roy Mustang",
+      "Erwin Smith",
+      "Saitama"
+    ]
+  },
+  {
+    "id": "Kaiju No. 8-180693",
+    "qid": 67,
+    "name": "Mina Ashiro",
+    "anime": "Kaiju No. 8",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b180693-i9RZuHTDwXov.png",
+    "quote": "Cumpliremos la promesa que nos hicimos de niños.",
+    "hint": "Frase representativa asociada al tono de Mina Ashiro.",
+    "tipo": "representativa",
+    "similares": [
+      "Mikasa Ackerman",
+      "Chinatsu Kano",
+      "Hina Chouno",
+      "Nagisa Furukawa",
+      "Emilia"
+    ]
+  },
+  {
+    "id": "Kaiju No. 8-205579",
+    "qid": 68,
+    "name": "Soushirou Hoshina",
+    "anime": "Kaiju No. 8",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b205579-FRvVyrOIG8Yz.jpg",
+    "quote": "Si alguna vez cruzas la línea y te conviertes en un peligro real para la gente, cumpliré mi promesa... Yo mismo te cortaré la cabeza con mis espadas.",
+    "hint": "Frase representativa asociada al tono de Soushirou Hoshina.",
+    "tipo": "representativa",
+    "similares": [
+      "Roy Mustang",
+      "Levi",
+      "Satoru Gojou",
+      "Hajime Umemiya",
+      "Bang"
     ]
   },
   {
     "id": "Kaiju No. 8-180694",
+    "qid": 69,
     "name": "Reno Ichikawa",
     "anime": "Kaiju No. 8",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b180694-Q0Ocr4aqBu4k.png",
-    "quote": "La prudencia está bien; una explosión también.",
-    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
-    "arquetipo": "comedia_caos",
+    "quote": "En loque me quiero convertir... es en un hombre que pueda arriesgarse para proteger a sus compañeros!",
+    "hint": "Frase representativa asociada al tono de Reno Ichikawa.",
+    "tipo": "representativa",
     "similares": [
-      "Gilgamesh",
-      "Rudo",
-      "Tenya Iida",
-      "Kazuma Satou",
-      "Anju Emma"
+      "Yoichi Isagi",
+      "Inosuke Hashibira",
+      "Katsuki Bakugou",
+      "Shouyou Hinata",
+      "Tobio Kageyama"
     ]
   },
   {
     "id": "Erased-89275",
+    "qid": 70,
     "name": "Satoru Fujinuma",
     "anime": "Erased",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89275-xCGzh6jAGe2v.png",
-    "quote": "No quiero que un recuerdo importante se pierda en silencio.",
-    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
-    "arquetipo": "romance_drama",
+    "quote": "Mi destino es mío. No hay necesidad de que te sientas responsable.",
+    "hint": "Frase iconica asociada al tono de Satoru Fujinuma.",
+    "tipo": "iconica",
     "similares": [
-      "Kaoruko Waguri",
-      "Riyou Reaper",
-      "Shouto Todoroki",
-      "Aqua",
-      "Maomao"
+      "Takemichi Hanagaki",
+      "Subaru Natsuki",
+      "Shinpei Ajiro",
+      "Izuku Midoriya",
+      "Tanjirou Kamado"
     ]
   },
   {
     "id": "Erased-89276",
+    "qid": 71,
     "name": "Kayo Hinazuki",
     "anime": "Erased",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/89276-LjlYvXfOnjHB.jpg",
-    "quote": "No aceptaré una respuesta cómoda sin comprobarla.",
-    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
-    "arquetipo": "misterio_serio",
+    "quote": "Quiero ir muy, muy lejos.",
+    "hint": "Frase representativa asociada al tono de Kayo Hinazuki.",
+    "tipo": "representativa",
     "similares": [
-      "Rintarou Tsumugi",
-      "Zanka Nijiku",
-      "Katsuki Bakugou",
-      "Darkness",
-      "Jinshi"
+      "Nagisa Furukawa",
+      "Emilia",
+      "Yuki Itose",
+      "Eru Chitanda",
+      "Shizuka Kuze"
     ]
   },
   {
-    "id": "Erased-89357",
-    "name": "Kenya Kobayashi",
+    "id": "Erased-89355",
+    "qid": 72,
+    "name": "Airi Katagiri",
     "anime": "Erased",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89357-E9erSMef5EJC.png",
-    "quote": "Las emociones no deben decidir una estrategia.",
-    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
-    "arquetipo": "frio_calculador",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89355-w1xEKGHisGWE.jpg",
+    "quote": "Quiero creer. Incluso si alguien me traiciona, quiero mantener el deseo de creer en las personas.",
+    "hint": "Frase representativa asociada al tono de Airi Katagiri.",
+    "tipo": "representativa",
     "similares": [
-      "Sakura Matou",
-      "Subaru Hoshina",
-      "Izuku Midoriya",
-      "Izuku Midoriya",
-      "Vladilena Milizé"
+      "Fern",
+      "Rem",
+      "Kaori Miyazono",
+      "Yotsuba Nakano",
+      "Emilia"
     ]
   },
   {
-    "id": "Erased-89326",
-    "name": "Sachiko Fujinuma",
+    "id": "Erased-89275",
+    "qid": 73,
+    "name": "Satoru Fujinuma",
     "anime": "Erased",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/89326-zNVEqTuDt7kL.jpg",
-    "quote": "Que todos miren: esta batalla ya tiene dueño.",
-    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
-    "arquetipo": "poder_arrogante",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89275-xCGzh6jAGe2v.png",
+    "quote": "Esta vez no dejaré que nadie desaparezca.",
+    "hint": "Frase representativa asociada al tono de Satoru Fujinuma.",
+    "tipo": "representativa",
     "similares": [
-      "Rin Toosaka",
-      "Saku Natsusawa",
-      "Shouta Aizawa",
-      "Shouta Aizawa",
-      "Kurena Kukumila"
+      "Subaru Natsuki",
+      "Takemichi Hanagaki",
+      "Shinpei Ajiro",
+      "Himmel",
+      "Tanjirou Kamado"
     ]
   },
   {
-    "id": "Las 100 Novias-173760",
-    "name": "Karane Inda",
+    "id": "Las 100 Novias-173758",
+    "qid": 74,
+    "name": "Rentarou Aijou",
     "anime": "Las 100 Novias",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b173760-Gj3fK5VpbpT3.png",
-    "quote": "Una caída no puede decidir el final de una historia.",
-    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
-    "arquetipo": "heroe_determinado",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b173758-AoqioODV01ki.png",
+    "quote": "Para mí, ninguna de ustedes es un reemplazo de otra. Todas son mi número uno.",
+    "hint": "Frase iconica asociada al tono de Rentarou Aijou.",
+    "tipo": "iconica",
     "similares": [
-      "Artoria Pendragon",
-      "Enjin",
-      "Toshinori Yagi",
-      "Megumin",
-      "Shinei Nouzen"
-    ]
-  },
-  {
-    "id": "Las 100 Novias-173761",
-    "name": "Shizuka Yoshimoto",
-    "anime": "Las 100 Novias",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b173761-1FcQvX74KVW7.png",
-    "quote": "Prometo que esta vez nadie tendrá que arreglarlo todo.",
-    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
-    "arquetipo": "comedia_caos",
-    "similares": [
-      "Gilgamesh",
-      "Rudo",
-      "Tenya Iida",
       "Kazuma Satou",
-      "Anju Emma"
-    ]
-  },
-  {
-    "id": "Las 100 Novias-173762",
-    "name": "Nano Eiai",
-    "anime": "Las 100 Novias",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b173762-bmdMGoIMVz2E.png",
-    "quote": "Si caminamos juntos, incluso el miedo pesa menos.",
-    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
-    "arquetipo": "romance_drama",
-    "similares": [
-      "Kaoruko Waguri",
-      "Riyou Reaper",
-      "Shouto Todoroki",
-      "Aqua",
-      "Maomao"
+      "Fuutarou Uesugi",
+      "Denji",
+      "Zenitsu Agatsuma",
+      "Subaru Natsuki"
     ]
   },
   {
     "id": "Las 100 Novias-173759",
+    "qid": 75,
     "name": "Hakari Hanazono",
     "anime": "Las 100 Novias",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b173759-Bu2KIzM1JELG.png",
-    "quote": "El silencio también deja pistas.",
-    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
-    "arquetipo": "misterio_serio",
+    "quote": "¿No te gustaría que compartiéramos la bebida? Así podré darle un beso... un beso indirecto...",
+    "hint": "Frase iconica asociada al tono de Hakari Hanazono.",
+    "tipo": "iconica",
     "similares": [
-      "Rintarou Tsumugi",
-      "Zanka Nijiku",
-      "Katsuki Bakugou",
-      "Darkness",
-      "Jinshi"
+      "Esdeath",
+      "Zero Two",
+      "Karane Inda",
+      "Nano Eiai",
+      "Miku Nakano"
     ]
   },
   {
-    "id": "Re: ZERO-88572",
-    "name": "Emilia",
-    "anime": "Re: ZERO",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b88572-IzTwXEHSobRs.jpg",
-    "quote": "Si conozco las reglas, puedo cambiar el tablero.",
-    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
-    "arquetipo": "frio_calculador",
+    "id": "Las 100 Novias-173760",
+    "qid": 76,
+    "name": "Karane Inda",
+    "anime": "Las 100 Novias",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b173760-Gj3fK5VpbpT3.png",
+    "quote": "¡No es que me gustes ni nada por el estilo, tonto!",
+    "hint": "Frase representativa asociada al tono de Karane Inda.",
+    "tipo": "representativa",
     "similares": [
-      "Sakura Matou",
-      "Subaru Hoshina",
-      "Izuku Midoriya",
-      "Izuku Midoriya",
-      "Vladilena Milizé"
+      "Rem",
+      "Miku Nakano",
+      "Hakari Hanazono",
+      "Akari Watanabe",
+      "Tsubaki Sawabe"
     ]
   },
   {
-    "id": "Re: ZERO-88575",
-    "name": "Rem",
-    "anime": "Re: ZERO",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b88575-Ayu8UPDA8NS6.png",
-    "quote": "La victoria es lo único que merece mi atención.",
-    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
-    "arquetipo": "poder_arrogante",
+    "id": "Las 100 Novias-173762",
+    "qid": 77,
+    "name": "Nano Eiai",
+    "anime": "Las 100 Novias",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b173762-bmdMGoIMVz2E.png",
+    "quote": "Eso es ineficiente",
+    "hint": "Frase representativa asociada al tono de Nano Eiai.",
+    "tipo": "representativa",
     "similares": [
-      "Rin Toosaka",
-      "Saku Natsusawa",
-      "Shouta Aizawa",
-      "Shouta Aizawa",
-      "Kurena Kukumila"
+      "Esdeath",
+      "Zero Two",
+      "Yuzu Aihara",
+      "Hakari Hanazono",
+      "Rem"
     ]
   },
   {
     "id": "Re: ZERO-88573",
+    "qid": 78,
     "name": "Subaru Natsuki",
     "anime": "Re: ZERO",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b88573-F8yMTK9GhnTA.png",
-    "quote": "Mi fuerza tiene sentido cuando protege a otra persona.",
-    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
-    "arquetipo": "heroe_determinado",
+    "quote": "Si muero, solo tengo que volver a intentarlo.",
+    "hint": "Frase iconica asociada al tono de Subaru Natsuki.",
+    "tipo": "iconica",
     "similares": [
-      "Artoria Pendragon",
-      "Enjin",
-      "Toshinori Yagi",
-      "Megumin",
-      "Shinei Nouzen"
+      "Satoru Fujinuma",
+      "Takemichi Hanagaki",
+      "Shinpei Ajiro",
+      "Denji",
+      "Eren Yeager"
+    ]
+  },
+  {
+    "id": "Re: ZERO-88572",
+    "qid": 79,
+    "name": "Emilia",
+    "anime": "Re: ZERO",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b88572-IzTwXEHSobRs.jpg",
+    "quote": "No soy la bruja que dicen; soy solo yo.",
+    "hint": "Frase iconica asociada al tono de Emilia.",
+    "tipo": "iconica",
+    "similares": [
+      "Violet Evergarden",
+      "Vladilena Milizé",
+      "Frieren",
+      "Mikasa Ackerman",
+      "Hae-In Cha"
+    ]
+  },
+  {
+    "id": "Re: ZERO-88575",
+    "qid": 80,
+    "name": "Rem",
+    "anime": "Re: ZERO",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b88575-Ayu8UPDA8NS6.png",
+    "quote": "Si el futuro que deseas es uno donde todos puedan sonreír.",
+    "hint": "Frase iconica asociada al tono de Rem.",
+    "tipo": "iconica",
+    "similares": [
+      "Violet Evergarden",
+      "Miku Nakano",
+      "Mikasa Ackerman",
+      "Karane Inda",
+      "Fern"
     ]
   },
   {
     "id": "Re: ZERO-90181",
+    "qid": 81,
     "name": "Beatrice",
     "anime": "Re: ZERO",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b90181-wRPm0OEaucmw.png",
-    "quote": "El caos siempre encuentra una manera de sorprenderme.",
-    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
-    "arquetipo": "comedia_caos",
+    "quote": "Cállate y no toques mis libros prohibidos.",
+    "hint": "Frase representativa asociada al tono de Beatrice.",
+    "tipo": "representativa",
     "similares": [
-      "Gilgamesh",
-      "Rudo",
-      "Tenya Iida",
-      "Kazuma Satou",
-      "Anju Emma"
+      "Mei Aihara",
+      "Mine",
+      "Kyou Fujibayashi",
+      "Suzune Horikita",
+      "Arisu Sakayanagi"
     ]
   },
   {
     "id": "Takopis Original Sin-266372",
+    "qid": 82,
     "name": "Takopi",
     "anime": "Takopis Original Sin",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b266372-zUgh0xxukbW8.png",
-    "quote": "Hay personas que cambian nuestra vida sin proponérselo.",
-    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
-    "arquetipo": "romance_drama",
+    "quote": "Hice todo lo que pude... Usé todos mis artilugios",
+    "hint": "Frase iconica asociada al tono de Takopi.",
+    "tipo": "iconica",
     "similares": [
-      "Kaoruko Waguri",
-      "Riyou Reaper",
-      "Shouto Todoroki",
-      "Aqua",
-      "Maomao"
+      "Himmel",
+      "Tanjirou Kamado",
+      "Alphonse Elric",
+      "Kenzou Tenma",
+      "Yotsuba Nakano"
+    ]
+  },
+  {
+    "id": "Takopis Original Sin-266372",
+    "qid": 83,
+    "name": "Takopi",
+    "anime": "Takopis Original Sin",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b266372-zUgh0xxukbW8.png",
+    "quote": "¡Prometo hacerte feliz, aunque sea lo último que haga!",
+    "hint": "Frase iconica asociada al tono de Takopi.",
+    "tipo": "iconica",
+    "similares": [
+      "Tanjirou Kamado",
+      "Shinpei Ajiro",
+      "Taiki Inomata",
+      "Himmel",
+      "Alphonse Elric"
     ]
   },
   {
     "id": "Takopis Original Sin-266369",
+    "qid": 84,
     "name": "Shizuka Kuze",
     "anime": "Takopis Original Sin",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b266369-vhLyGsVBIlAT.jpg",
-    "quote": "La realidad suele ser más inquietante que cualquier rumor.",
-    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
-    "arquetipo": "misterio_serio",
+    "quote": "No quiero que me ayudes, solo quiero que me escuches.",
+    "hint": "Frase representativa asociada al tono de Shizuka Kuze.",
+    "tipo": "representativa",
     "similares": [
-      "Rintarou Tsumugi",
-      "Zanka Nijiku",
-      "Katsuki Bakugou",
-      "Darkness",
-      "Jinshi"
+      "Marina Kirarazaka",
+      "Kayo Hinazuki",
+      "Yuki Itose",
+      "Anna Liebert",
+      "Mai Sakurajima"
     ]
   },
   {
     "id": "Takopis Original Sin-266370",
+    "qid": 85,
     "name": "Marina Kirarazaka",
     "anime": "Takopis Original Sin",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b266370-OClTuCBxS13v.jpg",
-    "quote": "No necesito mostrar mis intenciones para controlar el resultado.",
-    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
-    "arquetipo": "frio_calculador",
+    "quote": "Si tú no existieras, mi vida sería perfecta",
+    "hint": "Frase representativa asociada al tono de Marina Kirarazaka.",
+    "tipo": "representativa",
     "similares": [
-      "Sakura Matou",
-      "Subaru Hoshina",
-      "Izuku Midoriya",
-      "Izuku Midoriya",
-      "Vladilena Milizé"
-    ]
-  },
-  {
-    "id": "Takopis Original Sin-266371",
-    "name": "Naoki Azuma",
-    "anime": "Takopis Original Sin",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b266371-8ytjDeW2vHba.jpg",
-    "quote": "No hay rival capaz de detenerme cuando decido avanzar.",
-    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
-    "arquetipo": "poder_arrogante",
-    "similares": [
-      "Rin Toosaka",
-      "Saku Natsusawa",
-      "Shouta Aizawa",
-      "Shouta Aizawa",
-      "Kurena Kukumila"
+      "Shizuka Kuze",
+      "Kayo Hinazuki",
+      "Kikyou Kushida",
+      "Mai Sakurajima",
+      "Anna Liebert"
     ]
   },
   {
     "id": "One Punch Man-73935",
+    "qid": 86,
     "name": "Saitama",
     "anime": "One Punch Man",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b73935-ON5d0mAcrItd.jpg",
-    "quote": "Aunque tenga miedo, daré el siguiente paso.",
-    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
-    "arquetipo": "heroe_determinado",
+    "quote": "Soy un héroe por diversión.",
+    "hint": "Frase iconica asociada al tono de Saitama.",
+    "tipo": "iconica",
     "similares": [
-      "Artoria Pendragon",
-      "Enjin",
-      "Toshinori Yagi",
-      "Megumin",
-      "Shinei Nouzen"
+      "Satoru Gojou",
+      "Houtarou Oreki",
+      "Bang",
+      "Kazuma Satou",
+      "Denji"
     ]
   },
   {
-    "id": "One Punch Man-81929",
-    "name": "Tatsumaki",
+    "id": "One Punch Man-73935",
+    "qid": 87,
+    "name": "Saitama",
     "anime": "One Punch Man",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b81929-WPVp2LQoWgkc.png",
-    "quote": "Si todo puede salir mal, al menos será divertido.",
-    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
-    "arquetipo": "comedia_caos",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b73935-ON5d0mAcrItd.jpg",
+    "quote": "¿habré perdido algo que es esencial para un ser humano?",
+    "hint": "Frase iconica asociada al tono de Saitama.",
+    "tipo": "iconica",
     "similares": [
-      "Gilgamesh",
-      "Rudo",
-      "Tenya Iida",
-      "Kazuma Satou",
-      "Anju Emma"
+      "Sukuna",
+      "Thor",
+      "Bu Lü",
+      "Katsuki Bakugou",
+      "Satoru Gojou"
     ]
   },
   {
     "id": "One Punch Man-73979",
+    "qid": 88,
     "name": "Genos",
     "anime": "One Punch Man",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b73979-tVi9maPID881.jpg",
-    "quote": "Lo que siento merece ser dicho, aunque me haga temblar.",
-    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
-    "arquetipo": "romance_drama",
+    "quote": "He anotado detalladamente las palabras de sabiduría del maestro",
+    "hint": "Frase iconica asociada al tono de Genos.",
+    "tipo": "iconica",
     "similares": [
-      "Kaoruko Waguri",
-      "Riyou Reaper",
-      "Shouto Todoroki",
-      "Aqua",
-      "Maomao"
+      "Izuku Midoriya",
+      "Kouichi Haimawari",
+      "Tanjirou Kamado",
+      "Yoichi Isagi",
+      "Aki Hayakawa"
     ]
   },
   {
-    "id": "One Punch Man-89277",
-    "name": "Garou",
+    "id": "One Punch Man-81141",
+    "qid": 89,
+    "name": "Bang",
     "anime": "One Punch Man",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89277-xBGb4B5YISXg.png",
-    "quote": "La verdad permanece aunque todos intenten esconderla.",
-    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
-    "arquetipo": "misterio_serio",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/n81141-1ml7Q6X2B508.png",
+    "quote": "La técnica vale más que la fuerza bruta.",
+    "hint": "Frase iconica asociada al tono de Bang.",
+    "tipo": "iconica",
     "similares": [
-      "Rintarou Tsumugi",
-      "Zanka Nijiku",
-      "Katsuki Bakugou",
-      "Darkness",
-      "Jinshi"
-    ]
-  },
-  {
-    "id": "Darling in the Franxx-124382",
-    "name": "Ichigo",
-    "anime": "Darling in the Franxx",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b124382-bSBkjtYjJQtr.png",
-    "quote": "La mejor jugada es la que nadie ve venir.",
-    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
-    "arquetipo": "frio_calculador",
-    "similares": [
-      "Sakura Matou",
-      "Subaru Hoshina",
-      "Izuku Midoriya",
-      "Izuku Midoriya",
-      "Vladilena Milizé"
+      "Toshinori Yagi",
+      "Hajime Umemiya",
+      "Roy Mustang",
+      "Kyoujurou Rengoku",
+      "Himmel"
     ]
   },
   {
     "id": "Darling in the Franxx-124381",
+    "qid": 90,
     "name": "Zero Two",
     "anime": "Darling in the Franxx",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b124381-2gAVq76HPfL2.png",
-    "quote": "El poder solo sirve si quien lo posee sabe imponerlo.",
-    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
-    "arquetipo": "poder_arrogante",
+    "quote": "¿Quieres huir conmigo? Si estás conmigo, te mostraré un mundo completamente diferente.",
+    "hint": "Frase iconica asociada al tono de Zero Two.",
+    "tipo": "iconica",
     "similares": [
-      "Rin Toosaka",
-      "Saku Natsusawa",
-      "Shouta Aizawa",
-      "Shouta Aizawa",
-      "Kurena Kukumila"
+      "Lucy",
+      "Makima",
+      "Power",
+      "Violet Evergarden",
+      "Esdeath"
+    ]
+  },
+  {
+    "id": "Darling in the Franxx-124381",
+    "qid": 91,
+    "name": "Zero Two",
+    "anime": "Darling in the Franxx",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b124381-2gAVq76HPfL2.png",
+    "quote": "Eres solo mío; no dejaré que nadie te toque.",
+    "hint": "Frase iconica asociada al tono de Zero Two.",
+    "tipo": "iconica",
+    "similares": [
+      "Esdeath",
+      "Nano Eiai",
+      "Hakari Hanazono",
+      "Makima",
+      "Mei Aihara"
     ]
   },
   {
     "id": "Darling in the Franxx-124380",
+    "qid": 92,
     "name": "Hiro",
     "anime": "Darling in the Franxx",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b124380-ct1wJHIl9BY1.jpg",
-    "quote": "Mientras alguien necesite ayuda, no voy a rendirme.",
-    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
-    "arquetipo": "heroe_determinado",
+    "quote": "no tienes una razón para existir. Es lo mismo que estar muerto.",
+    "hint": "Frase iconica asociada al tono de Hiro.",
+    "tipo": "iconica",
     "similares": [
-      "Artoria Pendragon",
-      "Enjin",
-      "Toshinori Yagi",
-      "Megumin",
-      "Shinei Nouzen"
+      "Jirou Yakuin",
+      "Taiki Inomata",
+      "Kousei Arima",
+      "Tomoya Okazaki",
+      "Wakana Gojou"
     ]
   },
   {
-    "id": "Darling in the Franxx-124386",
-    "name": "Kokoro",
+    "id": "Darling in the Franxx-124382",
+    "qid": 93,
+    "name": "Ichigo",
     "anime": "Darling in the Franxx",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b124386-vc248g43ap3m.jpg",
-    "quote": "No era el plan, pero este desastre podría funcionar.",
-    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
-    "arquetipo": "comedia_caos",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b124382-bSBkjtYjJQtr.png",
+    "quote": "¿Por qué tiene que ser ella? Yo he estado a tu lado todo este tiempo",
+    "hint": "Frase representativa asociada al tono de Ichigo.",
+    "tipo": "representativa",
     "similares": [
-      "Gilgamesh",
-      "Rudo",
-      "Tenya Iida",
-      "Kazuma Satou",
-      "Anju Emma"
-    ]
-  },
-  {
-    "id": "Death Note-71",
-    "name": "L Lawliet",
-    "anime": "Death Note",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b71-1W4panC53vfs.png",
-    "quote": "A veces cuidar a alguien exige ser valiente.",
-    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
-    "arquetipo": "romance_drama",
-    "similares": [
-      "Kaoruko Waguri",
-      "Riyou Reaper",
-      "Shouto Todoroki",
-      "Aqua",
-      "Maomao"
+      "Nagisa Furukawa",
+      "Mina Ashiro",
+      "Yotsuba Nakano",
+      "Chinatsu Kano",
+      "Emilia"
     ]
   },
   {
     "id": "Death Note-80",
+    "qid": 94,
     "name": "Light Yagami",
     "anime": "Death Note",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b80-26EhwSsSqQ50.png",
-    "quote": "Cada detalle cuenta cuando el caso parece imposible.",
-    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
-    "arquetipo": "misterio_serio",
+    "quote": "Este mundo está podrido, y quienes lo pudren deben morir",
+    "hint": "Frase iconica asociada al tono de Light Yagami.",
+    "tipo": "iconica",
     "similares": [
-      "Rintarou Tsumugi",
-      "Zanka Nijiku",
-      "Katsuki Bakugou",
-      "Darkness",
-      "Jinshi"
+      "Oguro Iwao",
+      "Shirou Emiya",
+      "Eren Yeager",
+      "Roy Mustang",
+      "Tatsumi"
+    ]
+  },
+  {
+    "id": "Death Note-80",
+    "qid": 95,
+    "name": "Light Yagami",
+    "anime": "Death Note",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b80-26EhwSsSqQ50.png",
+    "quote": "Te atraparé... da igual dónde te escondas",
+    "hint": "Frase iconica asociada al tono de Light Yagami.",
+    "tipo": "iconica",
+    "similares": [
+      "Gilgamesh",
+      "Johan Liebert",
+      "Sukuna",
+      "Eren Yeager",
+      "Roy Mustang"
+    ]
+  },
+  {
+    "id": "Death Note-71",
+    "qid": 96,
+    "name": "L Lawliet",
+    "anime": "Death Note",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b71-1W4panC53vfs.png",
+    "quote": "Desde que naciste, ¿ha habido un solo momento en el que hayas dicho la verdad?",
+    "hint": "Frase iconica asociada al tono de L Lawliet.",
+    "tipo": "iconica",
+    "similares": [
+      "Satoru Gojou",
+      "Houtarou Oreki",
+      "Kiyotaka Ayanokouji",
+      "Satoshi Fukube",
+      "Heinrich Runge"
     ]
   },
   {
     "id": "Death Note-75",
+    "qid": 97,
     "name": "Ryuk",
     "anime": "Death Note",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b75-IkEpzO21LgFy.jpg",
-    "quote": "Observar en silencio también es una forma de ganar.",
-    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
-    "arquetipo": "frio_calculador",
+    "quote": "Los humanos son tan interesantes.",
+    "hint": "Frase iconica asociada al tono de Ryuk.",
+    "tipo": "iconica",
     "similares": [
-      "Sakura Matou",
-      "Subaru Hoshina",
-      "Izuku Midoriya",
-      "Izuku Midoriya",
-      "Vladilena Milizé"
-    ]
-  },
-  {
-    "id": "Death Note-835",
-    "name": "Misa Amane",
-    "anime": "Death Note",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b835-CiZa8y2z2gCz.png",
-    "quote": "No necesito permiso para demostrar quién está por encima.",
-    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
-    "arquetipo": "poder_arrogante",
-    "similares": [
-      "Rin Toosaka",
-      "Saku Natsusawa",
-      "Shouta Aizawa",
-      "Shouta Aizawa",
-      "Kurena Kukumila"
+      "Sukuna",
+      "Johan Liebert",
+      "Gilgamesh",
+      "Thor",
+      "Satoru Gojou"
     ]
   },
   {
     "id": "Wind Breaker-230204",
+    "qid": 98,
     "name": "Haruka Sakura",
     "anime": "Wind Breaker",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b230204-cNRNjAj1FP4j.png",
-    "quote": "Seguiré luchando hasta que todos estén a salvo.",
-    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
-    "arquetipo": "heroe_determinado",
+    "quote": "Sé mejor que nadie que soy extraño y que mi aspecto es extravagante/extraño",
+    "hint": "Frase representativa asociada al tono de Haruka Sakura.",
+    "tipo": "representativa",
     "similares": [
-      "Artoria Pendragon",
-      "Enjin",
-      "Toshinori Yagi",
-      "Megumin",
-      "Shinei Nouzen"
-    ]
-  },
-  {
-    "id": "Wind Breaker-255629",
-    "name": "Hayato Suou",
-    "anime": "Wind Breaker",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b255629-dnDEPOiRH5Wo.jpg",
-    "quote": "La prudencia está bien; una explosión también.",
-    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
-    "arquetipo": "comedia_caos",
-    "similares": [
-      "Gilgamesh",
-      "Rudo",
-      "Tenya Iida",
-      "Kazuma Satou",
-      "Anju Emma"
+      "Izuku Midoriya",
+      "Yuuji Itadori",
+      "Eren Yeager",
+      "Tanjirou Kamado",
+      "Yoichi Isagi"
     ]
   },
   {
     "id": "Wind Breaker-255630",
+    "qid": 99,
     "name": "Hajime Umemiya",
     "anime": "Wind Breaker",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b255630-lz7qcvEvmj3y.jpg",
-    "quote": "No quiero que un recuerdo importante se pierda en silencio.",
-    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
-    "arquetipo": "romance_drama",
+    "quote": "Los puños sólo son pesados por el motivo por el que luchas.",
+    "hint": "Frase representativa asociada al tono de Hajime Umemiya.",
+    "tipo": "representativa",
     "similares": [
-      "Kaoruko Waguri",
-      "Riyou Reaper",
-      "Shouto Todoroki",
-      "Aqua",
-      "Maomao"
+      "Toshinori Yagi",
+      "Kyoujurou Rengoku",
+      "Himmel",
+      "Bang",
+      "Erwin Smith"
     ]
   },
   {
-    "id": "Wind Breaker-332991",
-    "name": "Jou Togame",
+    "id": "Wind Breaker-255627",
+    "qid": 100,
+    "name": "Akihiko Nirei",
     "anime": "Wind Breaker",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b332991-Bqp9MwdolhBu.png",
-    "quote": "No aceptaré una respuesta cómoda sin comprobarla.",
-    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
-    "arquetipo": "misterio_serio",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b255627-UG5olFBkfpTO.jpg",
+    "quote": "Siempre estaré a tu lado, aunque no sea el más fuerte.",
+    "hint": "Frase representativa asociada al tono de Akihiko Nirei.",
+    "tipo": "representativa",
     "similares": [
-      "Rintarou Tsumugi",
-      "Zanka Nijiku",
-      "Katsuki Bakugou",
-      "Darkness",
-      "Jinshi"
+      "Taiki Inomata",
+      "Satoshi Fukube",
+      "Alphonse Elric",
+      "Stark",
+      "Kousei Arima"
+    ]
+  },
+  {
+    "id": "Wind Breaker-255629",
+    "qid": 101,
+    "name": "Hayato Suou",
+    "anime": "Wind Breaker",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b255629-dnDEPOiRH5Wo.jpg",
+    "quote": "soy Leonardo DiCaprio. Era broma, soy japonés.",
+    "hint": "Frase representativa asociada al tono de Hayato Suou.",
+    "tipo": "representativa",
+    "similares": [
+      "Megumi Fushiguro",
+      "Levi",
+      "Kei Tsukishima",
+      "Ken Ryuuguji",
+      "Satoshi Fukube"
+    ]
+  },
+  {
+    "id": "Las Quintillizas-128063",
+    "qid": 102,
+    "name": "Fuutarou Uesugi",
+    "anime": "Las Quintillizas",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b128063-0h9piZcxa2zt.png",
+    "quote": "Los haré graduarse a las cinco.",
+    "hint": "Frase iconica asociada al tono de Fuutarou Uesugi.",
+    "tipo": "iconica",
+    "similares": [
+      "Satoru Gojou",
+      "Kiyotaka Ayanokouji",
+      "Roy Mustang",
+      "Hajime Umemiya",
+      "Jirou Yakuin"
     ]
   },
   {
     "id": "Las Quintillizas-126375",
+    "qid": 103,
     "name": "Itsuki Nakano",
     "anime": "Las Quintillizas",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b126375-dEe9IyQ9By09.png",
-    "quote": "Las emociones no deben decidir una estrategia.",
-    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
-    "arquetipo": "frio_calculador",
+    "quote": "Al principio pensé que eran una molestia.",
+    "hint": "Frase iconica asociada al tono de Itsuki Nakano.",
+    "tipo": "iconica",
     "similares": [
-      "Sakura Matou",
-      "Subaru Hoshina",
-      "Izuku Midoriya",
-      "Izuku Midoriya",
-      "Vladilena Milizé"
-    ]
-  },
-  {
-    "id": "Las Quintillizas-126373",
-    "name": "Miku Nakano",
-    "anime": "Las Quintillizas",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b126373-CWeyXb822uDN.png",
-    "quote": "Que todos miren: esta batalla ya tiene dueño.",
-    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
-    "arquetipo": "poder_arrogante",
-    "similares": [
-      "Rin Toosaka",
-      "Saku Natsusawa",
-      "Shouta Aizawa",
-      "Shouta Aizawa",
-      "Kurena Kukumila"
-    ]
-  },
-  {
-    "id": "Las Quintillizas-126372",
-    "name": "Nino Nakano",
-    "anime": "Las Quintillizas",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b126372-DtorHRgQaYUJ.png",
-    "quote": "Una caída no puede decidir el final de una historia.",
-    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
-    "arquetipo": "heroe_determinado",
-    "similares": [
-      "Artoria Pendragon",
-      "Enjin",
-      "Toshinori Yagi",
       "Megumin",
-      "Shinei Nouzen"
+      "Power",
+      "Aqua",
+      "Yotsuba Nakano",
+      "Zero Two"
     ]
   },
   {
     "id": "Las Quintillizas-126374",
+    "qid": 104,
     "name": "Yotsuba Nakano",
     "anime": "Las Quintillizas",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b126374-Aal36iSQ5nKz.png",
-    "quote": "Prometo que esta vez nadie tendrá que arreglarlo todo.",
-    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
-    "arquetipo": "comedia_caos",
+    "quote": "¿¡Qué!? ¿¡En serio es un obsequio para mí!? ¿¡De ti para mí!?",
+    "hint": "Frase iconica asociada al tono de Yotsuba Nakano.",
+    "tipo": "iconica",
     "similares": [
-      "Gilgamesh",
-      "Rudo",
-      "Tenya Iida",
-      "Kazuma Satou",
-      "Anju Emma"
+      "Nagisa Furukawa",
+      "Eru Chitanda",
+      "Momo Ayase",
+      "Yuzu Aihara",
+      "Chinatsu Kano"
     ]
   },
   {
-    "id": "Blue Lock-162213",
-    "name": "Meguru Bachira",
-    "anime": "Blue Lock",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b162213-4czykzdxmWG6.png",
-    "quote": "Si caminamos juntos, incluso el miedo pesa menos.",
-    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
-    "arquetipo": "romance_drama",
+    "id": "Las Quintillizas-126373",
+    "qid": 105,
+    "name": "Miku Nakano",
+    "anime": "Las Quintillizas",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b126373-CWeyXb822uDN.png",
+    "quote": "Cuentame mas quiero saber todo de ti, y quiero que tu sepas todo de mi.",
+    "hint": "Frase representativa asociada al tono de Miku Nakano.",
+    "tipo": "representativa",
     "similares": [
-      "Kaoruko Waguri",
-      "Riyou Reaper",
-      "Shouto Todoroki",
-      "Aqua",
-      "Maomao"
-    ]
-  },
-  {
-    "id": "Blue Lock-162969",
-    "name": "Seishirou Nagi",
-    "anime": "Blue Lock",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b162969-WGnGyVQrFi0X.png",
-    "quote": "El silencio también deja pistas.",
-    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
-    "arquetipo": "misterio_serio",
-    "similares": [
-      "Rintarou Tsumugi",
-      "Zanka Nijiku",
-      "Katsuki Bakugou",
-      "Darkness",
-      "Jinshi"
+      "Tsubaki Sawabe",
+      "Yuki Itose",
+      "Hina Chouno",
+      "Karane Inda",
+      "Kaori Miyazono"
     ]
   },
   {
     "id": "Blue Lock-140856",
+    "qid": 106,
     "name": "Yoichi Isagi",
     "anime": "Blue Lock",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b140856-wVzKSyvU7R5B.png",
-    "quote": "Si conozco las reglas, puedo cambiar el tablero.",
-    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
-    "arquetipo": "frio_calculador",
+    "quote": "¡Muévete, tú solo eres una pieza de mi rompecabezas!",
+    "hint": "Frase iconica asociada al tono de Yoichi Isagi.",
+    "tipo": "iconica",
     "similares": [
-      "Sakura Matou",
-      "Subaru Hoshina",
-      "Izuku Midoriya",
-      "Izuku Midoriya",
-      "Vladilena Milizé"
+      "Shouyou Hinata",
+      "Tobio Kageyama",
+      "Shouei Barou",
+      "Meguru Bachira",
+      "Katsuki Bakugou"
     ]
   },
   {
-    "id": "Blue Lock-167444",
-    "name": "Hyouma Chigiri",
+    "id": "Blue Lock-140857",
+    "qid": 107,
+    "name": "Jinpachi Ego",
     "anime": "Blue Lock",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b167444-JTHkkJAX4E3q.png",
-    "quote": "La victoria es lo único que merece mi atención.",
-    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
-    "arquetipo": "poder_arrogante",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b140857-DOTyKBCufon9.png",
+    "quote": "¿Diganme se consideran ganadores? o son solo basuras que no han aceptado su derrota",
+    "hint": "Frase iconica asociada al tono de Jinpachi Ego.",
+    "tipo": "iconica",
     "similares": [
-      "Rin Toosaka",
-      "Saku Natsusawa",
-      "Shouta Aizawa",
-      "Shouta Aizawa",
-      "Kurena Kukumila"
+      "Shouei Barou",
+      "Light Yagami",
+      "Katsuki Bakugou",
+      "Gilgamesh",
+      "Tobio Kageyama"
+    ]
+  },
+  {
+    "id": "Blue Lock-162213",
+    "qid": 108,
+    "name": "Meguru Bachira",
+    "anime": "Blue Lock",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b162213-4czykzdxmWG6.png",
+    "quote": "¡Juguemos fútbol como monstruos!",
+    "hint": "Frase iconica asociada al tono de Meguru Bachira.",
+    "tipo": "iconica",
+    "similares": [
+      "Shouyou Hinata",
+      "Inosuke Hashibira",
+      "Satoru Gojou",
+      "Kazuma Satou",
+      "Yoichi Isagi"
+    ]
+  },
+  {
+    "id": "Blue Lock-169401",
+    "qid": 109,
+    "name": "Shouei Barou",
+    "anime": "Blue Lock",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b169401-jeepvEsqW4Ns.png",
+    "quote": "En esta cancha solo hay un rey: yo.",
+    "hint": "Frase representativa asociada al tono de Shouei Barou.",
+    "tipo": "representativa",
+    "similares": [
+      "Tobio Kageyama",
+      "Katsuki Bakugou",
+      "Gilgamesh",
+      "Sukuna",
+      "Tooru Oikawa"
     ]
   },
   {
     "id": "Frieren-176754",
+    "qid": 110,
     "name": "Frieren",
     "anime": "Frieren",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b176754-PCnpqIOkjhFk.png",
-    "quote": "Mi fuerza tiene sentido cuando protege a otra persona.",
-    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
-    "arquetipo": "heroe_determinado",
+    "quote": "Viví tanto tiempo y nunca lo conocí de verdad.",
+    "hint": "Frase iconica asociada al tono de Frieren.",
+    "tipo": "iconica",
     "similares": [
-      "Artoria Pendragon",
-      "Enjin",
-      "Toshinori Yagi",
-      "Megumin",
-      "Shinei Nouzen"
-    ]
-  },
-  {
-    "id": "Frieren-183965",
-    "name": "Fern",
-    "anime": "Frieren",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b183965-uGFohBjlFoTp.png",
-    "quote": "El caos siempre encuentra una manera de sorprenderme.",
-    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
-    "arquetipo": "comedia_caos",
-    "similares": [
-      "Gilgamesh",
-      "Rudo",
-      "Tenya Iida",
-      "Kazuma Satou",
-      "Anju Emma"
-    ]
-  },
-  {
-    "id": "Frieren-184313",
-    "name": "Stark",
-    "anime": "Frieren",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b184313-CQl6GSt4RSny.jpg",
-    "quote": "Hay personas que cambian nuestra vida sin proponérselo.",
-    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
-    "arquetipo": "romance_drama",
-    "similares": [
-      "Kaoruko Waguri",
-      "Riyou Reaper",
-      "Shouto Todoroki",
-      "Aqua",
-      "Maomao"
+      "Violet Evergarden",
+      "Mio Kofune",
+      "Vladilena Milizé",
+      "Suzune Horikita",
+      "Artoria Pendragon"
     ]
   },
   {
     "id": "Frieren-184311",
+    "qid": 111,
     "name": "Himmel",
     "anime": "Frieren",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b184311-wQFySqYXEqf1.png",
-    "quote": "La realidad suele ser más inquietante que cualquier rumor.",
-    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
-    "arquetipo": "misterio_serio",
+    "quote": "Eso es lo que habría hecho el héroe.",
+    "hint": "Frase iconica asociada al tono de Himmel.",
+    "tipo": "iconica",
     "similares": [
-      "Rintarou Tsumugi",
-      "Zanka Nijiku",
-      "Katsuki Bakugou",
-      "Darkness",
-      "Jinshi"
+      "Toshinori Yagi",
+      "Kyoujurou Rengoku",
+      "Erwin Smith",
+      "Hajime Umemiya",
+      "Shirou Emiya"
+    ]
+  },
+  {
+    "id": "Frieren-183965",
+    "qid": 112,
+    "name": "Fern",
+    "anime": "Frieren",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b183965-uGFohBjlFoTp.png",
+    "quote": "Señora maga, ¡levántese ya, que se hace tarde!",
+    "hint": "Frase representativa asociada al tono de Fern.",
+    "tipo": "representativa",
+    "similares": [
+      "Maomao",
+      "Suzune Horikita",
+      "Itsuki Nakano",
+      "Mikasa Ackerman",
+      "Hina Chouno"
+    ]
+  },
+  {
+    "id": "Frieren-184313",
+    "qid": 113,
+    "name": "Stark",
+    "anime": "Frieren",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b184313-CQl6GSt4RSny.jpg",
+    "quote": "Tengo miedo, pero no voy a huir.",
+    "hint": "Frase representativa asociada al tono de Stark.",
+    "tipo": "representativa",
+    "similares": [
+      "Zenitsu Agatsuma",
+      "Izuku Midoriya",
+      "Takemichi Hanagaki",
+      "Taiki Inomata",
+      "Kouichi Haimawari"
     ]
   },
   {
     "id": "Classroom of the Elite-123212",
+    "qid": 114,
     "name": "Kiyotaka Ayanokouji",
     "anime": "Classroom of the Elite",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b123212-ewZgUQr9vvEM.png",
-    "quote": "No necesito mostrar mis intenciones para controlar el resultado.",
-    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
-    "arquetipo": "frio_calculador",
+    "quote": "Los vínculos solo son una debilidad.",
+    "hint": "Frase iconica asociada al tono de Kiyotaka Ayanokouji.",
+    "tipo": "iconica",
     "similares": [
-      "Sakura Matou",
-      "Subaru Hoshina",
-      "Izuku Midoriya",
-      "Izuku Midoriya",
-      "Vladilena Milizé"
+      "Light Yagami",
+      "Johan Liebert",
+      "Kei Tsukishima",
+      "Megumi Fushiguro",
+      "Archer"
     ]
   },
   {
     "id": "Classroom of the Elite-123213",
+    "qid": 115,
     "name": "Suzune Horikita",
     "anime": "Classroom of the Elite",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b123213-jUfrGBXfW7BL.png",
-    "quote": "No hay rival capaz de detenerme cuando decido avanzar.",
-    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
-    "arquetipo": "poder_arrogante",
+    "quote": "Yo, por mi parte, no siento la necesidad de hacer amigos. Estar sola no es lo mismo que estar solitaria.",
+    "hint": "Frase iconica asociada al tono de Suzune Horikita.",
+    "tipo": "iconica",
     "similares": [
-      "Rin Toosaka",
-      "Saku Natsusawa",
-      "Shouta Aizawa",
-      "Shouta Aizawa",
-      "Kurena Kukumila"
+      "Arisu Sakayanagi",
+      "Mei Aihara",
+      "Mikasa Ackerman",
+      "Brunhilde",
+      "Chinatsu Kano"
     ]
   },
   {
-    "id": "Classroom of the Elite-141122",
-    "name": "Kei Karuizawa",
+    "id": "Classroom of the Elite-123214",
+    "qid": 116,
+    "name": "Kikyou Kushida",
     "anime": "Classroom of the Elite",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b141122-6Zk52eU3VK3O.png",
-    "quote": "Aunque tenga miedo, daré el siguiente paso.",
-    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
-    "arquetipo": "heroe_determinado",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b123214-Ym9cldopi3yR.png",
+    "quote": "¡Mi objetivo es hacerme amiga de todos y cada uno de los estudiantes de la clase!",
+    "hint": "Frase representativa asociada al tono de Kikyou Kushida.",
+    "tipo": "representativa",
     "similares": [
-      "Artoria Pendragon",
-      "Enjin",
-      "Toshinori Yagi",
-      "Megumin",
-      "Shinei Nouzen"
+      "Yotsuba Nakano",
+      "Eru Chitanda",
+      "Marin Kitagawa",
+      "Nagisa Furukawa",
+      "Marina Kirarazaka"
     ]
   },
   {
-    "id": "Classroom of the Elite-123216",
-    "name": "Honami Ichinose",
+    "id": "Classroom of the Elite-124691",
+    "qid": 117,
+    "name": "Arisu Sakayanagi",
     "anime": "Classroom of the Elite",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b123216-N9tQZf2XIKu6.png",
-    "quote": "Si todo puede salir mal, al menos será divertido.",
-    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
-    "arquetipo": "comedia_caos",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b124691-S9GyfwMAkkJ9.jpg",
+    "quote": "Tu eres la mayor obra de esa habitacion",
+    "hint": "Frase representativa asociada al tono de Arisu Sakayanagi.",
+    "tipo": "representativa",
     "similares": [
-      "Gilgamesh",
-      "Rudo",
-      "Tenya Iida",
-      "Kazuma Satou",
-      "Anju Emma"
+      "Makima",
+      "Brunhilde",
+      "Esdeath",
+      "Mio Kofune",
+      "Frieren"
     ]
   },
   {
-    "id": "Citrus-83367",
-    "name": "Yuzu Aihara",
-    "anime": "Citrus",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b83367-qOJp0tfOZf7r.jpg",
-    "quote": "Lo que siento merece ser dicho, aunque me haga temblar.",
-    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
-    "arquetipo": "romance_drama",
+    "id": "Attack on Titan-46494",
+    "qid": 118,
+    "name": "Armin Arlert",
+    "anime": "Attack on Titan",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b46494-g7xYYuBtYPnO.png",
+    "quote": "Quien no puede sacrificar nada, no puede cambiar nada.",
+    "hint": "Frase iconica asociada al tono de Armin Arlert.",
+    "tipo": "iconica",
     "similares": [
-      "Kaoruko Waguri",
-      "Riyou Reaper",
-      "Shouto Todoroki",
+      "Erwin Smith",
+      "Roy Mustang",
+      "Edward Elric",
+      "L Lawliet",
+      "Kenzou Tenma"
+    ]
+  },
+  {
+    "id": "Jujutsu Kaisen-133700",
+    "qid": 119,
+    "name": "Nobara Kugisaki",
+    "anime": "Jujutsu Kaisen",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b133700-f6sOO3TcgLV6.png",
+    "quote": "Me visto como me da la gana, ¡así soy yo!",
+    "hint": "Frase iconica asociada al tono de Nobara Kugisaki.",
+    "tipo": "iconica",
+    "similares": [
+      "Mine",
+      "Marin Kitagawa",
+      "Rebecca",
+      "Zero Two",
+      "Kyou Fujibayashi"
+    ]
+  },
+  {
+    "id": "One Punch Man-81929",
+    "qid": 120,
+    "name": "Tatsumaki",
+    "anime": "One Punch Man",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b81929-WPVp2LQoWgkc.png",
+    "quote": "No me trates como a una niña, soy la más fuerte.",
+    "hint": "Frase representativa asociada al tono de Tatsumaki.",
+    "tipo": "representativa",
+    "similares": [
+      "Mine",
+      "Power",
       "Aqua",
-      "Maomao"
+      "Esdeath",
+      "Beatrice"
     ]
   },
   {
-    "id": "Citrus-83209",
-    "name": "Mei Aihara",
-    "anime": "Citrus",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b83209-gv2ABy7LBr5x.jpg",
-    "quote": "La verdad permanece aunque todos intenten esconderla.",
-    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
-    "arquetipo": "misterio_serio",
+    "id": "Blue Lock-162969",
+    "qid": 121,
+    "name": "Seishirou Nagi",
+    "anime": "Blue Lock",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b162969-WGnGyVQrFi0X.png",
+    "quote": "Todo me da pereza, ¿para qué esforzarme?",
+    "hint": "Frase representativa asociada al tono de Seishirou Nagi.",
+    "tipo": "representativa",
     "similares": [
-      "Rintarou Tsumugi",
-      "Zanka Nijiku",
-      "Katsuki Bakugou",
-      "Darkness",
-      "Jinshi"
-    ]
-  },
-  {
-    "id": "Citrus-83387",
-    "name": "Harumi Taniguchi",
-    "anime": "Citrus",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b83387-UImdNRsseICO.jpg",
-    "quote": "La mejor jugada es la que nadie ve venir.",
-    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
-    "arquetipo": "frio_calculador",
-    "similares": [
-      "Sakura Matou",
-      "Subaru Hoshina",
-      "Izuku Midoriya",
-      "Izuku Midoriya",
-      "Vladilena Milizé"
-    ]
-  },
-  {
-    "id": "Citrus-88667",
-    "name": "Matsuri Mizusawa",
-    "anime": "Citrus",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b88667-1uLbk7yHhnz6.jpg",
-    "quote": "El poder solo sirve si quien lo posee sabe imponerlo.",
-    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
-    "arquetipo": "poder_arrogante",
-    "similares": [
-      "Rin Toosaka",
-      "Saku Natsusawa",
-      "Shouta Aizawa",
-      "Shouta Aizawa",
-      "Kurena Kukumila"
-    ]
-  },
-  {
-    "id": "Chainsaw Man-137080",
-    "name": "Makima",
-    "anime": "Chainsaw Man",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b137080-UHcynYNjb5ZU.png",
-    "quote": "Mientras alguien necesite ayuda, no voy a rendirme.",
-    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
-    "arquetipo": "heroe_determinado",
-    "similares": [
-      "Artoria Pendragon",
-      "Enjin",
-      "Toshinori Yagi",
-      "Megumin",
-      "Shinei Nouzen"
+      "Houtarou Oreki",
+      "Kazuma Satou",
+      "Kei Tsukishima",
+      "Saitama",
+      "Kiyotaka Ayanokouji"
     ]
   },
   {
     "id": "Chainsaw Man-130102",
+    "qid": 122,
     "name": "Denji",
     "anime": "Chainsaw Man",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b130102-FO1VHNnEnLlB.png",
-    "quote": "No era el plan, pero este desastre podría funcionar.",
-    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
-    "arquetipo": "comedia_caos",
+    "quote": "Mi sueño es una vida normal, con pan y mermelada.",
+    "hint": "Frase iconica asociada al tono de Denji.",
+    "tipo": "iconica",
     "similares": [
-      "Gilgamesh",
-      "Rudo",
-      "Tenya Iida",
       "Kazuma Satou",
-      "Anju Emma"
+      "Saitama",
+      "Rentarou Aijou",
+      "Tomoya Okazaki",
+      "Zenitsu Agatsuma"
     ]
   },
   {
     "id": "Chainsaw Man-137079",
+    "qid": 123,
     "name": "Power",
     "anime": "Chainsaw Man",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b137079-6yLEUYR3bmpr.png",
-    "quote": "A veces cuidar a alguien exige ser valiente.",
-    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
-    "arquetipo": "romance_drama",
+    "quote": "¡Eso es porque tengo un coeficiente intelectual muy alto!",
+    "hint": "Frase iconica asociada al tono de Power.",
+    "tipo": "iconica",
     "similares": [
-      "Kaoruko Waguri",
-      "Riyou Reaper",
-      "Shouto Todoroki",
       "Aqua",
-      "Maomao"
+      "Esdeath",
+      "Zero Two",
+      "Jinx",
+      "Beatrice"
+    ]
+  },
+  {
+    "id": "Chainsaw Man-137080",
+    "qid": 124,
+    "name": "Makima",
+    "anime": "Chainsaw Man",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b137080-UHcynYNjb5ZU.png",
+    "quote": "En lo personal solo 1 de cada 10 que veo logra atraparme.",
+    "hint": "Frase iconica asociada al tono de Makima.",
+    "tipo": "iconica",
+    "similares": [
+      "Esdeath",
+      "Arisu Sakayanagi",
+      "Mei Aihara",
+      "Beatrice",
+      "Brunhilde"
     ]
   },
   {
     "id": "Chainsaw Man-137081",
+    "qid": 125,
     "name": "Aki Hayakawa",
     "anime": "Chainsaw Man",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b137081-TSrUR3mUJL6r.png",
-    "quote": "Cada detalle cuenta cuando el caso parece imposible.",
-    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
-    "arquetipo": "misterio_serio",
+    "quote": "Renuncia a este trabajo. Si te presentas mañana, te daré otra paliza.",
+    "hint": "Frase representativa asociada al tono de Aki Hayakawa.",
+    "tipo": "representativa",
     "similares": [
-      "Rintarou Tsumugi",
-      "Zanka Nijiku",
-      "Katsuki Bakugou",
-      "Darkness",
-      "Jinshi"
-    ]
-  },
-  {
-    "id": "ARCANE-67",
-    "name": "Vi",
-    "anime": "ARCANE",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b90169-4wr1Zehnsac8.png",
-    "quote": "Observar en silencio también es una forma de ganar.",
-    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
-    "arquetipo": "frio_calculador",
-    "similares": [
-      "Sakura Matou",
-      "Subaru Hoshina",
-      "Izuku Midoriya",
-      "Izuku Midoriya",
-      "Vladilena Milizé"
+      "Eren Yeager",
+      "Levi",
+      "Megumi Fushiguro",
+      "Shinei Nouzen",
+      "Tatsumi"
     ]
   },
   {
     "id": "ARCANE-68",
+    "qid": 126,
     "name": "Jinx",
     "anime": "ARCANE",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b318488-nDSqz6AlFCT9.png",
-    "quote": "No necesito permiso para demostrar quién está por encima.",
-    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
-    "arquetipo": "poder_arrogante",
+    "quote": "¡¿Pensabas que me habías dejado atrás? Nunca me fui... Tú me creaste.",
+    "hint": "Frase iconica asociada al tono de Jinx.",
+    "tipo": "iconica",
     "similares": [
-      "Rin Toosaka",
-      "Saku Natsusawa",
-      "Shouta Aizawa",
-      "Shouta Aizawa",
-      "Kurena Kukumila"
+      "Power",
+      "Zero Two",
+      "Rebecca",
+      "Megumin",
+      "Aqua"
+    ]
+  },
+  {
+    "id": "ARCANE-67",
+    "qid": 127,
+    "name": "Vi",
+    "anime": "ARCANE",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b90169-4wr1Zehnsac8.png",
+    "quote": "No voy a dejarte, hermana.",
+    "hint": "Frase iconica asociada al tono de Vi.",
+    "tipo": "iconica",
+    "similares": [
+      "Mikasa Ackerman",
+      "Yotsuba Nakano",
+      "Mina Ashiro",
+      "Akame",
+      "Momo Ayase"
+    ]
+  },
+  {
+    "id": "ARCANE-67",
+    "qid": 128,
+    "name": "Vi",
+    "anime": "ARCANE",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b90169-4wr1Zehnsac8.png",
+    "quote": "Pensé que podría salvarte... pero ya no sé quién eres.",
+    "hint": "Frase representativa asociada al tono de Vi.",
+    "tipo": "representativa",
+    "similares": [
+      "Mikasa Ackerman",
+      "Akame",
+      "Mine",
+      "Rebecca",
+      "Momo Ayase"
+    ]
+  },
+  {
+    "id": "ARCANE-68",
+    "qid": 129,
+    "name": "Jinx",
+    "anime": "ARCANE",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b318488-nDSqz6AlFCT9.png",
+    "quote": "¡Ja, ja! ¡Mira cómo explota todo!",
+    "hint": "Frase iconica asociada al tono de Jinx.",
+    "tipo": "iconica",
+    "similares": [
+      "Power",
+      "Rebecca",
+      "Mine",
+      "Megumin",
+      "Zero Two"
+    ]
+  },
+  {
+    "id": "Tokyo Revengers-145342",
+    "qid": 130,
+    "name": "Takemichi Hanagaki",
+    "anime": "Tokyo Revengers",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b145342-GSUutL83jGgI.png",
+    "quote": "Solo pideme que te salve!!!",
+    "hint": "Frase iconica asociada al tono de Takemichi Hanagaki.",
+    "tipo": "iconica",
+    "similares": [
+      "Subaru Natsuki",
+      "Satoru Fujinuma",
+      "Shinpei Ajiro",
+      "Tomoya Okazaki",
+      "Taiki Inomata"
     ]
   },
   {
     "id": "Tokyo Revengers-145341",
+    "qid": 131,
     "name": "Manjirou Sano",
     "anime": "Tokyo Revengers",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b145341-CuPldCLZMvvf.png",
-    "quote": "Seguiré luchando hasta que todos estén a salvo.",
-    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
-    "arquetipo": "heroe_determinado",
+    "quote": "Mientras yo esté aquí, nadie de mi pandilla caerá.",
+    "hint": "Frase iconica asociada al tono de Manjirou Sano.",
+    "tipo": "iconica",
     "similares": [
-      "Artoria Pendragon",
-      "Enjin",
-      "Toshinori Yagi",
-      "Megumin",
-      "Shinei Nouzen"
-    ]
-  },
-  {
-    "id": "Tokyo Revengers-145344",
-    "name": "Chifuyu Matsuno",
-    "anime": "Tokyo Revengers",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b145344-q4BqRljEBYNc.png",
-    "quote": "La prudencia está bien; una explosión también.",
-    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
-    "arquetipo": "comedia_caos",
-    "similares": [
-      "Gilgamesh",
-      "Rudo",
-      "Tenya Iida",
-      "Kazuma Satou",
-      "Anju Emma"
+      "Ken Ryuuguji",
+      "Hajime Umemiya",
+      "Haruka Sakura",
+      "Eren Yeager",
+      "Erwin Smith"
     ]
   },
   {
     "id": "Tokyo Revengers-145345",
+    "qid": 132,
     "name": "Ken Ryuuguji",
     "anime": "Tokyo Revengers",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b145345-zyirrSsKIDCb.png",
-    "quote": "No quiero que un recuerdo importante se pierda en silencio.",
-    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
-    "arquetipo": "romance_drama",
+    "quote": "Nuestros asuntos se resuelven en nuestro propio mundo",
+    "hint": "Frase representativa asociada al tono de Ken Ryuuguji.",
+    "tipo": "representativa",
     "similares": [
-      "Kaoruko Waguri",
-      "Riyou Reaper",
-      "Shouto Todoroki",
-      "Aqua",
-      "Maomao"
+      "Levi",
+      "Soushirou Hoshina",
+      "Megumi Fushiguro",
+      "Hajime Umemiya",
+      "Roy Mustang"
     ]
   },
   {
-    "id": "Tokyo Revengers-145343",
-    "name": "Keisuke Baji",
+    "id": "Tokyo Revengers-145342",
+    "qid": 133,
+    "name": "Takemichi Hanagaki",
     "anime": "Tokyo Revengers",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b145343-vRrkdWEUXwYM.jpg",
-    "quote": "No aceptaré una respuesta cómoda sin comprobarla.",
-    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
-    "arquetipo": "misterio_serio",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b145342-GSUutL83jGgI.png",
+    "quote": "¡juro que voy a salvarte, aunque fracase una y otra vez",
+    "hint": "Frase representativa asociada al tono de Takemichi Hanagaki.",
+    "tipo": "representativa",
     "similares": [
-      "Rintarou Tsumugi",
-      "Zanka Nijiku",
-      "Katsuki Bakugou",
-      "Darkness",
-      "Jinshi"
+      "Izuku Midoriya",
+      "Kouichi Haimawari",
+      "Shouyou Hinata",
+      "Zenitsu Agatsuma",
+      "Taiki Inomata"
     ]
   },
   {
     "id": "Dan Da Dan-222594",
+    "qid": 134,
     "name": "Momo Ayase",
     "anime": "Dan Da Dan",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b222594-24Jn7qlI5spH.png",
-    "quote": "Las emociones no deben decidir una estrategia.",
-    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
-    "arquetipo": "frio_calculador",
+    "quote": "¡Vamos a vencer a ese yokai!",
+    "hint": "Frase representativa asociada al tono de Momo Ayase.",
+    "tipo": "representativa",
     "similares": [
-      "Sakura Matou",
-      "Subaru Hoshina",
-      "Izuku Midoriya",
-      "Izuku Midoriya",
-      "Vladilena Milizé"
-    ]
-  },
-  {
-    "id": "Dan Da Dan-245466",
-    "name": "Aira Shiratori",
-    "anime": "Dan Da Dan",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b245466-rd5I5mchZ3bv.png",
-    "quote": "Que todos miren: esta batalla ya tiene dueño.",
-    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
-    "arquetipo": "poder_arrogante",
-    "similares": [
-      "Rin Toosaka",
-      "Saku Natsusawa",
-      "Shouta Aizawa",
-      "Shouta Aizawa",
-      "Kurena Kukumila"
+      "Mina Ashiro",
+      "Yotsuba Nakano",
+      "Aira Shiratori",
+      "Megumin",
+      "Vi"
     ]
   },
   {
     "id": "Dan Da Dan-222593",
+    "qid": 135,
     "name": "Ken Takakura",
     "anime": "Dan Da Dan",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b222593-qBqUvpodooAI.png",
-    "quote": "Una caída no puede decidir el final de una historia.",
-    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
-    "arquetipo": "heroe_determinado",
+    "quote": "¿¡Por qué todo el mundo persigue mis partes bajas!?",
+    "hint": "Frase iconica asociada al tono de Ken Takakura.",
+    "tipo": "iconica",
     "similares": [
-      "Artoria Pendragon",
-      "Enjin",
-      "Toshinori Yagi",
-      "Megumin",
-      "Shinei Nouzen"
+      "Kazuma Satou",
+      "Zenitsu Agatsuma",
+      "Denji",
+      "Kouichi Haimawari",
+      "Izuku Midoriya"
     ]
   },
   {
-    "id": "Dan Da Dan-234824",
-    "name": "Seiko Ayase",
+    "id": "Dan Da Dan-245466",
+    "qid": 136,
+    "name": "Aira Shiratori",
     "anime": "Dan Da Dan",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b234824-i3s64ueaBqGq.png",
-    "quote": "Prometo que esta vez nadie tendrá que arreglarlo todo.",
-    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
-    "arquetipo": "comedia_caos",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b245466-rd5I5mchZ3bv.png",
+    "quote": "Te persigo porque estoy totalmente seguro de que eres un demonio",
+    "hint": "Frase representativa asociada al tono de Aira Shiratori.",
+    "tipo": "representativa",
     "similares": [
-      "Gilgamesh",
-      "Rudo",
-      "Tenya Iida",
-      "Kazuma Satou",
-      "Anju Emma"
+      "Momo Ayase",
+      "Yotsuba Nakano",
+      "Vi",
+      "Mina Ashiro",
+      "Mikasa Ackerman"
+    ]
+  },
+  {
+    "id": "Dan Da Dan-222594",
+    "qid": 137,
+    "name": "Momo Ayase",
+    "anime": "Dan Da Dan",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b222594-24Jn7qlI5spH.png",
+    "quote": "Pero eres un tanto torpe. Tal vez la proxima tambien termine rescatandote",
+    "hint": "Frase representativa asociada al tono de Momo Ayase.",
+    "tipo": "representativa",
+    "similares": [
+      "Nagisa Furukawa",
+      "Emilia",
+      "Yotsuba Nakano",
+      "Eru Chitanda",
+      "Yuki Itose"
     ]
   },
   {
     "id": "A Sign of Affection-179809",
+    "qid": 138,
     "name": "Yuki Itose",
     "anime": "A Sign of Affection",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b179809-pxG89n30MGwl.jpg",
-    "quote": "Si caminamos juntos, incluso el miedo pesa menos.",
-    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
-    "arquetipo": "romance_drama",
+    "quote": "Quiero aprender a comunicarme con signos.",
+    "hint": "Frase representativa asociada al tono de Yuki Itose.",
+    "tipo": "representativa",
     "similares": [
-      "Kaoruko Waguri",
-      "Riyou Reaper",
-      "Shouto Todoroki",
-      "Aqua",
-      "Maomao"
+      "Violet Evergarden",
+      "Eru Chitanda",
+      "Nagisa Furukawa",
+      "Emilia",
+      "Kayo Hinazuki"
     ]
   },
   {
     "id": "A Sign of Affection-179810",
+    "qid": 139,
     "name": "Itsuomi Nagi",
     "anime": "A Sign of Affection",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b179810-E34imq24Z2Gw.jpg",
-    "quote": "El silencio también deja pistas.",
-    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
-    "arquetipo": "misterio_serio",
+    "quote": "Quiero saber mas de ti, como interactuas con la vida y como es que la interpretas",
+    "hint": "Frase representativa asociada al tono de Itsuomi Nagi.",
+    "tipo": "representativa",
     "similares": [
-      "Rintarou Tsumugi",
-      "Zanka Nijiku",
-      "Katsuki Bakugou",
-      "Darkness",
-      "Jinshi"
+      "Jirou Yakuin",
+      "Wakana Gojou",
+      "Fuutarou Uesugi",
+      "Kousei Arima",
+      "Sakuta Azusagawa"
     ]
   },
   {
-    "id": "A Sign of Affection-206489",
-    "name": "Oushi Ashioki",
+    "id": "A Sign of Affection-179809",
+    "qid": 140,
+    "name": "Yuki Itose",
     "anime": "A Sign of Affection",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b206489-6Ewj3mocooVc.png",
-    "quote": "Si conozco las reglas, puedo cambiar el tablero.",
-    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
-    "arquetipo": "frio_calculador",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b179809-pxG89n30MGwl.jpg",
+    "quote": "No hace falta oír para entender.",
+    "hint": "Frase representativa asociada al tono de Yuki Itose.",
+    "tipo": "representativa",
     "similares": [
-      "Sakura Matou",
-      "Subaru Hoshina",
-      "Izuku Midoriya",
-      "Izuku Midoriya",
-      "Vladilena Milizé"
-    ]
-  },
-  {
-    "id": "A Sign of Affection-246023",
-    "name": "Shin Iryuu",
-    "anime": "A Sign of Affection",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b246023-JY3YgmQALjHM.png",
-    "quote": "La victoria es lo único que merece mi atención.",
-    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
-    "arquetipo": "poder_arrogante",
-    "similares": [
-      "Rin Toosaka",
-      "Saku Natsusawa",
-      "Shouta Aizawa",
-      "Shouta Aizawa",
-      "Kurena Kukumila"
+      "Violet Evergarden",
+      "Kaori Miyazono",
+      "Frieren",
+      "Mio Kofune",
+      "Mai Sakurajima"
     ]
   },
   {
     "id": "Demon Slayer-126071",
+    "qid": 141,
     "name": "Tanjirou Kamado",
     "anime": "Demon Slayer",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b126071-BTNEc1nRIv68.png",
-    "quote": "Mi fuerza tiene sentido cuando protege a otra persona.",
-    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
-    "arquetipo": "heroe_determinado",
+    "quote": "Aveces ayudar a los demas es la unica forma de ayudarte",
+    "hint": "Frase iconica asociada al tono de Tanjirou Kamado.",
+    "tipo": "iconica",
     "similares": [
-      "Artoria Pendragon",
-      "Enjin",
-      "Toshinori Yagi",
-      "Megumin",
-      "Shinei Nouzen"
-    ]
-  },
-  {
-    "id": "Demon Slayer-127518",
-    "name": "Nezuko Kamado",
-    "anime": "Demon Slayer",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b127518-NRlq1CQ1v1ro.png",
-    "quote": "El caos siempre encuentra una manera de sorprenderme.",
-    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
-    "arquetipo": "comedia_caos",
-    "similares": [
-      "Gilgamesh",
-      "Rudo",
-      "Tenya Iida",
-      "Kazuma Satou",
-      "Anju Emma"
-    ]
-  },
-  {
-    "id": "Demon Slayer-129130",
-    "name": "Inosuke Hashibira",
-    "anime": "Demon Slayer",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/n129130-SJC0Kn1DU39E.jpg",
-    "quote": "Hay personas que cambian nuestra vida sin proponérselo.",
-    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
-    "arquetipo": "romance_drama",
-    "similares": [
-      "Kaoruko Waguri",
-      "Riyou Reaper",
-      "Shouto Todoroki",
-      "Aqua",
-      "Maomao"
+      "Edward Elric",
+      "Alphonse Elric",
+      "Shinpei Ajiro",
+      "Satoru Fujinuma",
+      "Takemichi Hanagaki"
     ]
   },
   {
     "id": "Demon Slayer-129131",
+    "qid": 142,
     "name": "Zenitsu Agatsuma",
     "anime": "Demon Slayer",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b129131-FZrQ7lSlxmEr.png",
-    "quote": "La realidad suele ser más inquietante que cualquier rumor.",
-    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
-    "arquetipo": "misterio_serio",
+    "quote": "¡Voy a morir, seguro que voy a morir!",
+    "hint": "Frase iconica asociada al tono de Zenitsu Agatsuma.",
+    "tipo": "iconica",
     "similares": [
-      "Rintarou Tsumugi",
-      "Zanka Nijiku",
+      "Kazuma Satou",
+      "Denji",
+      "Stark",
+      "Ken Takakura",
+      "Kouichi Haimawari"
+    ]
+  },
+  {
+    "id": "Demon Slayer-129130",
+    "qid": 143,
+    "name": "Inosuke Hashibira",
+    "anime": "Demon Slayer",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/n129130-SJC0Kn1DU39E.jpg",
+    "quote": "¡Cállate, llorón de pijama amarillo! ¡Deja de gritar o te daré una paliza!",
+    "hint": "Frase iconica asociada al tono de Inosuke Hashibira.",
+    "tipo": "iconica",
+    "similares": [
+      "Thor",
+      "Meguru Bachira",
       "Katsuki Bakugou",
-      "Darkness",
-      "Jinshi"
+      "Bu Lü",
+      "Shouei Barou"
+    ]
+  },
+  {
+    "id": "Demon Slayer-129133",
+    "qid": 144,
+    "name": "Kyoujurou Rengoku",
+    "anime": "Demon Slayer",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b129133-VlTPowwt68rJ.png",
+    "quote": "Pon tu corazón en llamas.",
+    "hint": "Frase iconica asociada al tono de Kyoujurou Rengoku.",
+    "tipo": "iconica",
+    "similares": [
+      "Toshinori Yagi",
+      "Hajime Umemiya",
+      "Erwin Smith",
+      "Bang",
+      "Izuku Midoriya"
+    ]
+  },
+  {
+    "id": "La nobleza de las Flores-268676",
+    "qid": 145,
+    "name": "Kaoruko Waguri",
+    "anime": "La nobleza de las Flores",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b268676-aQmqvqj0DNoJ.png",
+    "quote": "¡Tú eres lo que importa, y quiero conocerte mejor!",
+    "hint": "Frase representativa asociada al tono de Kaoruko Waguri.",
+    "tipo": "representativa",
+    "similares": [
+      "Nagisa Furukawa",
+      "Eru Chitanda",
+      "Yuki Itose",
+      "Itsuki Nakano",
+      "Marin Kitagawa"
+    ]
+  },
+  {
+    "id": "La nobleza de las Flores-268677",
+    "qid": 146,
+    "name": "Rintarou Tsumugi",
+    "anime": "La nobleza de las Flores",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b268677-APMPGH67QqPr.jpg",
+    "quote": "Estoy acostumbrado a que la gente me juzgue por mi apariencia.",
+    "hint": "Frase representativa asociada al tono de Rintarou Tsumugi.",
+    "tipo": "representativa",
+    "similares": [
+      "Wakana Gojou",
+      "Taiki Inomata",
+      "Jirou Yakuin",
+      "Akihiko Nirei",
+      "Hiro"
+    ]
+  },
+  {
+    "id": "La nobleza de las Flores-272241",
+    "qid": 147,
+    "name": "Saku Natsusawa",
+    "anime": "La nobleza de las Flores",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b272241-6NHTwQDIUXQk.png",
+    "quote": "Pense que ya eramos amigos",
+    "hint": "Frase representativa asociada al tono de Saku Natsusawa.",
+    "tipo": "representativa",
+    "similares": [
+      "Chinatsu Kano",
+      "Hina Chouno",
+      "Kyou Fujibayashi",
+      "Suzune Horikita",
+      "Mei Aihara"
     ]
   },
   {
     "id": "Solo Leveling-129928",
+    "qid": 148,
     "name": "Jin-U Seong",
     "anime": "Solo Leveling",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b129928-BCEjVaP0AQSw.png",
-    "quote": "No necesito mostrar mis intenciones para controlar el resultado.",
-    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
-    "arquetipo": "frio_calculador",
+    "quote": "Tengo malas noticias para ti. Verás... yo no he parado de subir de nivel.",
+    "hint": "Frase representativa asociada al tono de Jin-U Seong.",
+    "tipo": "representativa",
     "similares": [
-      "Sakura Matou",
-      "Subaru Hoshina",
       "Izuku Midoriya",
-      "Izuku Midoriya",
-      "Vladilena Milizé"
-    ]
-  },
-  {
-    "id": "Solo Leveling-138789",
-    "name": "Hae-In Cha",
-    "anime": "Solo Leveling",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b138789-AhE8m0LWjE7E.png",
-    "quote": "No hay rival capaz de detenerme cuando decido avanzar.",
-    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
-    "arquetipo": "poder_arrogante",
-    "similares": [
-      "Rin Toosaka",
-      "Saku Natsusawa",
-      "Shouta Aizawa",
-      "Shouta Aizawa",
-      "Kurena Kukumila"
-    ]
-  },
-  {
-    "id": "Solo Leveling-145722",
-    "name": "Igris",
-    "anime": "Solo Leveling",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b145722-qSJ71S6vpeeM.png",
-    "quote": "Aunque tenga miedo, daré el siguiente paso.",
-    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
-    "arquetipo": "heroe_determinado",
-    "similares": [
-      "Artoria Pendragon",
-      "Enjin",
-      "Toshinori Yagi",
-      "Megumin",
-      "Shinei Nouzen"
-    ]
-  },
-  {
-    "id": "Solo Leveling-136074",
-    "name": "Ju-Hui Lee",
-    "anime": "Solo Leveling",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b136074-pLyumEnxjL7P.png",
-    "quote": "Si todo puede salir mal, al menos será divertido.",
-    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
-    "arquetipo": "comedia_caos",
-    "similares": [
-      "Gilgamesh",
-      "Rudo",
-      "Tenya Iida",
-      "Kazuma Satou",
-      "Anju Emma"
+      "Kafka Hibino",
+      "Taiki Inomata",
+      "Shouyou Hinata",
+      "Takemichi Hanagaki"
     ]
   },
   {
     "id": "My Dress up Darling-133676",
+    "qid": 149,
     "name": "Marin Kitagawa",
     "anime": "My Dress up Darling",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b133676-kV2czE3C8Qls.png",
-    "quote": "Lo que siento merece ser dicho, aunque me haga temblar.",
-    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
-    "arquetipo": "romance_drama",
+    "quote": "No deberias aceptar cosas que no quieres, en serio debes pensar mas por ti mismo.",
+    "hint": "Frase iconica asociada al tono de Marin Kitagawa.",
+    "tipo": "iconica",
     "similares": [
-      "Kaoruko Waguri",
-      "Riyou Reaper",
-      "Shouto Todoroki",
-      "Aqua",
-      "Maomao"
+      "Megumin",
+      "Itsuki Nakano",
+      "Yotsuba Nakano",
+      "Zero Two",
+      "Eru Chitanda"
     ]
   },
   {
     "id": "My Dress up Darling-133678",
+    "qid": 150,
     "name": "Wakana Gojou",
     "anime": "My Dress up Darling",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b133678-IitCgjDxQGgu.png",
-    "quote": "La verdad permanece aunque todos intenten esconderla.",
-    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
-    "arquetipo": "misterio_serio",
+    "quote": "Desde entonces la palabra hermoso se relaciona con cosas muy especiales.",
+    "hint": "Frase iconica asociada al tono de Wakana Gojou.",
+    "tipo": "iconica",
     "similares": [
-      "Rintarou Tsumugi",
-      "Zanka Nijiku",
-      "Katsuki Bakugou",
-      "Darkness",
-      "Jinshi"
+      "Taiki Inomata",
+      "Kousei Arima",
+      "Hiro",
+      "Jirou Yakuin",
+      "Houtarou Oreki"
     ]
   },
   {
-    "id": "My Dress up Darling-133677",
-    "name": "Sajuna Inui",
+    "id": "My Dress up Darling-133676",
+    "qid": 151,
+    "name": "Marin Kitagawa",
     "anime": "My Dress up Darling",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b133677-PqshvUeVFB7u.jpg",
-    "quote": "La mejor jugada es la que nadie ve venir.",
-    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
-    "arquetipo": "frio_calculador",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b133676-kV2czE3C8Qls.png",
+    "quote": "Puede ser un pasatiempo, o realmente cualquier otra cosa, pero me encanta cuando la gente se divierte haciendo lo que ama. ",
+    "hint": "Frase representativa asociada al tono de Marin Kitagawa.",
+    "tipo": "representativa",
     "similares": [
-      "Sakura Matou",
-      "Subaru Hoshina",
-      "Izuku Midoriya",
-      "Izuku Midoriya",
-      "Vladilena Milizé"
+      "Megumin",
+      "Yotsuba Nakano",
+      "Eru Chitanda",
+      "Itsuki Nakano",
+      "Fuuko Ibuki"
     ]
   },
   {
-    "id": "My Dress up Darling-207937",
-    "name": "Shinju Inui",
+    "id": "My Dress up Darling-133678",
+    "qid": 152,
+    "name": "Wakana Gojou",
     "anime": "My Dress up Darling",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b207937-ytYjcNtNX77K.png",
-    "quote": "El poder solo sirve si quien lo posee sabe imponerlo.",
-    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
-    "arquetipo": "poder_arrogante",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b133678-IitCgjDxQGgu.png",
+    "quote": "No soy alguien especial ni muy social, pero si puedo ayudarte a cumplir tus sueños con mis manos, me hace muy feliz.",
+    "hint": "Frase representativa asociada al tono de Wakana Gojou.",
+    "tipo": "representativa",
     "similares": [
-      "Rin Toosaka",
-      "Saku Natsusawa",
-      "Shouta Aizawa",
-      "Shouta Aizawa",
-      "Kurena Kukumila"
+      "Taiki Inomata",
+      "Kousei Arima",
+      "Jirou Yakuin",
+      "Akihiko Nirei",
+      "Fuutarou Uesugi"
     ]
   },
   {
     "id": "Jujutsu Kaisen-127691",
+    "qid": 153,
     "name": "Satoru Gojou",
     "anime": "Jujutsu Kaisen",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b127691-9zqh1xpIubn7.png",
-    "quote": "Mientras alguien necesite ayuda, no voy a rendirme.",
-    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
-    "arquetipo": "heroe_determinado",
+    "quote": "¿Que si me ganaría? ",
+    "hint": "Frase iconica asociada al tono de Satoru Gojou.",
+    "tipo": "iconica",
     "similares": [
-      "Artoria Pendragon",
-      "Enjin",
-      "Toshinori Yagi",
-      "Megumin",
-      "Shinei Nouzen"
+      "Sukuna",
+      "Saitama",
+      "Gilgamesh",
+      "Bu Lü",
+      "Thor"
     ]
   },
   {
     "id": "Jujutsu Kaisen-127212",
+    "qid": 154,
     "name": "Yuuji Itadori",
     "anime": "Jujutsu Kaisen",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b127212-FVm2tD0erQ5B.png",
-    "quote": "No era el plan, pero este desastre podría funcionar.",
-    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
-    "arquetipo": "comedia_caos",
+    "quote": "Quiero que la gente muera rodeada de gente.",
+    "hint": "Frase iconica asociada al tono de Yuuji Itadori.",
+    "tipo": "iconica",
+    "similares": [
+      "Tanjirou Kamado",
+      "Izuku Midoriya",
+      "Himmel",
+      "Alphonse Elric",
+      "Kenzou Tenma"
+    ]
+  },
+  {
+    "id": "Jujutsu Kaisen-133701",
+    "qid": 155,
+    "name": "Sukuna",
+    "anime": "Jujutsu Kaisen",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b133701-rCQuDpHr3UZL.png",
+    "quote": "Alégrate. Eres fuerte.",
+    "hint": "Frase iconica asociada al tono de Sukuna.",
+    "tipo": "iconica",
     "similares": [
       "Gilgamesh",
-      "Rudo",
-      "Tenya Iida",
-      "Kazuma Satou",
-      "Anju Emma"
+      "Johan Liebert",
+      "Light Yagami",
+      "Satoru Gojou",
+      "Thor"
     ]
   },
   {
     "id": "Jujutsu Kaisen-126635",
+    "qid": 156,
     "name": "Megumi Fushiguro",
     "anime": "Jujutsu Kaisen",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b126635-L0y3I92JSUkN.png",
-    "quote": "A veces cuidar a alguien exige ser valiente.",
-    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
-    "arquetipo": "romance_drama",
+    "quote": "El mundo no es justo, y yo tampoco lo soy",
+    "hint": "Frase iconica asociada al tono de Megumi Fushiguro.",
+    "tipo": "iconica",
     "similares": [
-      "Kaoruko Waguri",
-      "Riyou Reaper",
-      "Shouto Todoroki",
-      "Aqua",
-      "Maomao"
-    ]
-  },
-  {
-    "id": "Jujutsu Kaisen-133704",
-    "name": "Kento Nanami",
-    "anime": "Jujutsu Kaisen",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b133704-8wLTGjc234q2.png",
-    "quote": "Cada detalle cuenta cuando el caso parece imposible.",
-    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
-    "arquetipo": "misterio_serio",
-    "similares": [
-      "Rintarou Tsumugi",
-      "Zanka Nijiku",
-      "Katsuki Bakugou",
-      "Darkness",
-      "Jinshi"
+      "Levi",
+      "Archer",
+      "Kiyotaka Ayanokouji",
+      "Kei Tsukishima",
+      "Aki Hayakawa"
     ]
   },
   {
     "id": "Violet Evergarden-90169",
+    "qid": 157,
     "name": "Violet Evergarden",
     "anime": "Violet Evergarden",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b90169-4wr1Zehnsac8.png",
-    "quote": "Observar en silencio también es una forma de ganar.",
-    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
-    "arquetipo": "frio_calculador",
+    "quote": "Quiero saber qué significa te amo.",
+    "hint": "Frase iconica asociada al tono de Violet Evergarden.",
+    "tipo": "iconica",
     "similares": [
-      "Sakura Matou",
-      "Subaru Hoshina",
-      "Izuku Midoriya",
-      "Izuku Midoriya",
-      "Vladilena Milizé"
+      "Frieren",
+      "Emilia",
+      "Akame",
+      "Fern",
+      "Lucy"
     ]
   },
   {
     "id": "Violet Evergarden-124790",
+    "qid": 158,
     "name": "Gilbert Bougainvillea",
     "anime": "Violet Evergarden",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b124790-QR7zyemTK0zq.png",
-    "quote": "No necesito permiso para demostrar quién está por encima.",
-    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
-    "arquetipo": "poder_arrogante",
+    "quote": "Vive, y sé libre.",
+    "hint": "Frase iconica asociada al tono de Gilbert Bougainvillea.",
+    "tipo": "iconica",
     "similares": [
-      "Rin Toosaka",
-      "Saku Natsusawa",
-      "Shouta Aizawa",
-      "Shouta Aizawa",
-      "Kurena Kukumila"
+      "Himmel",
+      "Erwin Smith",
+      "Kyoujurou Rengoku",
+      "Kenzou Tenma",
+      "Toshinori Yagi"
     ]
   },
   {
-    "id": "Violet Evergarden-124788",
-    "name": "Benedict Blue",
+    "id": "Fullmetal Alchemist Brotherhood-70",
+    "qid": 159,
+    "name": "Riza Hawkeye",
+    "anime": "Fullmetal Alchemist Brotherhood",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b70-k4bCgDspyOdI.png",
+    "quote": "Si se desvía del camino, no dudaré en dispararle.",
+    "hint": "Frase representativa asociada al tono de Riza Hawkeye.",
+    "tipo": "representativa",
+    "similares": [
+      "Akame",
+      "Mikasa Ackerman",
+      "Suzune Horikita",
+      "Vladilena Milizé",
+      "Makima"
+    ]
+  },
+  {
+    "id": "Violet Evergarden-90169",
+    "qid": 160,
+    "name": "Violet Evergarden",
     "anime": "Violet Evergarden",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b124788-upZ5vtGwndzt.jpg",
-    "quote": "Seguiré luchando hasta que todos estén a salvo.",
-    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
-    "arquetipo": "heroe_determinado",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b90169-4wr1Zehnsac8.png",
+    "quote": "Cada carta merece ser entregada",
+    "hint": "Frase representativa asociada al tono de Violet Evergarden.",
+    "tipo": "representativa",
     "similares": [
-      "Artoria Pendragon",
-      "Enjin",
-      "Toshinori Yagi",
-      "Megumin",
-      "Shinei Nouzen"
-    ]
-  },
-  {
-    "id": "Violet Evergarden-124787",
-    "name": "Cattleya Baudelaire",
-    "anime": "Violet Evergarden",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b124787-1HuZGawvoejp.jpg",
-    "quote": "La prudencia está bien; una explosión también.",
-    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
-    "arquetipo": "comedia_caos",
-    "similares": [
-      "Gilgamesh",
-      "Rudo",
-      "Tenya Iida",
-      "Kazuma Satou",
-      "Anju Emma"
-    ]
-  },
-  {
-    "id": "Charlotte-88951",
-    "name": "Nao Tomori",
-    "anime": "Charlotte",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/88951-bRm610RrrXp9.jpg",
-    "quote": "No quiero que un recuerdo importante se pierda en silencio.",
-    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
-    "arquetipo": "romance_drama",
-    "similares": [
-      "Kaoruko Waguri",
-      "Riyou Reaper",
-      "Shouto Todoroki",
-      "Aqua",
-      "Maomao"
-    ]
-  },
-  {
-    "id": "Charlotte-22369",
-    "name": "Kanade Tachibana",
-    "anime": "Charlotte",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b22369-zC7OgGbfO7b6.jpg",
-    "quote": "No aceptaré una respuesta cómoda sin comprobarla.",
-    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
-    "arquetipo": "misterio_serio",
-    "similares": [
-      "Rintarou Tsumugi",
-      "Zanka Nijiku",
-      "Katsuki Bakugou",
-      "Darkness",
-      "Jinshi"
+      "Frieren",
+      "Yuki Itose",
+      "Kaori Miyazono",
+      "Emilia",
+      "Fern"
     ]
   },
   {
     "id": "Charlotte-88950",
+    "qid": 161,
     "name": "Yuu Otosaka",
     "anime": "Charlotte",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b88950-0ER2ke5pswxq.png",
-    "quote": "Las emociones no deben decidir una estrategia.",
-    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
-    "arquetipo": "frio_calculador",
+    "quote": "Y si domino el mundo entero? ya soy omnipotente",
+    "hint": "Frase representativa asociada al tono de Yuu Otosaka.",
+    "tipo": "representativa",
     "similares": [
-      "Sakura Matou",
-      "Subaru Hoshina",
-      "Izuku Midoriya",
-      "Izuku Midoriya",
-      "Vladilena Milizé"
+      "Kazuma Satou",
+      "Satoru Gojou",
+      "Denji",
+      "Light Yagami",
+      "Sakuta Azusagawa"
     ]
   },
   {
-    "id": "Charlotte-88955",
-    "name": "Ayumi Otosaka",
+    "id": "Charlotte-88951",
+    "qid": 162,
+    "name": "Nao Tomori",
     "anime": "Charlotte",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/88955-iKYbTaBsmIF0.jpg",
-    "quote": "Que todos miren: esta batalla ya tiene dueño.",
-    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
-    "arquetipo": "poder_arrogante",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/88951-bRm610RrrXp9.jpg",
+    "quote": "¿Entonces quieres ser una basura? ¿quieres dejar de ser humano?",
+    "hint": "Frase representativa asociada al tono de Nao Tomori.",
+    "tipo": "representativa",
     "similares": [
-      "Rin Toosaka",
-      "Saku Natsusawa",
-      "Shouta Aizawa",
-      "Shouta Aizawa",
-      "Kurena Kukumila"
+      "Suzune Horikita",
+      "Mei Aihara",
+      "Makima",
+      "Arisu Sakayanagi",
+      "Mikasa Ackerman"
+    ]
+  },
+  {
+    "id": "My Hero Academia-89243",
+    "qid": 163,
+    "name": "Eijirou Kirishima",
+    "anime": "My Hero Academia",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b89243-R2WJlNuj3aEs.jpg",
+    "quote": "Hasta ahora pase miedo muchas veces pero lo que mas miedo me da siempre es volver a arrepentirme.",
+    "hint": "Frase representativa asociada al tono de Eijirou Kirishima.",
+    "tipo": "representativa",
+    "similares": [
+      "Izuku Midoriya",
+      "Tanjirou Kamado",
+      "Kyoujurou Rengoku",
+      "Hajime Umemiya",
+      "Takemichi Hanagaki"
+    ]
+  },
+  {
+    "id": "Charlotte-88950",
+    "qid": 164,
+    "name": "Yuu Otosaka",
+    "anime": "Charlotte",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b88950-0ER2ke5pswxq.png",
+    "quote": "Este poder es tan inútil como útil.",
+    "hint": "Frase representativa asociada al tono de Yuu Otosaka.",
+    "tipo": "representativa",
+    "similares": [
+      "Kazuma Satou",
+      "Ken Takakura",
+      "Denji",
+      "Takemichi Hanagaki",
+      "Sakuta Azusagawa"
     ]
   },
   {
     "id": "Bunny Girl Senpai-127222",
+    "qid": 165,
     "name": "Mai Sakurajima",
     "anime": "Bunny Girl Senpai",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b127222-Jh5hhP7vZ7s1.png",
-    "quote": "Una caída no puede decidir el final de una historia.",
-    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
-    "arquetipo": "heroe_determinado",
+    "quote": "Mentiroso me prometiste que jamas me olvidarias",
+    "hint": "Frase representativa asociada al tono de Mai Sakurajima.",
+    "tipo": "representativa",
     "similares": [
-      "Artoria Pendragon",
-      "Enjin",
-      "Toshinori Yagi",
-      "Megumin",
-      "Shinei Nouzen"
+      "Kyou Fujibayashi",
+      "Mei Aihara",
+      "Mine",
+      "Suzune Horikita",
+      "Rio Futaba"
+    ]
+  },
+  {
+    "id": "Bunny Girl Senpai-127222",
+    "qid": 166,
+    "name": "Mai Sakurajima",
+    "anime": "Bunny Girl Senpai",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b127222-Jh5hhP7vZ7s1.png",
+    "quote": "Mientras puedas vivir estoy dispuesta a que me odies",
+    "hint": "Frase iconica asociada al tono de Mai Sakurajima.",
+    "tipo": "iconica",
+    "similares": [
+      "Hina Chouno",
+      "Kaori Miyazono",
+      "Marin Kitagawa",
+      "Mei Aihara",
+      "Kikyou Kushida"
     ]
   },
   {
     "id": "Bunny Girl Senpai-127221",
+    "qid": 167,
     "name": "Sakuta Azusagawa",
     "anime": "Bunny Girl Senpai",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/n127221-Wxg4xFtW4kaJ.png",
-    "quote": "Prometo que esta vez nadie tendrá que arreglarlo todo.",
-    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
-    "arquetipo": "comedia_caos",
+    "quote": "No vivo para gustarle a todo el mundo",
+    "hint": "Frase representativa asociada al tono de Sakuta Azusagawa.",
+    "tipo": "representativa",
     "similares": [
-      "Gilgamesh",
-      "Rudo",
-      "Tenya Iida",
-      "Kazuma Satou",
-      "Anju Emma"
+      "Shinei Nouzen",
+      "Kousei Arima",
+      "Tomoya Okazaki",
+      "Houtarou Oreki",
+      "Satoru Fujinuma"
     ]
   },
   {
     "id": "Bunny Girl Senpai-127633",
+    "qid": 168,
     "name": "Rio Futaba",
     "anime": "Bunny Girl Senpai",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b127633-FcCwWK5sQRhK.png",
-    "quote": "Si caminamos juntos, incluso el miedo pesa menos.",
-    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
-    "arquetipo": "romance_drama",
+    "quote": "Solo estoy disgustada conmigo misma por alegrarme cuando un chico con novia me habla",
+    "hint": "Frase representativa asociada al tono de Rio Futaba.",
+    "tipo": "representativa",
     "similares": [
-      "Kaoruko Waguri",
-      "Riyou Reaper",
-      "Shouto Todoroki",
-      "Aqua",
-      "Maomao"
-    ]
-  },
-  {
-    "id": "Bunny Girl Senpai-127613",
-    "name": "Kaede Azusagawa",
-    "anime": "Bunny Girl Senpai",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b127613-LBtFkMJfUWpg.png",
-    "quote": "El silencio también deja pistas.",
-    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
-    "arquetipo": "misterio_serio",
-    "similares": [
-      "Rintarou Tsumugi",
-      "Zanka Nijiku",
-      "Katsuki Bakugou",
-      "Darkness",
-      "Jinshi"
-    ]
-  },
-  {
-    "id": "Summer Time Rendering-155706",
-    "name": "Mio Kofune",
-    "anime": "Summer Time Rendering",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b155706-guouOSwrSqso.jpg",
-    "quote": "Si conozco las reglas, puedo cambiar el tablero.",
-    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
-    "arquetipo": "frio_calculador",
-    "similares": [
-      "Sakura Matou",
-      "Subaru Hoshina",
-      "Izuku Midoriya",
-      "Izuku Midoriya",
-      "Vladilena Milizé"
+      "Eru Chitanda",
+      "Maomao",
+      "Frieren",
+      "Mio Kofune",
+      "Mai Sakurajima"
     ]
   },
   {
     "id": "Summer Time Rendering-155703",
+    "qid": 169,
     "name": "Shinpei Ajiro",
     "anime": "Summer Time Rendering",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b155703-1CNh5yTk8xWO.jpg",
-    "quote": "La victoria es lo único que merece mi atención.",
-    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
-    "arquetipo": "poder_arrogante",
+    "quote": "Voy a salvarla, sin importar cuántas veces tenga que intentarlo.",
+    "hint": "Frase iconica asociada al tono de Shinpei Ajiro.",
+    "tipo": "iconica",
     "similares": [
-      "Rin Toosaka",
-      "Saku Natsusawa",
-      "Shouta Aizawa",
-      "Shouta Aizawa",
-      "Kurena Kukumila"
+      "Subaru Natsuki",
+      "Satoru Fujinuma",
+      "Takemichi Hanagaki",
+      "Tanjirou Kamado",
+      "Shirou Emiya"
     ]
   },
   {
-    "id": "Summer Time Rendering-155711",
-    "name": "Hizuru Minakata",
+    "id": "Summer Time Rendering-155703",
+    "qid": 170,
+    "name": "Shinpei Ajiro",
     "anime": "Summer Time Rendering",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b155711-VwaqEhjhI0FL.png",
-    "quote": "Mi fuerza tiene sentido cuando protege a otra persona.",
-    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
-    "arquetipo": "heroe_determinado",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b155703-1CNh5yTk8xWO.jpg",
+    "quote": "No puedo dejar que ella muera de nuevo.",
+    "hint": "Frase representativa asociada al tono de Shinpei Ajiro.",
+    "tipo": "representativa",
     "similares": [
-      "Artoria Pendragon",
-      "Enjin",
-      "Toshinori Yagi",
-      "Megumin",
-      "Shinei Nouzen"
+      "Subaru Natsuki",
+      "Satoru Fujinuma",
+      "Takemichi Hanagaki",
+      "Hiro",
+      "David Martinez"
     ]
   },
   {
-    "id": "Summer Time Rendering-155712",
-    "name": "Ushio Kofune",
+    "id": "Summer Time Rendering-155706",
+    "qid": 171,
+    "name": "Mio Kofune",
     "anime": "Summer Time Rendering",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b155712-zMvjVpfc4WQN.png",
-    "quote": "El caos siempre encuentra una manera de sorprenderme.",
-    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
-    "arquetipo": "comedia_caos",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b155706-guouOSwrSqso.jpg",
+    "quote": "Tenía que decírtelo hoy... Existe la posibilidad de que todos muramos mañana,",
+    "hint": "Frase representativa asociada al tono de Mio Kofune.",
+    "tipo": "representativa",
     "similares": [
-      "Gilgamesh",
-      "Rudo",
-      "Tenya Iida",
-      "Kazuma Satou",
-      "Anju Emma"
+      "Maomao",
+      "Frieren",
+      "Arisu Sakayanagi",
+      "Anna Liebert",
+      "Rio Futaba"
+    ]
+  },
+  {
+    "id": "Demon Slayer-136072",
+    "qid": 172,
+    "name": "Mitsuri Kanroji",
+    "anime": "Demon Slayer",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b136072-xVwyRUKdpybi.png",
+    "quote": "Quiero encontrar a alguien que me quiera tal como soy.",
+    "hint": "Frase representativa asociada al tono de Mitsuri Kanroji.",
+    "tipo": "representativa",
+    "similares": [
+      "Emilia",
+      "Yuki Itose",
+      "Karane Inda",
+      "Hina Chouno",
+      "Nano Eiai"
     ]
   },
   {
     "id": "Haikyuu!-64769",
+    "qid": 173,
     "name": "Shouyou Hinata",
     "anime": "Haikyuu!",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b64769-WoWlCMLLgJ14.png",
-    "quote": "Hay personas que cambian nuestra vida sin proponérselo.",
-    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
-    "arquetipo": "romance_drama",
+    "quote": "No me importa quién sea mi oponente o qué tan alto sea.",
+    "hint": "Frase iconica asociada al tono de Shouyou Hinata.",
+    "tipo": "iconica",
     "similares": [
-      "Kaoruko Waguri",
-      "Riyou Reaper",
-      "Shouto Todoroki",
-      "Aqua",
-      "Maomao"
+      "Yoichi Isagi",
+      "Izuku Midoriya",
+      "Meguru Bachira",
+      "Taiki Inomata",
+      "Inosuke Hashibira"
     ]
   },
   {
     "id": "Haikyuu!-64771",
+    "qid": 174,
     "name": "Tobio Kageyama",
     "anime": "Haikyuu!",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b64771-BuCVs7B8bBdh.png",
-    "quote": "La realidad suele ser más inquietante que cualquier rumor.",
-    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
-    "arquetipo": "misterio_serio",
+    "quote": "Yo soy el Rey de la Cancha.",
+    "hint": "Frase iconica asociada al tono de Tobio Kageyama.",
+    "tipo": "iconica",
     "similares": [
-      "Rintarou Tsumugi",
-      "Zanka Nijiku",
+      "Shouei Barou",
       "Katsuki Bakugou",
-      "Darkness",
-      "Jinshi"
+      "Tooru Oikawa",
+      "Yoichi Isagi",
+      "Gilgamesh"
     ]
   },
   {
-    "id": "Haikyuu!-67327",
-    "name": "Yuu Nishinoya",
+    "id": "Haikyuu!-67329",
+    "qid": 175,
+    "name": "Kei Tsukishima",
     "anime": "Haikyuu!",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b67327-zQb1dlC7joPb.jpg",
-    "quote": "No necesito mostrar mis intenciones para controlar el resultado.",
-    "hint": "Mente estratégica que calcula cada movimiento antes de actuar.",
-    "arquetipo": "frio_calculador",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b67329-k7mDdqQ6rJ4w.png",
+    "quote": "¿Que no los de primaria no deberian estar en su casa?",
+    "hint": "Frase representativa asociada al tono de Kei Tsukishima.",
+    "tipo": "representativa",
     "similares": [
-      "Sakura Matou",
-      "Subaru Hoshina",
-      "Izuku Midoriya",
-      "Izuku Midoriya",
-      "Vladilena Milizé"
+      "Megumi Fushiguro",
+      "Houtarou Oreki",
+      "Kiyotaka Ayanokouji",
+      "Levi",
+      "Satoshi Fukube"
     ]
   },
   {
-    "id": "Haikyuu!-71267",
-    "name": "Kenma Kozume",
+    "id": "Haikyuu!-71611",
+    "qid": 176,
+    "name": "Tooru Oikawa",
     "anime": "Haikyuu!",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b71267-q44J2MXMinXD.jpg",
-    "quote": "No hay rival capaz de detenerme cuando decido avanzar.",
-    "hint": "Presencia dominante, confianza extrema y voluntad de imponerse.",
-    "arquetipo": "poder_arrogante",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b71611-cUZwVfzeNXD9.png",
+    "quote": "Está perfecto, puedo volver a entrenar cuando quiera; solo fue un esguince de primer grado",
+    "hint": "Frase representativa asociada al tono de Tooru Oikawa.",
+    "tipo": "representativa",
     "similares": [
-      "Rin Toosaka",
-      "Saku Natsusawa",
-      "Shouta Aizawa",
-      "Shouta Aizawa",
-      "Kurena Kukumila"
+      "Tobio Kageyama",
+      "Katsuki Bakugou",
+      "Yoichi Isagi",
+      "Shouyou Hinata",
+      "Shouei Barou"
     ]
   },
   {
     "id": "Your Lie in April-69411",
+    "qid": 177,
     "name": "Kaori Miyazono",
     "anime": "Your Lie in April",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b69411-lxM0FRvWHqlv.png",
-    "quote": "Aunque tenga miedo, daré el siguiente paso.",
-    "hint": "Voluntad firme que convierte el miedo en impulso para proteger.",
-    "arquetipo": "heroe_determinado",
+    "quote": "¿Me recordaras aunquesea un poco?.",
+    "hint": "Frase iconica asociada al tono de Kaori Miyazono.",
+    "tipo": "iconica",
     "similares": [
-      "Artoria Pendragon",
-      "Enjin",
-      "Toshinori Yagi",
-      "Megumin",
-      "Shinei Nouzen"
+      "Tsubaki Sawabe",
+      "Violet Evergarden",
+      "Nagisa Furukawa",
+      "Hina Chouno",
+      "Eru Chitanda"
     ]
   },
   {
     "id": "Your Lie in April-69407",
+    "qid": 178,
     "name": "Kousei Arima",
     "anime": "Your Lie in April",
     "img": "https://s4.anilist.co/file/anilistcdn/character/large/b69407-eyIvpsFPeARS.png",
-    "quote": "Si todo puede salir mal, al menos será divertido.",
-    "hint": "Energía impredecible, humor absurdo y facilidad para meterse en problemas.",
-    "arquetipo": "comedia_caos",
+    "quote": "Entraste como si fuera tu casa",
+    "hint": "Frase representativa asociada al tono de Kousei Arima.",
+    "tipo": "representativa",
     "similares": [
-      "Gilgamesh",
-      "Rudo",
-      "Tenya Iida",
-      "Kazuma Satou",
-      "Anju Emma"
+      "Tomoya Okazaki",
+      "Taiki Inomata",
+      "Wakana Gojou",
+      "Hiro",
+      "Sakuta Azusagawa"
     ]
   },
   {
-    "id": "Your Lie in April-69405",
-    "name": "Ryouta Watari",
+    "id": "Your Lie in April-69411",
+    "qid": 179,
+    "name": "Kaori Miyazono",
     "anime": "Your Lie in April",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/69405-IpsjziJkHrHj.png",
-    "quote": "Lo que siento merece ser dicho, aunque me haga temblar.",
-    "hint": "Sensibilidad intensa y una forma valiente de cuidar los vínculos.",
-    "arquetipo": "romance_drama",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b69411-lxM0FRvWHqlv.png",
+    "quote": "Quiero saber muchas cosas sobre ti.",
+    "hint": "Frase representativa asociada al tono de Kaori Miyazono.",
+    "tipo": "representativa",
     "similares": [
-      "Kaoruko Waguri",
-      "Riyou Reaper",
-      "Shouto Todoroki",
-      "Aqua",
-      "Maomao"
+      "Mai Sakurajima",
+      "Tsubaki Sawabe",
+      "Miku Nakano",
+      "Rem",
+      "Kikyou Kushida"
     ]
   },
   {
-    "id": "Your Lie in April-85841",
-    "name": "Emi Igawa",
+    "id": "Your Lie in April-69409",
+    "qid": 180,
+    "name": "Tsubaki Sawabe",
     "anime": "Your Lie in April",
-    "img": "https://s4.anilist.co/file/anilistcdn/character/large/b85841-728eVWAvzifr.png",
-    "quote": "La verdad permanece aunque todos intenten esconderla.",
-    "hint": "Observador reservado que busca respuestas detrás de cada detalle.",
-    "arquetipo": "misterio_serio",
+    "img": "https://s4.anilist.co/file/anilistcdn/character/large/69409-lq7MFPFTwmBu.png",
+    "quote": "Estare contigo por siempre como un angel guardian",
+    "hint": "Frase representativa asociada al tono de Tsubaki Sawabe.",
+    "tipo": "representativa",
     "similares": [
-      "Rintarou Tsumugi",
-      "Zanka Nijiku",
-      "Katsuki Bakugou",
-      "Darkness",
-      "Jinshi"
+      "Miku Nakano",
+      "Karane Inda",
+      "Yuki Itose",
+      "Violet Evergarden",
+      "Kaori Miyazono"
     ]
   }
 ]
